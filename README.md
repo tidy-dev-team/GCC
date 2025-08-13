@@ -4,7 +4,7 @@ This is a repo for client, built on Daisy UI and Tailwind.
 
 The goal of this project is to keep it simple, fast and easy to maintain.
 
----
+## 
 
 ### Daisy UI components:
 
