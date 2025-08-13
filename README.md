@@ -18,5 +18,9 @@ https://tailwindcss.com
 
 https://www.figma.com/design/JNBdUnheXWrDXvs0WzBP9Q/Website-templates?node-id=1-7&t=jSbdutdFcqaAp2UL-4
 
+### Live Website:
+
+https://tidy-dev-team.github.io/GCC/Template_01
+
 
 Good Luck!
