@@ -1,9 +1,16 @@
-.section {
+.section:empty {
   min-height: calc(100vh - 65px - 224px);
 }
 
+.section {
+  max-width: 900px;
+  width: calc(100% - 32px);
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
 @media (max-width:480px) {
-  .section {
+  .section:empty {
     min-height: calc(100vh - 65px - 244px);
   }
 }
