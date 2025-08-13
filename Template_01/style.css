@@ -1,0 +1,9 @@
+.section {
+  min-height: calc(100vh - 65px - 224px);
+}
+
+@media (max-width:480px) {
+  .section {
+    min-height: calc(100vh - 65px - 244px);
+  }
+}
