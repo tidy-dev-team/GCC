@@ -13,4 +13,9 @@
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
   }
+  
+  .mobile-column {
+    flex-direction: column;
+    align-items: center;
+  }
 }
