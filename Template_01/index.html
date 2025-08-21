@@ -53,6 +53,48 @@
             </div>
         </div>
     </div>
+    <!--  COPONENT: TEXT  --> 
+    <section class="section mx-auto max-w-5xl px-4 py-14 section">
+        <div class="text-center">
+            <h2 class="text-6xl text-center mt-20">How it works</h2>
+            <h5 class="text-4xl text-center mt-5 mb-20">Simple. Verified. Compliant.</h5>
+        </div> 
+        <div class="mt-8 card bg-base-100">
+          <div class="card-body"> 
+            <div class="rounded-box border-primary/40 p-5 md:p-6">
+              <div class="grid gap-8 md:grid-cols-2"> 
+                <div>
+                  <h3 class="font-semibold text-base md:text-lg">
+                    ➤ For Borrowers (Need Labor?)
+                  </h3>
+                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
+                    <li><span class="font-medium">Find &amp; Select Labor</span></li>
+                    <li>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</li>
+                    <li><span class="font-medium">Raise a Purchase Order (PO)</span></li>
+                    <li>View pricing by worker and vehicle. Submit PO instantly.</li>
+                    <li><span class="font-medium">Sign &amp; Pay Securely</span></li>
+                    <li>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</li>
+                  </ul>
+                </div> 
+                <div>
+                  <h3 class="font-semibold text-base md:text-lg">
+                    ➤ For Lenders (Have Labor?)
+                  </h3>
+                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
+                    <li><span class="font-medium">List Labor Camps</span></li>
+                    <li>Upload labor data in bulk. Set availability, manage documents.</li>
+                    <li><span class="font-medium">Approve &amp; Contract</span></li>
+                    <li>Accept POs, auto-generate contracts, and sign with UAE Pass.</li>
+                    <li><span class="font-medium">Get Paid via Escrow</span></li>
+                    <li>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+
 
     <!-- COMPONENT: LIST -->
     <section class="section">
@@ -128,48 +170,167 @@
         </ul>
     </section>
 
-    <section class="section"></section>
 
     <!-- COMPONENT: ACCORDION -->
-    <section class="section">
-        <div class="join join-vertical bg-base-100 w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" checked="checked" />
-                <div class="collapse-title font-semibold">How do I create an account?</div>
-                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
-                    registration process.</div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                    instructions sent to your email.</div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.
+    <section class="section mx-auto max-w-6xl px-4 md:px-6 py-14"> 
+        <div class="text-center">
+            <h2 class="text-6xl text-center my-20">Everything You Need — In One Platform</h2> 
+        </div>  
+        <div class="flex gap-8 items-start"> 
+          <div class="basis-80 shrink-0 w-80">
+            <button 
+              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+              data-title="UAE Pass Integration"
+              data-sub="Digital identity + contract signature">
+              <span>
+                <span class="block font-semibold">UAE Pass Integration</span>
+                <span class="block text-xs text-base-content/60">Digital identity + contract signature</span>
+              </span>
+              <span class="shrink-0 opacity-60">→</span>
+            </button> 
+            <button 
+              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+              data-title="Site & Camp Mapping"
+              data-sub="Geospatial view of camps and sites">
+              <span>
+                <span class="block font-semibold">Site & Camp Mapping</span>
+                <span class="block text-xs text-base-content/60">Geospatial view of camps and sites</span>
+              </span>
+              <span class="shrink-0 opacity-60">→</span>
+            </button> 
+            <button 
+              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+              data-title="Labor Profile Management"
+              data-sub="Skills, documents, availability">
+              <span>
+                <span class="block font-semibold">Labor Profile Management</span>
+                <span class="block text-xs text-base-content/60">Skills, documents, availability</span>
+              </span>
+              <span class="shrink-0 opacity-60">→</span>
+            </button> 
+          </div> 
+          <div class="flex-1">
+            <div class="card bg-base-100 border border-base-300 shadow-sm">
+                <div class="card-body">
+                <div id="preview" class="text-center min-h-[200px] flex flex-col justify-center">
+                    <h3 class="text-xl font-semibold">UAE Pass Integration</h3>
+                    <p class="mt-2 text-sm text-base-content/60">Digital identity + contract signature</p>
+                </div>
                 </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+    
+      <script>
+        const items = document.querySelectorAll('.feature');
+        const preview = document.getElementById('preview');
+     
+        if (items.length) {
+          const first = items[0];
+          updatePreview(first.dataset.title, first.dataset.sub);
+          first.classList.add('bg-base-200');
+        }
+    
+        items.forEach(btn => {
+          btn.addEventListener('click', () => {
+            items.forEach(i => i.classList.remove('bg-base-200'));
+            btn.classList.add('bg-base-200');
+            updatePreview(btn.dataset.title, btn.dataset.sub);
+          });
+        });
+    
+        function updatePreview(title, sub) {
+          preview.innerHTML = `
+            <h3 class="text-xl font-semibold">${title}</h3>
+            <p class="mt-2 text-sm text-base-content/60">${sub}</p>
+          `;
+        }
+      </script>    
+    
 
-    <!-- COMPONENT: HERO -->
-    <section class="section">
-        <div class="hero bg-base-200 rounded-2xl p-4">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
-                    <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
-                    </p>
-                    <button class="btn btn-neutral">Learn more</button>
+   <!-- COMPONENT: HERO -->
+   <div class="hero my-50">
+        <div class="hero-content text-center">
+            <div>
+                <div class="text-center">
+                    <h2 class="text-6xl text-center my-20 mb-0">Trusted by UAE’s Leading Entities</h2> 
+                    <h5 class="text-4xl text-center mt-5 mb-20">Integrated with:</h5>
+                </div>  
+                <div class="flex gap-4 justify-center mobile-column mb-10">
+                    <div class="badge badge-neutral badge-outline rounded-full p-4">🔑 UAE Pass </div>
+                    <div class="badge badge-neutral badge-outline rounded-full p-4">🏦 RAKBANK Escrow</div>
+                    <div class="badge badge-neutral badge-outline rounded-full p-4"> 👥 MOHRE-ready</div>
+                    <div class="badge badge-neutral badge-outline rounded-full p-4">📄 Licensed Companies Only</div>
                 </div>
+                <button class="btn btn-neutral">Partner with Us</button>
             </div>
         </div>
-    </section>
+    </div>    
+
+        <!-- COMPONENT: LIST -->
+        <section class="section">
+
+            <div class="text-center">
+                <h2 class="text-6xl text-center my-20 mb-0">Enterprise-Grade Security. Government-Level Compliance.</h2>  
+            </div> 
+            <ul class="list flex flex-row gap-4 flex-wrap justify-center my-20">
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
+                    </div>
+                </li>
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Slash Project Delays</div> 
+                    </div>
+                </li>
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Contractless, Paperless</div> 
+                    </div>
+                </li>
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
+                    </div>
+                </li>
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Slash Project Delays</div>
+                    </div>
+                </li>
+    
+                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
+                    <div>
+                        <div class="mb-4 text-4xl">Contractless, Paperless</div>
+                    </div>
+                </li>
+    
+            </ul>
+            <p>AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance requirements of UAE authorities.</p>
+        </section>
+   <!-- COMPONENT: HERO -->
+        <section class="section"> 
+            <div class="hero my-50">
+                <div class="hero-content text-center">
+                    <div>
+                        <div class="text-center my-20 ">
+                            <h2 class="text-6xl text-center mb-0">Start Exchanging Labor Today — Securely and Seamlessly</h2>  
+                        </div>  
+                        <button class="btn btn-neutral">Partner with Us</button>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+    
+ 
 
     <!-- COMPONENT: FOOTER -->
     <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
