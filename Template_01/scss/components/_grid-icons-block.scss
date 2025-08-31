@@ -1,0 +1,17 @@
+.grid-icons-block{
+    padding: map-get($spacing, 29) 0;
+    li{
+        background-color: map-get($colors, amel, yellow-light-3);
+        border-radius: map-get($border-radius, '2xl');
+        p{
+            @include text-style('34xl', normal, normal);
+        }
+        svg{
+            width:100px;
+            height:100px;
+        }
+    }
+    .disclimer{
+        padding-top: map-get($spacing, 17);
+    }
+}

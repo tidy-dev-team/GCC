@@ -1,0 +1,234 @@
+
+
+// =============================================================================
+// SPACING UTILITIES
+// =============================================================================
+
+// Margin utilities
+@each $size, $value in $spacing {
+  .m-#{$size} { margin: $value; }
+  .mt-#{$size} { margin-top: $value; }
+  .mr-#{$size} { margin-right: $value; }
+  .mb-#{$size} { margin-bottom: $value; }
+  .ml-#{$size} { margin-left: $value; }
+  .mx-#{$size} { 
+    margin-left: $value; 
+    margin-right: $value; 
+  }
+  .my-#{$size} { 
+    margin-top: $value; 
+    margin-bottom: $value; 
+  }
+}
+
+// Padding utilities
+@each $size, $value in $spacing {
+  .p-#{$size} { padding: $value; }
+  .pt-#{$size} { padding-top: $value; }
+  .pr-#{$size} { padding-right: $value; }
+  .pb-#{$size} { padding-bottom: $value; }
+  .pl-#{$size} { padding-left: $value; }
+  .px-#{$size} { 
+    padding-left: $value; 
+    padding-right: $value; 
+  }
+  .py-#{$size} { 
+    padding-top: $value; 
+    padding-bottom: $value; 
+  }
+}
+
+// =============================================================================
+// TYPOGRAPHY UTILITIES
+// =============================================================================
+
+// Font sizes
+@each $size, $value in $font-sizes {
+  .text-#{$size} { font-size: $value; }
+}
+
+// Font weights
+@each $weight, $value in $font-weights {
+  .font-#{$weight} { font-weight: $value; }
+}
+
+// Line heights
+@each $height, $value in $line-heights {
+  .leading-#{$height} { line-height: $value; }
+}
+
+// Text alignment
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// Text decoration
+.underline { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+.line-through { text-decoration: line-through; }
+
+// Text transform
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+
+// =============================================================================
+// COLOR UTILITIES
+// =============================================================================
+
+// Primary colors
+@each $shade, $value in map-get($colors, primary) {
+  .text-primary-#{$shade} { color: $value; }
+  .bg-primary-#{$shade} { background-color: $value; }
+  .border-primary-#{$shade} { border-color: $value; }
+}
+
+// Neutral colors
+@each $shade, $value in map-get($colors, neutral) {
+  .text-neutral-#{$shade} { color: $value; }
+  .bg-neutral-#{$shade} { background-color: $value; }
+  .border-neutral-#{$shade} { border-color: $value; }
+}
+
+// Semantic colors
+.text-success { color: map-get($colors, success); }
+.text-warning { color: map-get($colors, warning); }
+.text-error { color: map-get($colors, error); }
+.text-info { color: map-get($colors, info); }
+
+.bg-success { background-color: map-get($colors, success); }
+.bg-warning { background-color: map-get($colors, warning); }
+.bg-error { background-color: map-get($colors, error); }
+.bg-info { background-color: map-get($colors, info); }
+
+// AMEL Specific Colors
+.amel-yellow { color: map-get($colors, amel, yellow); }
+.amel-dark { color: map-get($colors, amel, dark); }
+.amel-light { color: map-get($colors, amel, light); }
+.amel-card { color: map-get($colors, amel, card); }
+
+.bg-amel-yellow { background-color: map-get($colors, amel, yellow); }
+.bg-amel-dark { background-color: map-get($colors, amel, dark); }
+.bg-amel-light { background-color: map-get($colors, amel, light); }
+.bg-amel-card { background-color: map-get($colors, amel, card); }
+
+.border-amel-yellow { border-color: map-get($colors, amel, yellow); }
+.border-amel-dark { border-color: map-get($colors, amel, dark); }
+.border-amel-light { border-color: map-get($colors, amel, light); }
+.border-amel-card { border-color: map-get($colors, amel, card); }
+
+// Additional Colors from New Image
+.cream { color: map-get($colors, cream); }
+.bright-yellow { color: map-get($colors, bright-yellow); }
+.dark-green { color: map-get($colors, dark-green); }
+.deep-blue { color: map-get($colors, deep-blue); }
+.bright-red { color: map-get($colors, bright-red); }
+.separator { color: map-get($colors, separator); }
+
+.bg-cream { background-color: map-get($colors, cream); }
+.bg-bright-yellow { background-color: map-get($colors, bright-yellow); }
+.bg-dark-green { background-color: map-get($colors, dark-green); }
+.bg-deep-blue { background-color: map-get($colors, deep-blue); }
+.bg-bright-red { background-color: map-get($colors, bright-red); }
+.bg-separator { background-color: map-get($colors, separator); }
+
+.border-cream { border-color: map-get($colors, cream); }
+.border-bright-yellow { border-color: map-get($colors, bright-yellow); }
+.border-dark-green { border-color: map-get($colors, dark-green); }
+.border-deep-blue { border-color: map-get($colors, deep-blue); }
+.border-bright-red { border-color: map-get($colors, bright-red); }
+.border-separator { border-color: map-get($colors, separator); }
+ 
+
+// Gap
+@each $size, $value in $spacing {
+  .gap-#{$size} { gap: $value; }
+  .gap-x-#{$size} { column-gap: $value; }
+  .gap-y-#{$size} { row-gap: $value; }
+}
+
+// =============================================================================
+// POSITIONING UTILITIES
+// =============================================================================
+
+// Position
+.static { position: static; }
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.sticky { position: sticky; }
+
+// Top, Right, Bottom, Left
+@each $size, $value in $spacing {
+  .top-#{$size} { top: $value; }
+  .right-#{$size} { right: $value; }
+  .bottom-#{$size} { bottom: $value; }
+  .left-#{$size} { left: $value; }
+}
+
+// Z-index
+@each $name, $value in $z-index {
+  .z-#{$name} { z-index: $value; }
+}
+
+// =============================================================================
+// BORDER UTILITIES
+// =============================================================================
+
+// Border width
+.border-0 { border-width: 0; }
+.border { border-width: 1px; }
+.border-2 { border-width: 2px; }
+.border-4 { border-width: 4px; }
+.border-8 { border-width: 8px; }
+
+// Border radius
+@each $size, $value in $border-radius {
+  .rounded-#{$size} { border-radius: $value; }
+}
+
+.rounded-t { border-top-left-radius: map-get($border-radius, base); border-top-right-radius: map-get($border-radius, base); }
+.rounded-r { border-top-right-radius: map-get($border-radius, base); border-bottom-right-radius: map-get($border-radius, base); }
+.rounded-b { border-bottom-right-radius: map-get($border-radius, base); border-bottom-left-radius: map-get($border-radius, base); }
+.rounded-l { border-top-left-radius: map-get($border-radius, base); border-bottom-left-radius: map-get($border-radius, base); }
+
+// Border style
+.border-solid { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+.border-double { border-style: double; }
+.border-none { border-style: none; }
+
+// =============================================================================
+// SHADOW UTILITIES
+// =============================================================================
+
+@each $size, $value in $shadows {
+  .shadow-#{$size} { box-shadow: $value; }
+}
+
+// =============================================================================
+// TRANSITION UTILITIES
+// =============================================================================
+
+.transition-none { transition-property: none; }
+.transition-all { transition-property: all; }
+.transition { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; }
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }
+.transition-opacity { transition-property: opacity; }
+.transition-shadow { transition-property: box-shadow; }
+.transition-transform { transition-property: transform; }
+
+// Duration
+@each $name, $value in $transitions {
+  .duration-#{$name} { transition-duration: $value; }
+}
+
+// Timing functions
+.ease-linear { transition-timing-function: linear; }
+.ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+ 

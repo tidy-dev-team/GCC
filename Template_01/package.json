@@ -1,0 +1,29 @@
+{
+  "name": "template-01",
+  "version": "1.0.0",
+  "description": "Template 01 with CSS compiler and design system",
+  "main": "index.html",
+  "scripts": {
+    "dev": "concurrently \"npm run sass:watch\" \"npm run tailwind:watch\"",
+    "build": "npm run sass:build && npm run tailwind:build",
+    "sass:watch": "sass --watch scss:css --style compressed",
+    "sass:build": "sass scss:css --style compressed",
+    "tailwind:watch": "tailwindcss -i ./scss/main.scss -o ./css/tailwind.css --watch",
+    "tailwind:build": "tailwindcss -i ./scss/main.scss -o ./css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "sass": "^1.69.0",
+    "tailwindcss": "^4.1.12"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "design-system",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT"
+}

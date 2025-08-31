@@ -1,0 +1,249 @@
+// =============================================================================
+// HERO VIDEO COMPONENT 
+// =============================================================================
+
+
+
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  
+  // Video Background Container
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    // Main Video Element
+    .video-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      // Initial state - video starts more towards the bottom of the fold
+      transform: scale(0.75) translateY(25%);
+      opacity: 0;
+      transition: all 0s ease-out;
+      
+      &.animate-in {
+        transform: scale(0.8) translateY(-50%);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      &.fill-screen {
+        transform: scale(1) translateY(-25%);
+        transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      // Video Overlay for better text readability
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.2) 50%,
+          rgba(0, 0, 0, 0.6) 100%
+        );
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out 3s;
+      }
+      
+      &.animate-in::after {
+        opacity: 1;
+      }
+    }
+  }
+  
+  // Content Overlay
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: flex-start;
+    height: 100%;
+    //padding: 0 5%;
+    //max-width: 1200px;
+    //margin: 0 auto;
+    
+    // Initial state - content is hidden
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all 0s ease-out;
+    
+    &.animate-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); // Removed the 2s delay
+    }
+    
+    @include respond-to(md) {
+  //    padding: 0 8%;
+    }
+    
+    @include respond-to(lg) {
+    //  padding: 0 10%;
+    }
+    
+    // Main Headline
+    .hero-title {
+      @include heading(1);
+      color: white;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+      line-height: 1.1;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      
+      @include respond-to(md) {
+        margin-bottom: 2rem;
+      }
+    }
+    
+    // Description Text
+    .hero-description {
+      @include body-text(2xl);
+      color: white;
+      margin-bottom: 2.5rem;
+      max-width: 700px;
+      line-height: 1.6;
+      //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      
+      @include respond-to(md) {
+        margin-bottom: 3rem;
+      }
+    }
+    .hero-btn {
+      @include button(xl, primary, solid);
+
+    }
+
+  }
+  
+  // Loading State
+  .hero-video.loading {
+    .hero-content {
+      opacity: 0;
+    }
+  }
+  
+  // Responsive Adjustments
+  @include respond-below(md) {
+    height: 80vh;
+    min-height: 500px;
+    
+    .hero-content {
+      //padding: 0 5%;
+      text-align: center;
+      align-items: center;
+      
+      .hero-title {
+        @include heading(2);
+      }
+      
+      .hero-description {
+        @include body-text(base);
+      }
+    }
+  }
+}
+
+// Custom video animation keyframes (these can't be done with Tailwind)
+@keyframes videoEntrance {
+  0% {
+    transform: scale(0.75) translateY(100%);
+    opacity: 0;
+  }
+  
+  60% {
+    transform: scale(0.8) translateY(15%);
+    opacity: 0.8;
+  }
+  
+  100% {
+    transform: scale(0.8) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes videoFillScreen {
+  0% {
+    transform: scale(0.8) translateY(0);
+  }
+  
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+// Animation classes for JavaScript to add/remove
+.video-entrance {
+  animation: videoEntrance 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.video-fill-screen {
+  animation: videoFillScreen 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.content-fade-in {
+  animation: contentFadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; // Removed the 2s delay
+}
+
+// Custom video overlay gradient (if needed beyond Tailwind's gradient utilities)
+.video-overlay-custom {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+// Loading animation for daisyUI loading component
+@keyframes loadingPulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.loading-custom::before {
+  animation: loadingPulse 1.5s ease-in-out infinite;
+}
+ 

@@ -1,0 +1,15 @@
+.tag-line{
+    margin-bottom: map-get($spacing, 21);
+    .badge{
+        @include color('neutral', 500);
+        @include bg-color('amel', 'yellow-light');
+        @include border-color('amel', 'yellow-light');
+        @include rounded('base');
+    }
+    .main-tagline{
+        @include text-style('9xl', medium, tight); 
+    }
+    .sub-tagline{
+        @include text-style('35xl', normal, tight);
+    }
+}

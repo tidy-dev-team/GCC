@@ -4,331 +4,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     
     <title>Template 1</title>
-
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- jQuery must be loaded before Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
 <body>
 
     <!-- COMPONENT: NAVBAR -->
-    <div class="navbar bg-base-100 shadow-sm px-4">
+    <div class="navbar bg-base-100 p-0">
         <div class="navbar-start ml-4">
-            Template
+            <img src="assets/images/Amel_logo.svg"/>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Company</a></li>
+                <li><a>About</a></li>
+                <li><a>Resources</a></li>
             </ul>
         </div>
         <div class="flex gap-4 navbar-end">
-            <a class="btn">Sign up</a>
-            <a class="btn btn-neutral btn-outline">Log in</a>
+            <a class="btn">Partner with Us</a>
+            <a class="btn btn-neutral btn-outline">Login</a>
         </div>
     </div>
 
     <!-- COMPONENT: HERO -->
-    <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content text-center">
-            <div>
-                <h1 class="text-5xl font-bold">The Future of Labor Exchange in the UAE</h1>
-                <p class="py-6">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-neutral">Partner with Us</button>
-                <br /><br /><br />
-                <div class="flex gap-4 justify-center mobile-column">
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">🔑 UAE Pass </div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">🏦 RAKBANK Escrow</div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4"> 👥 MOHRE-ready</div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">📄 Licensed Companies Only</div>
-                </div>
+    <section class="hero-video relative w-full h-screen min-h-screen overflow-hidden"> 
+        <div class="video-background absolute inset-0 w-full h-full z-0"> 
+            <div class="video-item absolute inset-0 w-full h-full transform scale-75 translate-y-1/4 opacity-0 transition-all duration-0 ease-out" id="mainVideo">
+                <video id="heroVideoElement" class="w-full h-full object-cover object-center" autoplay muted playsinline>
+                    <source src="assets/video/Hero1.mp4" type="video/mp4">
+                </video> 
+                <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/60 opacity-0 transition-opacity duration-1500 delay-3000"></div>
             </div>
         </div>
-    </div>
-    <!--  COPONENT: TEXT  --> 
-    <section class="section mx-auto max-w-5xl px-4 py-14 section">
-        <div class="text-center">
-            <h2 class="text-6xl text-center mt-20">How it works</h2>
-            <h5 class="text-4xl text-center mt-5 mb-20">Simple. Verified. Compliant.</h5>
-        </div> 
-        <div class="mt-8 card bg-base-100">
-          <div class="card-body"> 
-            <div class="rounded-box border-primary/40 p-5 md:p-6">
-              <div class="grid gap-8 md:grid-cols-2"> 
-                <div>
-                  <h3 class="font-semibold text-base md:text-lg">
-                    ➤ For Borrowers (Need Labor?)
-                  </h3>
-                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
-                    <li><span class="font-medium">Find &amp; Select Labor</span></li>
-                    <li>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</li>
-                    <li><span class="font-medium">Raise a Purchase Order (PO)</span></li>
-                    <li>View pricing by worker and vehicle. Submit PO instantly.</li>
-                    <li><span class="font-medium">Sign &amp; Pay Securely</span></li>
-                    <li>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</li>
-                  </ul>
-                </div> 
-                <div>
-                  <h3 class="font-semibold text-base md:text-lg">
-                    ➤ For Lenders (Have Labor?)
-                  </h3>
-                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
-                    <li><span class="font-medium">List Labor Camps</span></li>
-                    <li>Upload labor data in bulk. Set availability, manage documents.</li>
-                    <li><span class="font-medium">Approve &amp; Contract</span></li>
-                    <li>Accept POs, auto-generate contracts, and sign with UAE Pass.</li>
-                    <li><span class="font-medium">Get Paid via Escrow</span></li>
-                    <li>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</li>
-                  </ul>
+         
+        <div class="hero-content relative z-10 flex flex-col justify-center items-start h-full max-w-6xl mx-auto opacity-0 transform translate-y-8 transition-all duration-0 ease-out" id="heroContent">
+            <div class="max-w-4xl">
+                <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+                    The Future of Labor Exchange in the UAE
+                </h1>
+                <p class="hero-description text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl leading-relaxed text-white/90 drop-shadow-md">
+                    AMEL connects licensed construction and manpower companies to lend and borrow labor — 
+                    securely, profitably, and in full compliance with UAE law. Free up idle workers. 
+                    Reduce project delays. Automate payments and contracts with UAE Pass and escrow.
+                </p>
+                <button class="hero-btn"> 
+                    Partner with Us
+                </button>
+            </div>
+        </div>
+        
+        <!-- Loading Indicator -->
+        <div class="loading loading-spinner loading-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-primary"></div>
+    </section>
+    <!-- SECTION: BUTTONS CARDS-->
+     <section class="section component-cards-icons pt-15">
+        <div class="container">
+        <div class="flex gap-11">
+            <div class="card w-96 border">
+                <div class="card-holder flex flex-col">
+                    <figure>
+                        <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
+                        </svg>    
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <p class="card-title"> UAE Pass </p> 
+                    </div>
                 </div>
               </div>
-            </div> 
-          </div>
+              <div class="card w-96 border">
+                <div class="card-holder flex flex-col">
+                <figure>
+                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
+                    </svg>    
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p class="card-title">RAKBANK Escrow</p>
+                </div>
+                </div>
+              </div>
+              <div class="card w-96 border">
+                <div class="card-holder flex flex-col">
+                <figure >
+                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
+                    </svg>    
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p class="card-title">MOHRE-ready</p>
+                </div>
+                </div>
+              </div>
+              <div class="card w-96 border">
+                <div class="card-holder flex flex-col">
+                <figure>
+                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
+                    </svg>    
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p class="card-title">Licensed Companies Only</p>
+                </div>
+                </div>
+              </div>
         </div>
-      </section>
+        </div>
+     </section>
 
 
-    <!-- COMPONENT: LIST -->
-    <section class="section">
-        <h2 class="text-6xl text-center my-20">Unlock New Value from Existing Resources</h2>
-        <ul class="list flex flex-row gap-4 flex-wrap justify-center">
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/1@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
-                    <div class="text-xs font-semibold opacity-60">Turn downtime into revenue. Lend workers to verified
-                        companies across the UAE.</div>
-                </div>
-            </li>
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/4@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Slash Project Delays</div>
-                    <div class="text-xs font-semibold opacity-60">Quickly source skilled, verified labor for urgent site
-                        demands.</div>
-                </div>
-            </li>
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/3@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
-                    <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
-                        UAE Pass.</div>
-                </div>
-            </li>
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/1@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
-                    <div class="text-xs font-semibold opacity-60">Turn downtime into revenue. Lend workers to verified
-                        companies across the UAE.</div>
-                </div>
-            </li>
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/4@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Slash Project Delays</div>
-                    <div class="text-xs font-semibold opacity-60">Quickly source skilled, verified labor for urgent site
-                        demands.</div>
-                </div>
-            </li>
-
-            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
-                <div><img class="size-40 rounded-box mb-4"
-                        src="https://img.daisyui.com/images/profile/demo/3@94.webp" />
-                </div>
-                <div>
-                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
-                    <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
-                        UAE Pass.</div>
-                </div>
-            </li>
-
-        </ul>
+     <!-- SECTION: HOW IT WORKS -->
+     <section class="how-it-works">
+        <div class="container">
+            <div class="tag-line text-center">
+                <div class="badge badge-warning">How it works</div>
+                <h3 class="main-tagline">Simple. Verified. </br> Compliant.</h3>
+            </div>
+             <div class="tabs-holder">  
+                    <div role="tablist" class="tabs">
+                        <a role="tab" class="tab tab-active">For Borrowers</a>
+                        <a role="tab" class="tab">For Lenders</a>
+                    </div>
+                    <div role="tabpanel" class="tab-content tab-content-active">  
+                        <div class="vertical-tabs flex ">
+                            <div class="vertical-tabs-holder flex flex-col flex-1">
+                                <h5 class="headline-tab">Add title here</h5>
+                                <div role="tablist" class="tabs ">
+                                    <a role="tab" class="tab tab-active">
+                                        <span class="icon">
+                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_515_471)">
+                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052" stroke-width="5.33333"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_515_471">
+                                                    <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>                                            
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Find & Select Labor</h4>
+                                            <p>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</p>
+                                        </div>
+                                    </a>
+                                    <a role="tab" class="tab">
+                                        <span class="icon">
+                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_515_683)">
+                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_515_683">
+                                                        <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>                                                                                                                            
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Raise a Purchase Order (PO)</h4>
+                                            <p>View pricing by worker and vehicle. Submit PO instantly.</p>
+                                        </div>
+                                    </a>
+                                    <a role="tab" class="tab">
+                                        <span class="icon">
+                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5239 0L2.40625 5.96398L2.59558 18.2578C2.59558 22.5428 4.13066 24.8633 7.75857 27.2639L16.5239 32L25.2892 27.2639C28.912 24.8633 30.4522 22.5428 30.4522 18.2578L30.6415 5.96398L16.5239 0Z" fill="#E5DBD2"/>
+                                            </svg>
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Sign & Pay Securely</h4>
+                                            <p>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</p>
+                                        </div>
+                                    </a>
+                                </div>  
+                            </div>
+                            <div class="tab-content-holder flex-1">
+                                <div role="tabpanel" class="tab-content tab-content-active">
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/image_1.png" alt="How it works borrowers">
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-content"> Tab content 2</div>
+                                <div role="tabpanel" class="tab-content"> Tab content 3</div>                          
+                            </div>
+                        </div>                      
+                    </div>
+                    <div role="tabpanel" class="tab-content">  
+                        <div class="vertical-tabs flex ">
+                            <div class="vertical-tabs-holder flex flex-col flex-1">
+                                <h5 class="headline-tab">Add title here</h5>
+                                <div role="tablist" class="tabs ">
+                                    <a role="tab" class="tab tab-active">
+                                        <span class="icon">
+                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_515_471)">
+                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052" stroke-width="5.33333"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_515_471">
+                                                    <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>                                            
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Find & Select Labor</h4>
+                                            <p>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</p>
+                                        </div>
+                                    </a>
+                                    <a role="tab" class="tab">
+                                        <span class="icon">
+                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_515_683)">
+                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_515_683">
+                                                        <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>                                                                                                                            
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Raise a Purchase Order (PO)</h4>
+                                            <p>View pricing by worker and vehicle. Submit PO instantly.</p>
+                                        </div>
+                                    </a>
+                                    <a role="tab" class="tab">
+                                        <span class="icon">
+                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5239 0L2.40625 5.96398L2.59558 18.2578C2.59558 22.5428 4.13066 24.8633 7.75857 27.2639L16.5239 32L25.2892 27.2639C28.912 24.8633 30.4522 22.5428 30.4522 18.2578L30.6415 5.96398L16.5239 0Z" fill="#E5DBD2"/>
+                                            </svg>
+                                        </span>
+                                        <div class="tab-button-content-holder">
+                                            <h4>Sign & Pay Securely</h4>
+                                            <p>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</p>
+                                        </div>
+                                    </a>
+                                </div>  
+                            </div>
+                            <div class="tab-content-holder flex-1">
+                                <div role="tabpanel" class="tab-content tab-content-active">
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/image_1.png" alt="How it works borrowers">
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-content"> Tab content 2</div>
+                                <div role="tabpanel" class="tab-content"> Tab content 3</div>                          
+                            </div>
+                        </div>                      
+                    </div>
+             </div> 
+        </div>
     </section>
 
 
-    <!-- COMPONENT: ACCORDION -->
-    <section class="section mx-auto max-w-6xl px-4 md:px-6 py-14"> 
-        <div class="text-center">
-            <h2 class="text-6xl text-center my-20">Everything You Need — In One Platform</h2> 
-        </div>  
-        <div class="flex gap-8 items-start"> 
-          <div class="basis-80 shrink-0 w-80">
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="UAE Pass Integration"
-              data-sub="Digital identity + contract signature">
-              <span>
-                <span class="block font-semibold">UAE Pass Integration</span>
-                <span class="block text-xs text-base-content/60">Digital identity + contract signature</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="Site & Camp Mapping"
-              data-sub="Geospatial view of camps and sites">
-              <span>
-                <span class="block font-semibold">Site & Camp Mapping</span>
-                <span class="block text-xs text-base-content/60">Geospatial view of camps and sites</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="Labor Profile Management"
-              data-sub="Skills, documents, availability">
-              <span>
-                <span class="block font-semibold">Labor Profile Management</span>
-                <span class="block text-xs text-base-content/60">Skills, documents, availability</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-          </div> 
-          <div class="flex-1">
-            <div class="card bg-base-100 border border-base-300 shadow-sm">
-                <div class="card-body">
-                <div id="preview" class="text-center min-h-[200px] flex flex-col justify-center">
-                    <h3 class="text-xl font-semibold">UAE Pass Integration</h3>
-                    <p class="mt-2 text-sm text-base-content/60">Digital identity + contract signature</p>
-                </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <script>
-        const items = document.querySelectorAll('.feature');
-        const preview = document.getElementById('preview');
-     
-        if (items.length) {
-          const first = items[0];
-          updatePreview(first.dataset.title, first.dataset.sub);
-          first.classList.add('bg-base-200');
-        }
-    
-        items.forEach(btn => {
-          btn.addEventListener('click', () => {
-            items.forEach(i => i.classList.remove('bg-base-200'));
-            btn.classList.add('bg-base-200');
-            updatePreview(btn.dataset.title, btn.dataset.sub);
-          });
-        });
-    
-        function updatePreview(title, sub) {
-          preview.innerHTML = `
-            <h3 class="text-xl font-semibold">${title}</h3>
-            <p class="mt-2 text-sm text-base-content/60">${sub}</p>
-          `;
-        }
-      </script>    
-    
-
-   <!-- COMPONENT: HERO -->
-   <div class="hero my-50">
-        <div class="hero-content text-center">
+     <!-- SECTION: SLIDER -->
+<section class="slider-block">
+    <div class="container">
+        <div class="tag-line text-center">
+            <h3 class="main-tagline">Unlock New Value </br>from Existing Resources</h3>
+        </div>        
+    </div>
+    <div class="slider-holder">
+        <div class="slider w-full">
             <div>
-                <div class="text-center">
-                    <h2 class="text-6xl text-center my-20 mb-0">Trusted by UAE’s Leading Entities</h2> 
-                    <h5 class="text-4xl text-center mt-5 mb-20">Integrated with:</h5>
-                </div>  
-                <div class="flex gap-4 justify-center mobile-column mb-10">
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">🔑 UAE Pass </div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">🏦 RAKBANK Escrow</div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4"> 👥 MOHRE-ready</div>
-                    <div class="badge badge-neutral badge-outline rounded-full p-4">📄 Licensed Companies Only</div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_1.png" alt="Unlock New Value from Existing Resources">
                 </div>
-                <button class="btn btn-neutral">Partner with Us</button>
+                <div class="slider-icon">
+                    <svg width="31" height="36" viewBox="0 0 31 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.5234 -0.00976562C30.5234 9.92999 23.8116 17.9902 15.5234 17.9902C7.23528 17.9902 0.523438 9.92999 0.523438 -0.00976562H30.5234Z" fill="#FFCC23"/>
+                        <path d="M0.523438 35.9902C0.523438 26.0505 7.23528 17.9902 15.5234 17.9902C23.8116 17.9902 30.5234 26.0505 30.5234 35.9902H0.523438Z" fill="#FFCC23"/>
+                    </svg>                                             
+                </div>
+                <div class="slider-content">
+                    <h5>Monetize Idle Labor</h5>
+                    <p>Turn downtime into revenue. Lend workers to verified companies across the UAE.</p>
+                </div>
             </div>
         </div>
-    </div>    
-
-        <!-- COMPONENT: LIST -->
-        <section class="section">
-
-            <div class="text-center">
-                <h2 class="text-6xl text-center my-20 mb-0">Enterprise-Grade Security. Government-Level Compliance.</h2>  
-            </div> 
-            <ul class="list flex flex-row gap-4 flex-wrap justify-center my-20">
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Slash Project Delays</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Contractless, Paperless</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Slash Project Delays</div>
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Contractless, Paperless</div>
-                    </div>
-                </li>
-    
-            </ul>
-            <p>AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance requirements of UAE authorities.</p>
-        </section>
-   <!-- COMPONENT: HERO -->
-        <section class="section"> 
-            <div class="hero my-50">
-                <div class="hero-content text-center">
-                    <div>
-                        <div class="text-center my-20 ">
-                            <h2 class="text-6xl text-center mb-0">Start Exchanging Labor Today — Securely and Seamlessly</h2>  
-                        </div>  
-                        <button class="btn btn-neutral">Partner with Us</button>
-                    </div>
+        <div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_2.png" alt="Unlock New Value from Existing Resources">
                 </div>
-            </div>   
-        </section>
+                <div class="slider-icon">
+                    <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.5234 17.9902L15.321 -0.00976562V14.6265L0.523438 -0.00976562V35.9902L15.321 21.354V35.9902L33.5234 17.9902Z" fill="#FFCC23"/>
+                    </svg>                                                                                          
+                </div>
+                <div class="slider-content">
+                    <h5>Slash Project Delays</h5>
+                    <p>Quickly source skilled, verified labor for urgent site demands.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_3.png" alt="Unlock New Value from Existing Resources">
+                </div>
+                <div class="slider-icon">
+                    <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.088 16.0677C40.0953 15.8852 40.1026 15.7063 40.1026 15.5312C40.1026 8.61617 34.5596 2.99023 27.7509 2.99023C23.0479 2.99023 18.7521 5.75104 16.6904 9.98353C15.6229 9.26818 14.3756 8.8807 13.066 8.8807C9.58825 8.8807 6.7305 11.6341 6.49939 15.1102C2.9483 16.4217 0.523438 19.8829 0.523438 23.7689C0.523438 28.8509 4.59912 32.9902 9.60659 32.9902H39.1195C43.7308 32.9902 47.48 29.1825 47.48 24.4992C47.48 20.1512 44.2444 16.5558 40.088 16.0677Z" fill="#FFCC23"/>
+                    </svg>                                                                                                         
+                </div>
+                <div class="slider-content">
+                    <h5>Contractless, Paperless</h5>
+                    <p>Sign and manage labor contracts 100% digitally with UAE Pass.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_4.png" alt="Unlock New Value from Existing Resources">
+                </div>
+                <div class="slider-icon">
+                    <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5234 -0.00976562L0.523438 6.69971L0.738008 20.5303C0.738008 25.3509 2.47777 27.9614 6.5894 30.6621L16.5234 35.9902L26.4575 30.6621C30.5633 27.9614 32.3089 25.3509 32.3089 20.5303L32.5234 6.69971L16.5234 -0.00976562Z" fill="#FFCC23"/>
+                    </svg>                                                                                                         
+                </div>
+                <div class="slider-content">
+                    <h5>Protect Every Transaction</h5>
+                    <p>RAKBANK escrow ensures funds are only released when work is confirmed.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_5.png" alt="Unlock New Value from Existing Resources">
+                </div>
+                <div class="slider-icon">
+                    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.7655 0.490234C17.2637 0.490234 16.8014 0.665151 16.4275 1.03441L12.8859 4.29949L8.87203 3.52209C7.61278 3.26944 6.84542 4.08571 6.58964 5.07689L5.8026 9.50807L1.55264 11.5293C0.549174 12.0249 0.263874 13.0258 0.765607 14.017L2.81189 17.9817L0.765607 21.9465C0.263874 22.9377 0.795121 23.9386 1.55264 24.4342L5.8026 26.4554L6.58964 30.8866C6.84542 31.8778 7.86856 32.694 8.87203 32.4414L13.5942 31.664L17.1359 34.9291C17.8934 35.6773 19.1329 35.6773 19.8905 34.9291L23.4321 31.664L28.233 32.4414C29.2365 32.694 30.2596 31.8778 30.5154 30.8866L31.2237 26.4554L35.5524 24.4342C36.5558 23.9386 36.7624 22.9377 36.2607 21.9465L33.5061 17.9817L35.5524 14.017C36.0541 13.0258 35.7688 12.0249 34.7653 11.5293L30.5154 9.50807L29.7283 5.07689C29.4726 4.08571 28.4494 3.26944 27.446 3.52209L22.7238 4.29949L19.1821 1.03441C18.8083 0.665151 18.2672 0.490234 17.7655 0.490234Z" fill="#FFCC23"/>
+                    </svg>                                                                                         
+                </div>
+                <div class="slider-content">
+                    <h5>Built for UAE Compliance</h5>
+                    <p>Built for UAE Compliance Integrated with MOHRE, DED, RAKEZ, and UAE Pass. Aligned with labor laws and financial regulations.</p>
+                </div>
+            </div>     
+        </div>          
+        <div>
+            <div class="slider-item">
+                <div class="slider-image">
+                    <img src="assets/images/slide_6.png" alt="Unlock New Value from Existing Resources">
+                </div>
+                <div class="slider-icon">
+                    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18.5234" cy="17.9902" r="15" stroke="#FFCC23" stroke-width="6"/>
+                    </svg>                                                                     
+                </div>
+                <div class="slider-content">
+                    <h5>Transparent Pricing</h5>
+                    <p>No hidden fees. Labor + transport rates are automated and fully visible at all times.</p>
+                </div>
+            </div>     
+        </div>                                                            
+        </div>        
+    </div>
+</section>
 
+<!-- SECTION: Accordion-->
+
+    <section class="accordion-block">
+        <div class="container">
+            <div class="tag-line text-center">
+                <div class="badge badge-warning">Features</div>
+                <h3 class="main-tagline">Everything You Need - </br>In One Platform</h3>
+            </div>
+            <div class="accordion">
+                <div class="accordion-holder">
+                    <div class="accordion-content">
+                        <div class="accordion-content-item active">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                        <div class="accordion-content-item">
+                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                        </div>
+                    </div>                    
+                    <div class="accordion-header">
+                        <div class="accordion-header-title active">
+                            <h4>UAE Pass Integration</h4>
+                            <p>Digital identity + contract signature</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4>Site & Camp Mapping</h4>
+                            <p>Manage multiple locations via Google Maps</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4> Labor Profile Management</h4>
+                            <p>Experience, insurance, blacklist status, ID, and more</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4> Smart Dashboards</h4>
+                            <p>View site/camp status, contract flows, financials</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4> Escrow Payment Flows</h4>
+                            <p>Full e-wallet integration via RAKBANK</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4> Real-Time Notifications</h4>
+                            <p>Get alerts for approvals, contracts, and payments</p>
+                        </div>
+                        <div class="accordion-header-title">
+                            <h4> POs & Contracts Auto-Generated</h4>
+                            <p>No paperwork, no delays</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="trusted-block">
+    <div class="container">
+        <div class="tag-line text-center"> 
+            <h4 class="sub-tagline">Trusted by UAE’s Leading Entities</h4>
+        </div>
+        <ul class="list flex flex-row gap-4 flex-wrap justify-center">
+            <li class="list-column max-w-2xs w-full">
+                <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities"/>
+            </li>
+            <li class="list-column max-w-2xs w-full">
+                <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities"/>
+            </li>
+            <li class="list-column max-w-2xs w-full">
+                <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities"/>
+            </li>
+            <li class="list-column max-w-2xs w-full">
+                <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities"/>
+            </li>
+        </ul>
+        <div class="button-holder text-center">
+            <button class="btn">Partner with Us</button>
+        </div>
+    </div>
+</section>
+
+<scetion class="grid-icons-block">
+    <div class="container">
+        <div class="tag-line text-left">
+            <div class="badge badge-warning">Security & Compliance</div>
+            <h3 class="main-tagline">Enterprise-Grade </br> Security. Government-</br>Level Compliance.</h3> 
+        </div>
+        <ul class="grid grid-cols-3 gap-6">
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="80" height="80" viewBox="0 0 112 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1107 129.652C19.1107 119.956 22.9621 110.658 29.8177 103.803C36.6732 96.9471 45.9714 93.0957 55.6667 93.0957C65.3619 93.0957 74.6601 96.9471 81.5157 103.803C88.3713 110.658 92.2227 119.956 92.2227 129.652" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M105.258 135.651V165.689C105.258 193.078 83.0548 215.281 55.6663 215.281C28.278 215.281 6.0755 193.078 6.0755 165.689V135.651H105.258Z" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M31.8928 0.00976562C31.8928 0.00976562 29.4146 15.7691 18.7011 23.2931L62.3054 17.1589V34.8396L18.7677 28.7054C29.4035 36.2516 31.8815 51.9333 31.8815 51.9333H18.2121C18.0454 40.5085 13.9443 34.0622 9.76561 30.4614C6.46497 27.6164 3.13078 26.5383 1.60814 26.1715C1.08291 26.0402 0.772912 25.9954 0.763489 25.994V25.9491C0.768072 25.9484 0.845801 25.9377 0.985883 25.9161C1.94198 25.7271 5.85341 24.8264 9.72068 21.5259C13.9216 17.9251 18.0448 11.4679 18.2226 0.00976562H31.8928Z" fill="#1E1F24"/>
+                        <path d="M79.4409 30.5713C79.4409 30.5713 81.919 46.3307 92.6325 53.8546L49.0282 47.7204V65.4011L92.5659 59.2669C81.9301 66.8131 79.4521 82.4948 79.4521 82.4948H93.1215C93.2882 71.0701 97.3893 64.6237 101.568 61.0229C104.869 58.1779 108.203 57.0998 109.725 56.733C110.251 56.6017 110.561 56.5569 110.57 56.5555V56.5106C110.566 56.5099 110.488 56.4992 110.348 56.4777C109.392 56.2886 105.48 55.3879 101.613 52.0874C97.412 48.4866 93.2888 42.0294 93.111 30.5713H79.4409Z" fill="#1E1F24"/>
+                        <path d="M55.2835 163.006V181.408" stroke="#1E1F24" stroke-width="14"/>
+                    </svg>                        
+                </div>
+                <p class="text-base">Escrow-secured transactions</p>
+            </li>
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="80" height="80" viewBox="0 0 184 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M103.091 30.6133C103.017 30.6289 61.5038 39.4397 43.998 113.002C43.998 113.002 43.998 112.961 43.9971 112.881C43.9891 112.956 43.9859 112.996 43.9854 113.001C38.056 78.231 0.0585938 77.7793 0.0585938 77.7793V53.4512C37.5273 53.4512 43.6488 85.6018 44.2607 102.656C45.6411 76.0639 53.9641 6.98353 103.091 0.974609V30.6133Z" fill="#1E1F24"/>
+                        <path d="M183.941 30.6133C183.941 30.6133 142.37 39.3743 124.849 113.002C124.849 113.002 124.849 112.961 124.848 112.882C124.84 112.956 124.836 112.996 124.836 113.001C118.913 78.2674 80.9886 77.7803 80.9092 77.7793V53.4512C118.374 53.4512 124.498 85.5957 125.111 102.651C126.492 76.0554 134.818 6.98304 183.941 0.974609V30.6133Z" fill="#1E1F24"/>
+                    </svg>                                              
+                </div>
+                <p class="text-base">Worker–Company–Permit validation</p>
+            </li>      
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="80" height="80" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="71.3336" cy="71.3777" r="64.9119" fill="#FFEB98" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M117.227 25.4854L25.4392 117.274" stroke="#1E1F24" stroke-width="12"/>
+                    </svg>                                                                    
+                </div>
+                <p class="text-base">No unnecessary personal data stored</p>
+            </li>  
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="113" height="208" viewBox="0 0 113 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M90.7051 21.9463L89.5176 22.1963H89.5156L89.5137 22.1982C89.5072 22.1997 89.4946 22.2027 89.4766 22.207C89.4393 22.2159 89.3771 22.2305 89.293 22.2529C89.1243 22.2978 88.8632 22.3725 88.5215 22.4844C87.8375 22.7083 86.8268 23.0828 85.5703 23.6768C83.0576 24.8646 79.5555 26.931 75.7002 30.4219C68.0027 37.3919 58.8123 50.1223 53.3408 73.1143L52.0654 72.9756L50.3945 73.0186C48.63 62.6707 42.1421 57.4586 35.998 54.7832C32.9101 53.4386 29.9219 52.7446 27.7002 52.3887C26.5919 52.2111 25.6806 52.1193 25.0527 52.0713C24.7392 52.0473 24.4966 52.0341 24.3359 52.0273C24.2558 52.024 24.1961 52.0225 24.1582 52.0215C24.1392 52.021 24.1251 52.0207 24.1172 52.0205C24.1138 52.0204 24.1115 52.0196 24.1104 52.0195L24.1113 52.0186L22.6289 52.002V33.6543H24.1289C32.495 33.6543 38.6139 36.106 43.0283 39.8926C47.4181 43.6581 50.0024 48.64 51.5117 53.5166C51.5679 53.698 51.6196 53.8803 51.6729 54.0615C52.3072 49.3367 53.2504 44.0854 54.6543 38.7715C59.1921 21.596 68.7647 2.99852 89.0225 0.520508L90.7051 0.31543V21.9463Z" fill="#1E1F24"/>
+                        <mask id="path-2-outside-1_4_152" maskUnits="userSpaceOnUse" x="0.92041" y="79.4248" width="112" height="68" fill="black">
+                        <rect fill="white" x="0.92041" y="79.4248" width="112" height="68"/>
+                        <path d="M100.413 135.171C100.413 123.569 95.8042 112.442 87.6002 104.238C79.3961 96.0338 68.2691 91.4248 56.6668 91.4248C45.0645 91.4248 33.9375 96.0338 25.7334 104.238C17.5294 112.442 12.9204 123.569 12.9204 135.171L56.6668 135.171H100.413Z"/>
+                        </mask>
+                        <path d="M100.413 135.171C100.413 123.569 95.8042 112.442 87.6002 104.238C79.3961 96.0338 68.2691 91.4248 56.6668 91.4248C45.0645 91.4248 33.9375 96.0338 25.7334 104.238C17.5294 112.442 12.9204 123.569 12.9204 135.171L56.6668 135.171H100.413Z" stroke="#1E1F24" stroke-width="24" mask="url(#path-2-outside-1_4_152)"/>
+                        <path d="M56.667 143.645V186.35C56.667 194.961 63.6473 201.941 72.258 201.941V201.941" stroke="#1E1F24" stroke-width="12"/>
+                    </svg>                                                                                           
+                </div>
+                <p class="text-base">Blacklist & insurance verification (MOHRE-ready)</p>
+            </li>    
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="125" height="196" viewBox="0 0 125 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M105.233 41.74L105.233 19.159C105.233 19.159 90.8579 32.8494 57.5365 30.0956C57.5365 30.0956 81.2754 64.0462 105.233 41.74Z" fill="#1E1F24"/>
+                        <path d="M112.307 114.092C112.307 101.082 107.139 88.6045 97.9394 79.4051C88.7399 70.2057 76.2628 65.0375 63.2529 65.0375C50.2429 65.0375 37.7658 70.2057 28.5664 79.4051C19.3669 88.6045 14.1987 101.082 14.1987 114.092L63.2529 114.092H112.307Z" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M0 114H124.075" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M18.1331 124.933L18.1331 179.163" stroke="#1E1F24" stroke-width="11.428"/>
+                        <path d="M63.0554 124.933L63.0554 179.163" stroke="#1E1F24" stroke-width="11.428"/>
+                        <path d="M63.2524 30.4813L63.2524 59.8094" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M107.978 124.934L107.978 179.164" stroke="#1E1F24" stroke-width="11.428"/>
+                        <path d="M0.476318 190.006H124.552" stroke="#1E1F24" stroke-width="12"/>
+                    </svg>                                                                                       
+                </div>
+                <p class="text-base">Secure data exchange with government systems</p>
+            </li> 
+            <li class="flex flex-col items-center text-center p-4">
+                <div class="mb-4">
+                    <svg width="189" height="210" viewBox="0 0 189 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M175.077 49.1061C146.887 75.3518 118.955 35.4437 118.922 35.3962C158.152 38.6384 175.078 22.5198 175.078 22.5198L175.077 49.1061Z" fill="#1E1F24"/>
+                        <circle cx="109.983" cy="48.4575" r="12.4975" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M6.52417 146.651V93.6727C6.52417 84.6496 13.8388 77.335 22.8619 77.335H40.4342C49.4573 77.335 56.7719 84.6496 56.7719 93.6727V146.651" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M100.608 146.651V209.01" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M119.358 146.651V209.01" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M41.0227 146.651V209.01" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M22.2737 146.651V209.01" stroke="#1E1F24" stroke-width="12"/>
+                        <path d="M76.6135 146.651L88.9822 125.006V93.6727C88.9822 84.6496 96.2969 77.335 105.32 77.335H114.646C123.67 77.335 130.984 84.6496 130.984 93.6727V125.006L143.353 146.651" stroke="#1E1F24" stroke-width="12"/>
+                        <circle cx="31.6482" cy="48.4575" r="12.4975" stroke="#1E1F24" stroke-width="12"/>
+                    </svg>                                                                                       
+                </div>
+                <p class="text-base">Data residency within the UAE</p>
+            </li>                                                                     
+        </ul> 
+        <div class="disclimer">
+            <p>*AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance requirements of UAE authorities.</p>
+        </div>
+    </div>
+</scetion>
+    
+ 
     
  
 
@@ -373,6 +607,11 @@
         </aside>
     </footer>
 
-</body>
-
+     <!-- JavaScript -->
+     <script src="js/global.js"></script>
+     <script src="js/hero-video.js"></script>
+     <script src="js/slider.js"></script>
+     <script src="js/tabs.js"></script>
+     
+</body> 
 </html>

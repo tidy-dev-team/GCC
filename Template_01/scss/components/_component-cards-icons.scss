@@ -1,0 +1,21 @@
+// =============================================================================
+// COMPONENT CARDS ICONS
+// =============================================================================
+
+.component-cards-icons{
+    .card{
+        border: 1px solid map-get($colors, 'neutral', 300);
+        border-radius: map-get($border-radius, '4xl');
+        padding: map-get($spacing, 6);
+        .card-body{
+          padding: 0;
+          padding-top: map-get($spacing, 2);
+        } 
+        figure > svg{
+          width:56px;
+          height:56px;
+        }
+    }
+}
+
+ 

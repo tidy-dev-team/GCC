@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Design System Demo - Template 01</title> 
+    
+</head>
+<body>
+    <div class="container-responsive">
+        <header class="py-8 text-center">
+            <h1 class="text-6xl font-bold text-primary-600 mb-4">Design System Demo</h1>
+            <p class="text-xl text-neutral-600">Showcasing CSS variables, mixins, and utility classes</p>
+        </header>
+
+        <!-- Color Palette -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Color Palette</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-primary-50 p-4 rounded-lg border border-primary-200">
+                    <div class="text-sm font-medium text-primary-900">Primary 50</div>
+                    <div class="text-xs text-primary-600">#eff6ff</div>
+                </div>
+                <div class="bg-primary-100 p-4 rounded-lg border border-primary-200">
+                    <div class="text-sm font-medium text-primary-900">Primary 100</div>
+                    <div class="text-xs text-primary-600">#dbeafe</div>
+                </div>
+                <div class="bg-primary-500 p-4 rounded-lg border border-primary-200">
+                    <div class="text-sm font-medium text-white">Primary 500</div>
+                    <div class="text-xs text-primary-100">#3b82f6</div>
+                </div>
+                <div class="bg-primary-900 p-4 rounded-lg border border-primary-200">
+                    <div class="text-sm font-medium text-white">Primary 900</div>
+                    <div class="text-xs text-primary-100">#1e3a8a</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-neutral-50 p-4 rounded-lg border border-neutral-200">
+                    <div class="text-sm font-medium text-neutral-900">Neutral 50</div>
+                    <div class="text-xs text-neutral-600">#fafafa</div>
+                </div>
+                <div class="bg-neutral-100 p-4 rounded-lg border border-neutral-200">
+                    <div class="text-sm font-medium text-neutral-900">Neutral 100</div>
+                    <div class="text-xs text-neutral-600">#f5f5f5</div>
+                </div>
+                <div class="bg-neutral-500 p-4 rounded-lg border border-neutral-200">
+                    <div class="text-sm font-medium text-white">Neutral 500</div>
+                    <div class="text-xs text-neutral-100">#737373</div>
+                </div>
+                <div class="bg-neutral-900 p-4 rounded-lg border border-neutral-200">
+                    <div class="text-sm font-medium text-white">Neutral 900</div>
+                    <div class="text-xs text-neutral-100">#171717</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Typography</h2>
+            
+            <div class="space-y-4">
+                <h1 class="text-6xl font-bold text-neutral-900">Heading 1 (6xl)</h1>
+                <h2 class="text-5xl font-bold text-neutral-900">Heading 2 (5xl)</h2>
+                <h3 class="text-4xl font-semibold text-neutral-900">Heading 3 (4xl)</h3>
+                <h4 class="text-3xl font-semibold text-neutral-900">Heading 4 (3xl)</h4>
+                <h5 class="text-2xl font-medium text-neutral-900">Heading 5 (2xl)</h5>
+                <h6 class="text-xl font-medium text-neutral-900">Heading 6 (xl)</h6>
+                
+                <div class="text-base text-neutral-600 leading-relaxed">
+                    <p class="mb-2">Body text (base) with relaxed line height. This demonstrates the typography system with proper spacing and readability.</p>
+                    <p class="text-sm text-neutral-500">Small text (sm) for secondary information and captions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Spacing Scale</h2>
+            
+            <div class="space-y-2">
+                <div class="bg-primary-100 p-1 rounded text-xs text-primary-900">p-1 (4px)</div>
+                <div class="bg-primary-200 p-2 rounded text-xs text-primary-900">p-2 (8px)</div>
+                <div class="bg-primary-300 p-3 rounded text-xs text-primary-900">p-3 (12px)</div>
+                <div class="bg-primary-400 p-4 rounded text-xs text-primary-900">p-4 (16px)</div>
+                <div class="bg-primary-500 p-6 rounded text-xs text-white">p-6 (24px)</div>
+                <div class="bg-primary-600 p-8 rounded text-xs text-white">p-8 (32px)</div>
+                <div class="bg-primary-700 p-12 rounded text-xs text-white">p-12 (48px)</div>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Button Components</h2>
+            
+            <div class="flex flex-wrap gap-4">
+                <button class="btn-custom">Primary Button</button>
+                <button class="btn-custom-secondary">Secondary Button</button>
+                <button class="btn-custom-outline">Outline Button</button>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Card Components</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card-custom">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-2">Card Title</h3>
+                    <p class="text-neutral-600">This is a custom card component using the design system mixins.</p>
+                </div>
+                
+                <div class="card-custom">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-2">Interactive Card</h3>
+                    <p class="text-neutral-600">Hover over this card to see the hover effects.</p>
+                </div>
+                
+                <div class="card-custom">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-2">Responsive Card</h3>
+                    <p class="text-neutral-600">This card adapts to different screen sizes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Form Components</h2>
+            
+            <div class="max-w-md space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-neutral-700 mb-2">Email</label>
+                    <input type="email" class="input-custom" placeholder="Enter your email">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-neutral-700 mb-2">Password</label>
+                    <input type="password" class="input-custom" placeholder="Enter your password">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-neutral-700 mb-2">Message</label>
+                    <textarea class="input-custom" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Badge Components</h2>
+            
+            <div class="flex flex-wrap gap-4">
+                <div class="badge-custom">Default Badge</div>
+                <div class="badge-custom">Hover Me</div>
+                <div class="badge-custom">Interactive</div>
+            </div>
+        </section>
+
+        <!-- Responsive Grid -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Responsive Grid</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-neutral-100 p-4 rounded-lg text-center">
+                    <div class="text-sm font-medium text-neutral-900">1 Column (Mobile)</div>
+                    <div class="text-xs text-neutral-600">2 Columns (Small)</div>
+                    <div class="text-xs text-neutral-600">4 Columns (Large)</div>
+                </div>
+                <div class="bg-neutral-200 p-4 rounded-lg text-center">
+                    <div class="text-sm font-medium text-neutral-900">Grid Item 2</div>
+                </div>
+                <div class="bg-neutral-300 p-4 rounded-lg text-center">
+                    <div class="text-sm font-medium text-neutral-900">Grid Item 3</div>
+                </div>
+                <div class="bg-neutral-400 p-4 rounded-lg text-center">
+                    <div class="text-sm font-medium text-neutral-900">Grid Item 4</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animations -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Animation Utilities</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="animate-fade-in bg-primary-100 p-6 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-primary-900 mb-2">Fade In</h3>
+                    <p class="text-sm text-primary-700">This element fades in on page load</p>
+                </div>
+                
+                <div class="animate-slide-in-left bg-primary-200 p-6 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-primary-900 mb-2">Slide In Left</h3>
+                    <p class="text-sm text-primary-700">This element slides in from the left</p>
+                </div>
+                
+                <div class="animate-slide-in-right bg-primary-300 p-6 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-primary-900 mb-2">Slide In Right</h3>
+                    <p class="text-sm text-primary-700">This element slides in from the right</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Utility Classes -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-neutral-900 mb-6">Utility Classes</h2>
+            
+            <div class="space-y-4">
+                <div class="flex gap-4 items-center">
+                    <div class="bg-success text-white px-4 py-2 rounded">Success</div>
+                    <div class="bg-warning text-white px-4 py-2 rounded">Warning</div>
+                    <div class="bg-error text-white px-4 py-2 rounded">Error</div>
+                    <div class="bg-info text-white px-4 py-2 rounded">Info</div>
+                </div>
+                
+                <div class="flex gap-4 items-center">
+                    <div class="shadow-sm bg-white p-4 rounded">Shadow Small</div>
+                    <div class="shadow-md bg-white p-4 rounded">Shadow Medium</div>
+                    <div class="shadow-lg bg-white p-4 rounded">Shadow Large</div>
+                </div>
+                
+                <div class="flex gap-4 items-center">
+                    <div class="border border-neutral-300 rounded-sm p-4">Rounded Small</div>
+                    <div class="border border-neutral-300 rounded p-4">Rounded Base</div>
+                    <div class="border border-neutral-300 rounded-lg p-4">Rounded Large</div>
+                    <div class="border border-neutral-300 rounded-full p-4">Rounded Full</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add some interactivity to demonstrate the design system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.card-custom');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Add click effects to buttons
+            const buttons = document.querySelectorAll('.btn-custom, .btn-custom-secondary, .btn-custom-outline');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
