@@ -8,15 +8,16 @@
     "build": "npm run sass:build && npm run tailwind:build",
     "sass:watch": "sass --watch scss:css --style compressed",
     "sass:build": "sass scss:css --style compressed",
-    "tailwind:watch": "tailwindcss -i ./scss/main.scss -o ./css/tailwind.css --watch",
-    "tailwind:build": "tailwindcss -i ./scss/main.scss -o ./css/tailwind.css --minify"
+    "tailwind:watch": "npx tailwindcss -i ./css/input.css -o ./css/tailwind.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./css/input.css -o ./css/tailwind.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.1",
+    "daisyui": "^5.0.54",
     "postcss": "^8.5.6",
     "sass": "^1.69.0",
-    "tailwindcss": "^4.1.12"
+    "tailwindcss": "^3.4.17"
   },
   "keywords": [
     "css",
