@@ -1,0 +1,68 @@
+.accordion-block{
+    background-color: map-get($colors, amel, gray-light);
+    padding: map-get($spacing, 29) 0;
+}
+.accordion{
+    &-holder{
+        display: flex;
+        gap: map-get($spacing, 5);
+        justify-content: space-between;
+    }
+    &-header{
+        max-width:700px;
+        width: 100%;
+        &-title{
+            position: relative;
+            padding: map-get($spacing, 6) 0;
+            margin-left: map-get($spacing, 5);
+            color: map-get($colors, amel, gray-5);
+            &::before{
+                content: "";
+                width: 100%;
+                max-width: 100%;
+                height: 2px;
+                background-color: map-get($colors, amel,gray-6);
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 1.3s ease-in-out;
+            }
+            h4{
+                @include text-style('35xl', normal, tight);
+                padding-bottom: map-get($spacing, 3);
+            }
+            p{
+                @include body-text(base);
+                opacity: 0;
+                max-height:0;
+                transition: all 0.3s ease-in-out;
+            }
+            &.active{
+                color: map-get($colors, amel, dark-light);
+                &::before{
+                    background-color: map-get($colors, amel,  dark-light);
+                   width: 100%;
+                   transition: all 1.3s ease-in-out;
+                }
+                p{
+                    opacity: 1;
+                    max-height:100%;
+                    transition: all 0.3s ease-in-out;                
+                }
+            }
+            
+        }
+    }
+    &-content{
+        max-width: 660px;
+        width: 100%;
+        &-item{
+            
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+
+}

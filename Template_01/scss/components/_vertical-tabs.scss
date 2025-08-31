@@ -1,0 +1,94 @@
+.how-it-works{
+    padding: map-get($spacing, 36) 0;
+}
+.tabs{
+    width: 100%;
+    padding-bottom: map-get($spacing, 17);
+    .tab{
+        flex: 50%;
+        text-transform: uppercase;
+        @include text-style('base', normal, normal);
+        padding: map-get($spacing, 4);
+        height: auto;
+        &-active{
+            border-bottom:2px solid map-get($colors, amel, dark-light);
+        }
+        
+    } 
+  
+}
+.tab-content{
+    &-active{
+        display: block;           
+    }
+    .headline-tab{
+        @include text-style('5xl', medium, tight);
+        padding-top: map-get($spacing, 8);
+        padding-bottom: map-get($spacing, 17);
+    }   
+}
+.vertical-tabs{
+    align-items: start;
+    .tabs{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .tab{
+            width: 100%;
+            flex: 100%;
+            display: flex;
+            justify-content: start; 
+            flex-wrap: nowrap;
+            position: relative;
+            align-items: start;
+            margin-bottom: map-get($spacing, 14);
+            text-transform: initial;
+            padding: initial;
+            border: none;
+            &::before{ 
+                content: "";
+                height: 100%; 
+                border-style: dashed;
+                border-width: 1px;
+                border-color: map-get($colors, amel, gray-3);
+                bottom: 0;
+                position: absolute;
+                left: 1rem;
+                top: 45px;
+            }
+            &:last-child{
+                &::before{
+                    display: none;
+                }
+            }
+            &-button-content-holder{
+                text-align: left;
+                padding-left: map-get($spacing, 4);
+            }
+          
+            h4{
+                @include text-style('2xl', normal, tight);
+                color: map-get($colors, amel, gray-2);
+            }
+            p{
+                @include text-style('base', normal, tight);
+                color: map-get($colors, amel, gray-2);
+                text-align: left;
+            }
+
+            &-active{
+                &::before{ 
+                    border-style: solid;
+                    border-color: map-get($colors, amel, yellow-light-2);
+                }
+                h4{ 
+                    color: map-get($colors, amel, dark-light);
+                }
+                p{
+                    color: map-get($colors, amel, dark-light); 
+                }
+            }
+        }
+       
+    }
+}

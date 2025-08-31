@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript Loading</title>
+</head>
+<body>
+    <h1>🧪 Test JavaScript Loading</h1>
+    
+    <div id="status">Loading...</div>
+    
+    <button onclick="testFunction()">Test Function</button>
+    <button onclick="checkHeroEntrance()">Check HeroEntrance</button>
+    
+    <script>
+        // Test if basic JavaScript works
+        document.getElementById('status').textContent = 'Basic JavaScript works';
+        
+        function testFunction() {
+            alert('Basic function works!');
+        }
+        
+        function checkHeroEntrance() {
+            if (window.heroEntrance) {
+                alert('HeroEntrance is loaded!');
+            } else {
+                alert('HeroEntrance is NOT loaded!');
+            }
+        }
+    </script>
+    
+    <!-- Load the external JavaScript file -->
+    <script src="js/hero-video.js"></script>
+    
+    <script>
+        // Check if the external JS loaded
+        setTimeout(() => {
+            if (window.heroEntrance) {
+                document.getElementById('status').textContent = '✅ External JavaScript loaded successfully!';
+                console.log('✅ HeroEntrance loaded:', window.heroEntrance);
+            } else {
+                document.getElementById('status').textContent = '❌ External JavaScript failed to load!';
+                console.error('❌ HeroEntrance not found');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

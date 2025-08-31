@@ -1,0 +1,395 @@
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
+}
+
+@mixin respond-below($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: (map-get($breakpoints, $breakpoint) - 1px)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
+}
+
+// Typography Mixins
+@mixin text-style($size, $weight: normal, $line-height: normal) {
+  font-size: map-get($font-sizes, $size);
+  font-weight: map-get($font-weights, $weight);
+  line-height: map-get($line-heights, $line-height);
+}
+
+@mixin heading($level) {
+  @if $level == 1 {
+    @include text-style('8xl', bold, tight);
+  } @else if $level == 2 {
+    @include text-style('5xl', bold, tight);
+  } @else if $level == 3 {
+    @include text-style('4xl', semibold, snug);
+  } @else if $level == 4 {
+    @include text-style('3xl', semibold, snug);
+  } @else if $level == 5 {
+    @include text-style('2xl', medium, normal);
+  } @else if $level == 6 {
+    @include text-style('xl', medium, normal);
+  }
+}
+
+@mixin body-text($size: base, $weight: normal) {
+  @include text-style($size, $weight, relaxed);
+}
+
+@mixin font-weight($weight) {
+  font-weight: map-get($font-weights, $weight);
+}
+
+// Spacing Mixins
+@mixin spacing($property, $size) {
+  #{$property}: map-get($spacing, $size);
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: map-get($spacing, $top) map-get($spacing, $right) map-get($spacing, $bottom) map-get($spacing, $left);
+}
+
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: map-get($spacing, $top) map-get($spacing, $right) map-get($spacing, $bottom) map-get($spacing, $left);
+}
+ 
+
+// Color Mixins
+@mixin color($color-name, $shade: 500) {
+  // Check if the color is a nested map (has shades)
+  @if type-of(map-get($colors, $color-name)) == 'map' {
+    // It's a nested map, so we need a shade
+    color: map-get(map-get($colors, $color-name), $shade);
+  } @else {
+    // It's a direct color value
+    color: map-get($colors, $color-name);
+  }
+}
+
+
+
+@mixin bg-color($color-name, $shade: 500) {
+  // Check if the color is a nested map (has shades)
+  @if type-of(map-get($colors, $color-name)) == 'map' {
+    // It's a nested map, so we need a shade
+    background-color: map-get(map-get($colors, $color-name), $shade);
+  } @else {
+    // It's a direct color value
+    background-color: map-get($colors, $color-name);
+  }
+}
+
+@mixin border-color($color-name, $shade: 500) {
+  // Check if the color is a nested map (has shades)
+  @if type-of(map-get($colors, $color-name)) == 'map' {
+    // It's a nested map, so we need a shade
+    border-color: map-get(map-get($colors, $color-name), $shade);
+  } @else {
+    // It's a direct color value
+    border-color: map-get($colors, $color-name);
+  }
+}
+
+// Border Mixins
+@mixin border($width: 1px, $style: solid, $color: neutral, $shade: 300) {
+  border: $width $style;
+  @include border-color($color, $shade);
+}
+
+@mixin border-radius($size: base) {
+  border-radius: map-get($border-radius, $size);
+}
+
+@mixin rounded($size: base) {
+  @include border-radius($size);
+}
+ 
+ 
+
+// =============================================================================
+// BUTTON MIXINS
+// =============================================================================
+
+// Main button mixin with all properties
+@mixin button($size: 'base', $variant: 'primary', $style: 'solid') {
+  // Font size
+  font-size: map-get($font-sizes, $size);
+  
+  // Base button properties
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: map-get($button-padding, $size);
+  border: 1px solid transparent;
+  border-radius: map-get($border-radius, $size);
+  font-weight: map-get($font-weights, 'medium');
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  
+  // Variant-specific styling
+  @if $variant == 'primary' {
+    @if $style == 'solid' {
+      background-color: map-get($colors, 'primary', 400);
+      color: map-get($colors, 'dark-gray'); 
+      border-color: map-get($colors, 'primary', 400);
+      
+      &:hover {
+        background-color: map-get($colors, 'primary', 700);
+        border-color: map-get($colors, 'primary', 700);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+    } @else if $style == 'outline' {
+      background-color: transparent;
+      color: map-get($colors, 'primary', 600);
+      border-color: map-get($colors, 'primary', 600);
+      
+      &:hover {
+        background-color: map-get($colors, 'primary', 50);
+        color: map-get($colors, 'primary', 700);
+        border-color: map-get($colors, 'primary', 700);
+      }
+    }
+  } @else if $variant == 'secondary' {
+    @if $style == 'solid' {
+      background-color: map-get($colors, 'neutral', 100);
+      color: map-get($colors, 'neutral', 800);
+      border-color: map-get($colors, 'neutral', 200);
+      
+      &:hover {
+        background-color: map-get($colors, 'neutral', 200);
+        border-color: map-get($colors, 'neutral', 300);
+        transform: translateY(-2px);
+      }
+    } @else if $style == 'outline' {
+      background-color: transparent;
+      color: map-get($colors, 'neutral', 600);
+      border-color: map-get($colors, 'neutral', 300);
+      
+      &:hover {
+        background-color: map-get($colors, 'neutral', 50);
+        color: map-get($colors, 'neutral', 700);
+        border-color: map-get($colors, 'neutral', 400);
+      }
+    }
+  } @else if $variant == 'success' {
+    background-color: map-get($colors, 'success');
+    color: white;
+    border-color: map-get($colors, 'success');
+    
+    &:hover {
+      background-color: darken(map-get($colors, 'success'), 10%);
+      border-color: darken(map-get($colors, 'success'), 10%);
+      transform: translateY(-2px);
+    }
+  } @else if $variant == 'warning' {
+    background-color: map-get($colors, 'warning');
+    color: white;
+    border-color: map-get($colors, 'warning');
+    
+    &:hover {
+      background-color: darken(map-get($colors, 'warning'), 10%);
+      border-color: darken(map-get($colors, 'warning'), 10%);
+      transform: translateY(-2px);
+    }
+  } @else if $variant == 'error' {
+    background-color: map-get($colors, 'error');
+    color: white;
+    border-color: map-get($colors, 'error');
+    
+    &:hover {
+      background-color: darken(map-get($colors, 'error'), 10%);
+      border-color: darken(map-get($colors, 'error'), 10%);
+      transform: translateY(-2px);
+    }
+  } @else if $variant == 'amel' {
+    background-color: map-get($colors, amel, yellow);
+    color: map-get($colors, amel, dark);
+    border-color: map-get($colors, amel, yellow);
+    
+    &:hover {
+      background-color: darken(map-get($colors, amel, yellow), 10%);
+      border-color: darken(map-get($colors, amel, yellow), 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.3);
+    }
+  }
+  
+  // Disabled state
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    
+    &:hover {
+      background-color: inherit;
+      border-color: inherit;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+  
+  // Focus state
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(map-get($colors, 'primary', 500), 0.3);
+  }
+}
+
+// Button size variants
+@mixin button-size($size) {
+  @if $size == 'xs' {
+    padding: 0.5rem 1rem;
+    font-size: map-get($font-sizes, 'xs');
+    border-radius: map-get($border-radius, 'sm');
+  } @else if $size == 'sm' {
+    padding: 0.625rem 1.25rem;
+    font-size: map-get($font-sizes, 'sm');
+    border-radius: map-get($border-radius, 'base');
+  } @else if $size == 'base' {
+    padding: 0.75rem 1.5rem;
+    font-size: map-get($font-sizes, 'base');
+    border-radius: map-get($border-radius, 'base');
+  } @else if $size == 'lg' {
+    padding: 1rem 2rem;
+    font-size: map-get($font-sizes, 'lg');
+    border-radius: map-get($border-radius, 'lg');
+  } @else if $size == 'xl' {
+    padding: 1.25rem 2.5rem;
+    font-size: map-get($font-sizes, 'xl');
+    border-radius: map-get($border-radius, 'xl');
+  }
+}
+
+// Button variant shortcuts
+@mixin button-primary($size: 'base', $style: 'solid') {
+  @include button($size, 'primary', $style);
+}
+
+@mixin button-secondary($size: 'base', $style: 'solid') {
+  @include button($size, 'secondary', $style);
+}
+
+@mixin button-success($size: 'base') {
+  @include button($size, 'success', 'solid');
+}
+
+@mixin button-warning($size: 'base') {
+  @include button($size, 'warning', 'solid');
+}
+
+@mixin button-error($size: 'base') {
+  @include button($size, 'error', 'solid');
+}
+
+@mixin button-amel($size: 'base') {
+  @include button($size, 'amel', 'solid');
+}
+
+// Button outline variants
+@mixin button-outline($variant: 'primary', $size: 'base') {
+  @include button($size, $variant, 'outline');
+}
+
+// Button with icon
+@mixin button-with-icon($size: 'base', $variant: 'primary', $style: 'solid') {
+  @include button($size, $variant, $style);
+  
+  gap: 0.5rem;
+  
+  svg {
+    width: map-get($icon-sizes, $size);
+    height: map-get($icon-sizes, $size);
+  }
+}
+ 
+
+// Form Mixins
+@mixin input-base {
+  width: 100%;
+  padding: map-get($spacing, 3) map-get($spacing, 4);
+  border: 1px solid map-get(map-get($colors, neutral), 300);
+  border-radius: map-get($border-radius, lg);
+  font-size: map-get($font-sizes, base);
+  @include transition(border-color);
+  
+  &:focus {
+    outline: none;
+    border-color: map-get(map-get($colors, primary), 500);
+    box-shadow: 0 0 0 3px rgba(map-get(map-get($colors, primary), 500), 0.1);
+  }
+  
+  &:disabled {
+    background-color: map-get(map-get($colors, neutral), 100);
+    cursor: not-allowed;
+  }
+}
+
+// Badge Mixins
+@mixin badge-custom {
+  @include padding(4);
+  @include border-radius(full);
+  @include border(1px, solid, neutral, 300);
+  @include bg-color(neutral, 50);
+  @include color(neutral, 700);
+  @include transition(all);
+  
+  &:hover {
+    @include bg-color(neutral, 100);
+    @include border-color(neutral, 400);
+  }
+}
+
+// Utility Mixins
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  
+  &::before {
+    content: '';
+    display: block;
+    padding-top: ($height / $width) * 100%;
+  }
+  
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,46 @@
+// Tailwind CSS
+ 
+
+// Custom SCSS
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+@import 'components';
+@import 'components/hero-video';
+@import 'components/component-cards-icons';
+@import 'components/vertical-tabs';
+@import 'components/tag-line';
+@import 'components/carousel-block';
+@import 'components/accordion-block';
+@import 'components/trusted-block';
+@import 'components/grid-icons-block';
+// =============================================================================
+// GLOBAL STYLES
+// =============================================================================
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: map-get($font-families, sans);
+  line-height: map-get($line-heights, normal);
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  margin: 0;
+  font-family: map-get($font-families, sans);
+  font-size: map-get($font-sizes, base);
+  line-height: map-get($line-heights, relaxed);
+  color: map-get(map-get($colors, neutral), 900);
+  background-color: map-get($colors, amel, gray-light);
+}
+ 
+ .container{
+    margin: auto;
+    max-width: 1440px;
+ }
+  

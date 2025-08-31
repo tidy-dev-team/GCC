@@ -1,0 +1,50 @@
+
+.btn {
+  @include button-primary('base');
+  
+  &.btn-neutral {
+    @include button-primary('base');
+  }
+  
+  &.btn-outline {
+    @include button-outline('primary', 'base');
+  }
+  
+  &.btn-secondary {
+    @include button-secondary('base');
+  }
+}
+ 
+
+.bg-base-100 {
+  @include bg-color(neutral, 50);
+}
+
+.bg-base-200 {
+  @include bg-color(neutral, 200);
+}
+
+.text-5xl {
+  @include text-style('5xl');
+}
+
+.text-4xl {
+  @include text-style('4xl');
+}
+
+.text-6xl {
+  @include text-style('6xl');
+}
+
+.font-bold {
+  @include font-weight(bold);
+}
+
+.font-semibold {
+  @include font-weight(semibold);
+}
+
+.font-medium {
+  @include font-weight(medium);
+}
+  

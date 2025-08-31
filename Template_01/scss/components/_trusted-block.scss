@@ -1,0 +1,9 @@
+.trusted-block{
+    padding: map-get($spacing, 29) 0;
+    .button-holder{
+        padding-top: map-get($spacing, 17);
+        button{
+            @include button(xl, primary, solid);
+        }
+    }   
+}

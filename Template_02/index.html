@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- COMPONENT: NAVBAR -->
+    <div class="navbar bg-base-100 shadow-sm px-4">
+        <div class="navbar-start ml-4">
+            Template
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-4 navbar-end">
+            <a class="btn">Sign up</a>
+            <a class="btn btn-neutral btn-outline">Log in</a>
+        </div>
+    </div>
+
+    <!-- COMPONENT: HERO -->
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content text-center">
+            <div>
+                <h1 class="text-5xl font-bold">Bringing the Future of Real Estate to the UAE.</h1>
+                <p class="py-6">
+                    AI-matched properties. 24-hour bank approvals. Secure digital deeds. Everything about buying property — reimagined.
+                </p>
+                <button class="btn btn-neutral">Partner with Us</button>
+                <button class="btn btn-neutral">Get Pre-Approved Now</button>
+                <br /><br /><br />
+                <div class="flex gap-4 justify-center mobile-column">
+                    <div class="badge badge-neutral badge-outline rounded-full p-4">🔑 UAE Pass </div>
+                    <div class="badge badge-neutral badge-outline rounded-full p-4">🏦 RAKBANK Escrow</div>
+                    <div class="badge badge-neutral badge-outline rounded-full p-4"> 👥 MOHRE-ready</div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  COPONENT: TEXT  --> 
+    <section class="section mx-auto max-w-5xl px-4 py-14 section">
+        <div class="text-center">
+            <h2 class="text-6xl text-center mt-20">How it works</h2>
+            <h5 class="text-4xl text-center mt-5 mb-20">Simple. Verified. Compliant.</h5>
+        </div> 
+        <div class="mt-8 card bg-base-100">
+          <div class="card-body"> 
+            <div class="rounded-box border-primary/40 p-5 md:p-6">
+              <div class="grid gap-8 md:grid-cols-2"> 
+                <div>
+                  <h3 class="font-semibold text-base md:text-lg">
+                    ➤ For Borrowers (Need Labor?)
+                  </h3>
+                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
+                    <li><span class="font-medium">Find &amp; Select Labor</span></li>
+                    <li>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</li>
+                    <li><span class="font-medium">Raise a Purchase Order (PO)</span></li>
+                    <li>View pricing by worker and vehicle. Submit PO instantly.</li>
+                    <li><span class="font-medium">Sign &amp; Pay Securely</span></li>
+                    <li>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</li>
+                  </ul>
+                </div> 
+                <div>
+                  <h3 class="font-semibold text-base md:text-lg">
+                    ➤ For Lenders (Have Labor?)
+                  </h3>
+                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
+                    <li><span class="font-medium">List Labor Camps</span></li>
+                    <li>Upload labor data in bulk. Set availability, manage documents.</li>
+                    <li><span class="font-medium">Approve &amp; Contract</span></li>
+                    <li>Accept POs, auto-generate contracts, and sign with UAE Pass.</li>
+                    <li><span class="font-medium">Get Paid via Escrow</span></li>
+                    <li>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 md:px-6 py-14">
+        <!-- Headline -->
+        <h2 class="text-center text-3xl md:text-4xl font-semibold mb-8">
+          Why Darrio <span class="text-base-content/50">(temporary title)</span>
+        </h2>
+      
+        <!-- Tabs -->
+        <div class="tabs tabs-bordered justify-center">
+          <button class="tab tab-lg tab-active" data-tab="buyers">For Buyers</button>
+          <button class="tab tab-lg" data-tab="sellers">For Sellers</button>
+          <button class="tab tab-lg" data-tab="banks">For Banks</button>
+        </div>
+      
+        <!-- Content area -->
+        <div class="mt-10 flex gap-10 items-start">
+          <!-- Left column: text -->
+          <div class="basis-96 shrink-0 w-[22rem]">
+            <ul id="bullets" class="space-y-6 text-sm leading-relaxed">
+              <!-- injected by JS -->
+            </ul>
+            <p class="mt-10 text-[11px] font-semibold tracking-wide text-base-content/60">
+              AI isn’t just part of the system — it powers the entire experience.
+            </p>
+          </div>
+      
+          <!-- Right column: card/preview -->
+          <div class="flex-1">
+            <div class="card bg-base-100 border border-base-300 shadow-sm">
+              <div class="card-body">
+                <div class="min-h-[320px] rounded-2xl border border-base-300 p-6 md:p-10 flex items-center justify-center">
+                  <div id="preview" class="text-center">
+                    <!-- injected by JS -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        // Data per tab
+        const content = {
+          buyers: {
+            bullets: [
+              "AI-matched properties based on your income, preferences, and eligibility",
+              "Instant mortgage pre-approvals through AI-integrated bank logic",
+              "Complete end-to-end transaction in less than 24 hours — all digital, all secure"
+            ],
+            preview: {
+              title: "Buyer Experience",
+              sub: "Personalized matches, instant pre-approval, secure digital closing"
+            }
+          },
+          sellers: {
+            bullets: [
+              "Smart pricing suggestions from market + demand signals",
+              "Instant buyer qualification — fewer no-shows, faster decisions",
+              "Automated paperwork & e-sign to close in under 24 hours"
+            ],
+            preview: {
+              title: "Seller Dashboard",
+              sub: "Pricing intelligence, qualified leads, lightning-fast contracting"
+            }
+          },
+          banks: {
+            bullets: [
+              "AI-enhanced risk scoring for faster approvals",
+              "Automated KYC/AML checks and document validation",
+              "Real-time pipeline visibility and SLA tracking"
+            ],
+            preview: {
+              title: "Bank Console",
+              sub: "Risk automation, compliance, and real-time pipeline monitoring"
+            }
+          }
+        };
+      
+        const tabs = document.querySelectorAll('.tabs .tab');
+        const bullets = document.getElementById('bullets');
+        const preview = document.getElementById('preview');
+      
+        function render(key) {
+          const { bullets: lines, preview: p } = content[key];
+      
+          // bullets
+          bullets.innerHTML = lines.map(line => `
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-base-content/70"></span>
+              <span>${line}</span>
+            </li>
+          `).join('');
+      
+          // preview card
+          preview.innerHTML = `
+            <div class="space-y-2">
+              <h3 class="text-xl md:text-2xl font-semibold">${p.title}</h3>
+              <p class="text-sm text-base-content/60">${p.sub}</p>
+            </div>
+          `;
+        }
+      
+        // init
+        render('buyers');
+      
+        tabs.forEach(t => {
+          t.addEventListener('click', () => {
+            tabs.forEach(x => x.classList.remove('tab-active'));
+            t.classList.add('tab-active');
+            render(t.dataset.tab);
+          });
+        });
+      </script>
+
+
+<section class="mx-auto max-w-6xl px-4 md:px-6 py-16">
+    <!-- Headline -->
+    <header class="text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold">
+        Featured Properties &amp; Experiences
+        <span class="block text-base-content/60 text-xl font-normal">(temporary title)</span>
+      </h2>
+      <p class="mt-2 text-sm md:text-base text-base-content/60">Temporary subtitle</p>
+    </header>
+  
+    <!-- Main layout: left copy + big circle -->
+    <div class="my-20">
+      <!-- Left: copy -->
+      <div class="flex flex-col items-center justify-center w-full">
+        <h3 class="text-xl md:text-2xl font-semibold">Interactive Property Showcase</h3>
+        <ul class="mt-3 space-y-2 text-sm text-base-content/70">
+          <li>+ Featured, high-demand listings curated by AI</li>
+          <li>+ Filters: location, size, price, amenities, type</li>
+        </ul>
+        <!-- Center: circle visual -->
+        <div class="order-1 md:order-2 md:justify-self-center mt-20">
+            <div class="w-[320px] h-[320px] md:w-[520px] md:h-[520px] rounded-full border border-base-300 flex items-center justify-center text-center p-6 leading-relaxed">
+            <span class="text-sm text-base-content/60">Brand related visual????</span>
+            </div>
+        </div>        
+      </div>
+  
+     
+  
+      <!-- Right spacer (keeps circle centered like the mock) -->
+      <div class="order-3 hidden md:block"></div>
+    </div>
+  
+    <!-- Bottom captions -->
+    <div class="mt-12 grid gap-10 md:grid-cols-2">
+      <div>
+        <h4 class="text-xl font-semibold">Seller Network</h4>
+        <p class="mt-1 text-sm text-base-content/60">Trusted developers, owners, and brokers integrated</p>
+      </div>
+      <div class="md:text-right">
+        <h4 class="text-xl font-semibold">Smart Matching Engine</h4>
+        <p class="mt-1 text-sm text-base-content/60">Describe your dream home — AI recommends listings</p>
+      </div>
+    </div>
+  </section>
+  
+    <!-- COMPONENT: LIST -->
+    <section class="section">
+        <h2 class="text-6xl text-center my-20">Why Innovative Banks Choose Darr.io:</h2>
+        <ul class="list flex flex-row gap-4 flex-wrap justify-center">
+
+            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4"
+                        src="https://img.daisyui.com/images/profile/demo/1@94.webp" />
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
+                    <div class="text-xs font-semibold opacity-60">Turn downtime into revenue. Lend workers to verified
+                        companies across the UAE.</div>
+                </div>
+            </li>
+
+            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4"
+                        src="https://img.daisyui.com/images/profile/demo/4@94.webp" />
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Slash Project Delays</div>
+                    <div class="text-xs font-semibold opacity-60">Quickly source skilled, verified labor for urgent site
+                        demands.</div>
+                </div>
+            </li>
+
+            <li class="list-column max-w-2xs w-full border-slate-200 border rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4"
+                        src="https://img.daisyui.com/images/profile/demo/3@94.webp" />
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
+                    <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
+                        UAE Pass.</div>
+                </div>
+            </li> 
+
+        </ul>
+    </section>
+    <section class="mx-auto max-w-6xl px-4 py-30">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          <h2 class="text-4xl font-semibold text-center">24hr Pre-Approval</h2>
+          <h2 class="text-4xl font-semibold text-center">100% Coverage Model</h2>
+          <h2 class="text-4xl font-semibold text-center">AI Decision Routing</h2>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-3xl px-4 py-20 text-center">
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8">
+          Become our partner today <span class="text-base-content/60">(temporary title)</span>
+        </h2>
+      
+        <!-- Form -->
+        <form class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <input 
+            type="email" 
+            placeholder="Type your email here" 
+            class="input input-bordered rounded-full w-full sm:w-80"
+            required
+          />
+          <button type="submit" class="btn btn-neutral rounded-full px-6">
+            BECOME AN ISSUER
+          </button>
+        </form>
+      </section>
+      
+      <section class="mx-auto max-w-6xl px-4 md:px-6 py-20">
+        <!-- Header -->
+        <header class="text-center">
+          <h2 class="text-3xl md:text-4xl font-semibold">
+            Platform Performance &amp; Trust Markers
+          </h2>
+          <p class="mt-2 text-base text-base-content/60">Temporary subtitle</p>
+        </header>
+      
+        <!-- Features -->
+        <div class="mt-16 space-y-16">
+          <!-- Row 1: text left, card right -->
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-xl font-semibold">System Uptime</h3>
+              <p class="mt-2 text-sm text-base-content/70">99.99% digital availability</p>
+            </div>
+            <div class="w-full h-64 border border-base-300 rounded-lg flex items-center justify-center">
+              <span class="text-sm text-base-content/50">Visual</span>
+            </div>
+          </div>
+      
+          <!-- Row 2: card left, text right -->
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="w-full h-64 border border-base-300 rounded-lg flex items-center justify-center order-1 md:order-none">
+              <span class="text-sm text-base-content/50">Visual</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Security First</h3>
+              <p class="mt-2 text-sm text-base-content/70">AES-256 encryption, 2FA, audit trails</p>
+            </div>
+          </div>
+          <!-- Row 1: text left, card right -->
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-xl font-semibold">System Uptime</h3>
+              <p class="mt-2 text-sm text-base-content/70">99.99% digital availability</p>
+            </div>
+            <div class="w-full h-64 border border-base-300 rounded-lg flex items-center justify-center">
+              <span class="text-sm text-base-content/50">Visual</span>
+            </div>
+          </div>
+      
+          <!-- Row 2: card left, text right -->
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="w-full h-64 border border-base-300 rounded-lg flex items-center justify-center order-1 md:order-none">
+              <span class="text-sm text-base-content/50">Visual</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Security First</h3>
+              <p class="mt-2 text-sm text-base-content/70">AES-256 encryption, 2FA, audit trails</p>
+            </div>
+          </div>          
+        </div>
+      </section>      
+
+
+      <section class="section">
+        <h2 class="text-6xl text-center my-20"> Social proof (Temporary Title)</h2>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+            <li class="border border-slate-200 rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4" src="https://img.daisyui.com/images/profile/demo/1@94.webp">
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
+                    <div class="text-xs font-semibold opacity-60">Turn downtime into revenue. Lend workers to verified
+                        companies across the UAE.</div>
+                </div>
+            </li>
+
+            <li class="border border-slate-200 rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4" src="https://img.daisyui.com/images/profile/demo/4@94.webp">
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Slash Project Delays</div>
+                    <div class="text-xs font-semibold opacity-60">Quickly source skilled, verified labor for urgent site
+                        demands.</div>
+                </div>
+            </li>
+
+            <li class="border border-slate-200 rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4" src="https://img.daisyui.com/images/profile/demo/3@94.webp">
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
+                    <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
+                        UAE Pass.</div>
+                </div>
+            </li> 
+            <li class="border border-slate-200 rounded-xl p-4">
+                <div><img class="size-40 rounded-box mb-4" src="https://img.daisyui.com/images/profile/demo/3@94.webp">
+                </div>
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
+                    <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
+                        UAE Pass.</div>
+                </div>
+            </li> 
+        </ul>
+    </section>      
+
+
+    <section class="section">
+        <h2 class="text-6xl text-center my-20"> Social proof (Temporary Title)</h2>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+            <li class=" related p-4">
+                 
+                <div>
+                    <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
+                </div>
+            </li>
+
+            <li class=" rounded-xl p-4">
+                 
+                <div>
+                    <div class="mb-4 text-4xl">Slash Project Delays</div> 
+                </div>
+            </li>
+
+            <li class=" rounded-xl p-4">
+                
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div> 
+                </div>
+            </li> 
+            <li class=" rounded-xl p-4">
+                 
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div> 
+                </div>
+            </li> 
+        </ul>
+    </section>      
+ 
+  
+   <!-- COMPONENT: HERO -->
+        <section class="section"> 
+            <div class="hero my-50">
+                <div class="hero-content text-center">
+                    <div>
+                        <div class="text-center my-20 ">
+                            <h2 class="text-6xl text-center mb-0">Start Exchanging Labor Today — Securely and Seamlessly</h2>  
+                        </div>  
+                        <button class="btn btn-neutral">Partner with Us</button>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+    
+ 
+
+    <!-- COMPONENT: FOOTER -->
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <aside>
+            <p>Copyright © 2025- All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+</body>
+
+</html>
