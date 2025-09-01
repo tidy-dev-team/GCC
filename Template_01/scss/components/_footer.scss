@@ -1,0 +1,17 @@
+.footer{
+    background-color: map-get($colors, amel, gray-4);
+    padding:0 map-get($spacing, 10);
+    padding-top: map-get($spacing, 30); 
+    display: flex;
+    gap: map-get($spacing, 29);
+    padding-bottom: map-get($spacing, 12);
+    &-content{
+        display:flex;
+        gap: map-get($spacing, 21);
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: map-get($spacing, 4);
+        }
+    }
+}

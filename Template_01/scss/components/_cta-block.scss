@@ -1,0 +1,44 @@
+.cta-block{
+    background-color: map-get($colors, amel, gray-4);
+    min-height: 659px;
+    padding: map-get($spacing, 10);
+
+    &-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+
+        &-title{
+            @include text-style('9xl', normal, normal);
+            padding-bottom: map-get($spacing, 12);
+            display: block;
+        }
+        &-button{
+            @include button(base, amel, solid);
+            background-color: map-get($colors, amel, dark-2);
+            border-color: map-get($colors, amel, dark-2);
+            color: map-get($colors, amel, light);
+            border-radius: map-get($border-radius, full);
+            height: auto;
+            padding: map-get($spacing, 400) map-get($spacing, 5);
+        } 
+    }
+    &-bg{
+        svg{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            padding: 0;
+            rect{
+                width: 100%;
+            }
+        }
+    }
+}

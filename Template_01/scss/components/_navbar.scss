@@ -1,0 +1,49 @@
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:10;
+    padding: map-get($spacing, 6) map-get($spacing, 10);
+    transition: all 0.3s ease-in-out;
+    
+    a{
+        color: map-get($colors, amel, light);
+    }
+    .button-dark{
+        @include button(base, amel, solid);
+        background-color: map-get($colors, amel, dark-2);
+        border-color: map-get($colors, amel, dark-2);
+        color: map-get($colors, amel, light);
+        border-radius: map-get($border-radius, full);
+        height: auto;
+        padding: map-get($spacing, 400) map-get($spacing, 5);
+        min-width: 140px;
+
+    }
+    .button-light{
+        @include button(base, amel, solid);
+        background-color: map-get($colors, amel, light);
+        border-color: map-get($colors, amel, light);
+        color: map-get($colors, amel, dark-2);
+        border-radius: map-get($border-radius, full);
+        height: auto;
+        min-width: 140px;
+        padding: map-get($spacing, 400) map-get($spacing, 5);
+    }
+    &.scroll-down {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); 
+        a{
+            color: map-get($colors, amel, dark-2);
+        }
+    }
+    
+    &.scroll-up {
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-100%);
+    }
+}

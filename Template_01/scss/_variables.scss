@@ -54,8 +54,10 @@ $colors: (
     yellow-light: #FFE074,
     yellow-light-2: #FCD052,
     yellow-light-3: #FFEB98,
+    yellow-light-4: #FEEDAE,
     // Main brand yellow
     dark: #1e293b, 
+    dark-2: #222222,
     dark-light: #1E1F24,
     gray-light: #F9F7F5,
     gray-1:#CDCDCD,
@@ -124,6 +126,7 @@ $spacing: (
   2: 0.5rem,    // 8px
   3: 0.75rem,   // 12px
   4: 1rem,      // 16px
+  400: 1.125rem,   // 18px
   5: 1.25rem,   // 20px
   6: 1.5rem,    // 24px
   7: 1.75rem,   // 28px
@@ -140,8 +143,10 @@ $spacing: (
   25: 6.25rem,   // 100px
   28: 7rem,     // 112px
   29: 7.5rem,   // 120px
+  30: 7.8125rem,   // 125px
   32: 8rem,     // 128px
   36: 9rem,     // 144px
+  37: 9.75rem,   // 156px
   40: 10rem,    // 160px
   44: 11rem,    // 176px
   48: 12rem,    // 192px

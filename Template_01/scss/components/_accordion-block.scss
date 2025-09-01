@@ -16,6 +16,7 @@
             padding: map-get($spacing, 6) 0;
             margin-left: map-get($spacing, 5);
             color: map-get($colors, amel, gray-5);
+            cursor: pointer;
             &::before{
                 content: "";
                 width: 100%;
@@ -36,11 +37,13 @@
                 opacity: 0;
                 max-height:0;
                 transition: all 0.3s ease-in-out;
+                position: absolute;
+                bottom: 7px;
             }
             &.active{
                 color: map-get($colors, amel, dark-light);
                 &::before{
-                    background-color: map-get($colors, amel,  dark-light);
+                    //background-color: map-get($colors, amel,  dark-light);
                    width: 100%;
                    transition: all 1.3s ease-in-out;
                 }
@@ -56,11 +59,17 @@
     &-content{
         max-width: 660px;
         width: 100%;
+        position: relative;
         &-item{
-            
-            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
             &.active{
-                display: block;
+                position: relative;
+                opacity: 1;
             }
         }
     }
