@@ -3,7 +3,13 @@
     .button-holder{
         padding-top: map-get($spacing, 17);
         button{
-            @include button(xl, primary, solid);
+            @include button(base, amel, solid);
+            background-color: map-get($colors, amel, dark-2);
+            border-color: map-get($colors, amel, dark-2);
+            color: map-get($colors, amel, light);
+            border-radius: map-get($border-radius, full);
+            padding: map-get($spacing, 400) map-get($spacing, 5);
+            height: auto;
         }
     }   
 }
