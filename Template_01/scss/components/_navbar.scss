@@ -38,6 +38,9 @@
         a{
             color: map-get($colors, amel, dark-2);
         }
+        .button-dark{
+            color: map-get($colors, amel, light);
+        }
     }
     
     &.scroll-up {
