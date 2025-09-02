@@ -1,5 +1,8 @@
 .trusted-block{
     padding: map-get($spacing, 29) 0;
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
     .button-holder{
         padding-top: map-get($spacing, 17);
         button{

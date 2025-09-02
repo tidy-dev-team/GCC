@@ -7,9 +7,23 @@
         @include rounded('base');
     }
     .main-tagline{
+        max-width: 800px;
+        margin: 0 auto;
         @include text-style('9xl', medium, tight); 
+        &.full{
+            max-width: 100%;
+        }
     }
     .sub-tagline{
         @include text-style('35xl', normal, tight);
+    }
+    @include respond-below('md'){
+        margin-bottom: map-get($spacing, 6);
+        .main-tagline{
+            @include text-style('45xl', medium, tight);
+        }
+        .sub-tagline{
+            @include text-style('2xl', normal, tight);
+        }
     }
 }

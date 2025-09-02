@@ -1,6 +1,9 @@
 .accordion-block{
     background-color: map-get($colors, amel, gray-light);
     padding: map-get($spacing, 29) 0;
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
 }
 .accordion{
     &-holder{
@@ -17,6 +20,9 @@
             margin-left: map-get($spacing, 5);
             color: map-get($colors, amel, gray-5);
             cursor: pointer;
+            @include respond-below('md'){
+                margin-left: 0;
+            }
             &::before{
                 content: "";
                 width: 100%;
@@ -39,6 +45,9 @@
                 transition: all 0.3s ease-in-out;
                 position: absolute;
                 bottom: 7px;
+                @include respond-below('md'){
+                 position: initial;
+                }
             }
             &.active{
                 color: map-get($colors, amel, dark-light);

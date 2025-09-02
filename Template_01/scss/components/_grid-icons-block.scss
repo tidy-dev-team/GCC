@@ -2,12 +2,29 @@
     padding: map-get($spacing, 29) 0;
     padding-bottom: map-get($spacing, 29);
     display: block;
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
     li{
         background-color: map-get($colors, amel, yellow-light-4);
         border-radius: map-get($border-radius, '2xl');
         min-height: 465px;
+        @include respond-below('md'){
+            min-height: auto;
+            position: relative;
+            margin-bottom: 80px;
+        }
         p{
             @include text-style('34xl', normal, normal);
+            @include respond-below('md'){
+                @include text-style('sm', normal, normal);
+                position: absolute;
+                bottom: -85px;
+                text-align: left;
+                min-height: 65px;
+                display: flex;
+                align-items: start;
+            }
         }
         svg{
             width:100px;
@@ -16,5 +33,8 @@
     }
     .disclimer{
         padding-top: map-get($spacing, 37);
+        @include respond-below('md'){
+            padding-top: 20px;
+        }
     }
 }

@@ -27,12 +27,21 @@
       left: 0;
       width: 100%;
       height: 100%;
+      border-radius: 24px;
       
       // Initial state - video starts more towards the bottom of the fold
       transform: scale(0.75) translateY(25%);
       opacity: 0;
       transition: all 0s ease-out;
-      
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 24px;
+        transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
       &.animate-in {
         transform: scale(0.8) translateY(-50%);
         opacity: 1;
@@ -42,14 +51,13 @@
       &.fill-screen {
         transform: scale(1) translateY(-25%);
         transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        video{
+          border-radius: 0;
+          transition: all 1.2s ease-in-out ;
+        }
       }
       
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
+     
       
       // Video Overlay for better text readability
       &::after {
@@ -137,7 +145,7 @@
     }
     .hero-btn {
       @include button(xl, primary, solid);
-
+      padding: map-get($spacing, 5) map-get($spacing, 6);
     }
 
   }

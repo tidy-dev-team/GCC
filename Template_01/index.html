@@ -20,22 +20,56 @@
 <body>
 
     <!-- COMPONENT: NAVBAR -->
-    <div class="navbar">
+    <div class="navbar ">
+        <!-- Left (logo) -->
         <div class="navbar-start ml-4">
-            <img src="assets/images/Amel_logo.svg"/>
+          <img src="assets/images/Amel_logo.svg" alt="Amel logo" />
         </div>
+      
+        <!-- Center menu (desktop only) -->
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a>Company</a></li>
-                <li><a>About</a></li>
-                <li><a>Resources</a></li>
-            </ul>
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Company</a></li>
+            <li><a>About</a></li>
+            <li><a>Resources</a></li>
+          </ul>
         </div>
-        <div class="flex gap-4 navbar-end">
+      
+        <!-- Right -->
+        <div class="navbar-end">
+          <!-- Desktop buttons -->
+          <div class="hidden lg:flex gap-4">
             <a class="button-dark">Partner with Us</a>
             <a class="button-light">Login</a>
+          </div>
+      
+          <!-- Mobile dropdown -->
+          <div class="dropdown dropdown-end lg:hidden">
+            <label tabindex="0" class="" >
+              <!-- Hamburger icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-hamburger" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- X icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-close hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </label>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Company</a></li>
+              <li><a>About</a></li>
+              <li><a>Resources</a></li>
+              <li><a>Partner with Us</a></li>
+              <li><a>Login</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- COMPONENT: HERO -->
     <section class="hero-video relative w-full h-screen min-h-screen overflow-hidden"> 
@@ -70,8 +104,8 @@
     <!-- SECTION: BUTTONS CARDS-->
      <section class="section component-cards-icons pt-15">
         <div class="container">
-        <div class="flex gap-11">
-            <div class="card w-96 border">
+        <div class="flex flex-col gap-11 md:flex-row">
+            <div class="card w-full md:w-96 border">
                 <div class="card-holder flex flex-col">
                     <figure>
                         <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +117,7 @@
                     </div>
                 </div>
               </div>
-              <div class="card w-96 border">
+              <div class="card w-full md:w-96 border">
                 <div class="card-holder flex flex-col">
                 <figure>
                     <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +129,7 @@
                 </div>
                 </div>
               </div>
-              <div class="card w-96 border">
+              <div class="card w-full md:w-96 border">
                 <div class="card-holder flex flex-col">
                 <figure >
                     <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +141,7 @@
                 </div>
                 </div>
               </div>
-              <div class="card w-96 border">
+              <div class="card w-full md:w-96 border">
                 <div class="card-holder flex flex-col">
                 <figure>
                     <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,13 +167,13 @@
             </div>
              <div class="tabs-holder">  
                     <div role="tablist" class="tabs">
-                        <a role="tab" class="tab tab-active">For Borrowers</a>
-                        <a role="tab" class="tab">For Lenders</a>
+                        <a role="tab" class="tab tab-active" aria-controls="borrowers-content">For Borrowers</a>
+                        <a role="tab" class="tab" aria-controls="lenders-content">For Lenders</a>
                     </div>
-                    <div role="tabpanel" class="tab-content tab-content-active">  
-                        <div class="vertical-tabs flex ">
+                    <div role="tabpanel" class="tab-content tab-content-active" id="borrowers-content">  
+                        <div class="vertical-tabs flex flex-col-reverse md:flex-row">
                             <div class="vertical-tabs-holder flex flex-col flex-1">
-                                <h5 class="headline-tab">Add title here</h5>
+                                <h5 class="headline-tab"> Add title here</h5>
                                 <div role="tablist" class="tabs ">
                                     <a role="tab" class="tab tab-active">
                                         <span class="icon">
@@ -196,13 +230,21 @@
                                         <img src="assets/images/image_1.png" alt="How it works borrowers">
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-content"> Tab content 2</div>
-                                <div role="tabpanel" class="tab-content"> Tab content 3</div>                          
+                                <div role="tabpanel" class="tab-content"> 
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/image_2.png" alt="How it works borrowers">
+                                    </div>                                       
+                                </div>
+                                <div role="tabpanel" class="tab-content"> 
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/image_3.png" alt="How it works borrowers">
+                                    </div>                                    
+                                </div>                          
                             </div>
                         </div>                      
                     </div>
-                    <div role="tabpanel" class="tab-content">  
-                        <div class="vertical-tabs flex ">
+                    <div role="tabpanel" class="tab-content" id="lenders-content">  
+                        <div class="vertical-tabs flex flex-col-reverse md:flex-row">
                             <div class="vertical-tabs-holder flex flex-col flex-1">
                                 <h5 class="headline-tab">Add title here</h5>
                                 <div role="tablist" class="tabs ">
@@ -220,8 +262,8 @@
                                             </svg>                                            
                                         </span>
                                         <div class="tab-button-content-holder">
-                                            <h4>Find & Select Labor</h4>
-                                            <p>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</p>
+                                            <h4>List Labor Camps</h4>
+                                            <p>Upload labor data in bulk. Set availability, manage documents.</p>
                                         </div>
                                     </a>
                                     <a role="tab" class="tab">
@@ -238,8 +280,8 @@
                                             </svg>                                                                                                                            
                                         </span>
                                         <div class="tab-button-content-holder">
-                                            <h4>Raise a Purchase Order (PO)</h4>
-                                            <p>View pricing by worker and vehicle. Submit PO instantly.</p>
+                                            <h4>Approve & Contract</h4>
+                                            <p>Accept POs, auto-generate contracts, and sign with UAE Pass.</p>
                                         </div>
                                     </a>
                                     <a role="tab" class="tab">
@@ -249,8 +291,8 @@
                                             </svg>
                                         </span>
                                         <div class="tab-button-content-holder">
-                                            <h4>Sign & Pay Securely</h4>
-                                            <p>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</p>
+                                            <h4>Get Paid via Escrow</h4>
+                                            <p>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</p>
                                         </div>
                                     </a>
                                 </div>  
@@ -258,11 +300,19 @@
                             <div class="tab-content-holder flex-1">
                                 <div role="tabpanel" class="tab-content tab-content-active">
                                     <div class="tab-content-image">
-                                        <img src="assets/images/image_1.png" alt="How it works borrowers">
+                                        <img src="assets/images/list_labor.png" alt="How it works borrowers">
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-content"> Tab content 2</div>
-                                <div role="tabpanel" class="tab-content"> Tab content 3</div>                          
+                                <div role="tabpanel" class="tab-content"> 
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/approve_contract.png" alt="How it works borrowers">
+                                    </div>                                    
+                                </div>
+                                <div role="tabpanel" class="tab-content"> 
+                                    <div class="tab-content-image">
+                                        <img src="assets/images/get_paid.png" alt="How it works borrowers">
+                                    </div>
+                                </div>                          
                             </div>
                         </div>                      
                     </div>
@@ -275,7 +325,7 @@
 <section class="slider-block">
     <div class="container">
         <div class="tag-line text-center">
-            <h3 class="main-tagline">Unlock New Value </br>from Existing Resources</h3>
+            <h3 class="main-tagline full">Unlock New Value </br>from Existing Resources</h3>
         </div>        
     </div>
     <div class="slider-holder">
@@ -387,31 +437,31 @@
         <div class="container">
             <div class="tag-line text-center">
                 <div class="badge badge-warning">Features</div>
-                <h3 class="main-tagline">Everything You Need - </br>In One Platform</h3>
+                <h3 class="main-tagline">Everything You Need - In One Platform</h3>
             </div>
             <div class="accordion">
-                <div class="accordion-holder">
+                <div class="accordion-holder flex-col md:flex-row">
                     <div class="accordion-content">
                         <div class="accordion-content-item active">
                             <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_2.png" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_3.png" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_4.png" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_5.png" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_6.png" alt="UAE Pass Integration">
                         </div>
                         <div class="accordion-content-item">
-                            <img src="assets/images/accordion_image_1.jpg" alt="UAE Pass Integration">
+                            <img src="assets/images/accordion_image_7.png" alt="UAE Pass Integration">
                         </div>
                     </div>                    
                     <div class="accordion-header">
@@ -453,20 +503,21 @@
         <div class="tag-line text-center"> 
             <h4 class="sub-tagline">Trusted by UAE’s Leading Entities</h4>
         </div>
-        <ul class="list flex flex-row gap-6 flex-wrap justify-center">
-            <li class="list-column max-w-2xs w-full">
-                <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities"/>
+        <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+            <li class="list-column">
+              <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
             </li>
-            <li class="list-column max-w-2xs w-full">
-                <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities"/>
+            <li class="list-column">
+              <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
             </li>
-            <li class="list-column max-w-2xs w-full">
-                <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities"/>
+            <li class="list-column">
+              <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
             </li>
-            <li class="list-column max-w-2xs w-full">
-                <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities"/>
+            <li class="list-column">
+              <img src="assets/images/logo_4.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
             </li>
-        </ul>
+          </ul>
+          
         <div class="button-holder text-center">
             <button class="btn">Partner with Us</button>
         </div>
@@ -477,9 +528,9 @@
     <div class="container">
         <div class="tag-line text-left">
             <div class="badge badge-warning">Security & Compliance</div>
-            <h3 class="main-tagline">Enterprise-Grade </br> Security. Government-</br>Level Compliance.</h3> 
+            <h3 class="main-tagline full">Enterprise-Grade </br> Security. Government-</br>Level Compliance.</h3> 
         </div>
-        <ul class="grid grid-cols-3 gap-6">
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-6">
             <li class="flex flex-col items-center text-center p-4 justify-center">
                 <div class="mb-4">
                     <svg width="112" height="156" viewBox="0 0 112 156" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -552,7 +603,7 @@
         </div>        
         <div class="cta-block-content">
             <div class="cta-block-content-inner container text-center">
-                <span class="cta-block-content-title ">Start Exchanging Labor Today</br> - Securely and Seamlessly</span>
+                <span class="cta-block-content-title ">Start Exchanging Labor Today - Securely and Seamlessly</span>
                 <a href="#" class="cta-block-content-button">Get Started</a>
             </div>
         </div>
@@ -562,7 +613,7 @@
  
 
     <!-- COMPONENT: FOOTER -->
-    <footer class="footer">
+    <footer class="footer flex-col md:flex-row">
         <aside>
             <svg width="226" height="127" viewBox="0 0 226 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_144_561)">
@@ -584,7 +635,7 @@
                 </defs>
                 </svg> 
           </aside> 
-          <div class="footer-content">
+          <div class="footer-content flex-col md:flex-row">
             <nav>
                 <h6 class="footer-title">Company</h6>
                 <a class="link link-hover">About AMEL</a>
@@ -610,7 +661,7 @@
               </nav>
           </div>        
       </footer>
-      <footer class="footer justify-between">
+      <footer class="footer justify-between flex-col md:flex-row">
             <div class="flex justfy-space-between">
                 <p class="footer-copy-write">© 2025 Website Ltd. All rights reserved.</p>
             </div>
