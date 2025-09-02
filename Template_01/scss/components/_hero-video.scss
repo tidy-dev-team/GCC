@@ -159,8 +159,8 @@
   
   // Responsive Adjustments
   @include respond-below(md) {
-    height: 80vh;
-    min-height: 500px;
+    height: 100vh;
+    //min-height: 500px;
     
     .hero-content {
       //padding: 0 5%;
