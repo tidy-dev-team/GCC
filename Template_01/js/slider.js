@@ -6,11 +6,13 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 1, 
         centerMode: true,
-        centerPadding: '100px',
+        centerPadding: '50px',
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
+                    centerPadding: '50px',
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
