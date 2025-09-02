@@ -135,7 +135,8 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 300ms ease-in-out;
-  
+  line-height: map-get($line-heights, '24px');
+  padding: map-get($spacing, 3) map-get($spacing, 5);
   // Variant-specific styling
   @if $variant == 'primary' {
     @if $style == 'solid' {

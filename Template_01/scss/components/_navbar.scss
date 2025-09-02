@@ -6,6 +6,9 @@
     z-index:10;
     padding: map-get($spacing, 6) map-get($spacing, 10);
     transition: all 0.3s ease-in-out;
+    @include respond-below('md'){
+        padding: 10px 24px;
+    }
     
     a{
         color: map-get($colors, amel, light);
@@ -16,8 +19,7 @@
         border-color: map-get($colors, amel, dark-2);
         color: map-get($colors, amel, light);
         border-radius: map-get($border-radius, full);
-        height: auto;
-        padding: map-get($spacing, 400) map-get($spacing, 5);
+        height: auto; 
         min-width: 140px;
 
     }
@@ -28,8 +30,7 @@
         color: map-get($colors, amel, dark-2);
         border-radius: map-get($border-radius, full);
         height: auto;
-        min-width: 140px;
-        padding: map-get($spacing, 400) map-get($spacing, 5);
+        min-width: 140px; 
     }
     &.scroll-down {
         background-color: rgba(255, 255, 255, 0.95);

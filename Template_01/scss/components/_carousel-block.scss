@@ -1,6 +1,9 @@
 .slider-block{
     @include bg-color(amel,gray-4);
-    padding: map-get($spacing, 25) 0;    
+    padding: map-get($spacing, 25) 0;   
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
 }
 .slider-holder{
     

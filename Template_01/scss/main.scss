@@ -47,3 +47,8 @@ body {
     max-width: 1440px;
  }
   
+ section{
+  @include respond-below('md'){
+    padding: 0 24px;
+  }
+ }

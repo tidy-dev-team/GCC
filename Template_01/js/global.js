@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize form handling
     initFormHandling();
+    document.querySelectorAll('.dropdown label').forEach(label => {
+        label.addEventListener('click', () => {
+          label.querySelector('.icon-hamburger').classList.toggle('hidden');
+          label.querySelector('.icon-close').classList.toggle('hidden');
+        });
+      });
 });
 
 // Button interaction system

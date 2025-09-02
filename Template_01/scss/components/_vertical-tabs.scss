@@ -1,15 +1,24 @@
 .how-it-works{
     padding: map-get($spacing, 36) 0;
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
 }
 .tabs{
     width: 100%;
     padding-bottom: map-get($spacing, 17);
+    @include respond-below('md'){
+        padding-bottom: 20px;
+    }
     .tab{
         flex: 50%;
         text-transform: uppercase;
         @include text-style('base', normal, normal);
         padding: map-get($spacing, 4);
         height: auto;
+        @include respond-below('md'){
+         padding: map-get($spacing, 4) 10px;
+        }
         &-active{
             border-bottom:2px solid map-get($colors, amel, dark-light);
         }
@@ -18,8 +27,21 @@
   
 }
 .tab-content{
+    display: none;
     &-active{
         display: block;           
+    }
+    &-image{
+        text-align: right;
+        @include respond-below('md'){
+            text-align: center; 
+        }
+
+        img{
+            max-width: 660px;
+            width: 100%;
+            display: inline-block;
+        }
     }
     .headline-tab{
         @include text-style('5xl', medium, tight);
@@ -27,8 +49,13 @@
         padding-bottom: map-get($spacing, 17);
     }   
 }
+ 
 .vertical-tabs{
     align-items: start;
+
+    &-holder{
+        max-width:706px;
+    }
     .tabs{
         display: flex;
         flex-wrap: wrap;

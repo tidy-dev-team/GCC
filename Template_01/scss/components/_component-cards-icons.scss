@@ -3,6 +3,9 @@
 // =============================================================================
 
 .component-cards-icons{
+    @include respond-below('md'){
+        padding: 50px 24px;
+    }
     .card{
         border: 1px solid map-get($colors, 'neutral', 300);
         border-radius: map-get($border-radius, '4xl');

@@ -5,6 +5,9 @@
     display: flex;
     gap: map-get($spacing, 29);
     padding-bottom: map-get($spacing, 12);
+    @include respond-below('md'){
+        padding: 0 24px;
+    }
     &-title{
         color: #000000;
         @include text-style('base', bold, normal);

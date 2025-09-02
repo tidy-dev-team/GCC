@@ -2,7 +2,11 @@
     background-color: map-get($colors, amel, gray-4);
     min-height: 659px;
     padding: map-get($spacing, 10);
-
+    position: relative;
+    @include respond-below('md'){
+        min-height: auto;
+        padding: map-get($spacing, 10) 24px;
+    }
     &-content{
         position: absolute;
         top: 0;
@@ -12,12 +16,22 @@
         z-index: 0;
         display: flex;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;     
+        @include respond-below('md'){
+            position: relative;
+            border-radius: 24px;
+            background-color: map-get($colors, amel, yellow-2);
+            padding: 50px 24px;
+        }
 
         &-title{
             @include text-style('9xl', normal, normal);
             padding-bottom: map-get($spacing, 12);
             display: block;
+            @include respond-below('md'){
+              font-size:36px;
+              line-height: 38px;
+            }
         }
         &-button{
             @include button(base, amel, solid);
@@ -25,8 +39,7 @@
             border-color: map-get($colors, amel, dark-2);
             color: map-get($colors, amel, light);
             border-radius: map-get($border-radius, full);
-            height: auto;
-            padding: map-get($spacing, 400) map-get($spacing, 5);
+            height: auto; 
         } 
     }
     &-bg{
@@ -40,5 +53,9 @@
                 width: 100%;
             }
         }
+        @include respond-below('md'){
+            display: none;
+        }
+
     }
 }
