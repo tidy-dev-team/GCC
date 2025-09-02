@@ -13,6 +13,15 @@
     a{
         color: map-get($colors, amel, light);
     }
+    .menu{
+        a{
+            &:hover,
+            &:focus{
+                background: transparent;
+                color: map-get($colors, amel, dark-2);
+            }
+        }
+    }
     .dropdown{
         svg{
             stroke: #fff;
