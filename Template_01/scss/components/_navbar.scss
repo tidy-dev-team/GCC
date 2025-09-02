@@ -13,6 +13,14 @@
     a{
         color: map-get($colors, amel, light);
     }
+    .dropdown{
+        svg{
+            stroke: #fff;
+        }
+        a{ 
+            color: map-get($colors, amel, dark-2);
+        }
+    }
     .button-dark{
         @include button(base, amel, solid);
         background-color: map-get($colors, amel, dark-2);
@@ -41,6 +49,11 @@
         }
         .button-dark{
             color: map-get($colors, amel, light);
+        }
+        .dropdown{
+            svg{
+                stroke: #000;
+            }
         }
     }
     

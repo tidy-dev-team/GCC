@@ -42,12 +42,40 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize form handling
     initFormHandling();
-    document.querySelectorAll('.dropdown label').forEach(label => {
-        label.addEventListener('click', () => {
-          label.querySelector('.icon-hamburger').classList.toggle('hidden');
-          label.querySelector('.icon-close').classList.toggle('hidden');
+    document.querySelectorAll('.dropdown').forEach((dropdown) => {
+        const label = dropdown.querySelector('.menu-label');
+        const menu  = dropdown.querySelector('.dropdown-content');
+        if (!label || !menu) return;
+    
+        const iconHamb  = label.querySelector('.icon-hamburger');
+        const iconClose = label.querySelector('.icon-close');
+    
+        function setOpen(isOpen) {
+          // DaisyUI shows menu when .dropdown-open is present
+          dropdown.classList.toggle('dropdown-open', isOpen);
+          label.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          if (iconHamb)  iconHamb.classList.toggle('hidden', isOpen);
+          if (iconClose) iconClose.classList.toggle('hidden', !isOpen);
+        }
+    
+        // Toggle on click
+        label.addEventListener('click', (e) => {
+          e.preventDefault();
+          setOpen(!dropdown.classList.contains('dropdown-open'));
+        });
+    
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+          if (!dropdown.contains(e.target)) setOpen(false);
+        });
+    
+        // Close on Esc
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') setOpen(false);
         });
       });
+    
+    
 });
 
 // Button interaction system
