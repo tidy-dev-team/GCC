@@ -83,6 +83,11 @@
                 left: 1rem;
                 top: 45px;
             }
+            svg{
+                circle{
+                    stroke: map-get($colors, amel, gray-3);
+                }
+            }
             &:last-child{
                 &::before{
                     display: none;
@@ -107,6 +112,14 @@
                 &::before{ 
                     border-style: solid;
                     border-color: map-get($colors, amel, yellow-light-2);
+                }
+                svg{
+                    circle{
+                        stroke: map-get($colors, amel, yellow-light-2);
+                    }
+                    path{
+                        fill: map-get($colors, amel, yellow-light-2);
+                    }
                 }
                 h4{ 
                     color: map-get($colors, amel, dark-light);

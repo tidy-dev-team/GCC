@@ -2,7 +2,10 @@
     @include bg-color(amel,gray-4);
     padding: map-get($spacing, 25) 0;   
     @include respond-below('md'){
-        padding: 50px 24px;
+       // padding: 50px 24px;
+       .tag-line{
+        padding: 0 24px;
+       }
     }
 }
 .slider-holder{
@@ -17,6 +20,7 @@
         border-radius: map-get($border-radius, '2xl');
         overflow: hidden; 
         cursor: grab;
+        margin-right: 20px;
         &::after{
             content: '';
             position: absolute;

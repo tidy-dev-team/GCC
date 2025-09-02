@@ -6,7 +6,8 @@
     gap: map-get($spacing, 29);
     padding-bottom: map-get($spacing, 12);
     @include respond-below('md'){
-        padding: 0 24px;
+        padding: 20px 24px;
+        gap: 20px;
     }
     &-title{
         color: #000000;
@@ -23,7 +24,9 @@
     &-content{
         display:flex;
         gap: map-get($spacing, 21);
-        
+        @include respond-below('md'){  
+            gap: 40px;
+        }
         nav{
             min-width: 178px;
             display: flex;
