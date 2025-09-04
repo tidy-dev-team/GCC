@@ -9,7 +9,14 @@
     }
 }
 .slider-holder{
-    
+    padding-left: 120px;
+    .slick-slide{
+        margin: 0 16px;
+        //width: auto !important;
+    }
+
+
+
    .slider{
     &-item{
         position: relative;
@@ -19,8 +26,7 @@
         display: flex;
         border-radius: map-get($border-radius, '2xl');
         overflow: hidden; 
-        cursor: grab;
-        margin-right: 20px;
+        cursor: grab;   
         &::after{
             content: '';
             position: absolute;
