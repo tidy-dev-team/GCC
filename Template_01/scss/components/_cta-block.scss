@@ -25,7 +25,15 @@
         }
 
         &-title{
-            @include text-style('9xl', normal, normal);
+            font-family:"helvetica-neue-lt-pro";
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 110%;
+            text-align: center;
+
+            text-transform: uppercase;
+            
+            //@include text-style('9xl', normal, normal);
             padding-bottom: map-get($spacing, 12);
             display: block;
             @include respond-below('md'){
@@ -34,7 +42,8 @@
             }
         }
         &-button{
-            @include button(2xl, primary, solid);  
+            @include button(2xl, invert, solid);
+            min-width: 170px;
         } 
     }
     &-bg{
