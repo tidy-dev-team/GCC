@@ -14,6 +14,7 @@
     <!-- jQuery must be loaded before Slick Carousel -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/iem6qmq.css">
 
 </head>
 
@@ -22,16 +23,15 @@
     <!-- COMPONENT: NAVBAR -->
     <div class="navbar ">
         <!-- Left (logo) -->
-        <div class="navbar-start ml-4">
+        <div class="navbar-start">
           <img src="assets/images/Amel_logo.svg" alt="Amel logo" />
         </div>
       
         <!-- Center menu (desktop only) -->
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal">
             <li><a>Company</a></li>
-            <li><a>About</a></li>
-            <li><a>Resources</a></li>
+            <li><a>About</a></li> 
           </ul>
         </div>
       
@@ -82,9 +82,9 @@
             </div>
         </div>
          
-        <div class="hero-content relative z-10 flex flex-col justify-center items-start h-full max-w-6xl mx-auto opacity-0 transform translate-y-8 transition-all duration-0 ease-out" id="heroContent">
-            <div class="max-w-4xl">
-                <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+        <div class="hero-content relative z-10 flex flex-col justify-center items-start h-full  container mx-auto opacity-0 transform translate-y-8 transition-all duration-0 ease-out" id="heroContent">
+            <div class="">
+                <h1 class="hero-title">
                     The Future of Labor Exchange in the UAE
                 </h1>
                 <p class="hero-description text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl leading-relaxed text-white/90 drop-shadow-md">
@@ -101,62 +101,33 @@
         <!-- Loading Indicator -->
         <div class="loading loading-spinner loading-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-primary"></div>
     </section>
-    <!-- SECTION: BUTTONS CARDS-->
-     <section class="section component-cards-icons pt-15">
-        <div class="container">
-        <div class="flex flex-col gap-11 md:flex-row">
-            <div class="card w-full md:w-96 border">
-                <div class="card-holder flex flex-col">
-                    <figure>
-                        <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
-                        </svg>    
-                    </figure>
-                    <div class="card-body items-center text-center">
-                    <p class="card-title"> UAE Pass </p> 
-                    </div>
-                </div>
-              </div>
-              <div class="card w-full md:w-96 border">
-                <div class="card-holder flex flex-col">
-                <figure>
-                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
-                    </svg>    
-                </figure>
-                <div class="card-body items-center text-center">
-                  <p class="card-title">RAKBANK Escrow</p>
-                </div>
-                </div>
-              </div>
-              <div class="card w-full md:w-96 border">
-                <div class="card-holder flex flex-col">
-                <figure >
-                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
-                    </svg>    
-                </figure>
-                <div class="card-body items-center text-center">
-                  <p class="card-title">MOHRE-ready</p>
-                </div>
-                </div>
-              </div>
-              <div class="card w-full md:w-96 border">
-                <div class="card-holder flex flex-col">
-                <figure>
-                    <svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40.0234 11.6406C40.0234 11.6406 23.8843 15.082 17.082 44C17.082 44 17.0814 43.9838 17.0811 43.9521C17.0777 43.9834 17.0771 44 17.0771 44C14.7758 30.3463 0.029512 30.1661 0.0234375 30.166V20.6104C14.5938 20.6104 16.9517 33.28 17.1826 39.9697C17.7134 29.5495 20.931 2.36251 40.0234 0V11.6406Z" fill="#FFCC23"/>
-                    </svg>    
-                </figure>
-                <div class="card-body items-center text-center">
-                  <p class="card-title">Licensed Companies Only</p>
-                </div>
-                </div>
-              </div>
-        </div>
-        </div>
-     </section>
 
+    <section class="trusted-block">
+        <div class="container">
+            <div class="tag-line text-center"> 
+                <h4 class="sub-tagline">Trusted by UAE’s Leading Entities</h4>
+            </div>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+                <li class="list-column">
+                  <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                </li>
+                <li class="list-column">
+                  <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                </li>
+                <li class="list-column">
+                  <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                </li>
+                <li class="list-column">
+                  <img src="assets/images/logo_4.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                </li>
+              </ul>
+              
+            <div class="button-holder text-center">
+                <button class="">Partner with Us</button>
+            </div>
+        </div>
+    </section>
+    
 
      <!-- SECTION: HOW IT WORKS -->
      <section class="how-it-works">
@@ -498,31 +469,6 @@
             </div>
         </div>
     </section>
-<section class="trusted-block">
-    <div class="container">
-        <div class="tag-line text-center"> 
-            <h4 class="sub-tagline">Trusted by UAE’s Leading Entities</h4>
-        </div>
-        <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-            <li class="list-column">
-              <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
-            </li>
-            <li class="list-column">
-              <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
-            </li>
-            <li class="list-column">
-              <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
-            </li>
-            <li class="list-column">
-              <img src="assets/images/logo_4.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
-            </li>
-          </ul>
-          
-        <div class="button-holder text-center">
-            <button class="btn">Partner with Us</button>
-        </div>
-    </div>
-</section>
 
 <scetion class="grid-icons-block">
     <div class="container">

@@ -34,12 +34,7 @@
             }
         }
         &-button{
-            @include button(base, amel, solid);
-            background-color: map-get($colors, amel, dark-2);
-            border-color: map-get($colors, amel, dark-2);
-            color: map-get($colors, amel, light);
-            border-radius: map-get($border-radius, full);
-            height: auto; 
+            @include button(2xl, primary, solid);  
         } 
     }
     &-bg{

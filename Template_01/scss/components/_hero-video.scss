@@ -10,7 +10,7 @@
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
-  border-radius: 24px;
+  //border-radius: 24px;
   // Video Background Container
   .video-background { 
     position: absolute;
@@ -19,7 +19,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    border-radius: 24px;
+    
     // Main Video Element
     .video-item {
       position: absolute;
@@ -81,6 +81,7 @@
       
       &.animate-in::after {
         opacity: 1;
+        border-radius: 0;
       }
     }
   }
@@ -119,25 +120,34 @@
     
     // Main Headline
     .hero-title {
-      @include heading(1);
-      color: white;
-      margin-bottom: 1.5rem;
-      max-width: 800px;
-      line-height: 1.1;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      font-family: "Trade Gothic Next", "Helvetica Neue", -apple-system,
+      "Segoe UI", Roboto, "Noto Sans Hebrew", "Heebo", Arial, sans-serif;      
+      //@include heading(1);
+      font-weight: 800;
+      font-size: 90px;
+      line-height: 106%;
+      text-transform: uppercase;
+      color:#fff;
+      max-width: 980px;
+      //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       
       @include respond-to(md) {
-        margin-bottom: 2rem;
+        margin-bottom: 48px;
       }
     }
     
     // Description Text
     .hero-description {
-      @include body-text(2xl);
+      //@include body-text(2xl);
       color: white;
       margin-bottom: 2.5rem;
       max-width: 700px;
-      line-height: 1.6;
+      font-family:"helvetica-neue-lt-pro";
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 20px; 
+      line-height: 120%;
+      letter-spacing: -0.02em;   
       //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       
       @include respond-to(md) {
@@ -145,8 +155,7 @@
       }
     }
     .hero-btn {
-      @include button(xl, primary, solid);
-      padding: map-get($spacing, 5) map-get($spacing, 6);
+      @include button(2xl, primary, solid);  
     }
 
   }

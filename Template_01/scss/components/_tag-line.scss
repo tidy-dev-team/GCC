@@ -1,15 +1,22 @@
 .tag-line{
-    margin-bottom: map-get($spacing, 21);
+    margin-bottom: 72px;
     .badge{
         @include color('neutral', 500);
         @include bg-color('amel', 'yellow-light');
         @include border-color('amel', 'yellow-light');
         @include rounded('base');
+        font-size: 16px;
+        padding: 4px 8px;
+        margin-bottom: 36px;
     }
     .main-tagline{
         max-width: 800px;
         margin: 0 auto;
-        @include text-style('9xl', medium, tight); 
+        //@include text-style('9xl', medium, tight); 
+        font-size: 72px;
+        line-height: 106%;
+        font-weight: 800;
+        text-transform: uppercase;
         &.full{
             max-width: 100%;
         }

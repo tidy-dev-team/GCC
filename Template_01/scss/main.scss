@@ -35,7 +35,8 @@ html {
 
 body {
   margin: 0;
-  font-family: map-get($font-families, sans);
+  font-family:"helvetica-neue-lt-pro";
+  font-weight: 400;
   font-size: map-get($font-sizes, base);
   line-height: map-get($line-heights, relaxed);
   color: map-get(map-get($colors, neutral), 900);
@@ -44,7 +45,7 @@ body {
  
  .container{
     margin: auto;
-    max-width: 1440px;
+    max-width: 1520px;
  }
   
  section{

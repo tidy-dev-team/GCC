@@ -1,18 +1,12 @@
 .trusted-block{
-    padding: map-get($spacing, 29) 0;
+    padding: 100px 0;
     @include respond-below('md'){
         padding: 50px 24px;
     }
     .button-holder{
-        padding-top: map-get($spacing, 17);
+        padding-top:64px;
         button{
-            @include button(base, amel, solid);
-            background-color: map-get($colors, amel, dark-2);
-            border-color: map-get($colors, amel, dark-2);
-            color: map-get($colors, amel, light);
-            border-radius: map-get($border-radius, full);
-            padding: map-get($spacing, 400) map-get($spacing, 5);
-            height: auto;
+            @include button(2xl, invert, solid);
         }
     }   
 }
