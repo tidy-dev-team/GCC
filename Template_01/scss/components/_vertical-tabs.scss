@@ -1,26 +1,31 @@
 .how-it-works{
-    padding: map-get($spacing, 36) 0;
+    padding:120px 0;
     @include respond-below('md'){
         padding: 50px 24px;
     }
 }
+.tabs-holder{
+    padding-top: 18px;
+}
 .tabs{
-    width: 100%;
-    padding-bottom: map-get($spacing, 17);
-    @include respond-below('md'){
-        padding-bottom: 20px;
-    }
+    width: fit-content;
+    background-color: #eee8e2;
+    padding: 12px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
     .tab{
-        flex: 50%;
+        font-family: Helvetica Neue;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 18px; 
+        line-height: 130%; 
         text-transform: uppercase;
-        @include text-style('base', normal, normal);
-        padding: map-get($spacing, 4);
+        padding: 16px 32px;
         height: auto;
-        @include respond-below('md'){
-         padding: map-get($spacing, 4) 10px;
-        }
+        border-radius: 6px;
         &-active{
-            border-bottom:2px solid map-get($colors, amel, dark-light);
+           background-color: #fff;
         }
         
     } 
@@ -44,9 +49,13 @@
         }
     }
     .headline-tab{
-        @include text-style('5xl', medium, tight);
-        padding-top: map-get($spacing, 8);
-        padding-bottom: map-get($spacing, 17);
+        //@include text-style('5xl', medium, tight);
+        font-family: Helvetica Neue;
+        font-weight: 500; 
+        font-size: 32px; 
+        line-height: 105%; 
+        padding-top: 32px;
+        padding-bottom: 72px;
     }   
 }
  
@@ -60,6 +69,8 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        background: transparent;
+        padding-left: 0;
         .tab{
             width: 100%;
             flex: 100%;
@@ -72,6 +83,7 @@
             text-transform: initial;
             padding: initial;
             border: none;
+            
             &::before{ 
                 content: "";
                 height: 100%; 
@@ -103,12 +115,17 @@
                 color: map-get($colors, amel, gray-2);
             }
             p{
-                @include text-style('base', normal, tight);
+                //@include text-style('base', normal, tight);
+                font-family: Helvetica Neue;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
                 color: map-get($colors, amel, gray-2);
                 text-align: left;
             }
 
             &-active{
+                background: transparent;
                 &::before{ 
                     border-style: solid;
                     border-color: map-get($colors, amel, yellow-light-2);
