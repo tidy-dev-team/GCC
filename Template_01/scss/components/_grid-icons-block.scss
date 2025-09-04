@@ -5,16 +5,30 @@
     @include respond-below('md'){
         padding: 50px 24px;
     }
+    ul{
+        align-items: baseline;
+        padding-top: 28px;
+    }
     li{
-        background-color: map-get($colors, amel, yellow-light-4);
-        border-radius: map-get($border-radius, '2xl');
-        min-height: 465px;
+        
+        
         @include respond-below('md'){
             min-height: auto;
             position: relative;
             margin-bottom: 80px;
         }
+        > div{
+            width: 100%;
+            background-color: map-get($colors, amel, yellow-light-4);
+            border-radius: map-get($border-radius, '2xl');
+            min-height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         p{
+            max-width: 400px;
             @include text-style('34xl', normal, normal);
             @include respond-below('md'){
                 @include text-style('sm', normal, normal);
@@ -27,12 +41,12 @@
             }
         }
         svg{
-            width:100px;
-            height:100px;
+           // width:100px;
+            height:140px;
         }
     }
     .disclimer{
-        padding-top: map-get($spacing, 37);
+        padding-top: 100px;
         @include respond-below('md'){
             padding-top: 20px;
         }
