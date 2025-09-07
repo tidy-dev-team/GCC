@@ -137,9 +137,7 @@
         margin-bottom: 48px;
       }
 
-      @include respond-below(xxl) {
-        font-size: 90px;
-      }
+       
     }
     
     // Description Text
@@ -182,9 +180,12 @@
       //padding: 0 5%;
       text-align: center;
       align-items: center;
-      
+      padding: 0 ;
       .hero-title {
-        @include heading(2);
+       // @include heading(2);
+       font-size: 38px;
+       line-height: 108%;
+        
       }
       
       .hero-description {
