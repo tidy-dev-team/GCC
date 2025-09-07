@@ -2,6 +2,7 @@
     @include bg-color(amel,gray-4);
     padding: map-get($spacing, 25) 0;   
     @include respond-below('md'){
+        padding: 60px 0;
        // padding: 50px 24px;
        .tag-line{
         padding: 0 24px;
@@ -10,8 +11,14 @@
 }
 .slider-holder{
     padding-left: 300px;
+    @include respond-below('md'){
+        padding-left: 24px;
+    }
     .slick-slide{
         margin: 0 16px;
+        @include respond-below('md'){
+            margin: 0 12px;
+        }
         //width: auto !important;
     }
 

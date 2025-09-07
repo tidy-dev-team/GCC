@@ -7,20 +7,30 @@
     padding-bottom: map-get($spacing, 12);
     padding-top: 0;
     @include respond-below('md'){
+
         padding: 20px 24px;
-        gap: 20px;
+        padding-top: 0;
+        gap: 46px;
     }
     &-title{
         color: #000000;
         @include text-style('base', bold, normal);
         opacity: 1;
         text-transform: capitalize;
+        @include respond-below('md'){
+         //   @include text-style('2xl', bold, normal);
+         font-size:14px;
+         margin-bottom: 0;
+        }
     }
     .link{
         color: #000000;
         @include text-style('base', normal, normal);
         opacity: 1;
-        
+        @include respond-below('md'){
+            font-size:14px;
+            margin-bottom: 0;
+        }
     }
     &-content{
         display:flex;

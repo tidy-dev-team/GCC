@@ -8,6 +8,9 @@
         font-size: 16px;
         padding: 4px 8px;
         margin-bottom: 36px;
+        @include respond-below('md'){
+            margin-bottom: 20px;
+        }
     }
     .main-tagline{
         max-width: 900px;
@@ -27,15 +30,21 @@
         }
     }
     .sub-tagline{
-        @include text-style('35xl', normal, tight);
+       // @include text-style('35xl', normal, tight);
+       font-size: 32px;
+       line-height: 130%;
     }
     @include respond-below('md'){
-        margin-bottom: map-get($spacing, 6);
+        margin-bottom:40px;
         .main-tagline{
-            @include text-style('45xl', medium, tight);
+           // @include text-style('45xl', medium, tight);
+           font-size:28px;
+           line-height: 110%;
         }
         .sub-tagline{
-            @include text-style('2xl', normal, tight);
+           // @include text-style('2xl', normal, tight);
+           font-size: 18px;
+           line-height: 110%;
         }
     }
 }
