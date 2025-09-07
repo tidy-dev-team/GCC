@@ -12,6 +12,7 @@
     .main-tagline{
         max-width: 900px;
         margin: 0 auto;
+        font-family: "Trade Gothic Next";
         //@include text-style('9xl', medium, tight); 
         font-size: 72px;
         line-height: 106%;
@@ -19,6 +20,10 @@
         text-transform: uppercase;
         &.full{
             max-width: 100%;
+        }
+        &.left{
+            max-width: 750px;
+            margin: 0;
         }
     }
     .sub-tagline{
