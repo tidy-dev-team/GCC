@@ -5,6 +5,7 @@
     display: flex;
     gap: map-get($spacing, 29);
     padding-bottom: map-get($spacing, 12);
+    padding-top: 0;
     @include respond-below('md'){
         padding: 20px 24px;
         gap: 20px;

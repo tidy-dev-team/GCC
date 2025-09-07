@@ -25,12 +25,12 @@
         }
 
         &-title{
-            font-family:"helvetica-neue-lt-pro";
+            font-family: "Trade Gothic Next";
             font-weight: 800;
             font-size: 72px;
             line-height: 110%;
             text-align: center;
-
+            color: map-get($colors, amel, light);
             text-transform: uppercase;
             
             //@include text-style('9xl', normal, normal);
@@ -42,11 +42,13 @@
             }
         }
         &-button{
-            @include button(2xl, invert, solid);
+            //@include button(2xl, invert, solid);
+            @include button(2xl, primary, solid);  
             min-width: 170px;
         } 
     }
     &-bg{
+        position: relative;
         svg{
             margin: 0 auto;
             width: 100%;
