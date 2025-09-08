@@ -8,6 +8,9 @@
     ul{
         align-items: baseline;
         padding-top: 28px;
+        @include respond-below('md'){
+            padding-top: 0;
+        }
     }
     li{
         

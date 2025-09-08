@@ -7,7 +7,15 @@ class HeroVideoEntrance {
         this.loadingElement = document.querySelector('.loading');
         this.videoSources = [
             'assets/video/Hero1.mp4',
-            'assets/video/Hero2.mp4'
+            'assets/video/Hero2.mp4',
+            'assets/video/Hero3.mp4',
+            'assets/video/Hero4.mp4',
+            'assets/video/Hero5.mp4',
+            'assets/video/Hero6.mp4',
+            'assets/video/Hero7.mp4',
+            'assets/video/Hero8.mp4',
+            'assets/video/Hero9.mp4',
+            'assets/video/Hero10.mp4'
         ];
         this.currentVideoIndex = 0;
         this.fillScreenTriggered = false;
