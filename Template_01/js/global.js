@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     
     // Initialize form handling
-    initFormHandling();
+   // initFormHandling();
     document.querySelectorAll('.dropdown').forEach((dropdown) => {
         const label = dropdown.querySelector('.menu-label');
         const menu  = dropdown.querySelector('.dropdown-content');
@@ -88,9 +88,9 @@ function initButtonInteractions() {
             createRippleEffect(e, this);
             
             // Add click animation
-            this.style.transform = 'scale(0.95)';
+            //this.style.transform = 'scale(0.95)';
             setTimeout(() => {
-                this.style.transform = 'scale(1)';
+              //  this.style.transform = 'scale(1)';
             }, 150);
             
             // Handle specific button actions
@@ -99,24 +99,24 @@ function initButtonInteractions() {
         
         // Add hover effects
         button.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px)';
-            this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15)';
+           // this.style.transform = 'translateY(-2px)';
+           // this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15)';
         });
         
         button.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = '';
+         //   this.style.transform = 'translateY(0)';
+          //  this.style.boxShadow = '';
         });
         
         // Add focus effects for accessibility
         button.addEventListener('focus', function() {
-            this.style.outline = '2px solid #ffcc23';
-            this.style.outlineOffset = '2px';
+      //      this.style.outline = '2px solid #ffcc23';
+        //    this.style.outlineOffset = '2px';
         });
         
         button.addEventListener('blur', function() {
-            this.style.outline = '';
-            this.style.outlineOffset = '';
+         //   this.style.outline = '';
+         //   this.style.outlineOffset = '';
         });
     });
 }
@@ -158,11 +158,11 @@ function handleButtonAction(button) {
     switch(buttonText) {
         case 'partner with us':
             // Scroll to contact section or open contact form
-            scrollToSection('contact') || showContactForm();
+          //  scrollToSection('contact') || showContactForm();
             break;
         case 'login':
             // Open login modal or redirect to login page
-            showLoginModal();
+          //  showLoginModal();
             break;
         default:
             // Default action - could be form submission or navigation

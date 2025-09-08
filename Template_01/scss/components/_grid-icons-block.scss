@@ -17,8 +17,8 @@
         }
         > div{
             width: 100%;
-            background-color: map-get($colors, amel, yellow-light-4);
-            border-radius: map-get($border-radius, '2xl');
+            background-color:#FEEDAE;
+            border-radius: 8px;
             min-height: 228px;
             display: flex;
             flex-direction: column;
@@ -30,6 +30,7 @@
                 height: 150px;
                 min-height: auto;
                 margin-bottom: 16px;
+                border-radius: 6px;
             }
         }
         p{
@@ -48,6 +49,7 @@
             height:94px;
             @include respond-below('md'){
                height: 68px;
+               max-width: 78px;
             }
         }
     }

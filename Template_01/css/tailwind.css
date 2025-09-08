@@ -1604,14 +1604,6 @@ video {
   outline: 2px solid currentColor;
 }
 
-.card-title {
-  display: flex;
-  align-items: center;
-  gap: calc(0.25rem * 2);
-  font-size: var(--cardtitle-fs, 1.125rem);
-  font-weight: 600;
-}
-
 .card-body {
   display: flex;
   flex: auto;
@@ -1630,17 +1622,9 @@ video {
   --card-fs: 0.6875rem;
 }
 
-.card-xs .card-title {
-  --cardtitle-fs: 0.875rem;
-}
-
 .card-sm .card-body {
   --card-p: 1rem;
   --card-fs: 0.75rem;
-}
-
-.card-sm .card-title {
-  --cardtitle-fs: 1rem;
 }
 
 .card-md .card-body {
@@ -1648,26 +1632,14 @@ video {
   --card-fs: 0.875rem;
 }
 
-.card-md .card-title {
-  --cardtitle-fs: 1.125rem;
-}
-
 .card-lg .card-body {
   --card-p: 2rem;
   --card-fs: 1rem;
 }
 
-.card-lg .card-title {
-  --cardtitle-fs: 1.25rem;
-}
-
 .card-xl .card-body {
   --card-p: 2.5rem;
   --card-fs: 1.125rem;
-}
-
-.card-xl .card-title {
-  --cardtitle-fs: 1.375rem;
 }
 
 .\!menu {
@@ -3947,10 +3919,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -4103,10 +4071,6 @@ video {
 
 .justify-items-center {
   justify-items: center;
-}
-
-.gap-11 {
-  gap: 2.75rem;
 }
 
 .gap-4 {
@@ -4345,11 +4309,6 @@ video {
   padding: 2rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -4463,10 +4422,6 @@ video {
   line-height: 1.625;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .text-error {
   color: var(--color-error);
 }
@@ -4546,11 +4501,6 @@ video {
 
 .blur {
   --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -4710,8 +4660,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:w-96 {
-    width: 24rem;
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:grid-cols-3 {
@@ -4724,11 +4678,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .md\:text-xl {
@@ -4753,10 +4702,5 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
