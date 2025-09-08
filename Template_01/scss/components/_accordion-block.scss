@@ -91,16 +91,18 @@
         position: relative;
         min-height: 400px;
         &-item{
-            //position: absolute;
+            position: absolute;
             display: none;
             top: 0;
             left: 0;
             width: 100%;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
-            
-            &.active{
+            @include respond-below('md'){
                 position: relative;
+            }
+            &.active{
+               // position: relative;
                 opacity: 1;
                 display: block;
             }
