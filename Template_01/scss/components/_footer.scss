@@ -1,10 +1,10 @@
 .footer{
     background-color: map-get($colors, amel, gray-4);
     padding:0 map-get($spacing, 10);
-    padding-top: map-get($spacing, 30); 
+    //padding-top: map-get($spacing, 30); 
     display: flex;
-    gap: map-get($spacing, 29);
-    padding-bottom: map-get($spacing, 12);
+    gap: 160px;
+    padding-bottom: 0;
     padding-top: 0;
     @include respond-below('md'){
 
@@ -34,9 +34,9 @@
     }
     &-content{
         display:flex;
-        gap: map-get($spacing, 21);
+        gap: 88px;
         @include respond-below('md'){  
-            gap: 40px;
+            gap: 36px;
         }
         nav{
             min-width: 178px;
@@ -45,4 +45,29 @@
             gap: map-get($spacing, 4);
         }
     }
+    &-links-horizontal{
+        @include respond-below('md'){
+            display: flex;
+            .grid{
+                display: flex;
+                gap: initial;
+                flex-wrap: wrap;
+                .link{
+                    flex: 50%;
+                }
+            }
+        }
+      
+
+    }
+}
+.button-footer{
+    padding-top: 72px;
+    padding-bottom: 20px;
+    @include respond-below('md'){
+        padding-top: 40px;
+        padding-bottom: 20px;
+        gap: 32px;
+    }
+
 }
