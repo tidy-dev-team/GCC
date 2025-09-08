@@ -10,7 +10,7 @@
     }
 }
 .slider-holder{
-    padding-left: 300px;
+    padding-left: 200px;
     @include respond-below('md'){
         padding-left: 24px;
     }
@@ -31,7 +31,7 @@
         height: 566px;
         padding: map-get($spacing, 6);
         display: flex;
-        border-radius: map-get($border-radius, '2xl');
+        border-radius:12px;
         overflow: hidden; 
         cursor: grab;   
         &::after{

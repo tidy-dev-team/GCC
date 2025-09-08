@@ -18,7 +18,7 @@
         > div{
             width: 100%;
             background-color: map-get($colors, amel, yellow-light-4);
-            border-radius: map-get($border-radius, '2xl');
+            border-radius: 8px;
             min-height: 228px;
             display: flex;
             flex-direction: column;

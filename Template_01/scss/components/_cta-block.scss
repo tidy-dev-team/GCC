@@ -1,6 +1,6 @@
 .cta-block{
     background-color: map-get($colors, amel, gray-4);
-    min-height: 659px;
+    //min-height: 659px;
     padding: map-get($spacing, 10);
     position: relative;
     @include respond-below('md'){

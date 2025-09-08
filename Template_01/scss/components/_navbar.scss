@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index:10;
-    padding: map-get($spacing, 6) map-get($spacing, 10);
+    padding: 20px  map-get($spacing, 10);
     transition: all 0.3s ease-in-out;
     @include respond-below('md'){
         padding: 10px 24px;
