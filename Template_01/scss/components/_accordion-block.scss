@@ -114,6 +114,12 @@
     @include respond-below('md'){
         display: block;
     }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
     img{
         margin-top:20px;
     }
