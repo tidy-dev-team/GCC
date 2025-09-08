@@ -1,8 +1,10 @@
 .accordion-block{
     background-color: map-get($colors, amel, gray-light);
     padding: map-get($spacing, 29) 0;
+    
     @include respond-below('md'){
         padding: 50px 24px;
+        display: none;
     }
 }
 .accordion{
@@ -105,4 +107,14 @@
         }
     }
 
+}
+
+.accordion-block-mobile{
+    display: none;
+    @include respond-below('md'){
+        display: block;
+    }
+    img{
+        margin-top:20px;
+    }
 }
