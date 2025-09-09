@@ -137,7 +137,10 @@
       @include respond-to(md) {
         margin-bottom: 48px;
       }
-
+      @include respond-below('lg'){
+        font-size: 72px;
+        margin-bottom: 24px;
+      }
        
     }
     
