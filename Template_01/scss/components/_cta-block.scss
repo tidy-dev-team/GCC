@@ -54,7 +54,9 @@
             }
             @include respond-below('md'){
               font-size:36px;
-              line-height: 38px;
+              line-height: 41px;
+            letter-spacing: 0px;
+            padding-bottom: 32px;
             }
         }
         &-button{

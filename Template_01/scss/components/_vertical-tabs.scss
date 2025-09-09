@@ -77,9 +77,14 @@
 .vertical-tabs{
     align-items: center;
     padding-top: 72px;
-
+    @include respond-below('md'){
+        padding-top: 0;
+    }
     &-holder{
         max-width:706px;
+        @include respond-below('md'){
+            padding: 0 12px;
+        }
     }
     .tabs{
         display: flex;
@@ -159,6 +164,7 @@
                 }
                 @include respond-below('md'){
                     font-size: 18px; 
+                    padding-bottom: 8px;
                 }
             }
             p{

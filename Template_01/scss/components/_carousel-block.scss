@@ -35,6 +35,9 @@
         border-radius:12px;
         overflow: hidden; 
         cursor: grab;   
+        @include respond-below('md'){
+            border-radius: 8px;
+        }
         &::after{
             content: '';
             position: absolute;
