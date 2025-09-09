@@ -66,6 +66,14 @@
         padding-left: 24px;
     }
 
+    & .slider-content {
+        height: 510px;
+
+        & p {
+            font-size: 14px !important;
+        }
+    }
+
     .slick-slide {
         margin: 0 16px;
 
