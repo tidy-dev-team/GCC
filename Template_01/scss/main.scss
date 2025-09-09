@@ -49,6 +49,10 @@ body {
     @include respond-below('xxl'){
       padding: 0 24px;
     }
+    @include respond-below('md'){
+      padding: 0 0px;
+    }
+    
  }
   
  section{

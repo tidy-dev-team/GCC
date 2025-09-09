@@ -62,6 +62,7 @@
         svg{
            // width:100px;
             height:94px;
+            max-width:130px;
             @include respond-below('lg'){
                 height: 78px;
             }

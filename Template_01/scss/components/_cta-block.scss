@@ -1,7 +1,9 @@
 .cta-block{
     background-color: map-get($colors, amel, gray-4);
+   
     //min-height: 659px;
     padding: map-get($spacing, 10);
+    padding-bottom: 72px;
     position: relative;
     @include respond-below('md'){
         min-height: auto;
@@ -36,14 +38,14 @@
         &-title{
             font-family: "Trade Gothic Next";
             font-weight: 800;
-            font-size: 72px;
+            font-size: 60px;
             line-height: 110%;
             text-align: center;
             color: map-get($colors, amel, light);
             text-transform: uppercase;
             
             //@include text-style('9xl', normal, normal);
-            padding-bottom: map-get($spacing, 12);
+            padding-bottom: 32px;
             display: block;
             @include respond-below('lg'){
                 font-size:48px;
