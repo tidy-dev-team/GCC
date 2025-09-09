@@ -134,8 +134,8 @@
   cursor: pointer;
   transition: all 300ms ease-in-out;
   line-height: 130%;
-  padding: 16px 24px;
-  height: 54px;
+  padding: 12px 24px;
+  height: 48px;
   @if $variant == 'primary' {
     background-color: #FFD23D;
     color: #1E1F24;

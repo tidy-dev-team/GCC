@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         // Check if user is scrolling down
-        if (currentScrollTop > lastScrollTop && currentScrollTop > 50) {
+        if (currentScrollTop > lastScrollTop && currentScrollTop > 900) {
             // User is scrolling down and has scrolled more than 50px
             navbar.classList.remove('scroll-down');
             navbar.classList.add('scroll-up');

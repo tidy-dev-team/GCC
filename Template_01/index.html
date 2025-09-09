@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     
+
     <title>Amel</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css?v=1.0.0" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- jQuery must be loaded before Slick Carousel -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -25,385 +25,434 @@
     <div class="navbar ">
         <!-- Left (logo) -->
         <div class="navbar-start">
-          <img src="assets/images/Amel_logo.svg" alt="Amel logo" />
+            <img src="assets/images/Amel_logo.svg" alt="Amel logo" />
         </div>
-      
+
         <!-- Center menu (desktop only) -->
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal">
-            <li><a>Company</a></li>
-            <li><a>About</a></li> 
-          </ul>
+            <ul class="menu menu-horizontal">
+                <li><a>Company</a></li>
+                <li><a>About</a></li>
+            </ul>
         </div>
-      
+
         <!-- Right -->
         <div class="navbar-end">
-          <!-- Desktop buttons -->
-          <div class="hidden lg:flex gap-4">
-            <a class="button-dark">Partner with Us</a>
-            <a class="button-light">Login</a>
-          </div>
-      
-          <!-- Mobile dropdown -->
-          <div class="dropdown dropdown-end lg:hidden">
-            <label tabindex="0" class="menu-label" >
-              <!-- Hamburger icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-hamburger" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <!-- X icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-close hidden" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </label>
-            <ul tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Company</a></li>
-              <li><a>About</a></li>
-              <li><a>Resources</a></li>
-              <li><a>Partner with Us</a></li>
-              <li><a>Login</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+            <!-- Desktop buttons -->
+            <div class="hidden lg:flex gap-4">
+                <a class="button-dark">Partner with Us</a>
+                <a class="button-light">Login</a>
+            </div>
 
-    <!-- COMPONENT: HERO -->
-    <section class="hero-video relative w-full h-screen min-h-screen overflow-hidden"> 
-        <div class="video-background absolute inset-0 w-full h-full z-0"> 
-            <div class="video-item absolute inset-0 w-full h-full transform scale-75 translate-y-1/4 opacity-0 transition-all duration-0 ease-out" id="mainVideo">
-                <video id="heroVideoElement" class="w-full h-full object-cover object-center" autoplay muted playsinline>
-                    <source src="assets/video/Hero1.mp4" type="video/mp4">
-                </video> 
-                <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/60 opacity-0 transition-opacity duration-1500 delay-3000"></div>
+            <!-- Mobile dropdown -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <label tabindex="0" class="menu-label">
+                    <!-- Hamburger icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-hamburger" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- X icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-close hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Company</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Resources</a></li>
+                    <li><a>Partner with Us</a></li>
+                    <li><a>Login</a></li>
+                </ul>
             </div>
         </div>
-         
-        <div class="hero-content relative z-10 flex flex-col justify-center items-start h-full  container mx-auto opacity-0 transform translate-y-8 transition-all duration-0 ease-out" id="heroContent">
+    </div>
+
+    <!-- COMPONENT: HERO -->
+    <section class="hero-video relative w-full h-screen min-h-screen overflow-hidden">
+        <div class="video-background absolute inset-0 w-full h-full z-0">
+            <div class="video-item absolute inset-0 w-full h-full transform scale-75 translate-y-1/4 opacity-0 transition-all duration-0 ease-out"
+                id="mainVideo">
+                <video id="heroVideoElement" class="w-full h-full object-cover object-center" autoplay muted
+                    playsinline>
+                    <source src="assets/video/Hero1.mp4" type="video/mp4">
+                </video>
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/60 opacity-0 transition-opacity duration-1500 delay-3000">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content relative z-10 flex flex-col justify-center items-start h-full  container mx-auto opacity-0 transform translate-y-8 transition-all duration-0 ease-out"
+            id="heroContent">
             <div class="">
                 <h1 class="hero-title">
                     The Future of Labor Exchange in the UAE
                 </h1>
-                <p class="hero-description text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl leading-relaxed text-white/90 drop-shadow-md">
-                    AMEL connects licensed construction and manpower companies to lend and borrow labor — 
-                    securely, profitably, and in full compliance with UAE law. Free up idle workers. 
+                <p
+                    class="hero-description text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl leading-relaxed text-white/90 drop-shadow-md">
+                    AMEL connects licensed construction and manpower companies to lend and borrow labor —
+                    securely, profitably, and in full compliance with UAE law. Free up idle workers.
                     Reduce project delays. Automate payments and contracts with UAE Pass and escrow.
                 </p>
-                <button class="hero-btn"> 
+                <button class="hero-btn">
                     Partner with Us
                 </button>
             </div>
         </div>
-        
+
         <!-- Loading Indicator -->
-        <div class="loading loading-spinner loading-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-primary"></div>
+        <div
+            class="loading loading-spinner loading-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-primary">
+        </div>
     </section>
 
     <section class="trusted-block">
         <div class="container">
-            <div class="tag-line text-center"> 
+            <div class="tag-line text-center">
                 <h4 class="sub-tagline">Trusted by UAE’s Leading Entities</h4>
             </div>
             <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
                 <li class="list-column">
-                  <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                    <img src="assets/images/logo_1.png" alt="Trusted by UAE’s Leading Entities" loading="lazy"
+                        decoding="async">
                 </li>
                 <li class="list-column">
-                  <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                    <img src="assets/images/logo_2.png" alt="Trusted by UAE’s Leading Entities" loading="lazy"
+                        decoding="async">
                 </li>
                 <li class="list-column">
-                  <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                    <img src="assets/images/logo_3.png" alt="Trusted by UAE’s Leading Entities" loading="lazy"
+                        decoding="async">
                 </li>
                 <li class="list-column">
-                  <img src="assets/images/logo_4.png" alt="Trusted by UAE’s Leading Entities" loading="lazy" decoding="async">
+                    <img src="assets/images/logo_4.png" alt="Trusted by UAE’s Leading Entities" loading="lazy"
+                        decoding="async">
                 </li>
-              </ul>
-              
+            </ul>
+
             <div class="button-holder text-center">
                 <button class="">Partner with Us</button>
             </div>
         </div>
     </section>
-    
 
-     <!-- SECTION: HOW IT WORKS -->
-     <section class="how-it-works">
+
+    <!-- SECTION: HOW IT WORKS -->
+    <section class="how-it-works">
         <div class="container">
             <div class="tag-line text-center">
                 <div class="badge badge-warning">How it works</div>
                 <h3 class="main-tagline">Simple. Verified. </br> Compliant.</h3>
             </div>
-             <div class="tabs-holder">  
-                    <div role="tablist" class="tabs">
-                        <a role="tab" class="tab tab-active" aria-controls="borrowers-content">For Borrowers</a>
-                        <a role="tab" class="tab" aria-controls="lenders-content">For Lenders</a>
-                    </div>
-                    <div role="tabpanel" class="tab-content tab-content-active" id="borrowers-content">  
-                        <div class="vertical-tabs flex flex-col-reverse md:flex-row">
-                            <div class="vertical-tabs-holder flex flex-col flex-1">
-                                <h5 class="headline-tab" style="display: none;"> Add title here</h5>
-                                <div role="tablist" class="tabs ">
-                                    <a role="tab" class="tab tab-active">
-                                        <span class="icon">
-                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_515_471)">
-                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052" stroke-width="5.33333"/>
-                                                </g>
-                                                <defs>
+            <div class="tabs-holder">
+                <div role="tablist" class="tabs">
+                    <a role="tab" class="tab tab-active" aria-controls="borrowers-content">For Borrowers</a>
+                    <a role="tab" class="tab" aria-controls="lenders-content">For Lenders</a>
+                </div>
+                <div role="tabpanel" class="tab-content tab-content-active" id="borrowers-content">
+                    <div class="vertical-tabs flex flex-col-reverse md:flex-row">
+                        <div class="vertical-tabs-holder flex flex-col flex-1">
+                            <h5 class="headline-tab" style="display: none;"> Add title here</h5>
+                            <div role="tablist" class="tabs ">
+                                <a role="tab" class="tab tab-active">
+                                    <span class="icon">
+                                        <svg width="33" height="36" viewBox="0 0 33 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_515_471)">
+                                                <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052"
+                                                    stroke-width="5.33333" />
+                                            </g>
+                                            <defs>
                                                 <clipPath id="clip0_515_471">
-                                                    <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                    <rect width="32" height="32" fill="white"
+                                                        transform="translate(0.523438 4)" />
                                                 </clipPath>
-                                                </defs>
-                                            </svg>                                            
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>Find & Select Labor</h4>
-                                            <p>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</p>
-                                        </div>
-                                    </a>
-                                    <a role="tab" class="tab">
-                                        <span class="icon">
-                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_515_683)">
-                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_515_683">
-                                                        <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>                                                                                                                            
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>Raise a Purchase Order (PO)</h4>
-                                            <p>View pricing by worker and vehicle. Submit PO instantly.</p>
-                                        </div>
-                                    </a>
-                                    <a role="tab" class="tab">
-                                        <span class="icon">
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="16" cy="16" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
-                                            </svg>                                                
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>Sign & Pay Securely</h4>
-                                            <p>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</p>
-                                        </div>
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="tab-content-holder flex-1">
-                                <div role="tabpanel" class="tab-content tab-content-active">
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/image_1.png" alt="How it works borrowers">
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>Find & Select Labor</h4>
+                                        <p>Search across verified camps, filter by skill, location, insurance, blacklist
+                                            status, and more.</p>
                                     </div>
-                                </div>
-                                <div role="tabpanel" class="tab-content"> 
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/image_2.png" alt="How it works borrowers">
-                                    </div>                                       
-                                </div>
-                                <div role="tabpanel" class="tab-content"> 
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/image_3.png" alt="How it works borrowers">
-                                    </div>                                    
-                                </div>                          
+                                </a>
+                                <a role="tab" class="tab">
+                                    <span class="icon">
+                                        <svg width="33" height="36" viewBox="0 0 33 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_515_683)">
+                                                <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2"
+                                                    stroke-width="5.33333" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_515_683">
+                                                    <rect width="32" height="32" fill="white"
+                                                        transform="translate(0.523438 4)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>Raise a Purchase Order (PO)</h4>
+                                        <p>View pricing by worker and vehicle. Submit PO instantly.</p>
+                                    </div>
+                                </a>
+                                <a role="tab" class="tab">
+                                    <span class="icon">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="13.3333" stroke="#E5DBD2"
+                                                stroke-width="5.33333" />
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>Sign & Pay Securely</h4>
+                                        <p>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after
+                                            confirmed deployment.</p>
+                                    </div>
+                                </a>
                             </div>
-                        </div>                      
+                        </div>
+                        <div class="tab-content-holder flex-1">
+                            <div role="tabpanel" class="tab-content tab-content-active">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/image_1.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-content">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/image_2.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-content">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/image_3.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-content" id="lenders-content">  
-                        <div class="vertical-tabs flex flex-col-reverse md:flex-row">
-                            <div class="vertical-tabs-holder flex flex-col flex-1">
-                                <h5 class="headline-tab" style="display: none;">Add title here</h5>
-                                <div role="tablist" class="tabs ">
-                                    <a role="tab" class="tab tab-active">
-                                        <span class="icon">
-                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_515_471)">
-                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052" stroke-width="5.33333"/>
-                                                </g>
-                                                <defs>
+                </div>
+                <div role="tabpanel" class="tab-content" id="lenders-content">
+                    <div class="vertical-tabs flex flex-col-reverse md:flex-row">
+                        <div class="vertical-tabs-holder flex flex-col flex-1">
+                            <h5 class="headline-tab" style="display: none;">Add title here</h5>
+                            <div role="tablist" class="tabs ">
+                                <a role="tab" class="tab tab-active">
+                                    <span class="icon">
+                                        <svg width="33" height="36" viewBox="0 0 33 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_515_471)">
+                                                <circle cx="16.5234" cy="20" r="13.3333" stroke="#FCD052"
+                                                    stroke-width="5.33333" />
+                                            </g>
+                                            <defs>
                                                 <clipPath id="clip0_515_471">
-                                                    <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
+                                                    <rect width="32" height="32" fill="white"
+                                                        transform="translate(0.523438 4)" />
                                                 </clipPath>
-                                                </defs>
-                                            </svg>                                            
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>List Labor Camps</h4>
-                                            <p>Upload labor data in bulk. Set availability, manage documents.</p>
-                                        </div>
-                                    </a>
-                                    <a role="tab" class="tab">
-                                        <span class="icon">
-                                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_515_683)">
-                                                    <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_515_683">
-                                                        <rect width="32" height="32" fill="white" transform="translate(0.523438 4)"/>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>                                                                                                                            
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>Approve & Contract</h4>
-                                            <p>Accept POs, auto-generate contracts, and sign with UAE Pass.</p>
-                                        </div>
-                                    </a>
-                                    <a role="tab" class="tab">
-                                        <span class="icon">
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="16" cy="16" r="13.3333" stroke="#E5DBD2" stroke-width="5.33333"/>
-                                            </svg>                                                
-                                        </span>
-                                        <div class="tab-button-content-holder">
-                                            <h4>Get Paid via Escrow</h4>
-                                            <p>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</p>
-                                        </div>
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="tab-content-holder flex-1">
-                                <div role="tabpanel" class="tab-content tab-content-active">
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/list_labor.png" alt="How it works borrowers">
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>List Labor Camps</h4>
+                                        <p>Upload labor data in bulk. Set availability, manage documents.</p>
                                     </div>
-                                </div>
-                                <div role="tabpanel" class="tab-content"> 
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/approve_contract.png" alt="How it works borrowers">
-                                    </div>                                    
-                                </div>
-                                <div role="tabpanel" class="tab-content"> 
-                                    <div class="tab-content-image">
-                                        <img src="assets/images/get_paid.png" alt="How it works borrowers">
+                                </a>
+                                <a role="tab" class="tab">
+                                    <span class="icon">
+                                        <svg width="33" height="36" viewBox="0 0 33 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_515_683)">
+                                                <circle cx="16.5234" cy="20" r="13.3333" stroke="#E5DBD2"
+                                                    stroke-width="5.33333" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_515_683">
+                                                    <rect width="32" height="32" fill="white"
+                                                        transform="translate(0.523438 4)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>Approve & Contract</h4>
+                                        <p>Accept POs, auto-generate contracts, and sign with UAE Pass.</p>
                                     </div>
-                                </div>                          
+                                </a>
+                                <a role="tab" class="tab">
+                                    <span class="icon">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="13.3333" stroke="#E5DBD2"
+                                                stroke-width="5.33333" />
+                                        </svg>
+                                    </span>
+                                    <div class="tab-button-content-holder">
+                                        <h4>Get Paid via Escrow</h4>
+                                        <p>Once deployment is confirmed by the borrower, funds are released to your
+                                            e-wallet.</p>
+                                    </div>
+                                </a>
                             </div>
-                        </div>                      
+                        </div>
+                        <div class="tab-content-holder flex-1">
+                            <div role="tabpanel" class="tab-content tab-content-active">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/list_labor.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-content">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/approve_contract.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-content">
+                                <div class="tab-content-image">
+                                    <img src="assets/images/get_paid.png" alt="How it works borrowers">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-             </div> 
+                </div>
+            </div>
         </div>
     </section>
 
 
-     <!-- SECTION: SLIDER -->
-<section class="slider-block">
-    <div class="container">
-        <div class="tag-line text-center">
-            <h3 class="main-tagline full">Unlock New Value </br>from Existing Resources</h3>
-        </div>        
-    </div>
-    <div class="slider-holder">
-        <div class="slider w-full">
-            <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_1.png" alt="Unlock New Value from Existing Resources">
+    <!-- SECTION: SLIDER -->
+    <section class="slider-block">
+        <div class="container">
+            <div class="tag-line text-center">
+                <h3 class="main-tagline full">Unlock New Value </br>from Existing Resources</h3>
+            </div>
+        </div>
+        <div class="slider-holder">
+            <div class="slider w-full">
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_1.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="31" height="36" viewBox="0 0 31 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M30.5234 -0.00976562C30.5234 9.92999 23.8116 17.9902 15.5234 17.9902C7.23528 17.9902 0.523438 9.92999 0.523438 -0.00976562H30.5234Z"
+                                    fill="#FFCC23" />
+                                <path
+                                    d="M0.523438 35.9902C0.523438 26.0505 7.23528 17.9902 15.5234 17.9902C23.8116 17.9902 30.5234 26.0505 30.5234 35.9902H0.523438Z"
+                                    fill="#FFCC23" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Monetize Idle Labor</h5>
+                            <p>Turn downtime into revenue. Lend workers to verified companies across the UAE.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-icon">
-                    <svg width="31" height="36" viewBox="0 0 31 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30.5234 -0.00976562C30.5234 9.92999 23.8116 17.9902 15.5234 17.9902C7.23528 17.9902 0.523438 9.92999 0.523438 -0.00976562H30.5234Z" fill="#FFCC23"/>
-                        <path d="M0.523438 35.9902C0.523438 26.0505 7.23528 17.9902 15.5234 17.9902C23.8116 17.9902 30.5234 26.0505 30.5234 35.9902H0.523438Z" fill="#FFCC23"/>
-                    </svg>                                             
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_2.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="34" height="36" viewBox="0 0 34 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M33.5234 17.9902L15.321 -0.00976562V14.6265L0.523438 -0.00976562V35.9902L15.321 21.354V35.9902L33.5234 17.9902Z"
+                                    fill="#FFCC23" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Slash Project Delays</h5>
+                            <p>Quickly source skilled, verified labor for urgent site demands.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-content">
-                    <h5>Monetize Idle Labor</h5>
-                    <p>Turn downtime into revenue. Lend workers to verified companies across the UAE.</p>
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_3.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="48" height="36" viewBox="0 0 48 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.088 16.0677C40.0953 15.8852 40.1026 15.7063 40.1026 15.5312C40.1026 8.61617 34.5596 2.99023 27.7509 2.99023C23.0479 2.99023 18.7521 5.75104 16.6904 9.98353C15.6229 9.26818 14.3756 8.8807 13.066 8.8807C9.58825 8.8807 6.7305 11.6341 6.49939 15.1102C2.9483 16.4217 0.523438 19.8829 0.523438 23.7689C0.523438 28.8509 4.59912 32.9902 9.60659 32.9902H39.1195C43.7308 32.9902 47.48 29.1825 47.48 24.4992C47.48 20.1512 44.2444 16.5558 40.088 16.0677Z"
+                                    fill="#FFCC23" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Contractless, Paperless</h5>
+                            <p>Sign and manage labor contracts 100% digitally with UAE Pass.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_4.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="33" height="36" viewBox="0 0 33 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5234 -0.00976562L0.523438 6.69971L0.738008 20.5303C0.738008 25.3509 2.47777 27.9614 6.5894 30.6621L16.5234 35.9902L26.4575 30.6621C30.5633 27.9614 32.3089 25.3509 32.3089 20.5303L32.5234 6.69971L16.5234 -0.00976562Z"
+                                    fill="#FFCC23" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Protect Every Transaction</h5>
+                            <p>RAKBANK escrow ensures funds are only released when work is confirmed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_5.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="37" height="36" viewBox="0 0 37 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7655 0.490234C17.2637 0.490234 16.8014 0.665151 16.4275 1.03441L12.8859 4.29949L8.87203 3.52209C7.61278 3.26944 6.84542 4.08571 6.58964 5.07689L5.8026 9.50807L1.55264 11.5293C0.549174 12.0249 0.263874 13.0258 0.765607 14.017L2.81189 17.9817L0.765607 21.9465C0.263874 22.9377 0.795121 23.9386 1.55264 24.4342L5.8026 26.4554L6.58964 30.8866C6.84542 31.8778 7.86856 32.694 8.87203 32.4414L13.5942 31.664L17.1359 34.9291C17.8934 35.6773 19.1329 35.6773 19.8905 34.9291L23.4321 31.664L28.233 32.4414C29.2365 32.694 30.2596 31.8778 30.5154 30.8866L31.2237 26.4554L35.5524 24.4342C36.5558 23.9386 36.7624 22.9377 36.2607 21.9465L33.5061 17.9817L35.5524 14.017C36.0541 13.0258 35.7688 12.0249 34.7653 11.5293L30.5154 9.50807L29.7283 5.07689C29.4726 4.08571 28.4494 3.26944 27.446 3.52209L22.7238 4.29949L19.1821 1.03441C18.8083 0.665151 18.2672 0.490234 17.7655 0.490234Z"
+                                    fill="#FFCC23" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Built for UAE Compliance</h5>
+                            <p>Built for UAE Compliance Integrated with MOHRE, DED, RAKEZ, and UAE Pass. Aligned with
+                                labor laws and financial regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider-item">
+                        <div class="slider-image">
+                            <img src="assets/images/slide_6.png" alt="Unlock New Value from Existing Resources">
+                        </div>
+                        <div class="slider-icon">
+                            <svg width="37" height="36" viewBox="0 0 37 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5234" cy="17.9902" r="15" stroke="#FFCC23" stroke-width="6" />
+                            </svg>
+                        </div>
+                        <div class="slider-content">
+                            <h5>Transparent Pricing</h5>
+                            <p>No hidden fees. Labor + transport rates are automated and fully visible at all times.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_2.png" alt="Unlock New Value from Existing Resources">
-                </div>
-                <div class="slider-icon">
-                    <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M33.5234 17.9902L15.321 -0.00976562V14.6265L0.523438 -0.00976562V35.9902L15.321 21.354V35.9902L33.5234 17.9902Z" fill="#FFCC23"/>
-                    </svg>                                                                                          
-                </div>
-                <div class="slider-content">
-                    <h5>Slash Project Delays</h5>
-                    <p>Quickly source skilled, verified labor for urgent site demands.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_3.png" alt="Unlock New Value from Existing Resources">
-                </div>
-                <div class="slider-icon">
-                    <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40.088 16.0677C40.0953 15.8852 40.1026 15.7063 40.1026 15.5312C40.1026 8.61617 34.5596 2.99023 27.7509 2.99023C23.0479 2.99023 18.7521 5.75104 16.6904 9.98353C15.6229 9.26818 14.3756 8.8807 13.066 8.8807C9.58825 8.8807 6.7305 11.6341 6.49939 15.1102C2.9483 16.4217 0.523438 19.8829 0.523438 23.7689C0.523438 28.8509 4.59912 32.9902 9.60659 32.9902H39.1195C43.7308 32.9902 47.48 29.1825 47.48 24.4992C47.48 20.1512 44.2444 16.5558 40.088 16.0677Z" fill="#FFCC23"/>
-                    </svg>                                                                                                         
-                </div>
-                <div class="slider-content">
-                    <h5>Contractless, Paperless</h5>
-                    <p>Sign and manage labor contracts 100% digitally with UAE Pass.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_4.png" alt="Unlock New Value from Existing Resources">
-                </div>
-                <div class="slider-icon">
-                    <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.5234 -0.00976562L0.523438 6.69971L0.738008 20.5303C0.738008 25.3509 2.47777 27.9614 6.5894 30.6621L16.5234 35.9902L26.4575 30.6621C30.5633 27.9614 32.3089 25.3509 32.3089 20.5303L32.5234 6.69971L16.5234 -0.00976562Z" fill="#FFCC23"/>
-                    </svg>                                                                                                         
-                </div>
-                <div class="slider-content">
-                    <h5>Protect Every Transaction</h5>
-                    <p>RAKBANK escrow ensures funds are only released when work is confirmed.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_5.png" alt="Unlock New Value from Existing Resources">
-                </div>
-                <div class="slider-icon">
-                    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.7655 0.490234C17.2637 0.490234 16.8014 0.665151 16.4275 1.03441L12.8859 4.29949L8.87203 3.52209C7.61278 3.26944 6.84542 4.08571 6.58964 5.07689L5.8026 9.50807L1.55264 11.5293C0.549174 12.0249 0.263874 13.0258 0.765607 14.017L2.81189 17.9817L0.765607 21.9465C0.263874 22.9377 0.795121 23.9386 1.55264 24.4342L5.8026 26.4554L6.58964 30.8866C6.84542 31.8778 7.86856 32.694 8.87203 32.4414L13.5942 31.664L17.1359 34.9291C17.8934 35.6773 19.1329 35.6773 19.8905 34.9291L23.4321 31.664L28.233 32.4414C29.2365 32.694 30.2596 31.8778 30.5154 30.8866L31.2237 26.4554L35.5524 24.4342C36.5558 23.9386 36.7624 22.9377 36.2607 21.9465L33.5061 17.9817L35.5524 14.017C36.0541 13.0258 35.7688 12.0249 34.7653 11.5293L30.5154 9.50807L29.7283 5.07689C29.4726 4.08571 28.4494 3.26944 27.446 3.52209L22.7238 4.29949L19.1821 1.03441C18.8083 0.665151 18.2672 0.490234 17.7655 0.490234Z" fill="#FFCC23"/>
-                    </svg>                                                                                         
-                </div>
-                <div class="slider-content">
-                    <h5>Built for UAE Compliance</h5>
-                    <p>Built for UAE Compliance Integrated with MOHRE, DED, RAKEZ, and UAE Pass. Aligned with labor laws and financial regulations.</p>
-                </div>
-            </div>     
-        </div>          
-        <div>
-            <div class="slider-item">
-                <div class="slider-image">
-                    <img src="assets/images/slide_6.png" alt="Unlock New Value from Existing Resources">
-                </div>
-                <div class="slider-icon">
-                    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="18.5234" cy="17.9902" r="15" stroke="#FFCC23" stroke-width="6"/>
-                    </svg>                                                                     
-                </div>
-                <div class="slider-content">
-                    <h5>Transparent Pricing</h5>
-                    <p>No hidden fees. Labor + transport rates are automated and fully visible at all times.</p>
-                </div>
-            </div>     
-        </div>                                                            
-        </div>        
-    </div>
-</section>
+    </section>
 
-<!-- SECTION: Accordion-->
+    <!-- SECTION: Accordion-->
 
     <section class="accordion-block">
         <div class="container">
@@ -435,14 +484,14 @@
                         <div class="accordion-content-item">
                             <img src="assets/images/accordion_image_7.png" alt="UAE Pass Integration">
                         </div>
-                    </div>                    
+                    </div>
                     <div class="accordion-header">
                         <div class="accordion-header-title active">
                             <h4>UAE Pass Integration</h4>
                             <div class="accordion-header-content">
                                 <p>Digital identity + contract signature</p>
                             </div>
-                            
+
                         </div>
                         <div class="accordion-header-title">
                             <h4>Site & Camp Mapping</h4>
@@ -471,30 +520,30 @@
                         <div class="accordion-header-title">
                             <h4> Real-Time Notifications</h4>
                             <div class="accordion-header-content">
-                            <p>Get alerts for approvals, contracts, and payments</p>
+                                <p>Get alerts for approvals, contracts, and payments</p>
                             </div>
                         </div>
                         <div class="accordion-header-title">
                             <h4> POs & Contracts Auto-Generated</h4>
                             <div class="accordion-header-content">
-                            <p>No paperwork, no delays</p>
-                            </div>  
+                                <p>No paperwork, no delays</p>
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-        <section class="accordion-block-mobile">
+    <section class="accordion-block-mobile">
         <div class="container">
             <div class="tag-line text-center">
                 <div class="badge badge-warning">Features</div>
                 <h3 class="main-tagline">Everything You Need In One Platform</h3>
             </div>
             <div class="accordion">
-                <div class="accordion-holder flex-col md:flex-row">               
+                <div class="accordion-holder flex-col md:flex-row">
                     <div class="accordion-header">
                         <div class="accordion-header-title active">
                             <h4>UAE Pass Integration</h4>
@@ -502,9 +551,9 @@
                                 <p>Digital identity + contract signature</p>
                                 <div class="accordion-content-item active">
                                     <img src="assets/images/mobile_accordion_image_1.png" alt="UAE Pass Integration">
-                                </div>                                
+                                </div>
                             </div>
-                            
+
                         </div>
                         <div class="accordion-header-title">
                             <h4>Site & Camp Mapping</h4>
@@ -512,7 +561,7 @@
                                 <p>Manage multiple locations via Google Maps</p>
                                 <div class="accordion-content-item">
                                     <img src="assets/images/mobile_accordion_image_2.png" alt="UAE Pass Integration">
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-header-title">
@@ -521,7 +570,7 @@
                                 <p>Experience, insurance, blacklist status, ID, and more</p>
                                 <div class="accordion-content-item">
                                     <img src="assets/images/mobile_accordion_image_3.png" alt="UAE Pass Integration">
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-header-title">
@@ -530,7 +579,7 @@
                                 <p>View site/camp status, contract flows, financials</p>
                                 <div class="accordion-content-item">
                                     <img src="assets/images/mobile_accordion_image_4.png" alt="UAE Pass Integration">
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-header-title">
@@ -539,218 +588,272 @@
                                 <p>Full e-wallet integration via RAKBANK</p>
                                 <div class="accordion-content-item">
                                     <img src="assets/images/mobile_accordion_image_5.png" alt="UAE Pass Integration">
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-header-title">
                             <h4> Real-Time Notifications</h4>
                             <div class="accordion-header-content">
-                            <p>Get alerts for approvals, contracts, and payments</p>
-                            <div class="accordion-content-item">
-                                <img src="assets/images/mobile_accordion_image_6.png" alt="UAE Pass Integration">
-                            </div>                            
+                                <p>Get alerts for approvals, contracts, and payments</p>
+                                <div class="accordion-content-item">
+                                    <img src="assets/images/mobile_accordion_image_6.png" alt="UAE Pass Integration">
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-header-title">
                             <h4> POs & Contracts Auto-Generated</h4>
                             <div class="accordion-header-content">
-                            <p>No paperwork, no delays</p>
-                            <div class="accordion-content-item">
-                                <img src="assets/images/mobile_accordion_image_7.png" alt="UAE Pass Integration">
-                            </div>                            
-                            </div>  
+                                <p>No paperwork, no delays</p>
+                                <div class="accordion-content-item">
+                                    <img src="assets/images/mobile_accordion_image_7.png" alt="UAE Pass Integration">
+                                </div>
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-<scetion class="grid-icons-block">
-    <div class="container">
-        <div class="tag-line text-left">
-            <div class="badge badge-warning">Security & Compliance</div>
-            <h3 class="main-tagline left">Enterprise-Grade </br> Security. Government-</br>Level Compliance.</h3> 
-        </div>
-        <ul class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="112" height="156" viewBox="0 0 112 156" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M60.8066 115.197H50.8066V101.197H60.8066V115.197Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M111.781 99.6807L111.776 100.399C111.392 130.77 86.6518 155.272 56.1895 155.272L55.4717 155.268C25.1005 154.883 0.598633 130.143 0.598633 99.6807V63.6426H111.781V99.6807ZM10.5986 99.6807C10.5986 124.86 31.0103 145.272 56.1895 145.272C81.3688 145.272 101.781 124.86 101.781 99.6807V73.6426H10.5986V99.6807Z" fill="black"/>
-                        <path d="M56.8564 0.0898438C71.1925 0.0898447 84.942 5.78476 95.0791 15.9219C105.216 26.0589 110.911 39.8077 110.911 54.1436H100.911C100.911 42.4599 96.2694 31.2548 88.0078 22.9932C79.7461 14.7314 68.5403 10.0898 56.8564 10.0898C45.1727 10.09 33.9677 14.7315 25.7061 22.9932C17.4444 31.2548 12.8028 42.4598 12.8027 54.1436H2.80273C2.80285 39.8077 8.49775 26.0589 18.6348 15.9219C28.7718 5.78486 42.5206 0.089957 56.8564 0.0898438Z" fill="black"/>
-                    </svg>                                           
-                </div>
-                <p class="text-base">Escrow-secured transactions</p>
-            </li>
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="123" height="120" viewBox="0 0 123 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M122.33 70.8188C115.888 70.8188 109.509 72.0876 103.557 74.5528C97.6058 77.018 92.1981 80.6313 87.643 85.1864C83.0879 89.7415 79.4746 95.1492 77.0094 101.101C74.5442 107.052 73.2754 113.431 73.2754 119.873C73.2754 110.344 71.3986 100.909 67.7522 92.1054C66.0399 87.9715 63.9531 84.015 61.5234 80.2832M122.33 47.3138C112.802 47.3138 103.366 49.1905 94.5631 52.837C85.7599 56.4834 77.7611 61.828 71.0234 68.5657C67.4496 72.1394 64.2678 76.068 61.5234 80.2832M61.5234 80.2832C59.0938 84.015 57.007 87.9715 55.2947 92.1054C51.6483 100.909 49.7715 110.344 49.7715 119.872C49.7715 113.43 48.5027 107.052 46.0375 101.101C43.5723 95.1492 39.959 89.7415 35.4039 85.1864C30.8488 80.6313 25.4411 77.018 19.4895 74.5528C13.538 72.0876 7.15923 70.8188 0.717344 70.8188M61.5234 80.2832C58.7791 76.068 55.5972 72.1394 52.0235 68.5657C45.2858 61.828 37.287 56.4834 28.4838 52.837C19.6806 49.1905 10.2453 47.3138 0.716797 47.3138M78.0583 22.0594C78.0648 26.4448 76.329 30.6532 73.2327 33.7588C70.1364 36.8644 65.9332 38.6128 61.5477 38.6194C57.1623 38.626 52.9539 36.8902 49.8483 33.7938C46.7427 30.6975 44.9943 26.4943 44.9877 22.1089C44.9812 17.7234 46.717 13.515 49.8133 10.4094C52.9096 7.30381 57.1128 5.55541 61.4983 5.54885C65.8837 5.54229 70.0921 7.2781 73.1977 10.3744C76.3033 13.4708 78.0517 17.674 78.0583 22.0594Z" stroke="black" stroke-width="10"/>
-                    </svg>                                                                  
-                </div>
-                <p class="text-base">Worker–Company–Permit validation</p>
-            </li>      
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="118" height="123" viewBox="0 0 118 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M107.828 122.082C107.828 109.072 102.66 96.5948 93.4604 87.3953C84.2609 78.1959 71.7838 73.0277 58.7739 73.0277C45.7639 73.0277 33.2868 78.1959 24.0874 87.3953C14.8879 96.5948 9.71973 109.072 9.71973 122.082M0.524414 58.4902H58.3135M58.3135 58.4902H59.3115M58.3135 58.4902L60.0439 60.2207M58.3135 58.4902L25.959 26.1357M59.3115 58.4902H117.024M59.3115 58.4902L59.3115 0.435547M61.6299 58.0957L93.5889 26.1367" stroke="black" stroke-width="9"/>
-                    </svg>                                                                                   
-                </div>
-                <p class="text-base">No unnecessary personal data stored</p>
-            </li>  
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="133" height="142" viewBox="0 0 133 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M65.4424 63.4434V116.767C65.4424 127.518 74.1582 136.234 84.9096 136.234M127.523 66.9961C127.523 50.7516 121.07 35.1724 109.584 23.6858C98.0971 12.1992 82.518 5.74609 66.2734 5.74609C50.0289 5.74609 34.4498 12.1992 22.9632 23.6858C11.4765 35.1724 5.02344 50.7516 5.02344 66.9961M127.523 66.995C127.523 55.4112 122.922 44.3019 114.731 36.111C106.54 27.92 95.4303 23.3184 83.8466 23.3184C72.2628 23.3184 61.1535 27.92 52.9625 36.1109C44.7716 44.3019 40.1699 55.4112 40.1699 66.995" stroke="black" stroke-width="10"/>
-                    </svg>                                                                                                                
-                </div>
-                <p class="text-base">Blacklist & insurance verification (MOHRE-ready)</p>
-            </li>    
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="207" height="105" viewBox="0 0 207 105" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M103.628 0.935547C130.974 0.935552 157.2 11.7992 176.537 31.1357C193.922 48.521 204.455 71.4753 206.405 95.8057C206.624 98.2176 206.737 100.647 206.737 103.089H206.731C206.734 103.407 206.737 103.725 206.737 104.044H196.736C196.736 92.3602 192.094 81.1552 183.833 72.8936C175.571 64.6318 164.365 59.9902 152.681 59.9902C151.551 59.9902 150.426 60.0342 149.307 60.1201C157.35 72.8848 161.717 87.7614 161.717 103.089H151.717C151.717 88.366 147.118 74.1178 138.715 62.2637C132.3 64.4082 126.404 68.0208 121.531 72.8936C113.282 81.1425 108.642 92.3259 108.627 103.99C108.627 104.008 108.628 104.026 108.628 104.044H98.6274C98.6274 104.026 98.6274 104.008 98.6274 103.99C98.6131 92.3259 93.974 81.1425 85.7251 72.8936C80.8524 68.0209 74.9554 64.4082 68.5405 62.2637C60.1385 74.1177 55.5396 88.3661 55.5396 103.089H45.5396C45.5396 87.7618 49.9051 72.8846 57.9478 60.1201C56.829 60.0342 55.7036 59.9902 54.5737 59.9902C42.89 59.9903 31.685 64.6319 23.4233 72.8936C15.4198 80.8971 10.8138 91.6629 10.5337 102.95L10.52 104.044H0.52002C0.520021 103.814 0.520998 103.584 0.523926 103.354C0.524517 103.266 0.52506 103.177 0.525879 103.089H0.52002C0.52002 100.647 0.632323 98.2176 0.851074 95.8057C2.80047 71.4753 13.3349 48.521 30.7202 31.1357C50.0568 11.7992 76.2824 0.935542 103.628 0.935547ZM103.628 36.1758C93.3977 39.6176 83.9937 45.3916 76.2173 53.168C75.904 53.4813 75.5944 53.7977 75.2876 54.1162C81.7733 56.8069 87.7351 60.761 92.7964 65.8223C97.3349 70.3608 100.982 75.6238 103.627 81.3389C106.273 75.6236 109.921 70.3609 114.459 65.8223C119.521 60.7608 125.482 56.8059 131.968 54.1152C131.662 53.797 131.353 53.4809 131.04 53.168C123.263 45.3916 113.859 39.6176 103.628 36.1758ZM126.138 32.4902C124.222 32.4902 122.315 32.5687 120.419 32.7227C126.849 36.3132 132.811 40.7971 138.111 46.0967C139.67 47.6562 141.158 49.2741 142.575 50.9434C145.883 50.3137 149.265 49.9903 152.681 49.9902C162.334 49.9902 171.721 52.5721 179.918 57.3535C178.693 55.9125 177.407 54.5154 176.059 53.168C162.819 39.9282 144.862 32.4902 126.138 32.4902ZM81.1187 32.4902C62.3947 32.4902 44.4376 39.9282 31.1978 53.168C29.8508 54.5149 28.5645 55.9111 27.3394 57.3516C35.5359 52.5711 44.9219 49.9903 54.5737 49.9902C57.9899 49.9902 61.3726 50.3145 64.6812 50.9443C66.0979 49.2747 67.5861 47.6566 69.146 46.0967C74.4454 40.7973 80.4074 36.3131 86.8364 32.7227C84.9413 32.5687 83.034 32.4902 81.1187 32.4902ZM103.628 10.9355C83.1375 10.9355 63.3426 17.6898 47.2212 29.9658C57.7443 25.088 69.2974 22.4902 81.1187 22.4902C88.8049 22.4902 96.3782 23.5874 103.628 25.6963C110.879 23.5874 118.452 22.4902 126.138 22.4902C137.959 22.4902 149.512 25.0882 160.035 29.9658C143.913 17.6901 124.119 10.9356 103.628 10.9355Z" fill="black"/>
-                    </svg>                                                                                                        
-                </div>
-                <p class="text-base">Secure data exchange with government systems</p>
-            </li> 
-            <li class="flex flex-col items-center text-center p-4 justify-center">
-                <div class="">
-                    <svg width="207" height="107" viewBox="0 0 207 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M152.912 52.3242C167.248 52.3242 180.998 58.0193 191.135 68.1563C201.272 78.2932 206.967 92.0422 206.967 106.378H196.967C196.967 94.6944 192.325 83.4891 184.063 75.2276C175.802 66.9659 164.596 62.3242 152.912 62.3242C147.918 62.3243 143.013 63.175 138.387 64.791C139.664 65.8512 140.897 66.973 142.08 68.1563C152.217 78.2932 157.912 92.0422 157.912 106.378H147.912C147.912 94.6944 143.27 83.4891 135.009 75.2276C132.968 73.1871 130.747 71.3686 128.385 69.7852C126.023 71.3685 123.802 73.1872 121.762 75.2276C113.5 83.4891 108.859 94.6944 108.858 106.378H98.8574C98.8572 94.6944 94.2156 83.4891 85.9541 75.2276C83.9136 73.1871 81.6926 71.3686 79.3301 69.7852C76.9678 71.3685 74.7474 73.1872 72.707 75.2276C64.4455 83.4891 59.8039 94.6944 59.8037 106.378H49.8037C49.8039 92.0422 55.4988 78.2932 65.6357 68.1563C66.8188 66.9732 68.0515 65.8511 69.3281 64.791C64.7017 63.1751 59.7963 62.3242 54.8027 62.3242C43.1191 62.3244 31.914 66.966 23.6523 75.2276C15.3908 83.4891 10.7492 94.6944 10.749 106.378H0.749023C0.749231 92.0422 6.44412 78.2932 16.5811 68.1563C26.7181 58.0194 40.4669 52.3244 54.8027 52.3242C63.4081 52.3242 71.8018 54.377 79.3301 58.21C86.8582 54.3769 95.252 52.3243 103.857 52.3242C112.463 52.3242 120.857 54.377 128.385 58.21C135.913 54.3769 144.307 52.3243 152.912 52.3242ZM103.857 62.3242C98.8638 62.3243 93.9584 63.175 89.332 64.791C90.6089 65.8512 91.8421 66.973 93.0254 68.1563C97.5644 72.6953 101.212 77.9591 103.857 83.6748C106.503 77.9589 110.151 72.6954 114.69 68.1563C115.873 66.9732 117.106 65.8511 118.383 64.791C113.756 63.1751 108.851 62.3242 103.857 62.3242Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5039 0.0508048C57.2151 0.0423719 62.6957 2.30363 66.7402 6.33596C70.7848 10.3685 73.0618 15.8433 73.0703 21.5547C73.0787 27.2659 70.8184 32.7465 66.7861 36.791C62.7537 40.8355 57.2796 43.1125 51.5684 43.1211C45.857 43.1297 40.3757 40.8694 36.3311 36.8369C32.2865 32.8045 30.0097 27.3304 30.001 21.6192C29.9924 15.9077 32.2535 10.4256 36.2861 6.38088C40.3187 2.33662 45.7927 0.0593497 51.5039 0.0508048ZM51.5186 10.0508C48.4595 10.0554 45.5271 11.2752 43.3672 13.4414C41.2071 15.6079 39.9954 18.5442 40 21.6035C40.0046 24.6628 41.2242 27.5958 43.3906 29.7559C45.5571 31.9158 48.4935 33.1256 51.5527 33.1211C54.6121 33.1165 57.545 31.897 59.7051 29.7305C61.8649 27.564 63.0749 24.6276 63.0703 21.5684C63.0656 18.5095 61.8467 15.5778 59.6807 13.418C57.5142 11.258 54.5778 10.0463 51.5186 10.0508Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M103.826 0.0508048C109.537 0.0423719 115.018 2.30363 119.062 6.33596C123.107 10.3685 125.384 15.8433 125.393 21.5547C125.401 27.2659 123.141 32.7465 119.108 36.791C115.076 40.8355 109.602 43.1125 103.891 43.1211C98.1792 43.1297 92.698 40.8694 88.6533 36.8369C84.6088 32.8045 82.332 27.3304 82.3232 21.6192C82.3147 15.9077 84.5758 10.4256 88.6084 6.38088C92.6409 2.33662 98.115 0.0593497 103.826 0.0508048ZM103.841 10.0508C100.782 10.0554 97.8494 11.2752 95.6895 13.4414C93.5294 15.6079 92.3177 18.5442 92.3223 21.6035C92.3269 24.6628 93.5464 27.5958 95.7129 29.7559C97.8793 31.9158 100.816 33.1256 103.875 33.1211C106.934 33.1165 109.867 31.897 112.027 29.7305C114.187 27.564 115.397 24.6276 115.393 21.5684C115.388 18.5095 114.169 15.5778 112.003 13.418C109.836 11.258 106.9 10.0463 103.841 10.0508Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.148 0.0508048C161.86 0.0423719 167.34 2.30363 171.385 6.33596C175.429 10.3685 177.706 15.8433 177.715 21.5547C177.723 27.2659 175.463 32.7465 171.431 36.791C167.398 40.8355 161.924 43.1125 156.213 43.1211C150.501 43.1297 145.02 40.8694 140.976 36.8369C136.931 32.8045 134.654 27.3304 134.646 21.6192C134.637 15.9077 136.898 10.4256 140.931 6.38088C144.963 2.33662 150.437 0.0593497 156.148 0.0508048ZM156.163 10.0508C153.104 10.0554 150.172 11.2752 148.012 13.4414C145.852 15.6079 144.64 18.5442 144.645 21.6035C144.649 24.6628 145.869 27.5958 148.035 29.7559C150.202 31.9158 153.138 33.1256 156.197 33.1211C159.257 33.1165 162.19 31.897 164.35 29.7305C166.509 27.564 167.719 24.6276 167.715 21.5684C167.71 18.5095 166.491 15.5778 164.325 13.418C162.159 11.258 159.222 10.0463 156.163 10.0508Z" fill="black"/>
-                    </svg>                                                                                                               
-                </div>
-                <p class="text-base">Data residency within the UAE</p>
-            </li>                                                                     
-        </ul> 
-        <div class="disclimer">
-            <p>*AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance requirements of UAE authorities.</p>
-        </div>
-    </div>
-</scetion>
-    
- <section class="cta-block">
-    
-    <div class="container-fluid">
-        <div class="cta-block-bg">
-            <div class="desktop">
-            <svg width="1840" height="484" viewBox="0 0 1840 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_34)">
-                <rect width="1840" height="484" rx="12" fill="#0A332C"/>
-                <path d="M1991.74 374.158L1894.75 542.156C1894.75 542.156 785.357 -98.3495 -170 632C-170 632 476.631 -229.747 1991.74 374.158Z" fill="#0C3C33"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_1_34">
-                <rect width="1840" height="484" rx="12" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>    
+    <scetion class="grid-icons-block">
+        <div class="container">
+            <div class="tag-line text-left">
+                <div class="badge badge-warning">Security & Compliance</div>
+                <h3 class="main-tagline left">Enterprise-Grade </br> Security. Government-</br>Level Compliance.</h3>
             </div>
-            <div class="mobile">
-                <svg width="335" height="374" viewBox="0 0 335 374" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_3_3)">
-                    <rect width="335" height="374" rx="8" fill="#0A332C"/>
-                    <path d="M822.297 -119.582V-10.2096C822.297 -10.2096 100.05 -10.2096 -160.536 615.72C-160.536 615.72 -87.734 12.6638 822.297 -119.582Z" fill="#0C3C33"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_3_3">
-                    <rect width="335" height="374" rx="8" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>                                   
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="112" height="156" viewBox="0 0 112 156" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.8066 115.197H50.8066V101.197H60.8066V115.197Z" fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M111.781 99.6807L111.776 100.399C111.392 130.77 86.6518 155.272 56.1895 155.272L55.4717 155.268C25.1005 154.883 0.598633 130.143 0.598633 99.6807V63.6426H111.781V99.6807ZM10.5986 99.6807C10.5986 124.86 31.0103 145.272 56.1895 145.272C81.3688 145.272 101.781 124.86 101.781 99.6807V73.6426H10.5986V99.6807Z"
+                                fill="black" />
+                            <path
+                                d="M56.8564 0.0898438C71.1925 0.0898447 84.942 5.78476 95.0791 15.9219C105.216 26.0589 110.911 39.8077 110.911 54.1436H100.911C100.911 42.4599 96.2694 31.2548 88.0078 22.9932C79.7461 14.7314 68.5403 10.0898 56.8564 10.0898C45.1727 10.09 33.9677 14.7315 25.7061 22.9932C17.4444 31.2548 12.8028 42.4598 12.8027 54.1436H2.80273C2.80285 39.8077 8.49775 26.0589 18.6348 15.9219C28.7718 5.78486 42.5206 0.089957 56.8564 0.0898438Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p class="text-base">Escrow-secured transactions</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="123" height="120" viewBox="0 0 123 120" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M122.33 70.8188C115.888 70.8188 109.509 72.0876 103.557 74.5528C97.6058 77.018 92.1981 80.6313 87.643 85.1864C83.0879 89.7415 79.4746 95.1492 77.0094 101.101C74.5442 107.052 73.2754 113.431 73.2754 119.873C73.2754 110.344 71.3986 100.909 67.7522 92.1054C66.0399 87.9715 63.9531 84.015 61.5234 80.2832M122.33 47.3138C112.802 47.3138 103.366 49.1905 94.5631 52.837C85.7599 56.4834 77.7611 61.828 71.0234 68.5657C67.4496 72.1394 64.2678 76.068 61.5234 80.2832M61.5234 80.2832C59.0938 84.015 57.007 87.9715 55.2947 92.1054C51.6483 100.909 49.7715 110.344 49.7715 119.872C49.7715 113.43 48.5027 107.052 46.0375 101.101C43.5723 95.1492 39.959 89.7415 35.4039 85.1864C30.8488 80.6313 25.4411 77.018 19.4895 74.5528C13.538 72.0876 7.15923 70.8188 0.717344 70.8188M61.5234 80.2832C58.7791 76.068 55.5972 72.1394 52.0235 68.5657C45.2858 61.828 37.287 56.4834 28.4838 52.837C19.6806 49.1905 10.2453 47.3138 0.716797 47.3138M78.0583 22.0594C78.0648 26.4448 76.329 30.6532 73.2327 33.7588C70.1364 36.8644 65.9332 38.6128 61.5477 38.6194C57.1623 38.626 52.9539 36.8902 49.8483 33.7938C46.7427 30.6975 44.9943 26.4943 44.9877 22.1089C44.9812 17.7234 46.717 13.515 49.8133 10.4094C52.9096 7.30381 57.1128 5.55541 61.4983 5.54885C65.8837 5.54229 70.0921 7.2781 73.1977 10.3744C76.3033 13.4708 78.0517 17.674 78.0583 22.0594Z"
+                                stroke="black" stroke-width="10" />
+                        </svg>
+                    </div>
+                    <p class="text-base">Worker–Company–Permit validation</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="118" height="123" viewBox="0 0 118 123" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M107.828 122.082C107.828 109.072 102.66 96.5948 93.4604 87.3953C84.2609 78.1959 71.7838 73.0277 58.7739 73.0277C45.7639 73.0277 33.2868 78.1959 24.0874 87.3953C14.8879 96.5948 9.71973 109.072 9.71973 122.082M0.524414 58.4902H58.3135M58.3135 58.4902H59.3115M58.3135 58.4902L60.0439 60.2207M58.3135 58.4902L25.959 26.1357M59.3115 58.4902H117.024M59.3115 58.4902L59.3115 0.435547M61.6299 58.0957L93.5889 26.1367"
+                                stroke="black" stroke-width="9" />
+                        </svg>
+                    </div>
+                    <p class="text-base">No unnecessary personal data stored</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="133" height="142" viewBox="0 0 133 142" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M65.4424 63.4434V116.767C65.4424 127.518 74.1582 136.234 84.9096 136.234M127.523 66.9961C127.523 50.7516 121.07 35.1724 109.584 23.6858C98.0971 12.1992 82.518 5.74609 66.2734 5.74609C50.0289 5.74609 34.4498 12.1992 22.9632 23.6858C11.4765 35.1724 5.02344 50.7516 5.02344 66.9961M127.523 66.995C127.523 55.4112 122.922 44.3019 114.731 36.111C106.54 27.92 95.4303 23.3184 83.8466 23.3184C72.2628 23.3184 61.1535 27.92 52.9625 36.1109C44.7716 44.3019 40.1699 55.4112 40.1699 66.995"
+                                stroke="black" stroke-width="10" />
+                        </svg>
+                    </div>
+                    <p class="text-base">Blacklist & insurance verification (MOHRE-ready)</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="207" height="105" viewBox="0 0 207 105" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M103.628 0.935547C130.974 0.935552 157.2 11.7992 176.537 31.1357C193.922 48.521 204.455 71.4753 206.405 95.8057C206.624 98.2176 206.737 100.647 206.737 103.089H206.731C206.734 103.407 206.737 103.725 206.737 104.044H196.736C196.736 92.3602 192.094 81.1552 183.833 72.8936C175.571 64.6318 164.365 59.9902 152.681 59.9902C151.551 59.9902 150.426 60.0342 149.307 60.1201C157.35 72.8848 161.717 87.7614 161.717 103.089H151.717C151.717 88.366 147.118 74.1178 138.715 62.2637C132.3 64.4082 126.404 68.0208 121.531 72.8936C113.282 81.1425 108.642 92.3259 108.627 103.99C108.627 104.008 108.628 104.026 108.628 104.044H98.6274C98.6274 104.026 98.6274 104.008 98.6274 103.99C98.6131 92.3259 93.974 81.1425 85.7251 72.8936C80.8524 68.0209 74.9554 64.4082 68.5405 62.2637C60.1385 74.1177 55.5396 88.3661 55.5396 103.089H45.5396C45.5396 87.7618 49.9051 72.8846 57.9478 60.1201C56.829 60.0342 55.7036 59.9902 54.5737 59.9902C42.89 59.9903 31.685 64.6319 23.4233 72.8936C15.4198 80.8971 10.8138 91.6629 10.5337 102.95L10.52 104.044H0.52002C0.520021 103.814 0.520998 103.584 0.523926 103.354C0.524517 103.266 0.52506 103.177 0.525879 103.089H0.52002C0.52002 100.647 0.632323 98.2176 0.851074 95.8057C2.80047 71.4753 13.3349 48.521 30.7202 31.1357C50.0568 11.7992 76.2824 0.935542 103.628 0.935547ZM103.628 36.1758C93.3977 39.6176 83.9937 45.3916 76.2173 53.168C75.904 53.4813 75.5944 53.7977 75.2876 54.1162C81.7733 56.8069 87.7351 60.761 92.7964 65.8223C97.3349 70.3608 100.982 75.6238 103.627 81.3389C106.273 75.6236 109.921 70.3609 114.459 65.8223C119.521 60.7608 125.482 56.8059 131.968 54.1152C131.662 53.797 131.353 53.4809 131.04 53.168C123.263 45.3916 113.859 39.6176 103.628 36.1758ZM126.138 32.4902C124.222 32.4902 122.315 32.5687 120.419 32.7227C126.849 36.3132 132.811 40.7971 138.111 46.0967C139.67 47.6562 141.158 49.2741 142.575 50.9434C145.883 50.3137 149.265 49.9903 152.681 49.9902C162.334 49.9902 171.721 52.5721 179.918 57.3535C178.693 55.9125 177.407 54.5154 176.059 53.168C162.819 39.9282 144.862 32.4902 126.138 32.4902ZM81.1187 32.4902C62.3947 32.4902 44.4376 39.9282 31.1978 53.168C29.8508 54.5149 28.5645 55.9111 27.3394 57.3516C35.5359 52.5711 44.9219 49.9903 54.5737 49.9902C57.9899 49.9902 61.3726 50.3145 64.6812 50.9443C66.0979 49.2747 67.5861 47.6566 69.146 46.0967C74.4454 40.7973 80.4074 36.3131 86.8364 32.7227C84.9413 32.5687 83.034 32.4902 81.1187 32.4902ZM103.628 10.9355C83.1375 10.9355 63.3426 17.6898 47.2212 29.9658C57.7443 25.088 69.2974 22.4902 81.1187 22.4902C88.8049 22.4902 96.3782 23.5874 103.628 25.6963C110.879 23.5874 118.452 22.4902 126.138 22.4902C137.959 22.4902 149.512 25.0882 160.035 29.9658C143.913 17.6901 124.119 10.9356 103.628 10.9355Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p class="text-base">Secure data exchange with government systems</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 justify-center">
+                    <div class="">
+                        <svg width="207" height="107" viewBox="0 0 207 107" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M152.912 52.3242C167.248 52.3242 180.998 58.0193 191.135 68.1563C201.272 78.2932 206.967 92.0422 206.967 106.378H196.967C196.967 94.6944 192.325 83.4891 184.063 75.2276C175.802 66.9659 164.596 62.3242 152.912 62.3242C147.918 62.3243 143.013 63.175 138.387 64.791C139.664 65.8512 140.897 66.973 142.08 68.1563C152.217 78.2932 157.912 92.0422 157.912 106.378H147.912C147.912 94.6944 143.27 83.4891 135.009 75.2276C132.968 73.1871 130.747 71.3686 128.385 69.7852C126.023 71.3685 123.802 73.1872 121.762 75.2276C113.5 83.4891 108.859 94.6944 108.858 106.378H98.8574C98.8572 94.6944 94.2156 83.4891 85.9541 75.2276C83.9136 73.1871 81.6926 71.3686 79.3301 69.7852C76.9678 71.3685 74.7474 73.1872 72.707 75.2276C64.4455 83.4891 59.8039 94.6944 59.8037 106.378H49.8037C49.8039 92.0422 55.4988 78.2932 65.6357 68.1563C66.8188 66.9732 68.0515 65.8511 69.3281 64.791C64.7017 63.1751 59.7963 62.3242 54.8027 62.3242C43.1191 62.3244 31.914 66.966 23.6523 75.2276C15.3908 83.4891 10.7492 94.6944 10.749 106.378H0.749023C0.749231 92.0422 6.44412 78.2932 16.5811 68.1563C26.7181 58.0194 40.4669 52.3244 54.8027 52.3242C63.4081 52.3242 71.8018 54.377 79.3301 58.21C86.8582 54.3769 95.252 52.3243 103.857 52.3242C112.463 52.3242 120.857 54.377 128.385 58.21C135.913 54.3769 144.307 52.3243 152.912 52.3242ZM103.857 62.3242C98.8638 62.3243 93.9584 63.175 89.332 64.791C90.6089 65.8512 91.8421 66.973 93.0254 68.1563C97.5644 72.6953 101.212 77.9591 103.857 83.6748C106.503 77.9589 110.151 72.6954 114.69 68.1563C115.873 66.9732 117.106 65.8511 118.383 64.791C113.756 63.1751 108.851 62.3242 103.857 62.3242Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M51.5039 0.0508048C57.2151 0.0423719 62.6957 2.30363 66.7402 6.33596C70.7848 10.3685 73.0618 15.8433 73.0703 21.5547C73.0787 27.2659 70.8184 32.7465 66.7861 36.791C62.7537 40.8355 57.2796 43.1125 51.5684 43.1211C45.857 43.1297 40.3757 40.8694 36.3311 36.8369C32.2865 32.8045 30.0097 27.3304 30.001 21.6192C29.9924 15.9077 32.2535 10.4256 36.2861 6.38088C40.3187 2.33662 45.7927 0.0593497 51.5039 0.0508048ZM51.5186 10.0508C48.4595 10.0554 45.5271 11.2752 43.3672 13.4414C41.2071 15.6079 39.9954 18.5442 40 21.6035C40.0046 24.6628 41.2242 27.5958 43.3906 29.7559C45.5571 31.9158 48.4935 33.1256 51.5527 33.1211C54.6121 33.1165 57.545 31.897 59.7051 29.7305C61.8649 27.564 63.0749 24.6276 63.0703 21.5684C63.0656 18.5095 61.8467 15.5778 59.6807 13.418C57.5142 11.258 54.5778 10.0463 51.5186 10.0508Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M103.826 0.0508048C109.537 0.0423719 115.018 2.30363 119.062 6.33596C123.107 10.3685 125.384 15.8433 125.393 21.5547C125.401 27.2659 123.141 32.7465 119.108 36.791C115.076 40.8355 109.602 43.1125 103.891 43.1211C98.1792 43.1297 92.698 40.8694 88.6533 36.8369C84.6088 32.8045 82.332 27.3304 82.3232 21.6192C82.3147 15.9077 84.5758 10.4256 88.6084 6.38088C92.6409 2.33662 98.115 0.0593497 103.826 0.0508048ZM103.841 10.0508C100.782 10.0554 97.8494 11.2752 95.6895 13.4414C93.5294 15.6079 92.3177 18.5442 92.3223 21.6035C92.3269 24.6628 93.5464 27.5958 95.7129 29.7559C97.8793 31.9158 100.816 33.1256 103.875 33.1211C106.934 33.1165 109.867 31.897 112.027 29.7305C114.187 27.564 115.397 24.6276 115.393 21.5684C115.388 18.5095 114.169 15.5778 112.003 13.418C109.836 11.258 106.9 10.0463 103.841 10.0508Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M156.148 0.0508048C161.86 0.0423719 167.34 2.30363 171.385 6.33596C175.429 10.3685 177.706 15.8433 177.715 21.5547C177.723 27.2659 175.463 32.7465 171.431 36.791C167.398 40.8355 161.924 43.1125 156.213 43.1211C150.501 43.1297 145.02 40.8694 140.976 36.8369C136.931 32.8045 134.654 27.3304 134.646 21.6192C134.637 15.9077 136.898 10.4256 140.931 6.38088C144.963 2.33662 150.437 0.0593497 156.148 0.0508048ZM156.163 10.0508C153.104 10.0554 150.172 11.2752 148.012 13.4414C145.852 15.6079 144.64 18.5442 144.645 21.6035C144.649 24.6628 145.869 27.5958 148.035 29.7559C150.202 31.9158 153.138 33.1256 156.197 33.1211C159.257 33.1165 162.19 31.897 164.35 29.7305C166.509 27.564 167.719 24.6276 167.715 21.5684C167.71 18.5095 166.491 15.5778 164.325 13.418C162.159 11.258 159.222 10.0463 156.163 10.0508Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p class="text-base">Data residency within the UAE</p>
+                </li>
+            </ul>
+            <div class="disclimer">
+                <p>*AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and
+                    compliance requirements of UAE authorities.</p>
             </div>
-            <div class="cta-block-content">
-                <div class="cta-block-content-inner container text-center">
-                    <span class="cta-block-content-title ">Start Exchanging Labor Today - Securely and Seamlessly</span>
-                    <a href="#" class="cta-block-content-button">Get Started</a>
-                </div>
-            </div>                                
-        </div>        
+        </div>
+    </scetion>
 
-    </div>
- </section>
-    
- 
+    <section class="cta-block">
+
+        <div class="container-fluid">
+            <div class="cta-block-bg">
+                <div class="desktop">
+                    <svg width="1840" height="484" viewBox="0 0 1840 484" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_34)">
+                            <rect width="1840" height="484" rx="12" fill="#0A332C" />
+                            <path
+                                d="M1991.74 374.158L1894.75 542.156C1894.75 542.156 785.357 -98.3495 -170 632C-170 632 476.631 -229.747 1991.74 374.158Z"
+                                fill="#0C3C33" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_34">
+                                <rect width="1840" height="484" rx="12" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="mobile">
+                    <svg width="335" height="374" viewBox="0 0 335 374" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3_3)">
+                            <rect width="335" height="374" rx="8" fill="#0A332C" />
+                            <path
+                                d="M822.297 -119.582V-10.2096C822.297 -10.2096 100.05 -10.2096 -160.536 615.72C-160.536 615.72 -87.734 12.6638 822.297 -119.582Z"
+                                fill="#0C3C33" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3_3">
+                                <rect width="335" height="374" rx="8" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="cta-block-content">
+                    <div class="cta-block-content-inner container text-center">
+                        <span class="cta-block-content-title ">Start Exchanging Labor Today - Securely and
+                            Seamlessly</span>
+                        <a href="#" class="cta-block-content-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 
     <!-- COMPONENT: FOOTER -->
     <footer class="footer flex-col md:flex-row">
         <aside>
             <svg width="180" height="108" viewBox="0 0 180 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_849_853)">
-                <path d="M34.4438 94.4819C33.3513 94.4819 32.4737 94.7951 31.8127 95.4197C31.1517 96.0442 30.8203 96.88 30.8203 97.9234V104.078C30.8203 105.121 31.1517 105.957 31.8127 106.582C32.4737 107.206 33.3513 107.519 34.4438 107.519C35.5363 107.519 36.4158 107.206 37.0841 106.582C37.7523 105.957 38.0855 105.121 38.0855 104.078V100.709C38.0855 100.649 38.0637 100.596 38.0218 100.555C37.9799 100.513 37.9271 100.491 37.867 100.491H34.6259C34.5658 100.491 34.513 100.513 34.4711 100.555C34.4293 100.596 34.4074 100.649 34.4074 100.709V102.33C34.4074 102.39 34.4293 102.443 34.4711 102.485C34.513 102.527 34.5658 102.548 34.6259 102.548H35.4271C35.4872 102.548 35.5181 102.579 35.5181 102.639V104.096C35.5181 104.46 35.4216 104.755 35.2268 104.979C35.032 105.203 34.7716 105.316 34.4438 105.316C34.1161 105.316 33.8739 105.203 33.6791 104.979C33.4842 104.755 33.3877 104.46 33.3877 104.096V97.9052C33.3877 97.541 33.4842 97.246 33.6791 97.022C33.8739 96.7981 34.1288 96.6852 34.4438 96.6852C34.7588 96.6852 35.032 96.7981 35.2268 97.022C35.4216 97.246 35.5181 97.541 35.5181 97.9052V98.6335C35.5181 98.6936 35.54 98.7464 35.5819 98.7883C35.6237 98.8301 35.6765 98.852 35.7366 98.852H37.867C37.9271 98.852 37.9799 98.8301 38.0218 98.7883C38.0637 98.7464 38.0855 98.6936 38.0855 98.6335V97.9416C38.0855 96.8982 37.7523 96.0606 37.0841 95.4288C36.4158 94.7969 35.5363 94.4819 34.4438 94.4819Z" fill="#1E1F24"/>
-                <path d="M49.9758 94.6279H43.7302C43.6701 94.6279 43.6175 94.6498 43.5756 94.6917C43.5338 94.7335 43.5117 94.7863 43.5117 94.8464V107.155C43.5117 107.216 43.5338 107.268 43.5756 107.31C43.6175 107.352 43.6701 107.374 43.7302 107.374H49.9758C50.0359 107.374 50.0889 107.352 50.1307 107.31C50.1726 107.268 50.1943 107.216 50.1943 107.155V105.389C50.1943 105.329 50.1726 105.276 50.1307 105.234C50.0889 105.193 50.0359 105.171 49.9758 105.171H46.1704C46.1103 105.171 46.0793 105.14 46.0793 105.08V102.185C46.0793 102.124 46.1103 102.093 46.1704 102.093H48.3554C48.4155 102.093 48.4681 102.072 48.51 102.03C48.5519 101.988 48.5739 101.935 48.5739 101.875V100.109C48.5739 100.049 48.5519 99.9958 48.51 99.9539C48.4681 99.9121 48.4155 99.8902 48.3554 99.8902H46.1704C46.1103 99.8902 46.0793 99.8593 46.0793 99.7992V96.9222C46.0793 96.8621 46.1103 96.8312 46.1704 96.8312H49.9758C50.0359 96.8312 50.0889 96.8093 50.1307 96.7674C50.1726 96.7256 50.1943 96.6728 50.1943 96.6127V94.8464C50.1943 94.7863 50.1726 94.7335 50.1307 94.6917C50.0889 94.6498 50.0359 94.6279 49.9758 94.6279Z" fill="#1E1F24"/>
-                <path d="M62.558 94.6279H55.3474C55.2873 94.6279 55.2345 94.6498 55.1926 94.6917C55.1508 94.7335 55.1289 94.7863 55.1289 94.8464V96.6127C55.1289 96.6728 55.1508 96.7256 55.1926 96.7674C55.2345 96.8093 55.2873 96.8312 55.3474 96.8312H57.5324C57.5925 96.8312 57.6235 96.8621 57.6235 96.9222V107.155C57.6235 107.216 57.6453 107.268 57.6872 107.31C57.7291 107.352 57.7819 107.374 57.842 107.374H59.9724C60.0325 107.374 60.0853 107.352 60.1272 107.31C60.169 107.268 60.1909 107.216 60.1909 107.155V96.9222C60.1909 96.8621 60.2219 96.8312 60.2819 96.8312H62.558C62.6181 96.8312 62.6709 96.8093 62.7128 96.7674C62.7547 96.7256 62.7765 96.6728 62.7765 96.6127V94.8464C62.7765 94.7863 62.7547 94.7335 62.7128 94.6917C62.6709 94.6498 62.6181 94.6279 62.558 94.6279Z" fill="#1E1F24"/>
-                <path d="M78.0159 94.6279H75.8855C75.8254 94.6279 75.7726 94.6498 75.7307 94.6917C75.6888 94.7335 75.667 94.7863 75.667 94.8464V107.155C75.667 107.216 75.6888 107.268 75.7307 107.31C75.7726 107.352 75.8254 107.374 75.8855 107.374H78.0159C78.076 107.374 78.1288 107.352 78.1707 107.31C78.2126 107.268 78.2344 107.216 78.2344 107.155V94.8464C78.2344 94.7863 78.2126 94.7335 78.1707 94.6917C78.1288 94.6498 78.076 94.6279 78.0159 94.6279Z" fill="#1E1F24"/>
-                <path d="M90.9262 94.6279H83.7156C83.6555 94.6279 83.6027 94.6498 83.5608 94.6917C83.5189 94.7335 83.4971 94.7863 83.4971 94.8464V96.6127C83.4971 96.6728 83.5189 96.7256 83.5608 96.7674C83.6027 96.8093 83.6555 96.8312 83.7156 96.8312H85.9006C85.9607 96.8312 85.9917 96.8621 85.9917 96.9222V107.155C85.9917 107.216 86.0135 107.268 86.0554 107.31C86.0973 107.352 86.1501 107.374 86.2102 107.374H88.3406C88.4007 107.374 88.4535 107.352 88.4953 107.31C88.5372 107.268 88.5591 107.216 88.5591 107.155V96.9222C88.5591 96.8621 88.59 96.8312 88.6501 96.8312H90.9262C90.9863 96.8312 91.0391 96.8093 91.081 96.7674C91.1228 96.7256 91.1447 96.6728 91.1447 96.6127V94.8464C91.1447 94.7863 91.1228 94.7335 91.081 94.6917C91.0391 94.6498 90.9863 94.6279 90.9262 94.6279Z" fill="#1E1F24"/>
-                <path d="M107.551 94.6279H104.256C104.196 94.6279 104.143 94.6498 104.101 94.6917C104.059 94.7335 104.037 94.7863 104.037 94.8464V107.155C104.037 107.216 104.059 107.268 104.101 107.31C104.143 107.352 104.196 107.374 104.256 107.374H107.551C108.657 107.374 109.542 107.052 110.21 106.409C110.878 105.766 111.211 104.91 111.211 103.841V98.1604C111.211 97.0916 110.878 96.2357 110.21 95.593C109.542 94.9502 108.657 94.6279 107.551 94.6279ZM108.644 103.678C108.631 104.115 108.522 104.466 108.316 104.734C108.11 105.001 107.843 105.14 107.515 105.153L106.696 105.171C106.635 105.171 106.605 105.14 106.605 105.08V96.9222C106.605 96.8621 106.635 96.8312 106.696 96.8312H107.497C107.848 96.8312 108.127 96.9641 108.334 97.2318C108.54 97.4994 108.644 97.8636 108.644 98.3243V103.678Z" fill="#1E1F24"/>
-                <path d="M120.207 94.4819C119.09 94.4819 118.198 94.8097 117.53 95.4652C116.862 96.1207 116.528 96.9947 116.528 98.0872V103.914C116.528 105.007 116.862 105.881 117.53 106.536C118.198 107.192 119.09 107.519 120.207 107.519C121.323 107.519 122.219 107.192 122.892 106.536C123.566 105.881 123.903 105.007 123.903 103.914V98.0872C123.903 96.9947 123.566 96.1207 122.892 95.4652C122.219 94.8097 121.323 94.4819 120.207 94.4819ZM121.335 104.023C121.335 104.411 121.232 104.724 121.026 104.961C120.82 105.198 120.547 105.316 120.207 105.316C119.866 105.316 119.596 105.198 119.396 104.961C119.196 104.724 119.096 104.411 119.096 104.023V97.978C119.096 97.5901 119.196 97.277 119.396 97.0402C119.596 96.8035 119.866 96.6852 120.207 96.6852C120.547 96.6852 120.82 96.8035 121.026 97.0402C121.232 97.277 121.335 97.5901 121.335 97.978V104.023Z" fill="#1E1F24"/>
-                <path d="M136.867 94.6279H134.755C134.695 94.6279 134.642 94.6498 134.6 94.6917C134.559 94.7335 134.537 94.7863 134.537 94.8464L134.555 101.839C134.555 101.875 134.54 101.897 134.509 101.902C134.479 101.908 134.458 101.893 134.446 101.857L132.17 94.81C132.133 94.688 132.055 94.6279 131.933 94.6279H129.548C129.488 94.6279 129.435 94.6498 129.393 94.6917C129.351 94.7335 129.329 94.7863 129.329 94.8464V107.155C129.329 107.216 129.351 107.268 129.393 107.31C129.435 107.352 129.488 107.374 129.548 107.374H131.66C131.72 107.374 131.773 107.352 131.815 107.31C131.856 107.268 131.878 107.216 131.878 107.155L131.86 100.163C131.86 100.127 131.875 100.105 131.906 100.1C131.937 100.094 131.957 100.109 131.969 100.145L134.227 107.192C134.264 107.314 134.342 107.374 134.464 107.374H136.867C136.928 107.374 136.98 107.352 137.022 107.31C137.064 107.268 137.086 107.216 137.086 107.155V94.8464C137.086 94.7863 137.064 94.7335 137.022 94.6917C136.98 94.6498 136.928 94.6279 136.867 94.6279Z" fill="#1E1F24"/>
-                <path d="M149.157 94.6279H142.912C142.852 94.6279 142.799 94.6498 142.757 94.6917C142.715 94.7335 142.693 94.7863 142.693 94.8464V107.155C142.693 107.216 142.715 107.268 142.757 107.31C142.799 107.352 142.852 107.374 142.912 107.374H149.157C149.218 107.374 149.27 107.352 149.312 107.31C149.354 107.268 149.376 107.216 149.376 107.155V105.389C149.376 105.329 149.354 105.276 149.312 105.234C149.27 105.193 149.218 105.171 149.157 105.171H145.352C145.292 105.171 145.261 105.14 145.261 105.08V102.185C145.261 102.124 145.292 102.093 145.352 102.093H147.537C147.597 102.093 147.65 102.072 147.692 102.03C147.734 101.988 147.755 101.935 147.755 101.875V100.109C147.755 100.049 147.734 99.9958 147.692 99.9539C147.65 99.9121 147.597 99.8902 147.537 99.8902H145.352C145.292 99.8902 145.261 99.8593 145.261 99.7992V96.9222C145.261 96.8621 145.292 96.8312 145.352 96.8312H149.157C149.218 96.8312 149.27 96.8093 149.312 96.7674C149.354 96.7256 149.376 96.6728 149.376 96.6127V94.8464C149.376 94.7863 149.354 94.7335 149.312 94.6917C149.27 94.6498 149.218 94.6279 149.157 94.6279Z" fill="#1E1F24"/>
-                <path d="M65.6343 6.19019C66.2029 6.19019 66.7018 6.56914 66.854 7.11694L75.3452 37.7205C75.6888 38.9586 77.4453 38.9565 77.7856 37.7175L86.189 7.12085C86.3399 6.57133 86.8398 6.19028 87.4097 6.19019H97.9155C98.5831 6.19019 99.1364 6.70856 99.1792 7.37476L103.454 73.8679C105.611 76.3549 107.241 78.6292 108.419 80.4675C108.75 80.9835 108.161 81.3596 107.769 80.8884C103.312 75.5278 94.3626 66.1793 82.1069 60.3318C73.0841 56.0267 63.2364 53.7917 53.2915 53.7908C49.7869 53.7905 46.3019 54.0685 42.8677 54.616L47.4419 75.5398C47.6144 76.329 47.0133 77.0756 46.2056 77.0759H35.0249C34.551 77.0758 34.1443 76.7388 34.0562 76.2732L33.5688 73.696C32.7063 69.1367 28.7218 65.8359 24.0815 65.8357C19.4412 65.8357 15.4569 69.1366 14.5942 73.696L14.1069 76.2732C14.0188 76.7389 13.6112 77.0759 13.1372 77.0759H0.182129L0.193848 77.0193C0.09338 76.9376 0.0615427 76.784 0.154785 76.6677C6.46474 68.7985 14.4507 62.4391 23.5454 58.0466C32.1267 53.9022 41.4906 51.6084 51.0376 51.2966L53.8628 7.37476C53.9056 6.7086 54.458 6.19024 55.1255 6.19019H65.6343ZM144.365 6.19019C145.064 6.19031 145.63 6.75679 145.63 7.45581V17.0759C145.63 17.7749 145.064 18.3414 144.365 18.3416H126.947C126.248 18.3416 125.681 18.9091 125.681 19.6082V33.9871C125.681 34.6861 126.248 35.2537 126.947 35.2537H141.934C142.633 35.2537 143.2 35.8202 143.2 36.5193V45.7341C143.2 46.4332 142.633 46.9998 141.934 46.9998H126.947C126.248 46.9998 125.681 47.5673 125.681 48.2664V64.0632C125.681 64.7623 126.248 65.3288 126.947 65.3289H144.77C145.469 65.3291 146.036 65.8965 146.036 66.5955V75.8103C146.036 76.5092 145.469 77.0757 144.77 77.0759H113.074C112.375 77.0759 111.807 76.5094 111.807 75.8103V7.45581C111.807 6.75672 112.375 6.19019 113.074 6.19019H144.365ZM166.991 6.19019C167.69 6.19039 168.256 6.75684 168.256 7.45581V64.0632C168.256 64.7623 168.823 65.3288 169.522 65.3289H185.522C186.221 65.3289 186.788 65.8964 186.788 66.5955V75.8103C186.788 76.5094 186.221 77.0759 185.522 77.0759H155.649C154.95 77.0759 154.382 76.5094 154.382 75.8103V7.45581C154.382 6.75672 154.95 6.19019 155.649 6.19019H166.991ZM30.2456 6.19019C31.4355 6.19019 32.4652 7.01896 32.7192 8.1814L41.1763 46.8757C37.1104 47.4901 33.1527 48.4341 29.3315 49.6804L28.0308 42.95L25.7778 31.3308C25.4087 29.4272 22.6889 29.4135 22.3013 31.3132L19.9292 42.95L17.7808 54.571C12.4235 57.3984 7.45453 60.863 2.97412 64.863L15.9351 8.15796C16.1981 7.00695 17.2222 6.1904 18.4028 6.19019H30.2456ZM88.4917 39.863C88.4154 38.3713 86.2707 38.2192 85.9849 39.6853L82.4731 57.7078C82.715 57.8198 82.957 57.9328 83.1978 58.0476C85.5054 59.2538 87.64 60.5228 89.6138 61.823L88.4917 39.863ZM67.0562 39.6853C66.7702 38.2194 64.6257 38.3713 64.5493 39.863L63.9243 52.0828C65.8632 52.3848 67.7887 52.7697 69.6958 53.2351L67.0562 39.6853Z" fill="#1E1F24"/>
+                    <path
+                        d="M34.4438 94.4819C33.3513 94.4819 32.4737 94.7951 31.8127 95.4197C31.1517 96.0442 30.8203 96.88 30.8203 97.9234V104.078C30.8203 105.121 31.1517 105.957 31.8127 106.582C32.4737 107.206 33.3513 107.519 34.4438 107.519C35.5363 107.519 36.4158 107.206 37.0841 106.582C37.7523 105.957 38.0855 105.121 38.0855 104.078V100.709C38.0855 100.649 38.0637 100.596 38.0218 100.555C37.9799 100.513 37.9271 100.491 37.867 100.491H34.6259C34.5658 100.491 34.513 100.513 34.4711 100.555C34.4293 100.596 34.4074 100.649 34.4074 100.709V102.33C34.4074 102.39 34.4293 102.443 34.4711 102.485C34.513 102.527 34.5658 102.548 34.6259 102.548H35.4271C35.4872 102.548 35.5181 102.579 35.5181 102.639V104.096C35.5181 104.46 35.4216 104.755 35.2268 104.979C35.032 105.203 34.7716 105.316 34.4438 105.316C34.1161 105.316 33.8739 105.203 33.6791 104.979C33.4842 104.755 33.3877 104.46 33.3877 104.096V97.9052C33.3877 97.541 33.4842 97.246 33.6791 97.022C33.8739 96.7981 34.1288 96.6852 34.4438 96.6852C34.7588 96.6852 35.032 96.7981 35.2268 97.022C35.4216 97.246 35.5181 97.541 35.5181 97.9052V98.6335C35.5181 98.6936 35.54 98.7464 35.5819 98.7883C35.6237 98.8301 35.6765 98.852 35.7366 98.852H37.867C37.9271 98.852 37.9799 98.8301 38.0218 98.7883C38.0637 98.7464 38.0855 98.6936 38.0855 98.6335V97.9416C38.0855 96.8982 37.7523 96.0606 37.0841 95.4288C36.4158 94.7969 35.5363 94.4819 34.4438 94.4819Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M49.9758 94.6279H43.7302C43.6701 94.6279 43.6175 94.6498 43.5756 94.6917C43.5338 94.7335 43.5117 94.7863 43.5117 94.8464V107.155C43.5117 107.216 43.5338 107.268 43.5756 107.31C43.6175 107.352 43.6701 107.374 43.7302 107.374H49.9758C50.0359 107.374 50.0889 107.352 50.1307 107.31C50.1726 107.268 50.1943 107.216 50.1943 107.155V105.389C50.1943 105.329 50.1726 105.276 50.1307 105.234C50.0889 105.193 50.0359 105.171 49.9758 105.171H46.1704C46.1103 105.171 46.0793 105.14 46.0793 105.08V102.185C46.0793 102.124 46.1103 102.093 46.1704 102.093H48.3554C48.4155 102.093 48.4681 102.072 48.51 102.03C48.5519 101.988 48.5739 101.935 48.5739 101.875V100.109C48.5739 100.049 48.5519 99.9958 48.51 99.9539C48.4681 99.9121 48.4155 99.8902 48.3554 99.8902H46.1704C46.1103 99.8902 46.0793 99.8593 46.0793 99.7992V96.9222C46.0793 96.8621 46.1103 96.8312 46.1704 96.8312H49.9758C50.0359 96.8312 50.0889 96.8093 50.1307 96.7674C50.1726 96.7256 50.1943 96.6728 50.1943 96.6127V94.8464C50.1943 94.7863 50.1726 94.7335 50.1307 94.6917C50.0889 94.6498 50.0359 94.6279 49.9758 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M62.558 94.6279H55.3474C55.2873 94.6279 55.2345 94.6498 55.1926 94.6917C55.1508 94.7335 55.1289 94.7863 55.1289 94.8464V96.6127C55.1289 96.6728 55.1508 96.7256 55.1926 96.7674C55.2345 96.8093 55.2873 96.8312 55.3474 96.8312H57.5324C57.5925 96.8312 57.6235 96.8621 57.6235 96.9222V107.155C57.6235 107.216 57.6453 107.268 57.6872 107.31C57.7291 107.352 57.7819 107.374 57.842 107.374H59.9724C60.0325 107.374 60.0853 107.352 60.1272 107.31C60.169 107.268 60.1909 107.216 60.1909 107.155V96.9222C60.1909 96.8621 60.2219 96.8312 60.2819 96.8312H62.558C62.6181 96.8312 62.6709 96.8093 62.7128 96.7674C62.7547 96.7256 62.7765 96.6728 62.7765 96.6127V94.8464C62.7765 94.7863 62.7547 94.7335 62.7128 94.6917C62.6709 94.6498 62.6181 94.6279 62.558 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M78.0159 94.6279H75.8855C75.8254 94.6279 75.7726 94.6498 75.7307 94.6917C75.6888 94.7335 75.667 94.7863 75.667 94.8464V107.155C75.667 107.216 75.6888 107.268 75.7307 107.31C75.7726 107.352 75.8254 107.374 75.8855 107.374H78.0159C78.076 107.374 78.1288 107.352 78.1707 107.31C78.2126 107.268 78.2344 107.216 78.2344 107.155V94.8464C78.2344 94.7863 78.2126 94.7335 78.1707 94.6917C78.1288 94.6498 78.076 94.6279 78.0159 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M90.9262 94.6279H83.7156C83.6555 94.6279 83.6027 94.6498 83.5608 94.6917C83.5189 94.7335 83.4971 94.7863 83.4971 94.8464V96.6127C83.4971 96.6728 83.5189 96.7256 83.5608 96.7674C83.6027 96.8093 83.6555 96.8312 83.7156 96.8312H85.9006C85.9607 96.8312 85.9917 96.8621 85.9917 96.9222V107.155C85.9917 107.216 86.0135 107.268 86.0554 107.31C86.0973 107.352 86.1501 107.374 86.2102 107.374H88.3406C88.4007 107.374 88.4535 107.352 88.4953 107.31C88.5372 107.268 88.5591 107.216 88.5591 107.155V96.9222C88.5591 96.8621 88.59 96.8312 88.6501 96.8312H90.9262C90.9863 96.8312 91.0391 96.8093 91.081 96.7674C91.1228 96.7256 91.1447 96.6728 91.1447 96.6127V94.8464C91.1447 94.7863 91.1228 94.7335 91.081 94.6917C91.0391 94.6498 90.9863 94.6279 90.9262 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M107.551 94.6279H104.256C104.196 94.6279 104.143 94.6498 104.101 94.6917C104.059 94.7335 104.037 94.7863 104.037 94.8464V107.155C104.037 107.216 104.059 107.268 104.101 107.31C104.143 107.352 104.196 107.374 104.256 107.374H107.551C108.657 107.374 109.542 107.052 110.21 106.409C110.878 105.766 111.211 104.91 111.211 103.841V98.1604C111.211 97.0916 110.878 96.2357 110.21 95.593C109.542 94.9502 108.657 94.6279 107.551 94.6279ZM108.644 103.678C108.631 104.115 108.522 104.466 108.316 104.734C108.11 105.001 107.843 105.14 107.515 105.153L106.696 105.171C106.635 105.171 106.605 105.14 106.605 105.08V96.9222C106.605 96.8621 106.635 96.8312 106.696 96.8312H107.497C107.848 96.8312 108.127 96.9641 108.334 97.2318C108.54 97.4994 108.644 97.8636 108.644 98.3243V103.678Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M120.207 94.4819C119.09 94.4819 118.198 94.8097 117.53 95.4652C116.862 96.1207 116.528 96.9947 116.528 98.0872V103.914C116.528 105.007 116.862 105.881 117.53 106.536C118.198 107.192 119.09 107.519 120.207 107.519C121.323 107.519 122.219 107.192 122.892 106.536C123.566 105.881 123.903 105.007 123.903 103.914V98.0872C123.903 96.9947 123.566 96.1207 122.892 95.4652C122.219 94.8097 121.323 94.4819 120.207 94.4819ZM121.335 104.023C121.335 104.411 121.232 104.724 121.026 104.961C120.82 105.198 120.547 105.316 120.207 105.316C119.866 105.316 119.596 105.198 119.396 104.961C119.196 104.724 119.096 104.411 119.096 104.023V97.978C119.096 97.5901 119.196 97.277 119.396 97.0402C119.596 96.8035 119.866 96.6852 120.207 96.6852C120.547 96.6852 120.82 96.8035 121.026 97.0402C121.232 97.277 121.335 97.5901 121.335 97.978V104.023Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M136.867 94.6279H134.755C134.695 94.6279 134.642 94.6498 134.6 94.6917C134.559 94.7335 134.537 94.7863 134.537 94.8464L134.555 101.839C134.555 101.875 134.54 101.897 134.509 101.902C134.479 101.908 134.458 101.893 134.446 101.857L132.17 94.81C132.133 94.688 132.055 94.6279 131.933 94.6279H129.548C129.488 94.6279 129.435 94.6498 129.393 94.6917C129.351 94.7335 129.329 94.7863 129.329 94.8464V107.155C129.329 107.216 129.351 107.268 129.393 107.31C129.435 107.352 129.488 107.374 129.548 107.374H131.66C131.72 107.374 131.773 107.352 131.815 107.31C131.856 107.268 131.878 107.216 131.878 107.155L131.86 100.163C131.86 100.127 131.875 100.105 131.906 100.1C131.937 100.094 131.957 100.109 131.969 100.145L134.227 107.192C134.264 107.314 134.342 107.374 134.464 107.374H136.867C136.928 107.374 136.98 107.352 137.022 107.31C137.064 107.268 137.086 107.216 137.086 107.155V94.8464C137.086 94.7863 137.064 94.7335 137.022 94.6917C136.98 94.6498 136.928 94.6279 136.867 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M149.157 94.6279H142.912C142.852 94.6279 142.799 94.6498 142.757 94.6917C142.715 94.7335 142.693 94.7863 142.693 94.8464V107.155C142.693 107.216 142.715 107.268 142.757 107.31C142.799 107.352 142.852 107.374 142.912 107.374H149.157C149.218 107.374 149.27 107.352 149.312 107.31C149.354 107.268 149.376 107.216 149.376 107.155V105.389C149.376 105.329 149.354 105.276 149.312 105.234C149.27 105.193 149.218 105.171 149.157 105.171H145.352C145.292 105.171 145.261 105.14 145.261 105.08V102.185C145.261 102.124 145.292 102.093 145.352 102.093H147.537C147.597 102.093 147.65 102.072 147.692 102.03C147.734 101.988 147.755 101.935 147.755 101.875V100.109C147.755 100.049 147.734 99.9958 147.692 99.9539C147.65 99.9121 147.597 99.8902 147.537 99.8902H145.352C145.292 99.8902 145.261 99.8593 145.261 99.7992V96.9222C145.261 96.8621 145.292 96.8312 145.352 96.8312H149.157C149.218 96.8312 149.27 96.8093 149.312 96.7674C149.354 96.7256 149.376 96.6728 149.376 96.6127V94.8464C149.376 94.7863 149.354 94.7335 149.312 94.6917C149.27 94.6498 149.218 94.6279 149.157 94.6279Z"
+                        fill="#1E1F24" />
+                    <path
+                        d="M65.6343 6.19019C66.2029 6.19019 66.7018 6.56914 66.854 7.11694L75.3452 37.7205C75.6888 38.9586 77.4453 38.9565 77.7856 37.7175L86.189 7.12085C86.3399 6.57133 86.8398 6.19028 87.4097 6.19019H97.9155C98.5831 6.19019 99.1364 6.70856 99.1792 7.37476L103.454 73.8679C105.611 76.3549 107.241 78.6292 108.419 80.4675C108.75 80.9835 108.161 81.3596 107.769 80.8884C103.312 75.5278 94.3626 66.1793 82.1069 60.3318C73.0841 56.0267 63.2364 53.7917 53.2915 53.7908C49.7869 53.7905 46.3019 54.0685 42.8677 54.616L47.4419 75.5398C47.6144 76.329 47.0133 77.0756 46.2056 77.0759H35.0249C34.551 77.0758 34.1443 76.7388 34.0562 76.2732L33.5688 73.696C32.7063 69.1367 28.7218 65.8359 24.0815 65.8357C19.4412 65.8357 15.4569 69.1366 14.5942 73.696L14.1069 76.2732C14.0188 76.7389 13.6112 77.0759 13.1372 77.0759H0.182129L0.193848 77.0193C0.09338 76.9376 0.0615427 76.784 0.154785 76.6677C6.46474 68.7985 14.4507 62.4391 23.5454 58.0466C32.1267 53.9022 41.4906 51.6084 51.0376 51.2966L53.8628 7.37476C53.9056 6.7086 54.458 6.19024 55.1255 6.19019H65.6343ZM144.365 6.19019C145.064 6.19031 145.63 6.75679 145.63 7.45581V17.0759C145.63 17.7749 145.064 18.3414 144.365 18.3416H126.947C126.248 18.3416 125.681 18.9091 125.681 19.6082V33.9871C125.681 34.6861 126.248 35.2537 126.947 35.2537H141.934C142.633 35.2537 143.2 35.8202 143.2 36.5193V45.7341C143.2 46.4332 142.633 46.9998 141.934 46.9998H126.947C126.248 46.9998 125.681 47.5673 125.681 48.2664V64.0632C125.681 64.7623 126.248 65.3288 126.947 65.3289H144.77C145.469 65.3291 146.036 65.8965 146.036 66.5955V75.8103C146.036 76.5092 145.469 77.0757 144.77 77.0759H113.074C112.375 77.0759 111.807 76.5094 111.807 75.8103V7.45581C111.807 6.75672 112.375 6.19019 113.074 6.19019H144.365ZM166.991 6.19019C167.69 6.19039 168.256 6.75684 168.256 7.45581V64.0632C168.256 64.7623 168.823 65.3288 169.522 65.3289H185.522C186.221 65.3289 186.788 65.8964 186.788 66.5955V75.8103C186.788 76.5094 186.221 77.0759 185.522 77.0759H155.649C154.95 77.0759 154.382 76.5094 154.382 75.8103V7.45581C154.382 6.75672 154.95 6.19019 155.649 6.19019H166.991ZM30.2456 6.19019C31.4355 6.19019 32.4652 7.01896 32.7192 8.1814L41.1763 46.8757C37.1104 47.4901 33.1527 48.4341 29.3315 49.6804L28.0308 42.95L25.7778 31.3308C25.4087 29.4272 22.6889 29.4135 22.3013 31.3132L19.9292 42.95L17.7808 54.571C12.4235 57.3984 7.45453 60.863 2.97412 64.863L15.9351 8.15796C16.1981 7.00695 17.2222 6.1904 18.4028 6.19019H30.2456ZM88.4917 39.863C88.4154 38.3713 86.2707 38.2192 85.9849 39.6853L82.4731 57.7078C82.715 57.8198 82.957 57.9328 83.1978 58.0476C85.5054 59.2538 87.64 60.5228 89.6138 61.823L88.4917 39.863ZM67.0562 39.6853C66.7702 38.2194 64.6257 38.3713 64.5493 39.863L63.9243 52.0828C65.8632 52.3848 67.7887 52.7697 69.6958 53.2351L67.0562 39.6853Z"
+                        fill="#1E1F24" />
                 </g>
                 <defs>
-                <clipPath id="clip0_849_853">
-                <rect width="180" height="101.519" fill="white" transform="translate(0 6)"/>
-                </clipPath>
+                    <clipPath id="clip0_849_853">
+                        <rect width="180" height="101.519" fill="white" transform="translate(0 6)" />
+                    </clipPath>
                 </defs>
-                </svg>
-                
-          </aside> 
-          <div class="footer-content flex-col md:flex-row">
+            </svg>
+
+        </aside>
+        <div class="footer-content flex-col md:flex-row">
             <nav>
                 <h6 class="footer-title">Company</h6>
                 <a class="link link-hover">About AMEL</a>
                 <a class="link link-hover">Platform Overview</a>
-                <a class="link link-hover">Compliance & Privacy</a> 
-              </nav>
-              <nav>
+                <a class="link link-hover">Compliance & Privacy</a>
+            </nav>
+            <nav>
                 <h6 class="footer-title">Resources</h6>
                 <a class="link link-hover">FAQ</a>
                 <a class="link link-hover">User Manual</a>
                 <a class="link link-hover">Escrow Terms</a>
                 <a class="link link-hover">Contract Templates</a>
-              </nav>
-              <nav>
+            </nav>
+            <nav>
                 <h6 class="footer-title">Integrations</h6>
                 <a class="link link-hover">MOHRE</a>
-                <a class="link link-hover">DED</a> 
-              </nav>
-              <nav>
+                <a class="link link-hover">DED</a>
+            </nav>
+            <nav>
                 <h6 class="footer-title">Connect</h6>
                 <a class="link link-hover">contact@company.com</a>
-                <a class="link link-hover">LinkedIn</a> 
-              </nav>
-          </div>        
-      </footer>
-      <footer class="footer justify-between flex-col md:flex-row button-footer">
-            <div class="flex justfy-space-between hidden md:block">
-                <p class="footer-copy-write">© 2025 Website Ltd. All rights reserved.</p>
-            </div>
-            <div class="footer-links-horizontal">
-                <nav class="grid grid-flow-col gap-4">
-                    <a class="link link-hover">Privacy Policy</a>
-                    <a class="link link-hover">Terms & Conditions</a>
-                    <a class="link link-hover">Accessibility</a>
-                    <a class="link link-hover">Manage Preferences</a>
-                  </nav>                
-            </div>
-            <div class="flex justfy-space-between block md:hidden">
-                <p class="footer-copy-write">© 2025 Website Ltd. All rights reserved.</p>
-            </div>
-      </footer>
-      
-     <!-- JavaScript -->
-     <script src="js/global.js"></script>
-     <script src="js/hero-video.js"></script>
-     <script src="js/navigation.js"></script>
-     <script src="js/accordion.js"></script>
-     <script src="js/scroll-animations.js"></script>
-     <script src="js/performance.js"></script>
-     <script src="js/slider.js"></script>
-     <script src="js/tabs.js"></script>
-     
-</body> 
+                <a class="link link-hover">LinkedIn</a>
+            </nav>
+        </div>
+    </footer>
+    <footer class="footer justify-between flex-col md:flex-row button-footer">
+        <div class="flex justfy-space-between hidden md:block">
+            <p class="footer-copy-write">© 2025 Website Ltd. All rights reserved.</p>
+        </div>
+        <div class="footer-links-horizontal">
+            <nav class="grid grid-flow-col gap-4">
+                <a class="link link-hover">Privacy Policy</a>
+                <a class="link link-hover">Terms & Conditions</a>
+                <a class="link link-hover">Accessibility</a>
+                <a class="link link-hover">Manage Preferences</a>
+            </nav>
+        </div>
+        <div class="flex justfy-space-between block md:hidden">
+            <p class="footer-copy-write">© 2025 Website Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/global.js"></script>
+    <script src="js/hero-video.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
+
+</body>
+
 </html>
