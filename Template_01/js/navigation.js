@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if user is scrolling down
         if (currentScrollTop > lastScrollTop && currentScrollTop > 50) {
             // User is scrolling down and has scrolled more than 50px
-            navbar.classList.add('scroll-down');
-            navbar.classList.remove('scroll-up');
+            navbar.classList.remove('scroll-down');
+            navbar.classList.add('scroll-up');
         } else if (currentScrollTop < lastScrollTop && currentScrollTop > 50) {
             // User is scrolling up and has scrolled more than 50px
-            navbar.classList.add('scroll-up');
-            navbar.classList.remove('scroll-down');
+            navbar.classList.remove('scroll-up');
+            navbar.classList.add('scroll-down');
         } else if (currentScrollTop <= 50) {
             // User is near the top - remove both classes
             navbar.classList.remove('scroll-down', 'scroll-up');

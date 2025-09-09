@@ -46,8 +46,9 @@
         min-width: 169px;
     }
     &.scroll-down {
-        background-color: rgba(255, 255, 255, 0.55);
-        backdrop-filter: blur(10px); 
+        background-color:hsl(0 0 93% / 60%);
+        backdrop-filter: blur(20px);
+        
         a{
             color: map-get($colors, amel, dark-2);
         } 
