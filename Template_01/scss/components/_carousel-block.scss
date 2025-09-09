@@ -1,110 +1,172 @@
-.slider-block{
-    @include bg-color(amel,gray-4);
-    padding: 124px 0;   
-    @include respond-below('md'){
+.slider-block {
+    @include bg-color(amel, gray-4);
+    padding: 124px 0;
+
+    @include respond-below('md') {
         padding: 60px 0;
-       // padding: 50px 24px;
-       .tag-line{
-        padding: 0 24px;
-       }
+
+        // padding: 50px 24px;
+        .tag-line {
+            padding: 0 24px;
+        }
     }
 }
-.slider-holder{
+
+.slick-list {
+    border-radius: 12px 0 0 12px;
+}
+
+.slick-arrow {
+    position: absolute;
+    left: -120px;
+    top: 250px;
+    height: 60px;
+    width: 60px;
+    border: 1.5px solid #1E1F24;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0;
+    color: #00000000;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml, <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.9601 8.24606C18.3506 7.85551 18.9838 7.85548 19.3743 8.24598L26.4207 15.2915C26.8105 15.6813 26.8114 16.313 26.4226 16.7039L25.4793 17.6516C24.9063 18.227 24.1307 19.0056 23.3198 19.8185C21.702 21.4402 19.9332 23.2091 19.3642 23.7621C18.9682 24.147 18.3351 24.138 17.9502 23.7419C17.5652 23.3459 17.5743 22.7128 17.9703 22.3279C18.5251 21.7886 20.2794 20.0344 21.9039 18.406C22.3971 17.9115 22.8774 17.4297 23.3069 16.9986H6.28662C5.73434 16.9986 5.28662 16.5509 5.28662 15.9986C5.28662 15.4463 5.73434 14.9986 6.28662 14.9986H23.2992L17.9602 9.66027C17.5697 9.26977 17.5696 8.63661 17.9601 8.24606Z" fill="currentColor"/></svg>');
+
+    &:hover {
+        border-color: #4F525E;
+        background-image: url('data:image/svg+xml, <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.9601 8.24606C18.3506 7.85551 18.9838 7.85548 19.3743 8.24598L26.4207 15.2915C26.8105 15.6813 26.8114 16.313 26.4226 16.7039L25.4793 17.6516C24.9063 18.227 24.1307 19.0056 23.3198 19.8185C21.702 21.4402 19.9332 23.2091 19.3642 23.7621C18.9682 24.147 18.3351 24.138 17.9502 23.7419C17.5652 23.3459 17.5743 22.7128 17.9703 22.3279C18.5251 21.7886 20.2794 20.0344 21.9039 18.406C22.3971 17.9115 22.8774 17.4297 23.3069 16.9986H6.28662C5.73434 16.9986 5.28662 16.5509 5.28662 15.9986C5.28662 15.4463 5.73434 14.9986 6.28662 14.9986H23.2992L17.9602 9.66027C17.5697 9.26977 17.5696 8.63661 17.9601 8.24606Z" fill="DarkSlateGray"/></svg>');
+    }
+
+    &:active {
+        border-color: #070708;
+    }
+
+    &:focus-visible {
+        outline: 4px solid #FEEDAE;
+    }
+
+    &.slick-prev {
+        left: -190px;
+        transform: rotate(180deg);
+    }
+
+    &.slick-disabled {
+        border-color: #A1A1A1;
+        pointer-events: none;
+        background-image: url('data:image/svg+xml, <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.9601 8.24606C18.3506 7.85551 18.9838 7.85548 19.3743 8.24598L26.4207 15.2915C26.8105 15.6813 26.8114 16.313 26.4226 16.7039L25.4793 17.6516C24.9063 18.227 24.1307 19.0056 23.3198 19.8185C21.702 21.4402 19.9332 23.2091 19.3642 23.7621C18.9682 24.147 18.3351 24.138 17.9502 23.7419C17.5652 23.3459 17.5743 22.7128 17.9703 22.3279C18.5251 21.7886 20.2794 20.0344 21.9039 18.406C22.3971 17.9115 22.8774 17.4297 23.3069 16.9986H6.28662C5.73434 16.9986 5.28662 16.5509 5.28662 15.9986C5.28662 15.4463 5.73434 14.9986 6.28662 14.9986H23.2992L17.9602 9.66027C17.5697 9.26977 17.5696 8.63661 17.9601 8.24606Z" fill="Gray"/></svg>');
+    }
+}
+
+.slider-holder {
+    position: relative;
     padding-top: 28px;
-    padding-left: 200px;
-    @include respond-below('md'){
+    padding-left: 320px;
+
+    @include respond-below('md') {
         padding-left: 24px;
     }
-    .slick-slide{
+
+    .slick-slide {
         margin: 0 16px;
-        @include respond-below('md'){
+
+        @include respond-below('md') {
             margin: 0 12px;
         }
+
         //width: auto !important;
     }
 
 
 
-   .slider{
-    &-item{
-        position: relative;
-        width: 342px;
-        height: 566px;
-        padding: map-get($spacing, 6);
-        display: flex;
-        border-radius:12px;
-        overflow: hidden; 
-        cursor: grab;   
-        @include respond-below('md'){
-            border-radius: 8px;
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-//            background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
-            background: linear-gradient(180deg, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%),
-linear-gradient(0deg, rgba(40, 40, 40, 0.6), rgba(40, 40, 40, 0.6));
+    .slider {
+        &-item {
+            position: relative;
+            width: 342px;
+            height: 566px;
+            padding: map-get($spacing, 6);
+            display: flex;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: grab;
 
-            opacity: 1;
-            transition: opacity 0.3s ease-in-out;
-            z-index: 1;
-            pointer-events: none;
-        }
-        
-        &:hover{
-            &::before{
-                //background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
+            @include respond-below('md') {
+                border-radius: 8px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
                 opacity: 0;
+                transition: opacity 0.3s ease-in-out;
             }
-            &::after{
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                //            background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
+                background: linear-gradient(180deg, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%),
+                    linear-gradient(0deg, rgba(40, 40, 40, 0.6), rgba(40, 40, 40, 0.6));
+
                 opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            &:hover {
+                &::before {
+                    //background: radial-gradient(100% 100% at 50% 0%, rgba(40, 40, 40, 0) 50%, rgba(40, 40, 40, 0.8) 100%);
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
             }
         }
-    }
-    &-image{
-        position: absolute;       
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
-    &-content{
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 100%; 
-        color: map-get($colors, neutral, 50);
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        z-index: 2;
-        h5{
-            @include text-style('2xl', medium, tight);
-            padding-bottom: map-get($spacing, 2);
+
+        &-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
         }
-        p{
-            @include text-style('base', normal, normal);
+
+        &-content {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: map-get($colors, neutral, 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            z-index: 2;
+
+            h5 {
+                @include text-style('2xl', medium, tight);
+                padding-bottom: map-get($spacing, 2);
+            }
+
+            p {
+                @include text-style('base', normal, normal);
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            z-index: 2;
         }
     }
-    &-icon{
-        position: absolute;
-        z-index: 2;
-    }
-   }
 }

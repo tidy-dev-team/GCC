@@ -9,7 +9,7 @@ $(document).ready(function () {
   
     $slider.slick({
       dots: false,
-      arrows: false,
+      arrows: true,
       infinite: false,
       slidesToShow: 4,          // <= show 5
       slidesToScroll: 1,
