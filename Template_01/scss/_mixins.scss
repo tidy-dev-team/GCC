@@ -122,7 +122,7 @@
 // Main button mixin with all properties
 @mixin button($size: 'base', $variant: 'primary', $style: 'solid') {
   // Font size
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
   // Base button properties
   display: inline-flex;
