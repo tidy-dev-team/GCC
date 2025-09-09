@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial
     createProgressBar();
-    startProgressBar();
+    // startProgressBar();
 
     // Cleanup
     const destroy = () => {
