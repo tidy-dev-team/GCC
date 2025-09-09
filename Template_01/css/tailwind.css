@@ -2448,15 +2448,6 @@ video {
   border: var(--border) solid currentColor;
 }
 
-.steps {
-  display: inline-grid;
-  grid-auto-flow: column;
-  overflow: hidden;
-  overflow-x: auto;
-  counter-reset: step;
-  grid-auto-columns: 1fr;
-}
-
 .steps .step {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2508,46 +2499,6 @@ video {
 
 .steps .step[data-content]:after {
   content: attr(data-content);
-}
-
-.steps .step-neutral + .step-neutral:before, .steps .step-neutral:after, .steps .step-neutral > .step-icon {
-  --step-bg: var(--color-neutral);
-  --step-fg: var(--color-neutral-content);
-}
-
-.steps .step-primary + .step-primary:before, .steps .step-primary:after, .steps .step-primary > .step-icon {
-  --step-bg: var(--color-primary);
-  --step-fg: var(--color-primary-content);
-}
-
-.steps .step-secondary + .step-secondary:before, .steps .step-secondary:after, .steps .step-secondary > .step-icon {
-  --step-bg: var(--color-secondary);
-  --step-fg: var(--color-secondary-content);
-}
-
-.steps .step-accent + .step-accent:before, .steps .step-accent:after, .steps .step-accent > .step-icon {
-  --step-bg: var(--color-accent);
-  --step-fg: var(--color-accent-content);
-}
-
-.steps .step-info + .step-info:before, .steps .step-info:after, .steps .step-info > .step-icon {
-  --step-bg: var(--color-info);
-  --step-fg: var(--color-info-content);
-}
-
-.steps .step-success + .step-success:before, .steps .step-success:after, .steps .step-success > .step-icon {
-  --step-bg: var(--color-success);
-  --step-fg: var(--color-success-content);
-}
-
-.steps .step-warning + .step-warning:before, .steps .step-warning:after, .steps .step-warning > .step-icon {
-  --step-bg: var(--color-warning);
-  --step-fg: var(--color-warning-content);
-}
-
-.steps .step-error + .step-error:before, .steps .step-error:after, .steps .step-error > .step-icon {
-  --step-bg: var(--color-error);
-  --step-fg: var(--color-error-content);
 }
 
 .steps-horizontal .step {
@@ -3993,12 +3944,12 @@ video {
   border-width: 0;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .\!visible {
   visibility: visible !important;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .static {
