@@ -45,6 +45,11 @@
             //@include text-style('9xl', normal, normal);
             padding-bottom: map-get($spacing, 12);
             display: block;
+            @include respond-below('lg'){
+                font-size:48px;
+                line-height: 110%;
+                padding-bottom: 24px;
+            }
             @include respond-below('md'){
               font-size:36px;
               line-height: 38px;

@@ -18,7 +18,7 @@
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 72px;
-    max-width: 482px;
+    max-width: 500px;
     border-radius: 6px;
     @include respond-below('md'){
         width: 100%;
@@ -76,7 +76,7 @@
 }
  
 .vertical-tabs{
-    align-items: start;
+    align-items: center;
 
     &-holder{
         max-width:706px;
@@ -87,6 +87,9 @@
         width: 100%;
         background: transparent;
         padding-left: 0;
+        @include respond-below('lg'){
+         margin-bottom: 0;
+        }
         @include respond-below('md'){
             padding: 0;
             padding-top:32px;
@@ -145,7 +148,11 @@
                 //@include text-style('2xl', normal, tight);
                 font-size:32px;
                 line-height: 130%;
+                font-weight: 400;
                 color: map-get($colors, amel, gray-2);
+                @include respond-below('lg'){
+                    font-size: 24px;
+                }
                 @include respond-below('md'){
                     font-size: 18px;
                     font-weight: 500;
@@ -159,6 +166,9 @@
                 line-height: 150%;
                 color: map-get($colors, amel, gray-2);
                 text-align: left;
+                @include respond-below('lg'){
+                    font-size: 14px;
+                }
                 @include respond-below('md'){
                     font-size: 14px;
                     font-weight: 400;
@@ -181,6 +191,7 @@
                 }
                 h4{ 
                     color: map-get($colors, amel, dark-light);
+                    font-weight:500;
                 }
                 p{
                     color: map-get($colors, amel, dark-light); 

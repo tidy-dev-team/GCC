@@ -6,8 +6,10 @@
     gap: 160px;
     padding-bottom: 0;
     padding-top: 0;
+    @include respond-below('lg'){ 
+        gap: 46px; 
+    }
     @include respond-below('md'){
-
         padding: 20px 24px;
         padding-top: 0;
         gap: 46px;
@@ -35,6 +37,10 @@
     &-content{
         display:flex;
         gap: 88px;
+        @include respond-below('lg'){ 
+            gap: 10px; 
+            flex-wrap: wrap;
+        }
         @include respond-below('md'){  
             gap: 36px;
         }

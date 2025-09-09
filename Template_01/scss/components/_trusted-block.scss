@@ -16,5 +16,11 @@
         @include respond-below('md'){
             gap: 12px;
         }
+        li{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
