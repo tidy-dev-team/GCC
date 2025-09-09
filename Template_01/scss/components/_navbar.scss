@@ -4,16 +4,22 @@
     top: 0;
     left: 0;
     z-index:10;
-    padding: 20px  map-get($spacing, 10);
+    padding: 15px  map-get($spacing, 10);
     transition: all 0.3s ease-in-out;
+    height: 90px;
+    @include respond-below('lg'){
+        height: auto;
+    }
+
     @include respond-below('md'){
         padding: 10px 24px;
+        height: auto;
     }
     
     a{
         color: map-get($colors, amel, light);
     }
-    .menu{
+    .menu{ 
         a{ 
             font-size: 18px;
             &:hover,
@@ -40,8 +46,9 @@
         min-width: 169px;
     }
     &.scroll-down {
-        background-color: rgba(255, 255, 255, 0.55);
-        backdrop-filter: blur(10px); 
+        background-color:hsl(0 0 93% / 60%);
+        backdrop-filter: blur(20px);
+        
         a{
             color: map-get($colors, amel, dark-2);
         } 

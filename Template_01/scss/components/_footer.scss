@@ -12,11 +12,14 @@
     @include respond-below('md'){
         padding: 20px 24px;
         padding-top: 0;
-        gap: 46px;
+        gap: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     &-title{
         color: #000000;
         @include text-style('base', bold, normal);
+        margin-bottom: 2px;
         opacity: 1;
         text-transform: capitalize;
         @include respond-below('md'){
@@ -28,6 +31,7 @@
     .link{
         color: #000000;
         @include text-style('base', normal, normal);
+        font-size: 14px;
         opacity: 1;
         @include respond-below('md'){
             font-size:14px;
@@ -42,13 +46,23 @@
             flex-wrap: wrap;
         }
         @include respond-below('md'){  
-            gap: 36px;
+            gap: 0;
+            padding-top: 48px;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
         nav{
             min-width: 178px;
             display: flex;
             flex-direction: column;
-            gap: map-get($spacing, 4);
+            gap: 8px;
+            @include respond-below('md'){
+                padding-bottom: 32px;
+                flex: 50%;
+                min-width: initial;
+             
+            }
         }
     }
     &-links-horizontal{
@@ -69,11 +83,15 @@
 }
 .button-footer{
     padding-top: 72px;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
     @include respond-below('md'){
-        padding-top: 40px;
+        padding-top: 0;
         padding-bottom: 20px;
         gap: 32px;
+    }
+    .link,
+    .footer-copy-write{
+        color: #41434E;
     }
 
 }

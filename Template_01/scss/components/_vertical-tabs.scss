@@ -16,8 +16,7 @@
     background-color: #eee8e2;
     padding: 12px;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 72px;
+    margin: 0 auto; 
     max-width: 500px;
     border-radius: 6px;
     @include respond-below('md'){
@@ -59,7 +58,7 @@
         }
 
         img{
-            max-width: 660px;
+            max-width: 650px;
             width: 100%;
             display: inline-block;
         }
@@ -77,9 +76,15 @@
  
 .vertical-tabs{
     align-items: center;
-
+    padding-top: 72px;
+    @include respond-below('md'){
+        padding-top: 0;
+    }
     &-holder{
         max-width:706px;
+        @include respond-below('md'){
+            padding: 0 12px;
+        }
     }
     .tabs{
         display: flex;
@@ -119,7 +124,7 @@
                 bottom: 0;
                 position: absolute;
                 left: 1rem;
-                top: 45px;
+                top: 47px;
                 @include respond-below('md'){
                     left: 11px;
                     top: 36px;
@@ -135,6 +140,9 @@
                 }
             }
             &:last-child{
+                .icon{
+                    padding-top: 5px;
+                }
                 &::before{
                     display: none;
                 }
@@ -150,12 +158,13 @@
                 line-height: 130%;
                 font-weight: 400;
                 color: map-get($colors, amel, gray-2);
+                padding-bottom: 12px;
                 @include respond-below('lg'){
                     font-size: 24px;
                 }
                 @include respond-below('md'){
-                    font-size: 18px;
-                    font-weight: 500;
+                    font-size: 18px; 
+                    padding-bottom: 8px;
                 }
             }
             p{
@@ -191,7 +200,7 @@
                 }
                 h4{ 
                     color: map-get($colors, amel, dark-light);
-                    font-weight:500;
+                    
                 }
                 p{
                     color: map-get($colors, amel, dark-light); 
