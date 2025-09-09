@@ -1,5 +1,5 @@
 // Tailwind CSS
- 
+
 
 // Custom SCSS
 @import 'variables';
@@ -31,30 +31,31 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   tab-size: 4;
+  background: #eee8e2 !important;
 }
 
 body {
   margin: 0;
-  font-family:"helvetica-neue-lt-pro";
+  font-family: "helvetica-neue-lt-pro";
   font-weight: 400;
   font-size: map-get($font-sizes, base);
   line-height: map-get($line-heights, relaxed);
   color: map-get(map-get($colors, neutral), 900);
   background-color: map-get($colors, amel, gray-light);
 }
- 
- .container{
-    margin: auto;
-    max-width: 100%;
-    padding: 0 100px;
 
-    @include respond-below('md'){
-      padding: 0 0px;
-    }
- }
-  
- section{
-  @include respond-below('md'){
+.container {
+  margin: auto;
+  max-width: 100%;
+  padding: 0 100px;
+
+  @include respond-below('md') {
+    padding: 0 0px;
+  }
+}
+
+section {
+  @include respond-below('md') {
     padding: 0 24px;
   }
- }
+}
