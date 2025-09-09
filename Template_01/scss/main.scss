@@ -45,17 +45,12 @@ body {
  
  .container{
     margin: auto;
-    // max-width: 1520px;
     max-width: 100%;
     padding: 0 100px;
 
-    @include respond-below('xxl'){
-      padding: 0 24px;
-    }
     @include respond-below('md'){
       padding: 0 0px;
     }
-    
  }
   
  section{
