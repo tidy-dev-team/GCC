@@ -1,6 +1,7 @@
-.tag-line{
+.tag-line {
     margin-bottom: 72px;
-    .badge{
+
+    .badge {
         @include color('neutral', 500);
         @include bg-color('amel', 'yellow-light');
         @include border-color('amel', 'yellow-light');
@@ -8,14 +9,17 @@
         font-size: 16px;
         padding: 4px 8px;
         margin-bottom: 36px;
-        @include respond-below('lg'){
+
+        @include respond-below('lg') {
             margin-bottom: 24px;
         }
-        @include respond-below('md'){
+
+        @include respond-below('md') {
             margin-bottom: 20px;
         }
     }
-    .main-tagline{
+
+    .main-tagline {
         max-width: 900px;
         margin: 0 auto;
         font-family: "Trade Gothic Next";
@@ -25,45 +29,59 @@
         letter-spacing: -2px;
         font-weight: 800;
         text-transform: uppercase;
-        &.full{
+
+        @include respond-below('md') {
+            letter-spacing: -1px;
+        }
+
+        &.full {
             max-width: 100%;
         }
-        &.left{
+
+        &.left {
             max-width: 750px;
             margin: 0;
-            @include respond-below('md'){
+
+            @include respond-below('md') {
                 max-width: 100%;
                 text-align: center;
             }
         }
     }
-    .sub-tagline{
-       // @include text-style('35xl', normal, tight);
-       font-size: 32px;
-       line-height: 130%;
+
+    .sub-tagline {
+        // @include text-style('35xl', normal, tight);
+        font-size: 32px;
+        line-height: 130%;
     }
-    @include respond-below('lg'){
+
+    @include respond-below('lg') {
         margin-bottom: 24px;
-        .main-tagline{
-            font-size:48px;
+
+        .main-tagline {
+            font-size: 48px;
             line-height: 110%;
         }
     }
-    @include respond-below('md'){
-        margin-bottom:40px;
-        .main-tagline{
-           // @include text-style('45xl', medium, tight);
-           font-size:28px;
-           line-height: 110%;
+
+    @include respond-below('md') {
+        margin-bottom: 40px;
+
+        .main-tagline {
+            // @include text-style('45xl', medium, tight);
+            font-size: 28px;
+            line-height: 110%;
         }
-        .sub-tagline{
-           // @include text-style('2xl', normal, tight);
-           font-size: 18px;
-           line-height: 110%;
+
+        .sub-tagline {
+            // @include text-style('2xl', normal, tight);
+            font-size: 18px;
+            line-height: 110%;
         }
     }
-    &.text-left{
-        @include respond-below('md'){
+
+    &.text-left {
+        @include respond-below('md') {
             text-align: center;
         }
     }

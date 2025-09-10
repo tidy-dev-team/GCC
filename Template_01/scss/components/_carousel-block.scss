@@ -81,7 +81,7 @@
         margin: 0 16px;
 
         @include respond-below('md') {
-            margin: 0 12px;
+            margin: 0 6px;
         }
 
         //width: auto !important;
@@ -101,7 +101,7 @@
             cursor: grab;
 
             @include respond-below('md') {
-                border-radius: 8px;
+                border-radius: 16px;
             }
 
             &::after {

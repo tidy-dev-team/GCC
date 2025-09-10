@@ -10,16 +10,17 @@
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
+
   //border-radius: 24px;
   // Video Background Container
-  .video-background { 
+  .video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    
+
     // Main Video Element
     .video-item {
       position: absolute;
@@ -28,11 +29,12 @@
       width: 100%;
       height: 100%;
       border-radius: 24px;
-      
+
       // Initial state - video starts more towards the bottom of the fold
       transform: scale(0.75) translateY(25%);
       opacity: 0;
       transition: all 0s ease-out;
+
       video {
         width: 100%;
         height: 100%;
@@ -47,18 +49,19 @@
         opacity: 1;
         transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
-      
+
       &.fill-screen {
         transform: scale(1) translateY(-25%);
         transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        video{
+
+        video {
           border-radius: 0;
-          transition: all 1.2s ease-in-out ;
+          transition: all 1.2s ease-in-out;
         }
       }
-      
-     
-      
+
+
+
       // Video Overlay for better text readability
       &::after {
         content: '';
@@ -68,24 +71,22 @@
         width: 100%;
         height: 100%;
         border-radius: 24px;
-        background: linear-gradient(
-          135deg,
-          rgba(0, 0, 0, 0.4) 0%,
-          rgba(0, 0, 0, 0.2) 50%,
-          rgba(0, 0, 0, 0.6) 100%
-        );
+        background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.2) 50%,
+            rgba(0, 0, 0, 0.6) 100%);
         z-index: 1;
         opacity: 0;
         transition: opacity 1.5s ease-in-out 3s;
       }
-      
+
       &.animate-in::after {
         opacity: 1;
         border-radius: 0;
       }
     }
   }
-  
+
   // Content Overlay
   .hero-content {
     position: relative;
@@ -98,29 +99,30 @@
     //padding: 0 5%;
     //max-width: 1200px;
     //margin: 0 auto;
-    
+
     // Initial state - content is hidden
     opacity: 0;
     transform: translateY(2rem);
     transition: all 0s ease-out;
-    
+
     &.animate-in {
       opacity: 1;
       transform: translateY(0);
       transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); // Removed the 2s delay
     }
-    
+
     @include respond-below(xxl) {
       // padding: 0 2.5rem; 
     }
+
     @include respond-to(md) {
-  //    padding: 0 8%;
+      //    padding: 0 8%;
     }
-    
+
     @include respond-to(lg) {
-    //  padding: 0 10%;
+      //  padding: 0 10%;
     }
-    
+
     // Main Headline
     .hero-title {
       font-family: "Trade Gothic Next";
@@ -129,71 +131,78 @@
       font-size: 90px;
       line-height: 106%;
       text-transform: uppercase;
-      color:#fff;
+      color: #fff;
       max-width: 800px;
       letter-spacing: -2px;
       //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      
+
+      @include respond-below('sm') {
+        letter-spacing: -1px;
+      }
+
       @include respond-to('md') {
         margin-bottom: 32px;
         padding-top: 80px;
         letter-spacing: 0px;
       }
-      @include respond-below('lg'){
+
+      @include respond-below('lg') {
         font-size: 72px;
         margin-bottom: 24px;
       }
-       
+
     }
-    
+
     // Description Text
     .hero-description {
       //@include body-text(2xl);
       color: white;
       margin-bottom: 2.5rem;
       max-width: 700px;
-      font-family:"helvetica-neue-lt-pro";
+      font-family: "helvetica-neue-lt-pro";
       font-weight: 400;
       font-style: Regular;
-      font-size: 20px; 
+      font-size: 20px;
       line-height: 130%;
-      letter-spacing: -0.02em;   
+      letter-spacing: -0.02em;
       //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-      
+
       @include respond-to(md) {
         margin-bottom: 32px;
       }
     }
+
     .hero-btn {
-      @include button(2xl, primary, solid);  
+      @include button(2xl, primary, solid);
     }
 
   }
-  
+
   // Loading State
   .hero-video.loading {
     .hero-content {
       opacity: 0;
     }
   }
-  
+
   // Responsive Adjustments
   @include respond-below(md) {
     height: 100vh;
     //min-height: 500px;
-    
+
     .hero-content {
       //padding: 0 5%;
       text-align: center;
       align-items: center;
-      padding: 0 ;
+      padding: 0;
+
       .hero-title {
-       // @include heading(2);
-       font-size: 38px;
-       line-height: 108%;
-        
+        // @include heading(2);
+        font-size: 38px;
+        line-height: 108%;
+
       }
-      
+
       .hero-description {
         @include body-text(base);
       }
@@ -207,12 +216,12 @@
     transform: scale(0.75) translateY(100%);
     opacity: 0;
   }
-  
+
   60% {
     transform: scale(0.8) translateY(15%);
     opacity: 0.8;
   }
-  
+
   100% {
     transform: scale(0.8) translateY(0);
     opacity: 1;
@@ -224,7 +233,7 @@
     opacity: 0;
     transform: translateY(2rem);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -235,7 +244,7 @@
   0% {
     transform: scale(0.8) translateY(0);
   }
-  
+
   100% {
     transform: scale(1) translateY(0);
   }
@@ -256,19 +265,20 @@
 
 // Custom video overlay gradient (if needed beyond Tailwind's gradient utilities)
 .video-overlay-custom {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.6) 100%);
 }
 
 // Loading animation for daisyUI loading component
 @keyframes loadingPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 1;
   }
@@ -277,4 +287,3 @@
 .loading-custom::before {
   animation: loadingPulse 1.5s ease-in-out infinite;
 }
- 
