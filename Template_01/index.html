@@ -45,29 +45,49 @@
             </div>
 
             <!-- Mobile dropdown -->
-            <div class="dropdown dropdown-end lg:hidden">
+            <details class="mobile-menu">
+                <summary class="mobile-summary">
+                    <div class="full-menu">
+                        <div class="navbar-start h-fit mx-6 my-3">
+                            <img src="assets/images/Amel_logo.svg" alt="Amel logo" loading="lazy" decoding="async">
+                        </div>
+                        <div class="inner-menu">
+                            <ul class="menu">
+                                <li><a>Company</a></li>
+                                <li><a>About</a></li>
+                                <a class="button-light mt-more">Login</a>
+                                <a class="button-dark">Partner with Us</a>
+                            </ul>
+                        </div>
+                    </div>
+                </summary>
+            </details>
+            <!-- <div class="dropdown dropdown-end lg:hidden">
                 <label tabindex="0" class="menu-label">
-                    <!-- Hamburger icon -->
+                    Hamburger icon
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-hamburger" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <!-- X icon -->
+                    X icon
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon-close hidden" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Company</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Resources</a></li>
-                    <li><a>Partner with Us</a></li>
-                    <li><a>Login</a></li>
-                </ul>
-            </div>
+                <div class="menu-container hidden">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-full h-full">
+                        <li><a>Company</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Resources</a></li>
+                        <li><a>Partner with Us</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </div>
+            </div> -->
         </div>
     </div>
 
