@@ -75,7 +75,7 @@ class HeroVideoEntrance {
         
         // Fade out current video
         this.video.style.transition = 'opacity 0s ease-in-out';
-        this.video.style.opacity = '0';
+        this.video.style.opacity = '1';
         
         // Switch to next video after fade out
         setTimeout(() => {
@@ -92,9 +92,9 @@ class HeroVideoEntrance {
                 
                 setTimeout(() => {
                     this.isTransitioning = false;
-                }, 1200);
+                }, 10);
             }, { once: true });
-        }, 0);
+        }, 10);
     }
     
     // Trigger fill screen animation
@@ -226,8 +226,8 @@ class HeroVideoEntrance {
                 if (this.loadingElement) {
                     this.loadingElement.style.display = 'none';
                 }
-            }, 1200);
-        }, 100);
+            }, 10);
+        }, 10);
     }
 }
 
