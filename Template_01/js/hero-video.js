@@ -57,45 +57,6 @@ class HeroVideoEntrance {
         this.video.addEventListener('ended', this.handleVideoEnded);
     }
     
-    // Handle video ended event
-    handleVideoEnded = () => {
-        if (this.contentElement.classList.contains('animate-in') && this.fillScreenTriggered && !this.isTransitioning) {
-            this.startFadeTransition();
-        }
-    }
-    
-    // Start fade transition to next video
-    startFadeTransition = () => {
-        if (this.isTransitioning) return;
-        this.isTransitioning = true;
-        
-        // Stop all monitoring during transition
-        this.stopFillAnimationMonitoring();
-        this.stopContentMonitoring();
-        
-        // Fade out current video
-        this.video.style.transition = 'opacity 0s ease-in-out';
-        this.video.style.opacity = '1';
-        
-        // Switch to next video after fade out
-        setTimeout(() => {
-            this.currentVideoIndex = (this.currentVideoIndex + 1) % this.videoSources.length;
-            const newSource = this.videoSources[this.currentVideoIndex];
-            
-            this.video.src = newSource;
-            this.video.load();
-            
-            this.video.addEventListener('loadeddata', () => {
-                this.setupVideoEndDetection();
-                this.video.play();
-                this.video.style.opacity = '1';
-                
-                setTimeout(() => {
-                    this.isTransitioning = false;
-                }, 10);
-            }, { once: true });
-        }, 10);
-    }
     
     // Trigger fill screen animation
     triggerFillScreen() {
