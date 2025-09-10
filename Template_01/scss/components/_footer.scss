@@ -113,3 +113,19 @@
     }
 
 }
+
+
+.footer aside {
+    max-width: 180px;
+    max-height: 108px;
+
+    @include respond-below('md') {
+        max-width: 140px;
+        max-height: 84px;
+    }
+}
+
+.footer aside svg {
+    width: 100%;
+    height: 100%;
+}
