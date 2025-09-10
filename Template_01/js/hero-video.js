@@ -94,7 +94,7 @@ class HeroVideoEntrance {
                     this.isTransitioning = false;
                 }, 1200);
             }, { once: true });
-        }, 1200);
+        }, 100);
     }
     
     // Trigger fill screen animation
