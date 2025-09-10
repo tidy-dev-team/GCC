@@ -40,3 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial check on page load
     handleScroll();
 });
+
+function closeNav() {
+    var x = document.querySelectorAll('details');
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].removeAttribute('open');
+    }
+}

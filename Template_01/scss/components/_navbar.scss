@@ -70,68 +70,6 @@
         }
     }
 
-    .full-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: hsla(0, 0%, 93%, .6);
-        backdrop-filter: blur(20px);
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            right: 24px;
-            width: 24px;
-            height: 24px;
-            background-image: url('data:image/svg+xml, <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.72781 5.72781C6.03155 5.42406 6.52401 5.42406 6.82775 5.72781L12.5 11.4001L18.1723 5.72781C18.476 5.42406 18.9685 5.42406 19.2722 5.72781C19.5759 6.03155 19.5759 6.52401 19.2722 6.82775L13.5999 12.5L19.2722 18.1723C19.5759 18.476 19.5759 18.9685 19.2722 19.2722C18.9685 19.5759 18.476 19.5759 18.1723 19.2722L12.5 13.5999L6.82775 19.2722C6.52401 19.5759 6.03155 19.5759 5.72781 19.2722C5.42406 18.9685 5.42406 18.476 5.72781 18.1723L11.4001 12.5L5.72781 6.82775C5.42406 6.52401 5.42406 6.03155 5.72781 5.72781Z" fill="black"/></svg>');
-        }
-    }
-
-    .full-menu {
-        visibility: hidden;
-        display: flex;
-        opacity: 0;
-        transform: scale(.6);
-        transition: opacity 300ms linear 0s allow-discrete, transform 300ms ease-out 0s allow-discrete;
-    }
-
-    .inner-menu {
-        position: absolute;
-        width: 100%;
-        padding-top: 108px;
-        justify-content: center;
-        display: flex;
-    }
-
-    .inner-menu a,
-    .inner-menu li,
-    .inner-menu button {
-        display: flex;
-        justify-content: center;
-        width: 80vw;
-        padding: 5px 0;
-        color: #1E1F24 !important;
-    }
-
-    .inner-menu ul {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .mt-more {
-        margin-top: 58px !important;
-    }
-
-    .mobile-menu[open] .full-menu {
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1);
-    }
-
     .menu {
         a {
             font-size: 18px;
@@ -183,5 +121,84 @@
         background-color: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(15px);
         transform: translateY(-100%);
+    }
+}
+
+body:has(.mobile-menu[open]) {
+    overflow: hidden;
+}
+
+body:has(.mobile-menu[open]) .full-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.full-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 93%, .6);
+    backdrop-filter: blur(20px);
+    z-index: 9999999;
+
+    .close-button {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        background-image: url('data:image/svg+xml, <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.72781 5.72781C6.03155 5.42406 6.52401 5.42406 6.82775 5.72781L12.5 11.4001L18.1723 5.72781C18.476 5.42406 18.9685 5.42406 19.2722 5.72781C19.5759 6.03155 19.5759 6.52401 19.2722 6.82775L13.5999 12.5L19.2722 18.1723C19.5759 18.476 19.5759 18.9685 19.2722 19.2722C18.9685 19.5759 18.476 19.5759 18.1723 19.2722L12.5 13.5999L6.82775 19.2722C6.52401 19.5759 6.03155 19.5759 5.72781 19.2722C5.42406 18.9685 5.42406 18.476 5.72781 18.1723L11.4001 12.5L5.72781 6.82775C5.42406 6.52401 5.42406 6.03155 5.72781 5.72781Z" fill="black"/></svg>');
+        z-index: 9999;
+    }
+}
+
+.full-menu {
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
+    transform: scale(.6);
+    transition: opacity 300ms linear 0s allow-discrete, transform 300ms ease-out 0s allow-discrete;
+
+    .inner-menu {
+        position: absolute;
+        width: 100%;
+        padding-top: 108px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .inner-menu a,
+    .inner-menu li,
+    .inner-menu button {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        font-size: 16px;
+        padding: 5px 0;
+        color: #1E1F24 !important;
+    }
+
+    .inner-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mt-more {
+        margin-top: 58px !important;
+    }
+
+    .button-dark {
+        @include button(2xl, primary, solid);
+        min-width: 169px;
+    }
+
+    .button-light {
+        @include button(2xl, secondary, solid);
+        min-width: 169px;
     }
 }
