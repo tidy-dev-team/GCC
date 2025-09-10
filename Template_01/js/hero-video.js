@@ -74,7 +74,7 @@ class HeroVideoEntrance {
         this.stopContentMonitoring();
         
         // Fade out current video
-        this.video.style.transition = 'opacity 1.2s ease-in-out';
+        this.video.style.transition = 'opacity 0s ease-in-out';
         this.video.style.opacity = '0';
         
         // Switch to next video after fade out
@@ -94,7 +94,7 @@ class HeroVideoEntrance {
                     this.isTransitioning = false;
                 }, 1200);
             }, { once: true });
-        }, 100);
+        }, 0);
     }
     
     // Trigger fill screen animation
