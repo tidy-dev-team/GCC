@@ -1,25 +1,39 @@
-.trusted-block{
+.trusted-block {
     padding: 100px 0;
-    @include respond-below('md'){
+
+    @include respond-below('md') {
         padding: 40px 24px;
     }
-    .button-holder{
-        padding-top:64px;
-        button{
+
+    .button-holder {
+        padding-top: 64px;
+
+        button {
             @include button(2xl, invert, solid);
         }
-        @include respond-below('md'){
+
+        @include respond-below('md') {
             padding-top: 40px;
         }
-    }   
-    ul{
-        @include respond-below('md'){
+    }
+
+    ul {
+        @include respond-below('md') {
             gap: 12px;
         }
-        li{
+
+        li {
             width: 100%;
-            img{
+
+            img {
                 width: 100%;
+
+                @include respond-below('md') {
+                    width: 50vw;
+                    height: 20vw;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
             }
         }
     }
