@@ -70,6 +70,10 @@
         & p {
             font-size: 14px !important;
             height: 54px;
+
+            @include respond-below('md') {
+                height: fit-content;
+            }
         }
 
         & h5 {
@@ -96,12 +100,13 @@
             height: 566px;
             padding: map-get($spacing, 6);
             display: flex;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             cursor: grab;
 
             @include respond-below('md') {
-                border-radius: 16px;
+                width: 85vw;
+                height: 140vw;
             }
 
             &::after {
@@ -151,7 +156,12 @@
             height: 100%;
             top: 0;
             left: 0;
-            object-fit: cover;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         &-content {
