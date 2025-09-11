@@ -132,6 +132,7 @@ body:has(.mobile-menu[open]) .full-menu {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 150ms linear 0s allow-discrete, transform 150ms ease-in 0s allow-discrete;
 }
 
 .full-menu {
@@ -161,8 +162,8 @@ body:has(.mobile-menu[open]) .full-menu {
     visibility: hidden;
     display: flex;
     opacity: 0;
-    transform: translateY(50%);
-    transition: opacity 300ms linear 0s allow-discrete, transform 300ms ease-in-out 0s allow-discrete;
+    transform: translateY(20%);
+    transition: opacity 150ms linear 0s allow-discrete, transform 150ms ease-out 0s allow-discrete;
 
     .inner-menu {
         position: absolute;
@@ -173,6 +174,11 @@ body:has(.mobile-menu[open]) .full-menu {
 
         li {
             height: 48px;
+
+            a:hover {
+                color: #4F525E !important;
+                background-color: transparent;
+            }
         }
 
         .button-dark,
