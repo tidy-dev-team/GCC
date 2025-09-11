@@ -140,7 +140,8 @@ body:has(.mobile-menu[open]) .full-menu {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: hsla(0, 0%, 93%, .6);
+    // background-color: hsla(0, 0%, 93%, .5);
+    background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(20px);
     z-index: 9999999;
 
@@ -160,8 +161,8 @@ body:has(.mobile-menu[open]) .full-menu {
     visibility: hidden;
     display: flex;
     opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 300ms linear 0s allow-discrete, transform 300ms ease-out 0s allow-discrete;
+    transform: translateY(50%);
+    transition: opacity 300ms linear 0s allow-discrete, transform 300ms ease-in-out 0s allow-discrete;
 
     .inner-menu {
         position: absolute;
@@ -169,6 +170,15 @@ body:has(.mobile-menu[open]) .full-menu {
         padding-top: 108px;
         justify-content: center;
         display: flex;
+
+        li {
+            height: 48px;
+        }
+
+        .button-dark,
+        .button-light {
+            height: 54px;
+        }
     }
 
     .inner-menu a,
