@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-Medium.ttf') format('truetype');
+  font-weight: 100 200 300 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.copernicus {
+  font-family: 'copernicus';
+}
