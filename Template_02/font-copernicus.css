@@ -38,6 +38,51 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-MediumItalic.ttf') format('truetype');
+  font-weight: 100 200 300 400 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'copernicus';
+  src: url('fonts/CopernicusTrial-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 .copernicus {
   font-family: 'copernicus';
+}
+
+.copernicus-italic {
+  font-family: 'copernicus';
+  font-style: italic;
 }
