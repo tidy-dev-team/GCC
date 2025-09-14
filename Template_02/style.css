@@ -23,8 +23,27 @@ button, .btn {
   transition: all 300ms ease-in-out 0s;
 }
 
+.grid-card {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  row-gap: 36px;
+}
+
+.card {
+  width: 380px;
+}
+
 .card-title {
   font-size: 22px;
+}
+
+.card-image {
+  height: 160px;
+  height: 100px;
+  object-fit: cover;
 }
 
 button::after, .btn::after {
@@ -60,7 +79,7 @@ button:active, .btn:active {
 }
 
 .section {
-  max-width: 900px;
+  max-width: 1200px;
   width: calc(100% - 32px);
   padding: 16px 0;
   margin: 0 auto;
