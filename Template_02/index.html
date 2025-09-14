@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Mosadad</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
@@ -16,8 +20,8 @@
 <body>
 
     <!-- COMPONENT: NAVBAR -->
-    <div class="navbar bg-base-100 shadow-sm px-4 absolute top-10 w-164">
-        <div class="navbar-start ml-4">
+    <div class="navbar bg-base-100 shadow-sm absolute top-10 w-164 rounded-md flex justify-between">
+        <div class="navbar-start w-fit ml-4">
             <img src="images/logo.svg" />
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -26,65 +30,119 @@
                 <li><a>Careers</a></li>
             </ul>
         </div>
-        <div class="flex gap-4 navbar-end">
-            <a class="btn btn-neutral btn-outline uppercase">Partner with Us</a>
+        <div class="flex gap-4 w-fit">
+            <a class="btn">Partner with Us</a>
         </div>
     </div>
 
     <!-- COMPONENT: HERO -->
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content text-center">
-            <div>
-                <h1 class="text-5xl font-bold">AI-native claims automation. Built for insurers.</h1>
-                <p class="py-6">
-                    Mosadad uses AI to settle motor claims between Claimant and At-Fault Insurers — in real time, with zero manual processing <strong>and full regulatory alignment.</strong>
+            <div class="flex flex-col items-center">
+                <h1 class="text-7xl font-bold">
+                    Cut claim costs.<br />
+                    Reduce risk. Automate<br />
+                    recovery.
+                </h1>
+                <p class="py-6 max-w-[830px] font-medium text-xl">
+                    Mosadad uses AI to streamline motor claim settlements — in real time, with zero manual processing
+                    and full regulatory alignment
                 </p>
-                <button class="btn btn-neutral">Partner with Us</button>
-                
+                <button class="btn">Partner with Us</button>
+
             </div>
         </div>
     </div>
-    <!--  COPONENT: TEXT  --> 
+    <!--  COPONENT: TEXT  -->
     <section class="section mx-auto max-w-5xl px-4 py-14 section">
         <div class="text-center">
-            <h2 class="text-6xl text-center mt-20">How it works</h2>
-            <h5 class="text-4xl text-center mt-5 mb-20">Simple. Verified. Compliant.</h5>
-        </div> 
-        <div class="mt-8 card bg-base-100">
-          <div class="card-body"> 
-            <div class="rounded-box border-primary/40 p-5 md:p-6">
-              <div class="grid gap-8 md:grid-cols-2"> 
-                <div>
-                  <h3 class="font-semibold text-base md:text-lg">
-                    ➤ For Borrowers (Need Labor?)
-                  </h3>
-                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
-                    <li><span class="font-medium">Find &amp; Select Labor</span></li>
-                    <li>Search across verified camps, filter by skill, location, insurance, blacklist status, and more.</li>
-                    <li><span class="font-medium">Raise a Purchase Order (PO)</span></li>
-                    <li>View pricing by worker and vehicle. Submit PO instantly.</li>
-                    <li><span class="font-medium">Sign &amp; Pay Securely</span></li>
-                    <li>Use UAE Pass to sign contracts. Pay through escrow. Funds released only after confirmed deployment.</li>
-                  </ul>
-                </div> 
-                <div>
-                  <h3 class="font-semibold text-base md:text-lg">
-                    ➤ For Lenders (Have Labor?)
-                  </h3>
-                  <ul class="mt-3 list-disc marker:text-primary pl-5 space-y-2 text-sm leading-relaxed">
-                    <li><span class="font-medium">List Labor Camps</span></li>
-                    <li>Upload labor data in bulk. Set availability, manage documents.</li>
-                    <li><span class="font-medium">Approve &amp; Contract</span></li>
-                    <li>Accept POs, auto-generate contracts, and sign with UAE Pass.</li>
-                    <li><span class="font-medium">Get Paid via Escrow</span></li>
-                    <li>Once deployment is confirmed by the borrower, funds are released to your e-wallet.</li>
-                  </ul>
-                </div>
-              </div>
-            </div> 
-          </div>
+            <h2 class="text-6xl text-center mt-20">
+                Cut the Bottlenecks.<br />
+                Keep the Wins.
+            </h2>
         </div>
-      </section>
+        <div class="mt-8 card bg-base-100">
+            <div class="card-body">
+                <div class="rounded-box border-primary/40 p-5 md:p-6">
+                    <div class="grid gap-8 md:grid-cols-3">
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <figure>
+                                <img src="images/card-01.png" />
+                            </figure>
+                            <div class="card-body text-center">
+                                <h2 class="card-title justify-center">AI-First by Design</h2>
+                                <p class="text-[#666666] font-normal">
+                                    Turn downtime into revenue. Lend workers to verified companies across the UAE.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- COMPONENT: LIST -->
@@ -163,82 +221,79 @@
 
 
     <!-- COMPONENT: ACCORDION -->
-    <section class="section mx-auto max-w-6xl px-4 md:px-6 py-14"> 
+    <section class="section mx-auto max-w-6xl px-4 md:px-6 py-14">
         <div class="text-center">
-            <h2 class="text-6xl text-center my-20">Core Capabilities</h2> 
-        </div>  
-        <div class="flex gap-8 items-start"> 
-          <div class="basis-80 shrink-0 w-80">
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="UAE Pass Integration"
-              data-sub="Digital identity + contract signature">
-              <span>
-                <span class="block font-semibold">UAE Pass Integration</span>
-                <span class="block text-xs text-base-content/60">Digital identity + contract signature</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="Site & Camp Mapping"
-              data-sub="Geospatial view of camps and sites">
-              <span>
-                <span class="block font-semibold">Site & Camp Mapping</span>
-                <span class="block text-xs text-base-content/60">Geospatial view of camps and sites</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-            <button 
-              class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
-              data-title="Labor Profile Management"
-              data-sub="Skills, documents, availability">
-              <span>
-                <span class="block font-semibold">Labor Profile Management</span>
-                <span class="block text-xs text-base-content/60">Skills, documents, availability</span>
-              </span>
-              <span class="shrink-0 opacity-60">→</span>
-            </button> 
-          </div> 
-          <div class="flex-1">
-            <div class="card bg-base-100 border border-base-300 shadow-sm">
-                <div class="card-body">
-                <div id="preview" class="text-center min-h-[200px] flex flex-col justify-center">
-                    <h3 class="text-xl font-semibold">UAE Pass Integration</h3>
-                    <p class="mt-2 text-sm text-base-content/60">Digital identity + contract signature</p>
-                </div>
+            <h2 class="text-6xl text-center my-20">Core Capabilities</h2>
+        </div>
+        <div class="flex gap-8 items-start">
+            <div class="basis-80 shrink-0 w-80">
+                <button
+                    class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+                    data-title="UAE Pass Integration" data-sub="Digital identity + contract signature">
+                    <span>
+                        <span class="block font-semibold">UAE Pass Integration</span>
+                        <span class="block text-xs text-base-content/60">Digital identity + contract signature</span>
+                    </span>
+                    <span class="shrink-0 opacity-60">→</span>
+                </button>
+                <button
+                    class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+                    data-title="Site & Camp Mapping" data-sub="Geospatial view of camps and sites">
+                    <span>
+                        <span class="block font-semibold">Site & Camp Mapping</span>
+                        <span class="block text-xs text-base-content/60">Geospatial view of camps and sites</span>
+                    </span>
+                    <span class="shrink-0 opacity-60">→</span>
+                </button>
+                <button
+                    class="feature btn btn-ghost w-full justify-between rounded-none border-b border-base-200 px-0 py-4 text-left"
+                    data-title="Labor Profile Management" data-sub="Skills, documents, availability">
+                    <span>
+                        <span class="block font-semibold">Labor Profile Management</span>
+                        <span class="block text-xs text-base-content/60">Skills, documents, availability</span>
+                    </span>
+                    <span class="shrink-0 opacity-60">→</span>
+                </button>
+            </div>
+            <div class="flex-1">
+                <div class="card bg-base-100 border border-base-300 shadow-sm">
+                    <div class="card-body">
+                        <div id="preview" class="text-center min-h-[200px] flex flex-col justify-center">
+                            <h3 class="text-xl font-semibold">UAE Pass Integration</h3>
+                            <p class="mt-2 text-sm text-base-content/60">Digital identity + contract signature</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
-      </section>
-    
-      <script>
+    </section>
+
+    <script>
         const items = document.querySelectorAll('.feature');
         const preview = document.getElementById('preview');
-     
+
         if (items.length) {
-          const first = items[0];
-          updatePreview(first.dataset.title, first.dataset.sub);
-          first.classList.add('bg-base-200');
+            const first = items[0];
+            updatePreview(first.dataset.title, first.dataset.sub);
+            first.classList.add('bg-base-200');
         }
-    
+
         items.forEach(btn => {
-          btn.addEventListener('click', () => {
-            items.forEach(i => i.classList.remove('bg-base-200'));
-            btn.classList.add('bg-base-200');
-            updatePreview(btn.dataset.title, btn.dataset.sub);
-          });
+            btn.addEventListener('click', () => {
+                items.forEach(i => i.classList.remove('bg-base-200'));
+                btn.classList.add('bg-base-200');
+                updatePreview(btn.dataset.title, btn.dataset.sub);
+            });
         });
-    
+
         function updatePreview(title, sub) {
-          preview.innerHTML = `
+            preview.innerHTML = `
             <h3 class="text-xl font-semibold">${title}</h3>
             <p class="mt-2 text-sm text-base-content/60">${sub}</p>
           `;
         }
-      </script>    
-    
+    </script>
+
     <!-- COMPONENT: LIST -->
     <section class="section">
         <h2 class="text-6xl text-center my-20">Why Mosadad</h2>
@@ -275,70 +330,72 @@
                     <div class="text-xs font-semibold opacity-60">Sign and manage labor contracts 100% digitally with
                         UAE Pass.</div>
                 </div>
-            </li>  
+            </li>
         </ul>
     </section>
 
-   
 
-        <!-- COMPONENT: LIST -->
-        <section class="section">
 
-            <div class="text-center">
-                <h2 class="text-6xl text-center my-20 mb-0"> Compliance & Security (temporary title)</h2>  
-            </div> 
-            <ul class="list flex flex-row gap-4 flex-wrap justify-center my-20">
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Slash Project Delays</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Contractless, Paperless</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Monetize Idle Labor</div> 
-                    </div>
-                </li>
-    
-                <li class="list-column max-w-2xs w-full rounded-xl p-4"> 
-                    <div>
-                        <div class="mb-4 text-4xl">Slash Project Delays</div>
-                    </div>
-                </li>
-     
-    
-            </ul>
-            <p>AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance requirements of UAE authorities.</p>
-        </section>
-   <!-- COMPONENT: HERO -->
-        <section class="section"> 
-            <div class="hero my-50">
-                <div class="hero-content text-center">
-                    <div>
-                        <div class="text-center my-20 ">
-                            <h2 class="text-6xl text-center mb-0">Start Exchanging Labor Today — Securely and Seamlessly</h2>  
-                        </div>  
-                        <button class="btn btn-neutral">Partner with Us</button>
-                    </div>
+    <!-- COMPONENT: LIST -->
+    <section class="section">
+
+        <div class="text-center">
+            <h2 class="text-6xl text-center my-20 mb-0"> Compliance & Security (temporary title)</h2>
+        </div>
+        <ul class="list flex flex-row gap-4 flex-wrap justify-center my-20">
+
+            <li class="list-column max-w-2xs w-full rounded-xl p-4">
+                <div>
+                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
                 </div>
-            </div>   
-        </section>
+            </li>
 
-    
- 
+            <li class="list-column max-w-2xs w-full rounded-xl p-4">
+                <div>
+                    <div class="mb-4 text-4xl">Slash Project Delays</div>
+                </div>
+            </li>
+
+            <li class="list-column max-w-2xs w-full rounded-xl p-4">
+                <div>
+                    <div class="mb-4 text-4xl">Contractless, Paperless</div>
+                </div>
+            </li>
+
+            <li class="list-column max-w-2xs w-full rounded-xl p-4">
+                <div>
+                    <div class="mb-4 text-4xl">Monetize Idle Labor</div>
+                </div>
+            </li>
+
+            <li class="list-column max-w-2xs w-full rounded-xl p-4">
+                <div>
+                    <div class="mb-4 text-4xl">Slash Project Delays</div>
+                </div>
+            </li>
+
+
+        </ul>
+        <p>AMEL ensures every transaction, contract, and labor deployment meets the legal, financial, and compliance
+            requirements of UAE authorities.</p>
+    </section>
+    <!-- COMPONENT: HERO -->
+    <section class="section">
+        <div class="hero my-50">
+            <div class="hero-content text-center">
+                <div>
+                    <div class="text-center my-20 ">
+                        <h2 class="text-6xl text-center mb-0">Start Exchanging Labor Today — Securely and Seamlessly
+                        </h2>
+                    </div>
+                    <button class="btn btn-neutral">Partner with Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- COMPONENT: FOOTER -->
     <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">

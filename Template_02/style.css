@@ -1,5 +1,58 @@
+body {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .navbar {
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.04);
+}
+
+button, .btn {
+  background-color: #DEDFDF;
+  border: none;
+  text-transform: uppercase;
+  padding: 26px 16px;
+  padding-right: 6px;
+  display: flex;
+  gap: 18px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0);
+  transition: all 300ms ease-in-out 0s;
+}
+
+.card-title {
+  font-size: 22px;
+}
+
+button::after, .btn::after {
+  content: '';
+  background-image: url('images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 42px;
+  height: 42px;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.04);
+}
+
+button:active, .btn:active {
+  transform: scale(1.05) translateY(2px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  background-image: url('images/hero.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .section:empty {
