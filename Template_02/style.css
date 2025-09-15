@@ -204,6 +204,10 @@ hr {
   background-image: url('images/stakeholder-03-hover.jpg');
 }
 
+.mobile-fullscreen {
+  max-width: calc(100% - 80px) !important;
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
@@ -286,5 +290,27 @@ hr {
     width: 100%;
     aspect-ratio: 1 / 1;
     max-width: unset;
+  }
+  
+  .mobile-100 {
+    width: 50vw;
+    max-width: 50vw;
+  }
+  
+  section, .section {
+    overflow: hidden;
+  }
+  
+  .mobile-fullscreen {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  
+  .mobile-gap {
+    gap: 32px;
+  }
+  
+  .mobile-footer {
+    padding: 16px;
   }
 }
