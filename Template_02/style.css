@@ -128,6 +128,21 @@ hr {
   max-width: unset;
 }
 
+.car-container {
+  border-bottom: 1px solid #DEDFDF;
+  width: 100vw;
+  transform: translateX(-16px);
+}
+
+.car {
+  width: 6vw;
+  height: 6vw;
+  background-image: url('images/car.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
 .stakeholder-card-01 {
   background-image: url('images/stakeholder-01.jpg');
 }
