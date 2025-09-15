@@ -82,6 +82,7 @@ button:active, .btn:active {
 
 .footer {
   background-image: url('images/footer.png');
+  margin-bottom: 0;
 }
 
 .section:empty {
@@ -99,6 +100,7 @@ button:active, .btn:active {
   max-width: unset;
   width: 100% !important;
   margin: 0 !important;
+  padding: 0;
 }
 
 hr {
