@@ -50,10 +50,13 @@ button, .btn {
   height: 160px;
   height: 100px;
   object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .w-half {
-  height: 470px;
+  width: 470px;
   height: 320px;
 }
 
@@ -121,7 +124,32 @@ hr {
   color: white !important;
   margin-top: 200px;
   margin-bottom: 200px;
-  box-shadow: -1200px 0 0 0 #1072FA, 1200px 0 0 0 #1072FA, -2400px 0 0 0 #1072FA, 2400px 0 0 0 #1072FA;
+  width: 100%;
+  max-width: unset;
+}
+
+.stakeholder-card-01 {
+  background-image: url('images/stakeholder-01.jpg');
+}
+
+.stakeholder-card-01:hover {
+  background-image: url('images/stakeholder-01-hover.jpg');
+}
+
+.stakeholder-card-02 {
+  background-image: url('images/stakeholder-02.jpg');
+}
+
+.stakeholder-card-02:hover {
+  background-image: url('images/stakeholder-02-hover.jpg');
+}
+
+.stakeholder-card-03 {
+  background-image: url('images/stakeholder-03.jpg');
+}
+
+.stakeholder-card-03:hover {
+  background-image: url('images/stakeholder-03-hover.jpg');
 }
 
 @media (max-width:480px) {
