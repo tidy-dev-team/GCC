@@ -107,6 +107,10 @@ hr {
   border-color: #1072FA;
 }
 
+.flex-row {
+  flex-direction: row !important;
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
