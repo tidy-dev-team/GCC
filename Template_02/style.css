@@ -133,6 +133,11 @@ hr {
   max-width: unset;
 }
 
+.icon-image {
+  width: 40px;
+  height: 40px;
+}
+
 .car-container {
   border-bottom: 1px solid #DEDFDF;
   width: 100vw;
