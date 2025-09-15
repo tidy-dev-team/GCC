@@ -208,6 +208,11 @@ hr {
   max-width: calc(100% - 80px) !important;
 }
 
+.mobile-60 {
+  margin-top: 280px !important;
+  margin-bottom: 280px !important;
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
@@ -260,6 +265,11 @@ hr {
   
   .mobile-top {
     margin-top: 60px;
+  }
+  
+  .mobile-60 {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
   }
   
   .mobile-card {
