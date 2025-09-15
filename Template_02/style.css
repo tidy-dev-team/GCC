@@ -119,6 +119,11 @@ hr {
   flex-direction: row !important;
 }
 
+.blue-bg {
+  background-color: #1072FA;
+  color: white !important;
+}
+
 .blue {
   background-color: #1072FA;
   color: white !important;
