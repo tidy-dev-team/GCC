@@ -213,4 +213,48 @@ hr {
     flex-direction: column;
     align-items: center;
   }
+  
+  .navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    box-shadow: unset;
+  }
+  
+  .mobile-col {
+    flex-direction: column;
+  }
+  
+  .mobile-center {
+    margin: 0 !important;
+  }
+  
+  .text-7xl {
+    font-size: 34px;
+  }
+  
+  .text-6xl {
+    font-size: 28px;
+  }
+  
+  .text-xl {
+    font-size: 16px;
+  }
+  
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .min-h-screen {
+    min-height: 78vh;
+  }
+  
+  .hero {
+    background-attachment: unset;
+  }
+  
+  .mobile-top {
+    margin-top: 60px;
+  }
 }
