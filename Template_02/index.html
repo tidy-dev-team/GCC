@@ -20,7 +20,7 @@
 <body>
 
     <!-- COMPONENT: NAVBAR -->
-    <div class="navbar bg-base-100 shadow-sm absolute top-10 w-164 rounded-md flex justify-between">
+    <div class="navbar bg-white shadow-sm absolute top-10 w-164 rounded-md flex justify-between">
         <div class="navbar-start w-fit ml-4">
             <img src="images/logo.svg" />
         </div>
@@ -36,7 +36,7 @@
     </div>
 
     <!-- COMPONENT: HERO -->
-    <div class="hero bg-base-200 min-h-screen">
+    <div class="hero bg-white min-h-screen">
         <div class="hero-content text-center">
             <div class="flex flex-col items-center">
                 <h1 class="text-7xl copernicus-italic">
@@ -63,7 +63,7 @@
                 Keep the Wins.
             </h2>
         </div>
-        <div class="mt-8 grid-card bg-base-100">
+        <div class="mt-8 grid-card bg-white">
             <div class="card">
                 <figure>
                     <img class="card-image" src="images/card-01.png" />
@@ -192,6 +192,51 @@
         </div>
     </section>
 
+    <section class="section mx-auto px-4 py-14 flex flex-col justify-center">
+        <div class="text-center">
+            <h2 class="text-6xl text-center mt-50 copernicus font-normal line-105">
+                For Every Stakeholder<br /> in Motor Claims
+            </h2>
+        </div>
+        <div class="mt-8 grid-card bg-white">
+            <div class="card">
+                <figure>
+                    <img class="card-image" src="images/card-01.png" />
+                </figure>
+                <div class="card-body text-center">
+                    <h2 class="card-title justify-center copernicus font-normal">Insurers</h2>
+                    <p class="text-[#666666] font-normal">
+                        Modernize motor claims, reduce fraud, and improve operational efficiency.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img class="card-image" src="images/card-02.png" />
+                </figure>
+                <div class="card-body text-center">
+                    <h2 class="card-title justify-center copernicus font-normal">Regulators</h2>
+                    <p class="text-[#666666] font-normal">
+                        Gain real-time visibility into market-wide claims and compliance metrics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img class="card-image" src="images/card-03.png" />
+                </figure>
+                <div class="card-body text-center">
+                    <h2 class="card-title justify-center copernicus font-normal">Government Initiatives</h2>
+                    <p class="text-[#666666] font-normal">
+                        Enable public-private infrastructure for smart mobility and safer roads.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- COMPONENT: LIST -->
     <section class="section">
@@ -304,7 +349,7 @@
                 </button>
             </div>
             <div class="flex-1">
-                <div class="card bg-base-100 border border-base-300 shadow-sm">
+                <div class="card bg-white border border-base-300 shadow-sm">
                     <div class="card-body">
                         <div id="preview" class="text-center min-h-[200px] flex flex-col justify-center">
                             <h3 class="text-xl font-semibold">UAE Pass Integration</h3>
@@ -316,31 +361,6 @@
         </div>
     </section>
 
-    <script>
-        const items = document.querySelectorAll('.feature');
-        const preview = document.getElementById('preview');
-
-        if (items.length) {
-            const first = items[0];
-            updatePreview(first.dataset.title, first.dataset.sub);
-            first.classList.add('bg-base-200');
-        }
-
-        items.forEach(btn => {
-            btn.addEventListener('click', () => {
-                items.forEach(i => i.classList.remove('bg-base-200'));
-                btn.classList.add('bg-base-200');
-                updatePreview(btn.dataset.title, btn.dataset.sub);
-            });
-        });
-
-        function updatePreview(title, sub) {
-            preview.innerHTML = `
-            <h3 class="text-xl font-semibold">${title}</h3>
-            <p class="mt-2 text-sm text-base-content/60">${sub}</p>
-          `;
-        }
-    </script>
 
     <!-- COMPONENT: LIST -->
     <section class="section">
@@ -468,16 +488,16 @@
                             © 2025 Website Ltd. All rights reserved.
                         </p>
                         <div class="flex gap-8">
-                            <a href="#" class="font-normal text-[#666666]">
+                            <a href="#" class="font-semibold">
                                 Privacy Policy
                             </a>
-                            <a href="#" class="font-normal text-[#666666]">
+                            <a href="#" class="font-semibold">
                                 Terms & Conditions
                             </a>
-                            <a href="#" class="font-normal text-[#666666]">
+                            <a href="#" class="font-semibold">
                                 Accessibility
                             </a>
-                            <a href="#" class="font-normal text-[#666666]">
+                            <a href="#" class="font-semibold">
                                 Manage Preferences
                             </a>
                         </div>
