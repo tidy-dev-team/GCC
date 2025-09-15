@@ -257,4 +257,28 @@ hr {
   .mobile-top {
     margin-top: 60px;
   }
+  
+  .mobile-card {
+    flex-direction: row;
+  }
+  
+  .mobile-card .card-image {
+    object-fit: contain;
+    transform: translateY(16px);
+    height: 40px;
+    width: 40px;
+  }
+  
+  .mobile-card figure {
+    align-items: flex-start;
+  }
+  
+  .mobile-card .text-center, .mobile-card h2 {
+    text-align: left;
+    width: fit-content;
+  }
+  
+  .mobile-no-break {
+    display: none;
+  }
 }
