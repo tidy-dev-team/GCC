@@ -137,10 +137,37 @@ hr {
 .car {
   width: 6vw;
   height: 6vw;
+  animation: carAnim 20000ms linear infinite;
+}
+
+.inner-car {
+  width: 100%;
+  height: 100%;
   background-image: url('images/car.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
+  animation: carWiggle 100ms ease-in-out infinite;
+}
+
+@keyframes carAnim {
+  0% {
+    transform: translateX(-6vw);
+  }
+  
+  100% {
+    transform: translateX(106vw);
+  }
+}
+
+@keyframes carWiggle {
+  0% {
+    transform: translateY(-1px);
+  }
+  
+  100% {
+    transform: translateY(1px);
+  }
 }
 
 .stakeholder-card-01 {
