@@ -312,6 +312,7 @@ hr {
   
   .mobile-footer {
     padding: 16px;
+    gap: 48px;
   }
   
   .mobile-wrap {
