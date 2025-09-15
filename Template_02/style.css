@@ -237,6 +237,11 @@ hr {
   
   .mobile-center {
     margin: 0 !important;
+    text-align: center;
+  }
+  
+  .mobile-center h2 {
+    width: 100% !important;
   }
   
   .text-7xl {
@@ -337,5 +342,19 @@ hr {
   
   .mobile-reverse p {
     text-align: left;
+  }
+  
+  .mobile-grid .card {
+    max-width: 100%;
+  }
+  
+  .footer {
+    margin: 0;
+  }
+  
+  .car {
+    width: 30vw;
+    height: 30vw;
+    animation-duration: 6000ms;
   }
 }
