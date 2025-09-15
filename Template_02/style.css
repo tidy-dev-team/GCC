@@ -281,4 +281,10 @@ hr {
   .mobile-no-break {
     display: none;
   }
+  
+  .mobile-full {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: unset;
+  }
 }
