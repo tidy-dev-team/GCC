@@ -162,11 +162,11 @@ hr {
 
 @keyframes carAnim {
   0% {
-    transform: translateX(-6vw);
+    transform: translateX(-30vw);
   }
   
   100% {
-    transform: translateX(106vw);
+    transform: translateX(130vw);
   }
 }
 
