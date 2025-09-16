@@ -284,6 +284,7 @@ hr {
   
   .hero {
     background-attachment: unset;
+    background-image: url('images/hero-mobile.png');
   }
   
   .mobile-top {
