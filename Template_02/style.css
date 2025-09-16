@@ -376,4 +376,8 @@ hr {
     height: 30vw;
     animation-duration: 6000ms;
   }
+  
+  .less-mobile {
+    margin-top: 60px;
+  }
 }
