@@ -183,6 +183,7 @@ hr {
 
 .stakeholder-card-01 {
   background-image: url('images/stakeholder-01.jpg');
+  transition: all 300ms linear 0s;
 }
 
 .stakeholder-card-01:hover {
@@ -191,6 +192,7 @@ hr {
 
 .stakeholder-card-02 {
   background-image: url('images/stakeholder-02.jpg');
+  transition: all 300ms linear 0s;
 }
 
 .stakeholder-card-02:hover {
@@ -199,6 +201,7 @@ hr {
 
 .stakeholder-card-03 {
   background-image: url('images/stakeholder-03.jpg');
+  transition: all 300ms linear 0s;
 }
 
 .stakeholder-card-03:hover {
