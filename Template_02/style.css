@@ -143,6 +143,7 @@ hr {
   border-bottom: 1px solid #DEDFDF;
   width: 100vw;
   transform: translateX(-16px);
+  overflow: hidden;
 }
 
 .car {
