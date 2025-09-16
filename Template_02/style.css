@@ -301,7 +301,7 @@ hr {
   
   .mobile-card .card-image {
     object-fit: contain;
-    transform: translateY(16px);
+    transform: translateY(18px);
     height: 40px;
     width: 40px;
   }
