@@ -162,9 +162,6 @@ hr {
   animation: carAnim 20000ms linear infinite;
   animation-play-state: paused;
   animation-delay: -4000ms;
-  /* TODO:
-  Change car animation to start when user reach it
-  */
 }
 
 .car-container.animate .car {
