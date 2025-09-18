@@ -381,6 +381,7 @@ hr {
     width: 30vw;
     height: 30vw;
     animation-duration: 6000ms;
+    animation-delay: 0ms;
   }
   
   .less-mobile {
