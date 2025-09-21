@@ -413,13 +413,22 @@
         </div>
     </section>
 
-    <section class="open-menu hidden" id="openMenu">
+    <section class="open-menu hideme" id="openMenu">
         <div class="navbar bg-white shadow-sm fixed top-10 w-164 rounded-md flex justify-between z-[100]">
             <div class="navbar-start w-fit ml-4">
                 <img src="images/logo.svg" />
             </div>
             <div class="mobile-menu close" onclick="menuToggle();"></div>
         </div>
+
+        <div class="navbar-center">
+            <ul class="menu menu-horizontal px-1 flex flex-col items-center gap-8">
+                <li class="copernicus text-xl text-white"><a>About</a></li>
+                <li class="copernicus text-xl text-white"><a>Careers</a></li>
+                <a class="btn">Partner with Us</a>
+            </ul>
+        </div>
+
     </section>
 
     <script>
@@ -436,7 +445,7 @@
         observer.observe(carSection);
 
         function menuToggle() {
-            document.getElementById("openMenu").classList.toggle("hidden");
+            document.getElementById("openMenu").classList.toggle("hideme");
         }
     </script>
 

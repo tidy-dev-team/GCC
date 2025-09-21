@@ -257,7 +257,7 @@ hr {
   margin-bottom: 280px !important;
 }
 
-.hidden {
+.hideme {
   display: none;
 }
 
@@ -273,6 +273,18 @@ hr {
 
 .open-menu img {
   filter: invert(100%);
+}
+
+.open-menu .navbar-center {
+  position: fixed;
+  top: 108px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.open-menu .btn {
+  width: max-content;
+  margin-top: 72px;
 }
 
 @media (max-width:480px) {
