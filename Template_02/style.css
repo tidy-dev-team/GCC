@@ -125,6 +125,16 @@ hr {
   flex-direction: row !important;
 }
 
+.mobile-menu {
+  display: none;
+  background-image: url(images/mobile-menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+
 .blue-bg {
   background-color: #1072FA;
   color: white !important;
@@ -526,7 +536,12 @@ hr {
   section:has(.translate-y-30) {
     gap: 0 !important;
   }
-  .mobile-grid{
+  
+  .mobile-grid {
     margin-top: 0 !important;
+  }
+  
+  .mobile-menu {
+    display: block;
   }
 }
