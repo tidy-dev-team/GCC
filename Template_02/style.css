@@ -1,7 +1,9 @@
 @import 'font-copernicus.css';
 
 /* TODO:
-[ ] Add Mobile menu */
+[ ] Add Mobile menu
+[ ] Car section - scroll horizontally
+*/
 
 body {
   font-family: "Geist Mono", monospace;
@@ -409,6 +411,8 @@ hr {
   
   .blue {
     margin-top: 64px;
+    margin-bottom: 64px;
+    padding-bottom: 0px;
   }
   
   .blue h2 {
@@ -426,5 +430,25 @@ hr {
   .blue .card-body {
     padding-left: 0;
     padding-right: 0;
+  }
+  
+  .blue .grid-card:last-of-type {
+    margin-bottom: 64px;
+  }
+  
+  .w-\[80\%\] {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  .card-responsive {
+    width: calc(50% - 16px) !important;
+    max-width: calc(50% - 16px) !important;
+  }
+  .card-responsive .card-body{
+    gap: 32px;
+  }
+  .card-responsive .card-body h2{
+    font-size: 14px;
   }
 }
