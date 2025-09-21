@@ -412,6 +412,19 @@ hr {
   }
   
   .blue h2 {
-    margin-top: 64px;
+    margin-top: 48px;
+  }
+  
+  .mb-34 {
+    margin-top: 48px;
+  }
+  
+  .blue h2.card-title {
+    margin-top: 8px;
+  }
+  
+  .blue .card-body {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
