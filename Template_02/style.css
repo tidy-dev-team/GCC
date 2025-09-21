@@ -513,4 +513,20 @@ hr {
     transform: scale(0.6);
     transform-origin: 0 50%;
   }
+  
+  .translate-y-30 {
+    translate: none !important;
+    transform: translateY(40px);
+  }
+  
+  .translate-y-30 .mt-20 {
+    margin-top: 20px !important;
+  }
+  
+  section:has(.translate-y-30) {
+    gap: 0 !important;
+  }
+  .mobile-grid{
+    margin-top: 0 !important;
+  }
 }
