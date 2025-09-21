@@ -470,6 +470,10 @@ hr {
     height: 24px;
   }
   
+  .card-responsive .gap-12 {
+    gap: unset;
+  }
+  
   .mobile-fullscreen {
     padding-top: 0 !important;
     margin-bottom: 32px !important;
@@ -493,5 +497,20 @@ hr {
   
   .footer .gap-8 {
     row-gap: 8px !important;
+  }
+  
+  .mobile-col-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .mobile-col-footer img {
+    width: calc(100vw - 64px) !important;
+    max-width: calc(100vw - 64px) !important;
+  }
+  
+  .mobile-col-footer img {
+    transform: scale(0.6);
+    transform-origin: 0 50%;
   }
 }
