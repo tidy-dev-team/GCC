@@ -33,7 +33,7 @@
         <div class="flex gap-4 w-fit">
             <a class="btn mobile-hidden">Partner with Us</a>
         </div>
-        <div class="mobile-menu"></div>
+        <div class="mobile-menu" onclick="menuToggle();"></div>
     </div>
 
     <!-- COMPONENT: HERO -->
@@ -413,6 +413,15 @@
         </div>
     </section>
 
+    <section class="open-menu hidden" id="openMenu">
+        <div class="navbar bg-white shadow-sm fixed top-10 w-164 rounded-md flex justify-between z-[100]">
+            <div class="navbar-start w-fit ml-4">
+                <img src="images/logo.svg" />
+            </div>
+            <div class="mobile-menu close" onclick="menuToggle();"></div>
+        </div>
+    </section>
+
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -425,6 +434,10 @@
         });
         const carSection = document.querySelector('.car-container');
         observer.observe(carSection);
+
+        function menuToggle() {
+            document.getElementById("openMenu").classList.toggle("hidden");
+        }
     </script>
 
 </body>
