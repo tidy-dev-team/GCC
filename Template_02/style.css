@@ -282,7 +282,7 @@ hr {
   }
   
   .min-h-screen {
-    min-height: 78vh;
+    min-height: 100vh;
   }
   
   .hero {
