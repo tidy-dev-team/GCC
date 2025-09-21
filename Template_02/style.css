@@ -595,9 +595,10 @@ hr {
   }
   
   .mobile-row div {
-    width: calc(100vw - 32px) !important;
+    width: calc(100vw - 80px) !important;
     scroll-snap-align: start;
     max-width: unset;
-    flex-shrink: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
