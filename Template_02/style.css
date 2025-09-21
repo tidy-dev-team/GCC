@@ -295,6 +295,10 @@ hr {
     background-image: url('images/hero-mobile.png');
   }
   
+  .footer {
+    background-image: url('images/footer.png');
+  }
+  
   .mobile-top {
     margin-top: 60px;
   }
@@ -442,13 +446,40 @@ hr {
   }
   
   .card-responsive {
-    width: calc(50% - 16px) !important;
-    max-width: calc(50% - 16px) !important;
+    width: calc(50% - 8px) !important;
+    max-width: calc(50% - 8px) !important;
+    padding: 16px 12px;
+    border-radius: 4px;
   }
-  .card-responsive .card-body{
-    gap: 32px;
+  
+  .card-responsive .card-body {
+    height: 108px;
+    justify-content: space-between;
   }
-  .card-responsive .card-body h2{
+  
+  .card-responsive .card-body h2 {
     font-size: 14px;
+  }
+  
+  .mobile-grid {
+    gap: 12px !important;
+  }
+  
+  .card-responsive .icon-image {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .mobile-fullscreen {
+    padding-top: 0 !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .footer h2 {
+    font-size: 36px !important;
+  }
+  
+  .footer .mobile-fullscreen {
+    gap: 200px;
   }
 }
