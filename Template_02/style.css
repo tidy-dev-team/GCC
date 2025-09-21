@@ -482,4 +482,16 @@ hr {
   .footer .mobile-fullscreen {
     gap: 200px;
   }
+  
+  .mobile-footer {
+    border-radius: 6px;
+  }
+  
+  .footer p, .footer div {
+    font-size: 12px !important;
+  }
+  
+  .footer .gap-8 {
+    row-gap: 8px !important;
+  }
 }
