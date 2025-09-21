@@ -390,5 +390,28 @@ hr {
   .mobile-card .text-center, .mobile-card h2 {
     text-align: center !important;
     width: 100%;
+    font-size: 18px;
+  }
+  
+  .less-mobile {
+    margin-bottom: 32px;
+  }
+  
+  .text-\[22px\] {
+    font-size: 18px;
+  }
+  
+  .mobile-gap-2 {
+    gap: 8px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  
+  .blue {
+    margin-top: 64px;
+  }
+  
+  .blue h2 {
+    margin-top: 64px;
   }
 }
