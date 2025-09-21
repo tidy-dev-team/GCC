@@ -584,4 +584,20 @@ hr {
   .mobile-menu {
     display: block;
   }
+  
+  .mobile-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .mobile-row div {
+    width: calc(100vw - 32px) !important;
+    scroll-snap-align: start;
+    max-width: unset;
+    flex-shrink: 0;
+  }
 }
