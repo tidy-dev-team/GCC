@@ -257,8 +257,8 @@ hr {
   margin-bottom: 280px !important;
 }
 
-.hideme {
-  display: none;
+.open-menu.hideme {
+  transform: translateX(100%);
 }
 
 .open-menu {
@@ -269,6 +269,8 @@ hr {
   left: 0;
   background-color: #1072FA;
   z-index: 999;
+  transform: translateX(0);
+  transition: transform 200ms ease-in-out 0s;
 }
 
 .open-menu img {
