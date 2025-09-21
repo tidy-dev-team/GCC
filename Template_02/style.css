@@ -1,5 +1,8 @@
 @import 'font-copernicus.css';
 
+/* TODO:
+[ ] Add Mobile menu */
+
 body {
   font-family: "Geist Mono", monospace;
   font-optical-sizing: auto;
@@ -300,14 +303,13 @@ hr {
   }
   
   .mobile-card {
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .mobile-card .card-image {
     object-fit: contain;
-    transform: translateY(22px);
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
   }
   
   .mobile-card figure {
@@ -383,5 +385,10 @@ hr {
   
   .less-mobile {
     margin-top: 60px;
+  }
+  
+  .mobile-card .text-center, .mobile-card h2 {
+    text-align: center !important;
+    width: 100%;
   }
 }
