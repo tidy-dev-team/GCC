@@ -19,6 +19,10 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-.text-lg{
-    font-size: 18px !important;
+.text-lg {
+  font-size: 18px !important;
+}
+
+.no-center {
+  place-items: center flex-start;
 }
