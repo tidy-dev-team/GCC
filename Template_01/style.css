@@ -32,7 +32,23 @@ h1 {
 }
 
 @media (max-width:600px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .ml-for-mobile {
     margin-left: 0;
+  }
+  
+  .h1-mobile {
+    font-size: 38px;
+  }
+  
+  .para {
+    font-size: 1em;
+  }
+  
+  .no-center {
+    place-items: flex-start;
   }
 }
