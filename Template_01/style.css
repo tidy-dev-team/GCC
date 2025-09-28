@@ -27,6 +27,12 @@ h1 {
   place-items: center flex-start;
 }
 
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
 .ml-for-mobile {
   margin-left: 200px;
 }
@@ -50,5 +56,9 @@ h1 {
   
   .no-center {
     place-items: flex-start;
+  }
+  
+  .bg-image {
+    background-position: bottom right;
   }
 }
