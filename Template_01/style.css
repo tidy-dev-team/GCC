@@ -49,6 +49,10 @@ h2 {
   margin-left: 200px;
 }
 
+.mobile-pt {
+  padding-bottom: 60px;
+}
+
 @media (max-width:600px) {
   body {
     overflow-x: hidden;
@@ -87,7 +91,17 @@ h2 {
   .mobile-flex {
     flex-direction: column;
   }
-  .w-mobile-80{
+  
+  .w-mobile-80 {
     width: 100%;
+  }
+  
+  .mobile-pt {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .mobile-pb {
+    padding-bottom: 40px;
   }
 }
