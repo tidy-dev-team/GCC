@@ -29,6 +29,11 @@ h2 {
 
 .card-para {
   font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-para b {
+  font-weight: 600;
 }
 
 .text-lg {
@@ -51,6 +56,10 @@ h2 {
 
 .mobile-pt {
   padding-bottom: 60px;
+}
+
+.mobile-center {
+  justify-content: flex-start !important;
 }
 
 @media (max-width:600px) {
@@ -103,5 +112,10 @@ h2 {
   
   .mobile-pb {
     padding-bottom: 40px;
+  }
+  
+  .mobile-center {
+    text-align: center;
+    justify-content: center !important;
   }
 }
