@@ -58,8 +58,18 @@ h2 {
     margin-left: 0;
   }
   
+  .p-24-mobile {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+  }
+  
   .h1-mobile {
     font-size: 38px;
+  }
+  
+  .h2-mobile {
+    font-size: 28px;
   }
   
   .para {
