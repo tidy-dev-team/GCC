@@ -9,6 +9,14 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: "helvetica-neue-lt-pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
 .para {
   max-width: 1100px;
   font-family: "helvetica-neue-lt-pro";
@@ -17,6 +25,10 @@ h1 {
   font-size: 32px;
   line-height: 130%;
   letter-spacing: -0.02em;
+}
+
+.card-para {
+  font-size: 1rem;
 }
 
 .text-lg {
@@ -60,5 +72,9 @@ h1 {
   
   .bg-image {
     background-position: bottom right;
+  }
+  
+  .mobile-flex {
+    flex-direction: column;
   }
 }
