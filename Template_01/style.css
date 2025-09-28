@@ -87,4 +87,7 @@ h2 {
   .mobile-flex {
     flex-direction: column;
   }
+  .w-mobile-80{
+    width: 100%;
+  }
 }
