@@ -118,4 +118,8 @@ h2 {
     text-align: center;
     justify-content: center !important;
   }
+  
+  .card-title.w-full {
+    width: fit-content;
+  }
 }
