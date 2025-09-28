@@ -122,4 +122,8 @@ h2 {
   .card-title.w-full {
     width: fit-content;
   }
+  
+  .mobile-14 {
+    font-size: 14px;
+  }
 }
