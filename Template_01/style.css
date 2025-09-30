@@ -77,6 +77,16 @@ h2 {
   height: 54px;
 }
 
+.logo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-flex li {
+  max-width: calc(20% - 16px);
+}
+
 @media (max-width:600px) {
   body {
     overflow-x: hidden;
@@ -175,5 +185,9 @@ h2 {
   .mobile-s-30 {
     width: 30px;
     height: 30px;
+  }
+  
+  .logo-flex li {
+    max-width: calc(50% - 16px);
   }
 }
