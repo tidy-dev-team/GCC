@@ -109,6 +109,7 @@ h2 {
   
   .bg-image {
     background-position: bottom right;
+    background-image: url('assets/images/our-mission-mobile.png') !important;
   }
   
   .mobile-flex {
