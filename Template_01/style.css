@@ -72,6 +72,11 @@ h2 {
   height: fit-content;
 }
 
+.button-small {
+  padding: 16px 48px;
+  height: 54px;
+}
+
 @media (max-width:600px) {
   body {
     overflow-x: hidden;
@@ -165,5 +170,10 @@ h2 {
   .mobile-s-80 {
     width: 80px;
     height: 80px;
+  }
+  
+  .mobile-s-30 {
+    width: 30px;
+    height: 30px;
   }
 }
