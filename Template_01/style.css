@@ -194,4 +194,13 @@ h2 {
   .logo-flex li {
     max-width: calc(50% - 16px);
   }
+  
+  .py-mobile-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .cta-block {
+    padding-top: 24px;
+  }
 }
