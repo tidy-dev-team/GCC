@@ -91,6 +91,18 @@ h2 {
   max-width: calc(20% - 16px);
 }
 
+.para-big {
+  font-size: 24px;
+}
+
+.big-title {
+  font-size: 32px;
+}
+
+.desktop-pb {
+  padding-bottom: 200px;
+}
+
 @media (max-width:600px) {
   body {
     overflow-x: hidden;
@@ -202,5 +214,9 @@ h2 {
   
   .cta-block {
     padding-top: 24px;
+  }
+  
+  .big-title {
+    font-size: 18px;
   }
 }
