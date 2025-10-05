@@ -219,4 +219,8 @@ h2 {
   .big-title {
     font-size: 18px;
   }
+  
+  .cta-block-content-button, .hero-video .hero-content .hero-btn {
+    padding: 16px 36px;
+  }
 }
