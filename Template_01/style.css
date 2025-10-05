@@ -223,4 +223,8 @@ h2 {
   .cta-block-content-button, .hero-video .hero-content .hero-btn {
     padding: 16px 36px;
   }
+  
+  .hero-content {
+    padding: 24px;
+  }
 }
