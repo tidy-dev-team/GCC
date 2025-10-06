@@ -126,6 +126,10 @@ button:active, .btn:active {
   padding: 0;
 }
 
+.mobile-footer {
+  width: calc(100vw - 40px) !important;
+}
+
 hr {
   border-color: #1072FA;
 }
@@ -259,6 +263,15 @@ hr {
 
 .mobile-fullscreen {
   max-width: calc(100% - 80px) !important;
+}
+
+.footer .mobile-fullscreen {
+  width: 100%;
+  max-width: unset !important;
+}
+
+.footer .mobile-fullscreen > * {
+  width: 100%;
 }
 
 .mobile-60 {
@@ -417,6 +430,7 @@ hr {
   .mobile-footer {
     padding: 16px;
     gap: 48px;
+    border-radius: 6px;
   }
   
   .mobile-wrap {
@@ -544,10 +558,6 @@ hr {
   
   .footer .mobile-fullscreen {
     gap: 200px;
-  }
-  
-  .mobile-footer {
-    border-radius: 6px;
   }
   
   .footer p, .footer div {
