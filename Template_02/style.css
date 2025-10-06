@@ -142,6 +142,10 @@ hr {
   justify-content: space-between;
 }
 
+.desktop-no-break {
+  display: none;
+}
+
 .mobile-menu, .mobile-close {
   display: none;
   background-image: url(images/mobile-menu.svg);
@@ -401,6 +405,10 @@ hr {
   
   .mobile-no-break {
     display: none;
+  }
+  
+  .desktop-no-break {
+    display: inline;
   }
   
   .mobile-full {
