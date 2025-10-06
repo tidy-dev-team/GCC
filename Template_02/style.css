@@ -93,6 +93,10 @@ button:active, .btn:active {
   background-attachment: fixed;
 }
 
+.no-bg-img {
+  background-image: unset;
+}
+
 .footer {
   background-image: url('images/footer.png');
   margin-bottom: 0;
