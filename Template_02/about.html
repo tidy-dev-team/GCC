@@ -35,6 +35,45 @@
         <div class="mobile-menu" onclick="menuToggle();"></div>
     </div>
 
+
+
+
+    <section class="open-menu hideme" id="openMenu">
+        <div class="navbar bg-white shadow-sm fixed top-10 w-164 rounded-md flex justify-between z-[100]">
+            <div class="navbar-start w-fit ml-4">
+                <img src="images/logo.svg" />
+            </div>
+            <div class="mobile-menu close" onclick="menuToggle();"></div>
+        </div>
+
+        <div class="navbar-center">
+            <ul class="menu menu-horizontal px-1 flex flex-col items-center gap-8">
+                <li class="copernicus text-xl text-white"><a>About</a></li>
+                <li class="copernicus text-xl text-white"><a>Careers</a></li>
+                <a class="btn">Partner with Us</a>
+            </ul>
+        </div>
+
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        const carSection = document.querySelector('.car-container');
+        observer.observe(carSection);
+
+        function menuToggle() {
+            document.getElementById("openMenu").classList.toggle("hideme");
+        }
+    </script>
+
 </body>
 
 </html>
