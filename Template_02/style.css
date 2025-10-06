@@ -638,4 +638,8 @@ hr {
     width: 100% !important;
     max-width: 100% !important;
   }
+  
+  .mobile-24 {
+    font-size: 24px;
+  }
 }
