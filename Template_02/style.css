@@ -156,6 +156,11 @@ hr {
   height: 32px;
 }
 
+.card-third {
+  width: calc(33% - 8px) !important;
+  max-width: calc(33% - 8px) !important;
+}
+
 .close {
   background-image: url(images/mobile-close.svg) !important;
 }
