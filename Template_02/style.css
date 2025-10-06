@@ -633,4 +633,9 @@ hr {
     padding-left: 0;
     padding-right: 0;
   }
+  
+  .card-third {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
