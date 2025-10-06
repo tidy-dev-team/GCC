@@ -99,7 +99,7 @@ button:active, .btn:active {
 }
 
 .no-bg-img {
-  background-image: unset;
+  background-image: unset !important;
 }
 
 .footer {
