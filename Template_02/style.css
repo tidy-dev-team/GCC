@@ -93,6 +93,11 @@ button:active, .btn:active {
   background-attachment: fixed;
 }
 
+.h-fit {
+  height: fit-content;
+  flex-grow: unset;
+}
+
 .no-bg-img {
   background-image: unset;
 }
