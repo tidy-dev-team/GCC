@@ -29,6 +29,7 @@ body {
   border: none;
   width: 230px;
   height: 54px;
+  font-size: 16px;
   box-shadow: none;
   transition: scale 100ms ease-in-out 0s;
 }
