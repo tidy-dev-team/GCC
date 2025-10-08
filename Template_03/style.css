@@ -138,6 +138,16 @@ h2 {
   color: var(--color-light);
   font-size: 60px;
   font-family: 'rhetorik';
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+
+h5 {
+  color: var(--color-light);
+  font-size: 14px;
+  font-family: 'graphik';
+  text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   line-height: 1;
@@ -170,16 +180,28 @@ h2 {
   height: 100px;
 }
 
-.color-card.red {
+.bg-red {
   background-color: #DFA5A0;
 }
 
-.color-card.orange {
+.bg-orange {
   background-color: #F4986C;
 }
 
-.color-card.blue {
+.bg-blue {
   background-color: #9FB5C2;
+}
+
+.text-red {
+  color: #DFA5A0;
+}
+
+.text-orange {
+  color: #F4986C;
+}
+
+.text-blue {
+  color: #9FB5C2;
 }
 
 .color-card.outline {
@@ -192,7 +214,8 @@ h2 {
   padding-top: 14px;
   padding-bottom: 14px;
 }
-.color-card.outline img{
+
+.color-card.outline img {
   width: 26px;
   height: 26px;
 }
