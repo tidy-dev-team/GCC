@@ -126,10 +126,6 @@ button:active, .btn:active {
   padding: 0;
 }
 
-.mobile-footer {
-  width: calc(100vw - 40px) !important;
-}
-
 hr {
   border-color: #1072FA;
 }
