@@ -280,7 +280,7 @@ hr {
 }
 
 .footer .mobile-fullscreen > * {
-  width: 100%;
+  width: calc(100% - 16px);
 }
 
 .mobile-60 {
@@ -646,5 +646,13 @@ hr {
   
   .mobile-24 {
     font-size: 24px;
+  }
+  
+  .char-5 {
+    letter-spacing: -0.06rem;
+  }
+  
+  .hero-content {
+    padding: 24px;
   }
 }
