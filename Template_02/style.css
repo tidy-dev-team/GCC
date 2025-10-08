@@ -126,6 +126,10 @@ button:active, .btn:active {
   padding: 0;
 }
 
+.char-5 {
+  letter-spacing: -0.2rem;
+}
+
 hr {
   border-color: #1072FA;
 }
