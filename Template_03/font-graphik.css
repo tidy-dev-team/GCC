@@ -1,88 +1,88 @@
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Medium.ttf') format('truetype');
-  font-weight: 100 200 300 400 500;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-Thin.otf') format('opentype');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Semibold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-Light.otf') format('opentype');
+  font-weight: 200 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-Regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Extrabold.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-Medium.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Heavy.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-Bold.otf') format('opentype');
+  font-weight: 600 700 800 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-MediumItalic.ttf') format('truetype');
-  font-weight: 100 200 300 400 500;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-ThinItalic.otf') format('opentype');
+  font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-SemiboldItalic.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-LightItalic.otf') format('opentype');
+  font-weight: 200 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-RegularItalic.otf') format('opentype');
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-ExtraboldItalic.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-MediumItalic.otf') format('opentype');
+  font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-HeavyItalic.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'graphik';
+  src: url('fonts/Graphik-BoldItalic.otf') format('opentype');
+  font-weight: 600 700 800 900;
   font-style: italic;
   font-display: swap;
 }
 
-.copernicus {
-  font-family: 'copernicus';
+.graphik {
+  font-family: 'graphik';
 }
 
-.copernicus-italic {
-  font-family: 'copernicus';
+.graphik-italic {
+  font-family: 'graphik';
   font-style: italic;
 }
