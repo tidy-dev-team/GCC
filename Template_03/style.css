@@ -71,6 +71,21 @@ body {
   color: var(--color-dark);
 }
 
+.carousel {
+  max-width: 100vw;
+  border-radius: 16px;
+}
+
+.carousel-item {
+  width: fit-content;
+}
+
+.carousel-item img {
+  max-width: 322px;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
