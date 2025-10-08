@@ -60,6 +60,10 @@ body {
   width: 52px;
 }
 
+.btn-icon svg {
+  pointer-events: none;
+}
+
 .bg-color-light {
   background-color: var(--color-light);
 }
