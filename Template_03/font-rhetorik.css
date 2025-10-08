@@ -1,88 +1,88 @@
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Medium.ttf') format('truetype');
-  font-weight: 100 200 300 400 500;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Thin.otf') format('opentype');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Semibold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Light.otf') format('opentype');
+  font-weight: 200 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Extrabold.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Medium.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-Heavy.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Bold.otf') format('opentype');
+  font-weight: 600 700 800 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-MediumItalic.ttf') format('truetype');
-  font-weight: 100 200 300 400 500;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-ThinItalic.otf') format('opentype');
+  font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-SemiboldItalic.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-LightItalic.otf') format('opentype');
+  font-weight: 200 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-RegularItalic.otf') format('opentype');
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-ExtraboldItalic.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-MediumItalic.otf') format('opentype');
+  font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'copernicus';
-  src: url('fonts/CopernicusTrial-HeavyItalic.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-BoldItalic.otf') format('opentype');
+  font-weight: 600 700 800 900;
   font-style: italic;
   font-display: swap;
 }
 
-.copernicus {
-  font-family: 'copernicus';
+.rhetorik {
+  font-family: 'rhetorik';
 }
 
-.copernicus-italic {
-  font-family: 'copernicus';
+.rhetorik-italic {
+  font-family: 'rhetorik';
   font-style: italic;
 }
