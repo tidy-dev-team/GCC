@@ -65,7 +65,7 @@ body {
   pointer-events: none;
 }
 
-.btn.disabled{
+.btn.disabled {
   opacity: .5;
   pointer-events: none;
 }
@@ -88,10 +88,11 @@ body {
 
 .carousel {
   width: 75vw;
-  border-radius: 16px;
+  border-radius: 16px 0 0 16px;
 }
 
 .carousel-item {
+  position: relative;
   width: fit-content;
 }
 
@@ -99,6 +100,38 @@ body {
   max-width: 322px;
   aspect-ratio: 1 / 1;
   border-radius: 16px;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('images/heart.svg');
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ffffff;
+  font-weight: 500;
+  border-radius: 50vw;
+  min-width: 140px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 26px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #143D56;
 }
 
 @media (max-width:480px) {
