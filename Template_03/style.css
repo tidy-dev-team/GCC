@@ -1,3 +1,7 @@
+@import 'font-graphik.css';
+
+@import 'font-rhetorik.css';
+
 :root {
   --color-light: #ECECC9;
   --color-dark: #143D56;
