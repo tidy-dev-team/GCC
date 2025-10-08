@@ -53,7 +53,7 @@
   <!-- COMPONENT: CAROUSEL -->
   <section class="flex gap-6 justify-end items-end">
     <div class="buttons-wrapper flex gap-2 h-full">
-      <button class="btn btn-light btn-icon !bg-[#9FB5C2]" onclick="caroPrev(event);">
+      <button class="btn btn-light btn-icon disabled !bg-[#9FB5C2]" onclick="caroPrev(event);">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M11.5026 6.55564C11.7955 6.84855 11.7954 7.32342 11.5025 7.6163L7.49829 11.6201H20.2577C20.6719 11.6201 21.0077 11.9558 21.0077 12.3701C21.0077 12.7843 20.6719 13.1201 20.2577 13.1201H7.49253C7.81464 13.4434 8.17483 13.8047 8.54476 14.1756C9.7631 15.3969 11.0788 16.7126 11.495 17.117C11.792 17.4057 11.7987 17.8805 11.5101 18.1775C11.2214 18.4746 10.7465 18.4813 10.4495 18.1926C10.0228 17.7779 8.69614 16.4512 7.48281 15.2349C6.87468 14.6253 6.29293 14.0414 5.86323 13.6098L5.15579 12.899C4.86421 12.6059 4.8648 12.132 5.15718 11.8397L10.4419 6.55558C10.7348 6.2627 11.2097 6.26273 11.5026 6.55564Z"
@@ -69,7 +69,7 @@
         </svg>
       </button>
     </div>
-    <div class="carousel gap-2">
+    <div class="carousel gap-2" onscroll="window.caro=undefined;caroCheck(event);">
       <div class="carousel-item">
         <img src="images/home-img-01.png" alt="Home" />
       </div>

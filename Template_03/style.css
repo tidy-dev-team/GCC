@@ -61,6 +61,12 @@ body {
 }
 
 .btn-icon svg {
+  scale: 1.5;
+  pointer-events: none;
+}
+
+.btn.disabled{
+  opacity: .5;
   pointer-events: none;
 }
 
@@ -81,7 +87,7 @@ body {
 }
 
 .carousel {
-  width: 982px;
+  width: 75vw;
   border-radius: 16px;
 }
 
