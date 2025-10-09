@@ -195,6 +195,10 @@ h6 {
   width: 29.6666vw;
 }
 
+.color-card.two-third {
+  width: calc(59.3332vw + 20px);
+}
+
 .color-card img {
   width: 130px;
   height: 100px;
