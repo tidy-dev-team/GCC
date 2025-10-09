@@ -478,4 +478,20 @@ footer nav {
   .text-break {
     max-width: 60vw;
   }
+  
+  .color-card img {
+    width: unset;
+    height: unset;
+  }
+  
+  .color-card .bigger-img {
+    width: unset;
+    height: unset;
+    scale: 1;
+  }
+  
+  footer nav {
+    width: 50%;
+    margin-top: 36px;
+  }
 }
