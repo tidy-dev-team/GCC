@@ -187,6 +187,10 @@ h6 {
   align-items: center;
 }
 
+.color-card.third {
+  width: 29.6666vw;
+}
+
 .color-card img {
   width: 130px;
   height: 100px;
