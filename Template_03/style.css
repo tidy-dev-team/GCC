@@ -255,6 +255,7 @@ h6 {
 
 footer {
   gap: 24px;
+  justify-content: space-between;
 }
 
 footer nav {
