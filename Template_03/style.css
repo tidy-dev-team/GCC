@@ -445,4 +445,33 @@ footer nav {
   .color-card.outline {
     width: calc(50vw - 36px);
   }
+  
+  .color-card.third {
+    width: calc(100vw - 32px);
+    margin: 0 16px;
+  }
+  
+  .color-card.two-third {
+    width: calc(100vw - 32px);
+    margin: 0 16px;
+  }
+  
+  .color-card.bg-card.third {
+    height: 300px;
+  }
+  
+  .color-card.move-bg {
+    background-position: 50% 130%;
+  }
+  
+  .color-card.mobile-sp {
+    justify-content: flex-start;
+    background-position: 50% 120%;
+    background-size: 150%;
+    background-color: #9FB5C2;
+  }
+  
+  .mobile-full {
+    width: calc(100vw - 32px);
+  }
 }
