@@ -267,6 +267,20 @@ footer nav {
   flex-direction: column;
 }
 
+.footer-title {
+  /* font-family: 'graphik'; */
+  opacity: 1;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  color: var(--color-dark);
+}
+
+.link.link-hover {
+  font-weight: 300;
+  color: var(--color-dark);
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
