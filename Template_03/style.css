@@ -494,4 +494,8 @@ footer nav {
     width: 50%;
     margin-top: 36px;
   }
+  
+  .carousel {
+    width: calc(100vw - 32px);
+  }
 }
