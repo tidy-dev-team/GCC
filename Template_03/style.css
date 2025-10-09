@@ -474,4 +474,8 @@ footer nav {
   .mobile-full {
     width: calc(100vw - 32px);
   }
+  
+  .text-break {
+    max-width: 60vw;
+  }
 }
