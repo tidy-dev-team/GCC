@@ -71,6 +71,10 @@ body {
   pointer-events: none;
 }
 
+.bg-none {
+  background-color: unset !important;
+}
+
 .bg-color-light {
   background-color: var(--color-light) !important;
 }
