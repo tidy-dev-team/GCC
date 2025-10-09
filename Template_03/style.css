@@ -426,9 +426,23 @@ footer nav {
     flex-direction: column;
     align-items: center;
   }
-
-  .buttons-wrapper{
+  
+  .buttons-wrapper {
     justify-content: center;
     width: 100%;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  .color-card {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .color-card.outline {
+    width: calc(50vw - 36px);
   }
 }
