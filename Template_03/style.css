@@ -7,7 +7,7 @@
   --color-dark: #143D56;
 }
 
-body {
+body, html {
   background-color: var(--color-dark);
 }
 
@@ -251,6 +251,15 @@ h6 {
 .color-card.outline img {
   width: 26px;
   height: 26px;
+}
+
+footer {
+  gap: 24px;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width:480px) {
