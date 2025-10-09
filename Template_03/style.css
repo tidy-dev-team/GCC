@@ -205,6 +205,10 @@ h6 {
   height: 100px;
 }
 
+footer .bigger-img {
+  scale: 2;
+}
+
 .bg-red {
   background-color: #DFA5A0;
 }
