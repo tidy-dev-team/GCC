@@ -174,6 +174,12 @@ h6 {
   position: relative;
 }
 
+.bg-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .color-card {
   padding-top: 50px;
   padding-left: 16px;
