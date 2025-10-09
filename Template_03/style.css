@@ -72,19 +72,19 @@ body {
 }
 
 .bg-color-light {
-  background-color: var(--color-light);
+  background-color: var(--color-light) !important;
 }
 
 .bg-color-dark {
-  background-color: var(--color-dark);
+  background-color: var(--color-dark) !important;
 }
 
 .text-color-light {
-  color: var(--color-light);
+  color: var(--color-light) !important;
 }
 
 .text-color-dark {
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 
 .carousel {
@@ -213,6 +213,10 @@ h6 {
   background-color: #9FB5C2;
 }
 
+.bg-yellow {
+  background-color: #F0BC57;
+}
+
 .text-red {
   color: #DFA5A0;
 }
@@ -223,6 +227,10 @@ h6 {
 
 .text-blue {
   color: #9FB5C2;
+}
+
+.text-yellow {
+  color: #F0BC57;
 }
 
 .color-card.outline {
