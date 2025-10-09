@@ -426,4 +426,9 @@ footer nav {
     flex-direction: column;
     align-items: center;
   }
+
+  .buttons-wrapper{
+    justify-content: center;
+    width: 100%;
+  }
 }
