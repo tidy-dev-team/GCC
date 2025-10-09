@@ -295,6 +295,128 @@ footer nav {
   color: var(--color-dark);
 }
 
+#type-anim::before {
+  content: '';
+  animation: typeAnim 5000ms linear forwards;
+  animation-delay: 1000ms;
+}
+
+#type-anim::after {
+  content: '';
+  border-right: 4px solid;
+  margin-left: .2ch;
+  height: 1ch;
+  animation: blinkAnim 500ms steps(1, end) infinite;
+}
+
+@keyframes blinkAnim {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typeAnim {
+  0% {
+    content: '';
+  }
+  
+  2% {
+    content: 'F';
+  }
+  
+  4% {
+    content: 'Fr';
+  }
+  
+  6% {
+    content: 'Fri';
+  }
+  
+  8% {
+    content: 'Frie';
+  }
+  
+  10% {
+    content: 'Frien';
+  }
+  
+  12% {
+    content: 'Friend';
+  }
+  
+  14% {
+    content: 'Friendl';
+  }
+  
+  16% {
+    content: 'Friendly';
+  }
+  
+  18% {
+    content: 'Friendly ';
+  }
+  
+  20% {
+    content: 'Friendly n';
+  }
+  
+  22% {
+    content: 'Friendly ne';
+  }
+  
+  24% {
+    content: 'Friendly nei';
+  }
+  
+  26% {
+    content: 'Friendly neig';
+  }
+  
+  28% {
+    content: 'Friendly neigh';
+  }
+  
+  30% {
+    content: 'Friendly neighb';
+  }
+  
+  32% {
+    content: 'Friendly neighbo';
+  }
+  
+  34% {
+    content: 'Friendly neighbor';
+  }
+  
+  36% {
+    content: 'Friendly neighborh';
+  }
+  
+  38% {
+    content: 'Friendly neighborho';
+  }
+  
+  40% {
+    content: 'Friendly neighborhoo';
+  }
+  
+  42% {
+    content: 'Friendly neighborhood';
+  }
+  
+  100% {
+    content: 'Friendly neighborhood';
+  }
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);
