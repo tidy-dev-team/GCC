@@ -521,4 +521,9 @@ footer nav {
   .carousel {
     width: calc(100vw - 32px);
   }
+  
+  .color-card.outline.rhetorik p {
+    line-height: 1.1;
+    font-size: 14px;
+  }
 }
