@@ -206,13 +206,11 @@ h6 {
 }
 
 .color-card.third {
-  width: 29.6666vw;
   width: calc((88vw + 60px) / 3 - 20px);
   max-width: 480px;
 }
 
 .color-card.two-third {
-  width: calc(59.3332vw + 20px);
   width: calc(((88vw + 60px) / 3) * 2 - 20px);
   max-width: 960px;
 }
@@ -459,6 +457,21 @@ footer nav {
     width: calc(50vw - 36px);
   }
   
+  .color-card.h-mobile-more {
+    height: unset;
+    padding: 32px 16px !important;
+  }
+  
+  .color-card.h-mobile-more img {
+    height: 75px;
+    width: unset;
+  }
+  
+  .color-card.h-mobile-more p {
+    max-width: unset;
+    font-size: 20px;
+  }
+  
   .color-card.third {
     width: calc(100vw - 32px);
     margin: 0 16px;
@@ -466,7 +479,15 @@ footer nav {
   
   .color-card.two-third {
     width: calc(100vw - 32px);
+    height: 460px;
     margin: 0 16px;
+  }
+  
+  .color-card.two-third:last-of-type {
+    background-size: 170%;
+    background-color: #EEE8E2;
+    background-position: 50% 0;
+    height: 400px;
   }
   
   .color-card.bg-card.third {
@@ -525,5 +546,14 @@ footer nav {
   .color-card.outline.rhetorik p {
     line-height: 1.1;
     font-size: 14px;
+  }
+  
+  .tag.special {
+    left: 10px;
+    top: 10px;
+  }
+  
+  .no-mob-h {
+    height: unset;
   }
 }
