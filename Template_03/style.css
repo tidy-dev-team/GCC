@@ -283,6 +283,7 @@ footer {
 footer nav {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .footer-title {
