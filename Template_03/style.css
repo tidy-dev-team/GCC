@@ -289,7 +289,8 @@ footer nav {
   flex-direction: column;
   gap: 8px;
 }
-.wid-desk{
+
+.wid-desk {
   width: calc(88vw + 60px);
 }
 
@@ -492,14 +493,24 @@ footer nav {
   }
   
   .color-card img {
-    width: unset;
-    height: unset;
+    width: 60px;
+    height: 60px;
   }
   
   .color-card .bigger-img {
-    width: unset;
+    flex-grow: 1;
+    width: 84px;
     height: unset;
     scale: 1;
+  }
+  
+  .color-card p {
+    font-size: 16px;
+  }
+  
+  .color-card {
+    height: 120px;
+    width: 100%;
   }
   
   footer nav {
