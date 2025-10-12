@@ -22,6 +22,10 @@ body, html {
   margin: 0 auto;
 }
 
+.less-char {
+  letter-spacing: -0.04em;
+}
+
 .btn {
   background-color: var(--color-dark);
   color: var(--color-light);
