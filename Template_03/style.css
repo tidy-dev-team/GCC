@@ -207,10 +207,14 @@ h6 {
 
 .color-card.third {
   width: 29.6666vw;
+  width: calc((88vw + 60px) / 3 - 20px);
+  max-width: 480px;
 }
 
 .color-card.two-third {
   width: calc(59.3332vw + 20px);
+  width: calc(((88vw + 60px) / 3) * 2 - 20px);
+  max-width: 960px;
 }
 
 .color-card img {
@@ -284,6 +288,9 @@ footer nav {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.wid-desk{
+  width: calc(88vw + 60px);
 }
 
 .footer-title {
