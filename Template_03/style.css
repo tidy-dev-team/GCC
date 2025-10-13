@@ -233,6 +233,10 @@ footer .bigger-img {
   scale: 2;
 }
 
+.bg-green {
+  background-color: #A3A169;
+}
+
 .bg-red {
   background-color: #DFA5A0;
 }
@@ -247,6 +251,10 @@ footer .bigger-img {
 
 .bg-yellow {
   background-color: #F0BC57;
+}
+
+.text-green {
+  color: #A3A169;
 }
 
 .text-red {
