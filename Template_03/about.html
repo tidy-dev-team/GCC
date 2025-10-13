@@ -36,60 +36,28 @@
   </div>
 
   <!-- COMPONENT: HERO -->
-  <div class="hero min-h-[60vh] lg:min-h-[80vh]">
+  <div class="hero py-35">
     <div class="hero-content text-center">
-      <div class="flex flex-col gap-15 items-center">
-        <h1 class="text-[52px] lg:text-8xl text-color-light rhetorik leading-[1]" id="type-anim"></h1>
-
-        <div class="flex gap-4 flex-col-reverse lg:flex-row">
-          <button class="btn btn-outline-light">Partner with Us</button>
-          <button class="btn btn-light">Get Pre-Approved Now</button>
+      <div class="flex flex-col gap-18 items-center">
+        <img src="images/about-shape-01.svg" />
+        <div class="flex flex-col gap-2 items-center">
+          <h2 class="!text-5xl">PropTech Meets FinTech.</h2>
+          <h1 class="text-[52px] lg:text-9xl text-color-light rhetorik leading-[1]">Game Changed!</h1>
         </div>
-
+        <img src="images/about-shape-02.svg" />
       </div>
     </div>
   </div>
 
   <!-- COMPONENT: CAROUSEL -->
-  <section class="flex gap-6 justify-end items-end flex-col-reverse lg:flex-row">
-    <div class="buttons-wrapper flex gap-2 h-full">
-      <button class="btn btn-light btn-icon disabled !bg-[#9FB5C2]" onclick="caroPrev(event);">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M11.5026 6.55564C11.7955 6.84855 11.7954 7.32342 11.5025 7.6163L7.49829 11.6201H20.2577C20.6719 11.6201 21.0077 11.9558 21.0077 12.3701C21.0077 12.7843 20.6719 13.1201 20.2577 13.1201H7.49253C7.81464 13.4434 8.17483 13.8047 8.54476 14.1756C9.7631 15.3969 11.0788 16.7126 11.495 17.117C11.792 17.4057 11.7987 17.8805 11.5101 18.1775C11.2214 18.4746 10.7465 18.4813 10.4495 18.1926C10.0228 17.7779 8.69614 16.4512 7.48281 15.2349C6.87468 14.6253 6.29293 14.0414 5.86323 13.6098L5.15579 12.899C4.86421 12.6059 4.8648 12.132 5.15718 11.8397L10.4419 6.55558C10.7348 6.2627 11.2097 6.26273 11.5026 6.55564Z"
-            fill="#143D56" />
-        </svg>
-
-      </button>
-      <button class="btn btn-light btn-icon !bg-[#9FB5C2]" onclick="caroNext(event);">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M14.4349 6.55564C14.142 6.84855 14.1421 7.32342 14.435 7.6163L18.4392 11.6201H5.67979C5.26558 11.6201 4.92979 11.9558 4.92979 12.3701C4.92979 12.7843 5.26558 13.1201 5.67979 13.1201H18.445C18.1229 13.4434 17.7627 13.8047 17.3927 14.1756C16.1744 15.3969 14.8587 16.7126 14.4425 17.117C14.1455 17.4057 14.1388 17.8805 14.4274 18.1775C14.7161 18.4746 15.191 18.4813 15.488 18.1926C15.9147 17.7779 17.2414 16.4512 18.4547 15.2349C19.0628 14.6253 19.6446 14.0414 20.0743 13.6098L20.7817 12.899C21.0733 12.6059 21.0727 12.132 20.7803 11.8397L15.4956 6.55558C15.2027 6.2627 14.7278 6.26273 14.4349 6.55564Z"
-            fill="#143D56" />
-        </svg>
-      </button>
-    </div>
-    <div class="carousel gap-2" onscroll="window.caro=undefined;caroCheck(event);">
-      <div class="carousel-item">
-        <div class="tag">4 Bedroom Villa</div>
-        <img src="images/home-img-01.png" alt="Home" />
-      </div>
-      <div class="carousel-item">
-        <div class="tag">5 Bedroom Home</div>
-        <img src="images/home-img-02.png" alt="Home" />
-      </div>
-      <div class="carousel-item">
-        <div class="tag">5 Bedroom Villa</div>
-        <img src="images/home-img-03.png" alt="Home" />
-      </div>
-      <div class="carousel-item">
-        <div class="tag">4 Bedroom Villa</div>
-        <img src="images/home-img-04.png" alt="Home" />
-      </div>
-      <div class="carousel-item">
-        <div class="tag">2 Bedroom Apartment</div>
-        <img src="images/home-img-05.png" alt="Home" />
-      </div>
+  <section class="w-full flex gap-6 justify-center items-center flex-col-reverse lg:flex-row">
+    <div class="color-card bg-card bg-sp mx-4 !w-full !p-20 !pl-[66vw] leading-[1.2] h-[500px] flex flex-col justify-start"
+      style="background-image: url(images/revolution.png);">
+      <h2 class="!text-left w-full mb-4 text-color-dark !text-3xl">The Real-Estate Revolution!</h2>
+      <p class="text-left w-full text-lg font-light">UAE real estate is booming and ripe for disruption. Darr.io
+        delivers it! We've digitized everything - listings, approvals, transfers - into one seamless ecosystem backed up
+        with top AI capabilities. Property ownership just went from months to minutes.Our Mission is simple: Ditch the
+        paperwork. Keep the keys</p>
     </div>
   </section>
 
@@ -287,18 +255,21 @@
         </h2>
 
         <div class="flex gap-3 lg:gap-7 lg:flex-row flex-col">
-          <div class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
+          <div
+            class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
             <img src="images/join-icon-01.svg" class="mb-3 !w-9 !h-9 lg:!w-8 lg:!h-8">
             <p class="text-left w-full text-[16px] lg:text-[20px] text-break">Retain control via proprietary black-box
               integrations</p>
           </div>
 
-          <div class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
+          <div
+            class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
             <img src="images/join-icon-02.svg" class="mb-3 !w-9 !h-9 lg:!w-8 lg:!h-8">
             <p class="text-left w-full text-[16px] lg:text-[20px] text-break">Fully compliant with UAE regulations</p>
           </div>
 
-          <div class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
+          <div
+            class="flex color-card !p-0 leading-[1.2] !items-start bg-none gap-3 !flex-row lg:!flex-col lg:gap-0 no-mob-h">
             <img src="images/join-icon-03.svg" class="mb-3 !w-9 !h-9 lg:!w-8 lg:!h-8">
             <p class="text-left w-full text-[16px] lg:text-[20px] text-break">Integration with RAK Municipality</p>
           </div>
@@ -306,15 +277,18 @@
 
         <div class="grow"></div>
         <div class="flex flex-wrap gap-2 lg:gap-4">
-          <div class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
+          <div
+            class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
             <p class="text-left w-full rhetorik text-[20px] lg:text-[30px]">24hr<br /> Pre-Approval</p>
           </div>
 
-          <div class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
+          <div
+            class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
             <p class="text-left w-full rhetorik text-[20px] lg:text-[30px]">Full Market Reach</p>
           </div>
 
-          <div class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
+          <div
+            class="!w-[48.5%] lg:!w-[250px] color-card bg-color-dark text-color-light !px-8 !py-4 leading-[1.2] no-mob-h">
             <p class="text-left w-full rhetorik text-[20px] lg:text-[30px]">AI-Powered Decisions</p>
           </div>
         </div>

@@ -188,6 +188,10 @@ h6 {
   background-position: center;
 }
 
+.bg-sp {
+  background-position: bottom left;
+}
+
 .color-card {
   padding-top: 50px;
   padding-left: 16px;
