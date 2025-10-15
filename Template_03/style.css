@@ -572,4 +572,9 @@ footer nav {
   .wid-desk {
     width: unset;
   }
+  
+  .bg-mob {
+    background-size: 200%;
+    background-position: left bottom;
+  }
 }
