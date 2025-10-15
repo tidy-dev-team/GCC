@@ -329,7 +329,7 @@ footer nav {
 .after-hr::before {
   content: '';
   position: absolute;
-  width: 3836px;
+  width: 3800px;
   height: 1px;
   top: 12px;
   left: 0;
