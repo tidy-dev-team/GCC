@@ -111,7 +111,7 @@ body, html {
   border-radius: 16px;
 }
 
-.carousel-item::after {
+.item-after::after {
   content: '';
   position: absolute;
   top: 14px;
