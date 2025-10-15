@@ -318,6 +318,24 @@ footer nav {
   color: var(--color-dark);
 }
 
+.x-pos {
+  transform: translateX(36px);
+}
+
+.after-hr {
+  position: relative;
+}
+
+.after-hr::before {
+  content: '';
+  position: absolute;
+  width: 3480px;
+  height: 1px;
+  top: 12px;
+  left: 0;
+  background-color: var(--color-light);
+}
+
 #type-anim::before {
   content: '';
   animation: typeAnim 5000ms linear forwards;
