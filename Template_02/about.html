@@ -19,17 +19,19 @@
 <body>
 
     <!-- COMPONENT: NAVBAR -->
-    <div class="navbar bg-white shadow-sm fixed top-10 w-164 rounded-md flex justify-between z-[100]">
+    <div class="navbar p-1 min-h-fit bg-white shadow-sm fixed top-10 w-154 rounded-md flex justify-between z-[100]">
         <div class="navbar-start w-fit ml-4">
-            <img src="images/logo.svg" />
+            <a href="index.html">
+                <img src="images/logo.svg" class="h-[27px]" />
+            </a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 mobile-hidden">
-                <li><a>About</a></li>
-                <li><a>Careers</a></li>
+                <li><a class="font-medium" href="about.html">About</a></li>
+                <li><a class="font-medium">Careers</a></li>
             </ul>
         </div>
-        <div class="flex gap-6 w-fit">
+        <div class="flex gap-4 w-fit">
             <a class="btn mobile-hidden">Partner with Us</a>
         </div>
         <div class="mobile-menu" onclick="menuToggle();"></div>
@@ -59,7 +61,8 @@
                 <img src="images/vision-mission.png" class="lg:max-w-[56.25%]" />
                 <div class="flex flex-col justify-center gap-2 pr-0 lg:pr-50">
                     <div class="card-body text-left h-fit p-6">
-                        <h2 class="char-5 mb-4 lg:mb-10 card-title copernicus !text-3xl lg:!text-6xl text-[#030303]">Our Vision
+                        <h2 class="char-5 mb-4 lg:mb-10 card-title copernicus !text-3xl lg:!text-6xl text-[#030303]">Our
+                            Vision
                         </h2>
                         <p class="text-[#666666] font-medium text-md lg:text-xl h-fit">
                             A future where every motor claim in the region is settled instantly, with zero disputes,
@@ -68,7 +71,8 @@
                         </p>
                     </div>
                     <div class="card-body text-left h-fit p-6">
-                        <h2 class="char-5 mb-4 lg:mb-10 card-title copernicus !text-3xl lg:!text-6xl text-[#030303]">Our Mission
+                        <h2 class="char-5 mb-4 lg:mb-10 card-title copernicus !text-3xl lg:!text-6xl text-[#030303]">Our
+                            Mission
                         </h2>
                         <p class="text-[#666666] font-medium text-md lg:text-xl h-fit">
                             To transform claims recovery into a real-time, transparent, and regulator-aligned process
@@ -180,57 +184,61 @@
 
     <!-- COMPONENT: HERO -->
     <section class="section full-section">
-        <div class="hero my-50 footer">
-            <div class="hero-content text-center w-full flex-col gap-60 mobile-fullscreen">
-                <div class="text-center my-20">
-                    <h2 class="text-6xl text-center mb-0 copernicus font-normal"><i>Real-Time</i><br
-                            class="desktop-no-break" /> Claim
+        <div class="hero footer">
+            <div class="hero-content text-center w-full flex-col gap-40 mobile-fullscreen">
+                <div class="text-center my-20 !w-full ">
+                    <h2 class="text-[88px] w-full copernicus letter-5"><i>Real-Time</i><br class="desktop-no-break" />
+                        Claim
                         Settlement,<br />
                         Audit-<i>Ready</i>.
                     </h2>
                 </div>
-                <div class="flex flex-col bg-white w-full p-10 gap-26 rounded-xl mobile-footer">
+                <div class="bg-white flex flex-col w-full p-10 gap-26 rounded-xl mobile-footer">
                     <div class="flex justify-between items-start text-left mobile-col mobile-gap mobile-col-footer">
-                        <img src="images/logo.svg" class="max-w-100 w-100 mobile-100" />
-                        <div class="flex flex-col gap-3">
-                            <h6 class="font-bold">
-                                Company
-                            </h6>
-                            <a href="#" class="font-normal text-[#666666]">
-                                About Mosadad
-                            </a>
-                            <a href="#" class="font-normal text-[#666666]">
-                                Careers
-                            </a>
+                        <a href="index.html">
+                            <img src="images/logo.svg" class="trans-logo max-w-100 w-100 mobile-100" />
+                        </a>
+                        <div class="flex gap-20 mr-[20vw]">
+                            <div class="flex flex-col gap-3 w-[130px]">
+                                <h6 class="font-bold">
+                                    Company
+                                </h6>
+                                <a href="about.html" class="font-medium text-[#666666] tracking-[-0.28px]">
+                                    About Mosadad
+                                </a>
+                                <a href="#" class="font-medium text-[#666666] tracking-[-0.28px]">
+                                    Careers
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[130px]">
+                                <h6 class="font-bold">
+                                    Connect
+                                </h6>
+                                <a href="#" class="font-medium text-[#666666] tracking-[-0.28px]">
+                                    info@mosaded.org
+                                </a>
+                                <a href="#" class="font-medium text-[#666666] tracking-[-0.28px]">
+                                    Careers
+                                </a>
+                            </div>
                         </div>
-                        <div class="flex flex-col gap-3">
-                            <h6 class="font-bold">
-                                Connect
-                            </h6>
-                            <a href="#" class="font-normal text-[#666666]">
-                                info@mosaded.org
-                            </a>
-                            <a href="#" class="font-normal text-[#666666]">
-                                Careers
-                            </a>
-                        </div>
-                        <button class="btn">Partner with Us</button>
+                        <button class="btn">Partner with us</button>
                     </div>
                     <div class="flex justify-between mobile-col mobile-reverse">
-                        <p>
-                            © 2025 Mosadad Ltd. All rights reserved.
+                        <p class="font-medium text-[12px] tracking-[-0.28px]">
+                            ©2025 Mosadad Ltd. All rights reserved.
                         </p>
                         <div class="flex gap-8 mobile-wrap">
-                            <a href="#" class="font-semibold">
+                            <a href="#" class="font-medium text-[12px] tracking-[-0.28px]">
                                 Privacy Policy
                             </a>
-                            <a href="#" class="font-semibold">
+                            <a href="#" class="font-medium text-[12px] tracking-[-0.28px]">
                                 Terms & Conditions
                             </a>
-                            <a href="#" class="font-semibold">
+                            <a href="#" class="font-medium text-[12px] tracking-[-0.28px]">
                                 Accessibility
                             </a>
-                            <a href="#" class="font-semibold">
+                            <a href="#" class="font-medium text-[12px] tracking-[-0.28px]">
                                 Manage Preferences
                             </a>
                         </div>
@@ -243,7 +251,9 @@
     <section class="open-menu hideme" id="openMenu">
         <div class="navbar bg-white shadow-sm fixed top-10 w-164 rounded-md flex justify-between z-[100]">
             <div class="navbar-start w-fit ml-4">
-                <img src="images/logo.svg" />
+                <a href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
             </div>
             <div class="mobile-menu close" onclick="menuToggle();"></div>
         </div>
