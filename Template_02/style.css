@@ -271,7 +271,7 @@ hr {
 }
 
 .full-grid {
-  max-width: 1170px !important;
+  max-width: 1440px !important;
   width: calc(100% - 32px);
 }
 
