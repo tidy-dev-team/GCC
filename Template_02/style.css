@@ -106,7 +106,7 @@ button:active, .btn:active {
 }
 
 .footer {
-  background-image: url('images/footer.png');
+  background-image: url('images/footer-new.png');
   margin-bottom: 0;
 }
 
@@ -142,7 +142,7 @@ hr {
 }
 
 .letter-5 {
-  font-weight: 500;
+  font-weight: 500 !important;
   letter-spacing: -4.4px;
   line-height: 95%;
 }
@@ -236,6 +236,11 @@ hr {
   animation: carWiggle 100ms ease-in-out infinite;
 }
 
+.trans-logo {
+  transform-origin: left center;
+  transform: scale(0.9);
+}
+
 @keyframes carAnim {
   0% {
     transform: translateX(-30vw);
@@ -262,6 +267,12 @@ hr {
 
 .max-25 {
   max-width: calc(25% - 18px);
+  width: 100% !important;
+}
+
+.full-grid {
+  max-width: 1170px !important;
+  width: calc(100% - 32px);
 }
 
 .stakeholder-card-01 {
@@ -299,17 +310,17 @@ hr {
 }
 
 .footer .mobile-fullscreen {
-  width: 100%;
-  max-width: unset !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .footer .mobile-fullscreen > * {
-  width: calc(100% - 16px);
+  width: calc(100vw - 80px);
 }
 
 .mobile-60 {
-  margin-top: 280px !important;
-  margin-bottom: 280px !important;
+  margin-top: 200px !important;
+  margin-bottom: 200px !important;
 }
 
 .open-menu.hideme {
@@ -401,7 +412,7 @@ hr {
   }
   
   .footer {
-    background-image: url('images/footer.png');
+    background-image: url('images/footer-new.png');
   }
   
   .mobile-top {
