@@ -256,9 +256,14 @@ hr {
   }
 }
 
+.ar-16-11 {
+  aspect-ratio: 16 / 11;
+}
+
 .stakeholder-card-01 {
-  background-image: url('images/stakeholder-01.jpg');
+  background-image: url('images/stakeholder-01.png');
   transition: all 300ms linear 0s;
+  background-size: contain;
 }
 
 .stakeholder-card-01:hover {
@@ -266,8 +271,9 @@ hr {
 }
 
 .stakeholder-card-02 {
-  background-image: url('images/stakeholder-02.jpg');
+  background-image: url('images/stakeholder-02.png');
   transition: all 300ms linear 0s;
+  background-size: contain;
 }
 
 .stakeholder-card-02:hover {
@@ -275,8 +281,9 @@ hr {
 }
 
 .stakeholder-card-03 {
-  background-image: url('images/stakeholder-03.jpg');
+  background-image: url('images/stakeholder-03.png');
   transition: all 300ms linear 0s;
+  background-size: contain;
 }
 
 .stakeholder-card-03:hover {
