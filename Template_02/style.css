@@ -238,7 +238,7 @@ hr {
 
 .trans-logo {
   transform-origin: left center;
-  transform: scale(0.9);
+  transform: scale(0.9) translateY(-26px);
 }
 
 @keyframes carAnim {
@@ -316,6 +316,8 @@ hr {
 
 .footer .mobile-fullscreen > * {
   width: calc(100vw - 80px);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mobile-60 {
