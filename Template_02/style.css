@@ -260,6 +260,10 @@ hr {
   aspect-ratio: 16 / 11;
 }
 
+.max-25 {
+  max-width: calc(25% - 18px);
+}
+
 .stakeholder-card-01 {
   background-image: url('images/stakeholder-01.png');
   transition: all 300ms linear 0s;
