@@ -295,7 +295,7 @@
             <p class="font-normal leading-[1.5] tracking-[-0.4px] text-md lg:text-xl">
                 Leave your details and we'll contact you to schedule a live demo.
             </p>
-            <form onsubmit="preventDefault()" class="flex flex-col gap-8 w-full" method="POST" id="popupForm">
+            <form class="flex flex-col gap-8 w-full" method="POST" id="popupForm">
                 <input type="text" id="name" name="name" class="input-form" placeholder="Full Name"
                     autocomplete="true" />
                 <input type="email" id="email" name="email" class="input-form" placeholder="Email"
@@ -333,19 +333,19 @@
         }
 
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwpdqUSg7VCsfPbppyo8ixgZR6S8VaYBGZo9wtnEt7DzvNh3Y_UDxMQAjttIVfjghwS/exec';
-        const form = document.forms['popupForm']
-        form.addEventListener('submit', e => {
-            document.getElementById("formSend").classList.add('no-click');
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => formGood()).then(() => { }).catch(error => console.error('Error!', error.message), formBad(error.message))
-        })
+        const form = document.forms['popupForm'];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            var formData = new FormData(form);
 
-        function formGood() {
-            document.getElementById("formSend").classList.remove('no-click');
-        }
-        function formBad(x) {
-            document.getElementById("formSend").classList.remove('no-click');
-        }
+            fetch(scriptURL, { method: "POST", body: formData })
+                .then((response) => {
+                    console.log("Done", "Submitted Successfully.", "success");
+                })
+                .catch((error) => {
+                    console.log("Error", "Something went wrong. please try again!", "error");
+                });
+        });
     </script>
 
 </body>
