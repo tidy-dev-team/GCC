@@ -357,6 +357,31 @@ hr {
   margin-top: 72px;
 }
 
+#form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #838383a6;
+}
+
+.input-form {
+  padding: 16px;
+  border: 1px solid #DEDFDF;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 400;
+}
+
+.input-form::placeholder {
+  color: #9a9a9a;
+}
+
+.input-form:focus-visible {
+  border-color: #1072FA;
+}
+
 @media (max-width:480px) {
   .section:empty {
     min-height: calc(100vh - 65px - 244px);

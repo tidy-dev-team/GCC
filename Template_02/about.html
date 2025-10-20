@@ -159,8 +159,11 @@
                     <div class="card max-w-85 !w-full blue-bg rounded-sm p-6 lg:p-7 lg:pb-10 lg:pl-20 card-third">
                         <div class="card-body !p-0 flex flex-col items-end gap-2">
                             <img class="icon-image mb-10" src="images/icon-01-lock.svg" />
-                            <h2 class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">To Insurers</h2>
-                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">Reduce costs, fraud, and
+                            <h2
+                                class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">
+                                To Insurers</h2>
+                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">
+                                Reduce costs, fraud, and
                                 operational delays</p>
                         </div>
                     </div>
@@ -168,8 +171,11 @@
                     <div class="card max-w-85 !w-full blue-bg rounded-sm p-6 lg:p-7 lg:pb-10 lg:pl-20 card-third">
                         <div class="card-body !p-0 flex flex-col items-end gap-2">
                             <img class="icon-image mb-10" src="images/icon-01-lock.svg" />
-                            <h2 class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">To regulators</h2>
-                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">Deliver real-time visibility,
+                            <h2
+                                class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">
+                                To regulators</h2>
+                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">
+                                Deliver real-time visibility,
                                 compliance, and control</p>
                         </div>
                     </div>
@@ -177,8 +183,11 @@
                     <div class="card max-w-85 !w-full blue-bg rounded-sm p-6 lg:p-7 lg:pb-10 lg:pl-20 card-third">
                         <div class="card-body !p-0 flex flex-col items-end gap-2">
                             <img class="icon-image mb-10" src="images/icon-01-lock.svg" />
-                            <h2 class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">To governments</h2>
-                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">Build a smart mobility
+                            <h2
+                                class="card-title copernicus text-[22px] font-semibold tracking-[-0.66px] w-full mobile-24">
+                                To governments</h2>
+                            <p class="text-left font-normal text-[#DEDFDF] text-[15px] leading-[1.5] tracking-[-0.3px]">
+                                Build a smart mobility
                                 infrastructure that supports safer and more efficient roads</p>
                         </div>
                     </div>
@@ -277,6 +286,23 @@
 
     </section>
 
+    <section class="hidden flex justify-center items-center" id="form">
+        <div class="flex flex-col p-12 gap-7 items-start max-w-[96vw] w-[700px] bg-white rounded-[8px]">
+            <img src="images/logo.svg" class="h-[27px]" />
+            <h2 class="text-6xl text-left copernicus font-medium line-105 less-mobile tracking-[-3.2px]">
+                Partner with Us
+            </h2>
+            <p class="font-normal leading-[1.5] tracking-[-0.4px] text-md lg:text-xl">
+                Leave your details and we'll contact you to schedule a live demo.
+            </p>
+            <form action="submit" class="flex flex-col gap-8 w-full">
+                <input type="text" id="name" class="input-form" placeholder="Full Name" autocomplete="true" />
+                <input type="email" id="email" class="input-form" placeholder="Email" autocomplete="true" />
+                <button class="btn w-fit" action="submit">Submit request</button>
+            </form>
+        </div>
+    </section>
+
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -295,8 +321,8 @@
         }
     </script>
     <script>
-        function openForm(){
-            alert('form');
+        function openForm() {
+            document.getElementById("form").classList.remove('hidden');
         }
     </script>
 
