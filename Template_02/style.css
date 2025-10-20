@@ -363,7 +363,7 @@ hr {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: #838383a6;
 }
 
@@ -615,6 +615,10 @@ hr {
     font-size: 14px;
   }
   
+  .footer {
+    background-image: url('images/footer.png');
+  }
+  
   .mobile-grid {
     gap: 12px !important;
   }
@@ -717,5 +721,26 @@ hr {
   
   .hero-content {
     padding: 24px;
+  }
+  
+  .mob-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw);
+    height: calc(100vh);
+    padding: 24px;
+  }
+  
+  .text-80px {
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -1.6px;
+  }
+  
+  .tracking-32px {
+    line-height: 105%;
+    letter-spacing: -1.4px;
+    margin-left: 0 !important;
   }
 }
