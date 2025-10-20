@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="flex gap-4 w-fit">
-            <a class="btn mobile-hidden">Partner with Us</a>
+            <a class="btn mobile-hidden" onclick="openForm();">Partner with Us</a>
         </div>
         <div class="mobile-menu" onclick="menuToggle();"></div>
     </div>
@@ -49,7 +49,7 @@
                     Mosadad uses AI to streamline motor claim settlements — in real time, with zero manual processing
                     and full regulatory alignment
                 </p>
-                <button class="btn mt-4">Partner with Us</button>
+                <button class="btn mt-4" onclick="openForm();">Partner with Us</button>
 
             </div>
         </div>
@@ -424,7 +424,7 @@
                                 </a>
                             </div>
                         </div>
-                        <button class="btn">Partner with us</button>
+                        <button class="btn" onclick="openForm();">Partner with us</button>
                     </div>
                     <div class="flex justify-between mobile-col mobile-reverse">
                         <p class="font-medium text-[12px] tracking-[-0.28px]">
@@ -462,11 +462,76 @@
             <ul class="menu menu-horizontal px-1 flex flex-col items-center gap-8">
                 <li class="copernicus text-xl text-white"><a>About</a></li>
                 <li class="copernicus text-xl text-white"><a>Careers</a></li>
-                <a class="btn">Partner with Us</a>
+                <a class="btn" onclick="openForm();">Partner with Us</a>
             </ul>
         </div>
 
     </section>
+
+    <section class="hidden flex justify-center items-center" id="form" onclick="closeForm(event);">
+        <div class="mob-form flex flex-col p-12 gap-7 items-start max-w-[96vw] w-[700px] bg-white rounded-[8px]">
+            <div class="flex justify-between w-full">
+                <img src="images/logo.svg" class="h-[27px]" />
+                <div class="mobile-menu close" id="close" onclick="closeForm(event);" style="filter:invert(100%);"></div>
+            </div>
+            <h2 onclick="openForm();" class="text-6xl text-left copernicus font-medium line-105 less-mobile tracking-[-3.2px] tracking-32px">
+                Partner with Us
+            </h2>
+            <p class="font-normal leading-[1.5] tracking-[-0.4px] text-md lg:text-xl">
+                Leave your details and we'll contact you to schedule a live demo.
+            </p>
+            <form class="flex flex-col gap-8 w-full" method="POST" id="popupForm">
+                <input type="text" id="name" name="name" class="input-form" placeholder="Full Name"
+                    autocomplete="true" />
+                <input type="email" id="email" name="email" class="input-form" placeholder="Email"
+                    autocomplete="true" />
+                <button class="btn w-fit" id="formSend">Submit request</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        const carSection = document.querySelector('.car-container');
+        observer.observe(carSection);
+
+        function menuToggle() {
+            document.getElementById("openMenu").classList.toggle("hideme");
+        }
+    </script>
+    <script>
+        function openForm() {
+            document.getElementById("form").classList.remove('hidden');
+        }
+        function closeForm(event) {
+            if (event.target.id == "form" || event.target.id == "close") {
+                document.getElementById("form").classList.add('hidden');
+            }
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpdqUSg7VCsfPbppyo8ixgZR6S8VaYBGZo9wtnEt7DzvNh3Y_UDxMQAjttIVfjghwS/exec';
+        const form = document.forms['popupForm'];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            var formData = new FormData(form);
+
+            fetch(scriptURL, { method: "POST", body: formData })
+                .then((response) => {
+                    console.log("Done", "Submitted Successfully.", "success");
+                })
+                .catch((error) => {
+                    console.log("Error", "Something went wrong. please try again!", "error");
+                });
+        });
+    </script>
 
     <script>
         const observer = new IntersectionObserver((entries) => {
