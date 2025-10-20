@@ -295,10 +295,10 @@
             <p class="font-normal leading-[1.5] tracking-[-0.4px] text-md lg:text-xl">
                 Leave your details and we'll contact you to schedule a live demo.
             </p>
-            <form action="submit" class="flex flex-col gap-8 w-full">
+            <form onsubmit="preventDefault()" class="flex flex-col gap-8 w-full" method="POST">
                 <input type="text" id="name" class="input-form" placeholder="Full Name" autocomplete="true" />
                 <input type="email" id="email" class="input-form" placeholder="Email" autocomplete="true" />
-                <button class="btn w-fit" action="submit">Submit request</button>
+                <button class="btn w-fit">Submit request</button>
             </form>
         </div>
     </section>
@@ -328,6 +328,21 @@
             if (event.target.id == "form") {
                 document.getElementById("form").classList.add('hidden');
             }
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIfqMMhN6W_oQ3TaVM68usqo514aOI5ry41dv-dZXbPnlT16x/exec';
+        const form = document.forms['popupForm']
+        form.addEventListener('submit', e => {
+            document.getElementById("formSend").classList.add('no-click');
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => formGood()).then(() => { }).catch(error => console.error('Error!', error.message), formBad(error.message))
+        })
+
+        function formGood() {
+            document.getElementById("formSend").classList.remove('no-click');
+        }
+        function formBad(x) {
+            document.getElementById("formSend").classList.remove('no-click');
         }
     </script>
 
