@@ -295,10 +295,12 @@
             <p class="font-normal leading-[1.5] tracking-[-0.4px] text-md lg:text-xl">
                 Leave your details and we'll contact you to schedule a live demo.
             </p>
-            <form onsubmit="preventDefault()" class="flex flex-col gap-8 w-full" method="POST">
-                <input type="text" id="name" class="input-form" placeholder="Full Name" autocomplete="true" />
-                <input type="email" id="email" class="input-form" placeholder="Email" autocomplete="true" />
-                <button class="btn w-fit">Submit request</button>
+            <form onsubmit="preventDefault()" class="flex flex-col gap-8 w-full" method="POST" id="popupForm">
+                <input type="text" id="name" name="name" class="input-form" placeholder="Full Name"
+                    autocomplete="true" />
+                <input type="email" id="email" name="email" class="input-form" placeholder="Email"
+                    autocomplete="true" />
+                <button class="btn w-fit" id="formSend">Submit request</button>
             </form>
         </div>
     </section>
@@ -330,7 +332,7 @@
             }
         }
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2DDolkr1dO6iKo-uLIfqMMhN6W_oQ3TaVM68usqo514aOI5ry41dv-dZXbPnlT16x/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpdqUSg7VCsfPbppyo8ixgZR6S8VaYBGZo9wtnEt7DzvNh3Y_UDxMQAjttIVfjghwS/exec';
         const form = document.forms['popupForm']
         form.addEventListener('submit', e => {
             document.getElementById("formSend").classList.add('no-click');
