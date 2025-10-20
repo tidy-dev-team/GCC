@@ -382,7 +382,35 @@ hr {
   top: 0;
   left: 0;
   z-index: 1000;
+  opacity: 1;
   background-color: #838383a6;
+  animation: formIn 300ms linear forwards;
+  transition: display 100ms linear 300ms allow-discrete;
+}
+
+#form.hidden {
+  opacity: 0;
+  animation: formOut 300ms linear forwards;
+}
+
+@keyframes formIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes formOut {
+  0% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
 }
 
 .input-form {
