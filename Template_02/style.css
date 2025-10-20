@@ -275,6 +275,11 @@ hr {
   width: calc(100% - 32px);
 }
 
+.card-470 {
+  max-width: 470px;
+  width: calc(33.33vw - 15px);
+}
+
 .stakeholder-card-01 {
   background-image: url('images/stakeholder-01.png');
   transition: all 300ms linear 0s;
