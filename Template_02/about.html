@@ -205,7 +205,8 @@
         <div class="hero footer">
             <div class="hero-content text-center w-full flex-col gap-40 mobile-fullscreen">
                 <div class="text-center my-20 !w-full ">
-                    <h2 class="text-88px text-[88px] w-full copernicus letter-5"><i>Real-Time</i><br class="desktop-no-break" />
+                    <h2 class="text-88px text-[88px] w-full copernicus letter-5"><i>Real-Time</i><br
+                            class="desktop-no-break" />
                         Claim
                         Settlement,<br />
                         Audit-<i>Ready</i>.
@@ -288,7 +289,10 @@
 
     <section class="hidden flex justify-center items-center" id="form" onclick="closeForm(event);">
         <div class="mob-form flex flex-col p-12 gap-7 items-start max-w-[96vw] w-[700px] bg-white rounded-[8px]">
-            <img src="images/logo.svg" class="h-[27px]" />
+            <div class="flex justify-between w-full">
+                <img src="images/logo.svg" class="h-[27px]" />
+                <div class="mobile-menu close" id="close" onclick="closeForm(event);" style="filter:invert(100%);"></div>
+            </div>
             <h2 class="text-6xl text-left copernicus font-medium line-105 less-mobile tracking-[-3.2px] tracking-32px">
                 Partner with Us
             </h2>
@@ -327,7 +331,7 @@
             document.getElementById("form").classList.remove('hidden');
         }
         function closeForm(event) {
-            if (event.target.id == "form") {
+            if (event.target.id == "form" || event.target.id == "close") {
                 document.getElementById("form").classList.add('hidden');
             }
         }

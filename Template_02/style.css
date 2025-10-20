@@ -727,9 +727,11 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100vw);
-    height: calc(100vh);
+    max-width: unset;
+    width: 100vw;
+    height: 100vh;
     padding: 24px;
+    border-radius: 0;
   }
   
   .text-80px {
