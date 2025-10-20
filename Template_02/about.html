@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div class="flex gap-4 w-fit">
-            <a class="btn mobile-hidden">Partner with Us</a>
+            <a class="btn mobile-hidden" onclick="openForm();">Partner with Us</a>
         </div>
         <div class="mobile-menu" onclick="menuToggle();"></div>
     </div>
@@ -231,7 +231,7 @@
                                 </a>
                             </div>
                         </div>
-                        <button class="btn">Partner with us</button>
+                        <button class="btn" onclick="openForm();">Partner with us</button>
                     </div>
                     <div class="flex justify-between mobile-col mobile-reverse">
                         <p class="font-medium text-[12px] tracking-[-0.28px]">
@@ -271,7 +271,7 @@
             <ul class="menu menu-horizontal px-1 flex flex-col items-center gap-8">
                 <li class="copernicus text-xl text-white"><a>About</a></li>
                 <li class="copernicus text-xl text-white"><a>Careers</a></li>
-                <a class="btn">Partner with Us</a>
+                <a class="btn" onclick="openForm();">Partner with Us</a>
             </ul>
         </div>
 
@@ -292,6 +292,11 @@
 
         function menuToggle() {
             document.getElementById("openMenu").classList.toggle("hideme");
+        }
+    </script>
+    <script>
+        function openForm(){
+            alert('form');
         }
     </script>
 
