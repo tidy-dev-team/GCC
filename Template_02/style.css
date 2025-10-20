@@ -366,7 +366,7 @@ hr {
   content: '✅ Your request has been submitted';
 }
 
-.no-click {
+.mob-form:has(input:placeholder-shown) #formSend {
   pointer-events: none;
   opacity: 0.6;
 }

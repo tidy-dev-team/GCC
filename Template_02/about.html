@@ -347,6 +347,8 @@
                 .then((response) => {
                     console.log("Done", "Submitted Successfully.", "success");
                     document.getElementById("formSend").classList.add("success");
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
                 })
                 .catch((error) => {
                     console.log("Error", "Something went wrong. please try again!", "error");
