@@ -766,4 +766,7 @@ hr {
     line-height: 130%;
     letter-spacing: -0.7px;
   }
+  .card-470{
+    width: calc(100vw - 48px);
+  }
 }
