@@ -495,6 +495,7 @@
                 <input type="email" id="email" name="email" class="input-form" placeholder="Email"
                     autocomplete="true" />
                 <button class="btn w-fit" id="formSend">Submit request</button>
+                
             </form>
         </div>
     </section>
@@ -535,6 +536,7 @@
             fetch(scriptURL, { method: "POST", body: formData })
                 .then((response) => {
                     console.log("Done", "Submitted Successfully.", "success");
+                    document.getElementById("formSend").classList.add("success");
                 })
                 .catch((error) => {
                     console.log("Error", "Something went wrong. please try again!", "error");
