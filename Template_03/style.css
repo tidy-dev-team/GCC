@@ -604,4 +604,9 @@ footer nav {
   .no-break {
     display: none;
   }
+  
+  .home-img {
+    width: 16px;
+    height: 16px;
+  }
 }
