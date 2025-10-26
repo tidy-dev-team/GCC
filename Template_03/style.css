@@ -595,4 +595,8 @@ footer nav {
     background-size: 200%;
     background-position: left bottom;
   }
+  
+  h1 {
+    letter-spacing: -0.16rem;
+  }
 }
