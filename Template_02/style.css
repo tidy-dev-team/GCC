@@ -684,7 +684,9 @@ hr {
   }
   
   .footer h2 {
-    font-size: 36px !important;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 100% !important;
   }
   
   .footer .mobile-fullscreen {
