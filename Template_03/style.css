@@ -475,6 +475,7 @@ footer nav {
   
   h2 {
     font-size: 36px;
+    letter-spacing: -0.10286rem;
   }
   
   .color-card {
@@ -598,5 +599,9 @@ footer nav {
   
   h1 {
     letter-spacing: -0.16rem;
+  }
+  
+  .no-break {
+    display: none;
   }
 }
