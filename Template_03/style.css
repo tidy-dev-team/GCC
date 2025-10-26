@@ -336,6 +336,11 @@ footer nav {
   background-color: var(--color-light);
 }
 
+.first-mob {
+  background-size: 110% !important;
+  background-position: 50% 65% !important;
+}
+
 #type-anim::before {
   content: '';
   animation: typeAnim 5000ms linear forwards;
@@ -608,5 +613,15 @@ footer nav {
   .home-img {
     width: 16px;
     height: 16px;
+  }
+  
+  .bg-mobile {
+    background-position: 50% 160% !important;
+    background-size: 80%;
+  }
+  
+  .first-mob {
+    background-size: 100% !important;
+    background-position: 50% 170% !important;
   }
 }
