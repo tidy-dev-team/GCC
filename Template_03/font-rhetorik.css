@@ -9,7 +9,15 @@
 @font-face {
   font-family: 'rhetorik';
   src: url('fonts/RhetorikSans-Light-trial.otf') format('opentype');
-  font-weight: 200 300;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rhetorik';
+  src: url('fonts/RhetorikSerif-Regular-trial 2.otf') format('opentype');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
