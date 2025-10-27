@@ -34,12 +34,12 @@
       <a class="btn">Partner With Us</a>
       <a class="btn btn-outline">Get Pre-Approved Now</a>
     </div>
-    <div class="menu"></div>
+    <div class="menu" onclick="toggleMenu();"></div>
   </div>
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobileMenu">
     <div class="fake-nav">
       <img src="images/logo.svg" />
-      <div class="menu close"></div>
+      <div class="menu close" onclick="toggleMenu();"></div>
     </div>
   </div>
 
@@ -421,6 +421,11 @@
     </div>
   </section>
 
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>

@@ -365,6 +365,15 @@ footer nav {
   background-size: contain;
 }
 
+.fake-nav {
+  display: flex;
+  height: 80px;
+  padding: 12px 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .close {
   background-image: url(images/close.svg);
 }
