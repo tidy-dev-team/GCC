@@ -36,6 +36,21 @@
       <a class="btn">Partner With Us</a>
       <a class="btn btn-outline">Get Pre-Approved Now</a>
     </div>
+    <div class="menu" onclick="toggleMenu();"></div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="fake-nav">
+      <img src="images/logo.svg" />
+      <div class="menu close" onclick="toggleMenu();"></div>
+    </div>
+    <ul class="menu-links">
+      <li><a>Company</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a>Platforms</a></li>
+      <li><a>For Banks</a></li>
+      <button class="btn">Partner with Us</button>
+    </ul>
   </div>
 
   <!-- COMPONENT: HERO -->
@@ -403,6 +418,11 @@
     </div>
   </section>
 
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
