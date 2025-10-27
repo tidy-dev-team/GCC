@@ -664,6 +664,8 @@ footer nav {
   .mobile-menu {
     display: flex;
     position: fixed;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -672,6 +674,23 @@ footer nav {
     transform: translateX(100%);
     z-index: 10;
     transition: transform 300ms ease-in-out 0s;
+  }
+  
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+  }
+  
+  .menu-links li {
+    padding: 12px 20px;
+  }
+  
+  .menu-links li:last-of-type {
+    margin-bottom: 40px;
   }
   
   .mobile-menu.active {
