@@ -355,6 +355,16 @@ footer nav {
   animation: blinkAnim 500ms steps(1, end) infinite;
 }
 
+.menu {
+  display: none;
+  height: 32px;
+  width: 32px;
+  background-image: url(images/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 @keyframes blinkAnim {
   0% {
     opacity: 0;
@@ -623,5 +633,14 @@ footer nav {
   .first-mob {
     background-size: 100% !important;
     background-position: 50% 170% !important;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .menu {
+    display: block;
+    margin-right: 20px;
   }
 }
